@@ -34,7 +34,7 @@ function send() {
         alert("請輸入有效的信箱地址！");
         $("input").removeClass("border-red");
         $("#email").addClass("border-red").focus(); 
-    }else if(phone == ''){
+    }else if(phone == ''){ 
         alert("請確實輸入電話！");
         $("input").removeClass("border-red");
         $("#phone").addClass("border-red").focus();
