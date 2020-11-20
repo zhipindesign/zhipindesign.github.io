@@ -10,6 +10,7 @@ function send() {
     let projectName = document.querySelector('#projectName').value;
     // let projectImg = document.querySelector('#projectImg').value;
     let projectDescription = document.querySelector('#projectDescription').value;
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     // console.log(datetime);
     // console.log(lastName);
     // console.log(firstName);
@@ -18,20 +19,29 @@ function send() {
     // console.log(projectName);
     // console.log(projectDescription);
     if(lastName == ''){
-        alert("請確實輸入姓氏")
-        $("#lastName").addClass("border-red")
+        alert("請確實輸入姓氏！");
+        $("input").removeClass("border-red");
+        $("#lastName").addClass("border-red").focus();
     }else if(firstName == ''){
-        alert("請確實輸入名字")
-        $("#firstName").addClass("border-red")
+        alert("請確實輸入名字！");
+        $("input").removeClass("border-red");
+        $("#firstName").addClass("border-red").focus();
     }else if(email == ''){
-        alert("請確實輸入信箱")
-        $("#email").addClass("border-red")
+        alert("請確實輸入信箱！");
+        $("input").removeClass("border-red");
+        $("#email").addClass("border-red").focus();
+    }else if(!regex.test(email)){
+        alert("請輸入有效的信箱地址！");
+        $("input").removeClass("border-red");
+        $("#email").addClass("border-red").focus();
     }else if(phone == ''){
-        alert("請確實輸入電話")
-        $("#phone").addClass("border-red")
+        alert("請確實輸入電話！");
+        $("input").removeClass("border-red");
+        $("#phone").addClass("border-red").focus();
     }else if(projectName == ''){
-      alert("請確實輸入專案名稱")
-      $("#projectName").addClass("border-red")
+      alert("請確實輸入專案名稱！");
+      $("input").removeClass("border-red");
+      $("#projectName").addClass("border-red").focus();
     }else{
       alert("已新增")
       window.setTimeout(" window.location.href = './no_file.html'", 1000)
