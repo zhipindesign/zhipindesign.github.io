@@ -33,7 +33,7 @@ function send() {
     }else if(!regex.test(email)){
         alert("請輸入有效的信箱地址！");
         $("input").removeClass("border-red");
-        $("#email").addClass("border-red").focus();
+        $("#email").addClass("border-red").focus(); 
     }else if(phone == ''){
         alert("請確實輸入電話！");
         $("input").removeClass("border-red");
