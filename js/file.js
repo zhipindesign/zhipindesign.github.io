@@ -17,7 +17,24 @@ function send() {
     // console.log(phone);
     // console.log(projectName);
     // console.log(projectDescription);
-        // alert("已新增")
+    if(lastName == ''){
+        alert("請確實輸入姓氏")
+        $("#lastName").addClass("border-red")
+    }else if(firstName == ''){
+        alert("請確實輸入名字")
+        $("#firstName").addClass("border-red")
+    }else if(email == ''){
+        alert("請確實輸入信箱")
+        $("#email").addClass("border-red")
+    }else if(phone == ''){
+        alert("請確實輸入電話")
+        $("#phone").addClass("border-red")
+    }else if(projectName == ''){
+      alert("請確實輸入專案名稱")
+      $("#projectName").addClass("border-red")
+    }else{
+      alert("已新增")
+      window.setTimeout(" window.location.href = './no_file.html'", 1000)
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwXF-7loB34qgvJlwWwA2DIdNJbtab6hNUrAj_2b08d-fC938E/exec",
             // url: "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxEvc31hr02NnMuMDpgHeCQRIy-gOe0VaiXrKxBlqs1ACnflH6o/exec",
@@ -40,5 +57,5 @@ function send() {
           });
 
         };
-        
+      }      
         sendButton.addEventListener('click', send);

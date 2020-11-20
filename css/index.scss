@@ -666,7 +666,9 @@ header{//最上方區塊樣式
 .nofile{  //沒有檔案頁面樣式
     font-family: "Open Sans", "微軟正黑體";  //字型樣式
     main{  //主要內容樣式
-
+        .border-red{
+            border: red 2px solid;
+        }
         .file_form{  //沒有檔案之表單樣式
             // background: rgb(223,230,237);  //背景顏色
             margin: 100px auto;  //向上寬度，左右置中
