@@ -104,9 +104,13 @@
               </div>
               <label class="en" for="">Full Name*</label>
               <label class="zh-tw" for="">全名*</label>
+              <label class="en float-right" for="" style="color:rgb(201, 201, 201)">* Required</label>
+              <label class="zh-tw float-right" for="" style="color:rgb(201, 201, 201)">* 為必填</label>
               <div class="d-flex">
-                  <input type="text" name="lastName" id="lastName" class="form-control lname" placeholder="Last name">
-                  <input type="text" name="firstName" id="firstName" class="form-control fname" placeholder="First name">
+                  <input type="text" name="lastName" id="lastName" class="form-control lname en" placeholder="Last name">
+                  <input type="text" name="firstName" id="firstName" class="form-control fname en" placeholder="First name">
+                  <input type="text" name="lastName" id="lastName" class="form-control lname zh-tw" placeholder="姓氏">
+                  <input type="text" name="firstName" id="firstName" class="form-control fname zh-tw" placeholder="名字">
               </div>
               <label class="en" for="">Email*</label>
               <label class="zh-tw" for="">電子郵件*</label>
@@ -121,7 +125,7 @@
               <label class="zh-tw" for="">專案圖片*</label>
               <input type="text" name="projectImg" id="projectImg" class="form-control" placeholder=""> -->
               <label class="en" for="">Project Description*</label>
-              <label class="zh-tw" for="">專案描述*</label>
+              <label class="zh-tw" for="">專案描述</label>
               <textarea class="form-control" name="projectDescription" id="projectDescription" rows="8"></textarea><br>
               <!-- <input type="reset" value="123"> -->
               <button type="submit" class="btn submit float-right" id="send">Submit</button><br>
