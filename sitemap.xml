@@ -8,18 +8,23 @@
 
 
 <url>
-  <loc>https://lesandoz.github.io/%E6%99%BA%E5%93%81/index</loc>
-  <lastmod>2020-11-18T06:59:53+00:00</lastmod>
+  <loc>https://zhipindesign.github.io/</loc>
+  <lastmod>2020-11-23T06:56:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://lesandoz.github.io/%E6%99%BA%E5%93%81/index.html</loc>
-  <lastmod>2020-11-18T06:59:53+00:00</lastmod>
+  <loc>https://zhipindesign.github.io/index.html</loc>
+  <lastmod>2020-11-23T06:56:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lesandoz.github.io/%E6%99%BA%E5%93%81/file.html</loc>
-  <lastmod>2020-11-18T06:59:53+00:00</lastmod>
+  <loc>https://zhipindesign.github.io/file.html</loc>
+  <lastmod>2020-11-23T06:56:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhipindesign.github.io/no_file.html</loc>
+  <lastmod>2020-11-23T06:56:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
