@@ -223,6 +223,15 @@ header .menu {
   font-family: "Open Sans", "微軟正黑體";
 }
 
+.carousel .carousel-indicators li {
+  width: 30px;
+  height: 10px;
+  border-radius: 100%;
+  background: #007BFF;
+  -webkit-transform: scale(0.55) translateY(15vh);
+          transform: scale(0.55) translateY(15vh);
+}
+
 .carousel .carousel-item {
   height: 540px;
 }
