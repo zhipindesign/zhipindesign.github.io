@@ -257,8 +257,8 @@ header{//最上方區塊樣式
                 font-size: 24px;  //字體大小
                 text-align: left;  //字體左右置中
                 font-weight: bolder;  //字體粗度
-                margin-top: 50px;  //對外寬度
-                transform: translateX(5vw);
+                margin: 50px 50px 0;  //對外寬度
+                // transform: translateX(5vw);
             }
 
             .item_wrap{  //(建築模型/公仔模型/機構模型/產品設計)上述四項外框樣式
@@ -310,13 +310,13 @@ header{//最上方區塊樣式
         .step{  //步驟樣式
             max-width: 100vw;  //最大寬度
             height: 1000px;  //高度
-
+            
             .step_text{  //步驟文字樣式
                 font-size: 24px;  //字體大小
                 text-align: left;  //字體左右置中
                 font-weight: bolder;  //字體粗度
-                margin: 30px 0 100px;  //對外寬度
-                transform: translateX(5vw);
+                margin: 30px 50px 100px;  //對外寬度
+                // transform: translateX(5vw);
             }
             .step_img_wrap{  //步驟圖片外框樣式
                 width: 400px;  //寬度
@@ -327,11 +327,16 @@ header{//最上方區塊樣式
 
                 }
                 .file_img{
-                    transform: translateX(6vw);
+                    // transform: translateX(6vw);
+                    width: 200px;  //寬度
+                    margin: 0 0 0 5vw;
                     .step_img_STL_file, .step_img_No_file{  //有檔案之圖片樣式, 沒檔案之圖片樣式
                         width: 110px;  //寬度
                         height: auto;  //高度，隨寬度改變
                         padding: 5px;
+                        // display:block;  //左右置中
+                        // margin:auto;  //左右置中
+                        text-align: center;
                     }
                 }
                 .step_img_3D_printing{  //3D列印之圖片樣式
@@ -355,6 +360,7 @@ header{//最上方區塊樣式
                 .img_text{  //文字圖片樣式
                     text-align: center;  //上下置中
                     transform: translateY(40%);  //向下移動50%
+                    white-space:nowrap;
                 }
                 svg:hover, polygon:hover path{
                     // -webkit-filter: drop-shadow(0px 0px 0px #ff2600);
@@ -362,7 +368,6 @@ header{//最上方區塊樣式
                     cursor: pointer;
                 }
             }
-
             .file{ //有檔案跟無檔案之圖片外框樣式
                 display: flex;  //並排
                 img{  //圖片樣式
@@ -396,8 +401,8 @@ header{//最上方區塊樣式
                 font-size: 24px;  //字體大小
                 text-align: left;  //字體左右置中
                 font-weight: bolder;  //字體粗度
-                margin: 30px 0 100px;  //對外寬度
-                transform: translateX(5vw);
+                margin: 30px 50px 100px;  //對外寬度
+                // transform: translateX(5vw);
             }
             .other{  //其他服務外框樣式
                 display: flex;  //並排
@@ -437,6 +442,9 @@ header{//最上方區塊樣式
                     }
                     .box_text{
                         margin-bottom: -100px;
+                    }
+                    img{
+                        width: 90%;
                     }
                 }
             }
@@ -706,6 +714,7 @@ header{//最上方區塊樣式
                         padding: 8px 24px;
                         border-radius: 24px;
                         min-width: 50%;
+                        white-space:nowrap;
                     }
                     .stiFileText, .imgText{
                         color: #007BFF;

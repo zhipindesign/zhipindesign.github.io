@@ -278,9 +278,7 @@ header .menu {
   font-size: 24px;
   text-align: left;
   font-weight: bolder;
-  margin-top: 50px;
-  -webkit-transform: translateX(5vw);
-          transform: translateX(5vw);
+  margin: 50px 50px 0;
 }
 
 .index main .our_services .item_wrap {
@@ -326,9 +324,7 @@ header .menu {
   font-size: 24px;
   text-align: left;
   font-weight: bolder;
-  margin: 30px 0 100px;
-  -webkit-transform: translateX(5vw);
-          transform: translateX(5vw);
+  margin: 30px 50px 100px;
 }
 
 .index main .step .step_img_wrap {
@@ -339,14 +335,15 @@ header .menu {
 }
 
 .index main .step .step_img_wrap .file_img {
-  -webkit-transform: translateX(6vw);
-          transform: translateX(6vw);
+  width: 200px;
+  margin: 0 0 0 5vw;
 }
 
 .index main .step .step_img_wrap .file_img .step_img_STL_file, .index main .step .step_img_wrap .file_img .step_img_No_file {
   width: 110px;
   height: auto;
   padding: 5px;
+  text-align: center;
 }
 
 .index main .step .step_img_wrap .step_img_3D_printing {
@@ -374,6 +371,7 @@ header .menu {
   text-align: center;
   -webkit-transform: translateY(40%);
           transform: translateY(40%);
+  white-space: nowrap;
 }
 
 .index main .step .step_img_wrap svg:hover, .index main .step .step_img_wrap polygon:hover path {
@@ -421,9 +419,7 @@ header .menu {
   font-size: 24px;
   text-align: left;
   font-weight: bolder;
-  margin: 30px 0 100px;
-  -webkit-transform: translateX(5vw);
-          transform: translateX(5vw);
+  margin: 30px 50px 100px;
 }
 
 .index main .other_services .other {
@@ -470,6 +466,9 @@ header .menu {
   }
   .index main .our_services .item_wrap .box_text {
     margin-bottom: -100px;
+  }
+  .index main .our_services .item_wrap img {
+    width: 90%;
   }
   .index main .step {
     height: 2250px;
@@ -764,6 +763,7 @@ header .menu {
   padding: 8px 24px;
   border-radius: 24px;
   min-width: 50%;
+  white-space: nowrap;
 }
 
 .nofile main .file_form .nofile_img_wrap .image .stiFileText, .nofile main .file_form .nofile_img_wrap .image .imgText {
