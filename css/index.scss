@@ -432,8 +432,10 @@ header{//最上方區塊樣式
     @media screen and (max-width: 600px){  //當螢幕寬度小於600px時，改為以下(手機版)樣式
         main{   //首頁主要內容(我們的服務/步驟/其他服務)
             .our_services{  //我們的服務區塊樣式
-                height: 2000px;  //改為1200px高度，因手機版會拉長
-
+                height: 1800px;  //改為1200px高度，因手機版會拉長
+                .our_services_text{
+                    text-align: center;
+                }
                 .item_wrap{    //(建築模型/公仔模型/機構模型/產品設計)上述四項外框樣式
                     display: block;  //取消並排，改為直行排列
                     .box{    //四項內容樣式
@@ -450,13 +452,16 @@ header{//最上方區塊樣式
             }
             .step{    //步驟樣式
                 height: 2250px;  //改為1500px，手機版較長
+                .step_text{
+                    text-align: center;
+                }
                 .file{   //有檔案跟無檔案之圖片外框樣式
                     display: block;  //取消並排，改為直排
                     .step_img_wrap{
 
                     }
                     .file_img{
-                        transform: translateX(19vw);
+                        transform: translateX(15vw);                                      
                     }
                 }
                 .print{  //步驟2跟步驟3外框樣式
@@ -466,6 +471,9 @@ header{//最上方區塊樣式
             }
             .other_services{    //其他服務區塊樣式
                 height: 800px;  //拉長，手機版
+                .other_text{
+                    text-align: center;
+                }
                 .other{  //其他服務外框樣式
                     display: block;  //並排改為直排
                 }

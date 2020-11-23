@@ -455,7 +455,10 @@ header .menu {
 
 @media screen and (max-width: 600px) {
   .index main .our_services {
-    height: 2000px;
+    height: 1800px;
+  }
+  .index main .our_services .our_services_text {
+    text-align: center;
   }
   .index main .our_services .item_wrap {
     display: block;
@@ -473,18 +476,24 @@ header .menu {
   .index main .step {
     height: 2250px;
   }
+  .index main .step .step_text {
+    text-align: center;
+  }
   .index main .step .file {
     display: block;
   }
   .index main .step .file .file_img {
-    -webkit-transform: translateX(19vw);
-            transform: translateX(19vw);
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
   }
   .index main .step .print {
     display: block;
   }
   .index main .other_services {
     height: 800px;
+  }
+  .index main .other_services .other_text {
+    text-align: center;
   }
   .index main .other_services .other {
     display: block;
