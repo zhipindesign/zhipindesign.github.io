@@ -228,8 +228,9 @@ header .menu {
   height: 10px;
   border-radius: 100%;
   background: #007BFF;
-  -webkit-transform: scale(0.55) translateY(15vh);
-          transform: scale(0.55) translateY(15vh);
+  -webkit-transform: scale(0.45) translateY(18vh);
+          transform: scale(0.45) translateY(18vh);
+  margin-right: -5px;
 }
 
 .carousel .carousel-item {
