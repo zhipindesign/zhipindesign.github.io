@@ -1,7 +1,7 @@
 @charset "UTF-8";
 header {
   max-width: 100vw;
-  height: 120px;
+  height: 110px;
   background: white;
   position: relative;
   font-family: "Open Sans", "微軟正黑體";
@@ -28,8 +28,8 @@ header .zhipin_icon_wrap {
 }
 
 header .zhipin_icon_wrap .zhipin_icon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin: 20px 10px 10px 40px;
 }
 
@@ -287,7 +287,7 @@ header .menu {
   font-size: 24px;
   text-align: left;
   font-weight: bolder;
-  margin: 50px 50px 0;
+  margin: 30px 50px -30px;
 }
 
 .index main .our_services .item_wrap {
@@ -333,7 +333,7 @@ header .menu {
   font-size: 24px;
   text-align: left;
   font-weight: bolder;
-  margin: 30px 50px 100px;
+  margin: 0px 50px 100px;
 }
 
 .index main .step .step_img_wrap {
@@ -428,7 +428,7 @@ header .menu {
   font-size: 24px;
   text-align: left;
   font-weight: bolder;
-  margin: 30px 50px 100px;
+  margin: 0px 50px 50px;
 }
 
 .index main .other_services .other {
@@ -437,37 +437,52 @@ header .menu {
   display: flex;
 }
 
-.index main .other_services .other .other_img_wrap {
-  width: 400px;
-  height: 350px;
-  display: block;
+.index main .other_services .other .other_img_wrap_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 50px auto -50px;
 }
 
-.index main .other_services .other .other_img_wrap .other_img {
+.index main .other_services .other .other_img_wrap_wrap .other_img_wrap {
+  width: 400px;
+  height: 350px;
+}
+
+.index main .other_services .other .other_img_wrap_wrap .other_img_wrap .other_img {
   width: 200px;
   height: auto;
   display: block;
   margin: 50px auto -50px;
 }
 
-.index main .other_services .other .other_img_wrap .img_text {
-  text-align: center;
-  -webkit-transform: translateY(120%);
-          transform: translateY(120%);
+.index main .other_services .other .other_img_wrap_wrap .other_img_wrap .other_img_Laser {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
 }
 
-.index main .other_services .other .other_img_wrap .img_text_vacuum {
+.index main .other_services .other .other_img_wrap_wrap .other_img_wrap .img_text {
+  text-align: center;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 
+.index main .other_services .other .other_img_wrap_wrap .other_img_wrap .img_text p {
+  padding: 0px 80px;
+}
+
+.index main .other_services .other .other_img_wrap_wrap .other_img_wrap .img_text_vacuum {
+  -webkit-transform: translateY(105%);
+          transform: translateY(105%);
+}
+
 @media screen and (max-width: 600px) {
   .index main .our_services {
-    height: 1800px;
+    height: 2000px;
   }
   .index main .our_services .our_services_text {
     text-align: center;
+    margin: 20px;
   }
   .index main .our_services .item_wrap {
     display: block;
@@ -487,6 +502,7 @@ header .menu {
   }
   .index main .step .step_text {
     text-align: center;
+    z-index: 3;
   }
   .index main .step .file {
     display: block;
@@ -505,6 +521,9 @@ header .menu {
     text-align: center;
   }
   .index main .other_services .other {
+    display: block;
+  }
+  .index main .other_services .other .other_img_wrap_wrap {
     display: block;
   }
 }
