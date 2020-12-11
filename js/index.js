@@ -2,9 +2,9 @@
 $(".zh-tw").css("display", "none");
 
 $(document).scroll(function(){
-    var scroH = $(document).scrollTop();  //ºu°Ê°ª«×
-    var viewH = $(window).height();  //¥i¨£°ª«× 
-    var contentH = $(document).height();  //¤º®e°ª«×
+    var scroH = $(document).scrollTop();  //æ»¾å‹•é«˜åº¦
+    var viewH = $(window).height();  //å¯è¦‹é«˜åº¦ 
+    var contentH = $(document).height();  //å…§å®¹é«˜åº¦
     // console.log(scroH);
     if(scroH > 100 && scroH < 650){
         $(".language").css("color", "white");
@@ -100,7 +100,17 @@ $(document).on("click", ".stiFileText", function(){
 })
 
 
-
+$(document).ready(function(){
+    $(window).resize(function() {
+        var wdth=$(window).width();
+        // console.log(wdth)
+        if(wdth < 1200){
+            $(".carousel, header, .index, footer").removeClass("container")
+        }else if(wdth >= 1200){
+            $(".carousel, header, .index, footer").addClass("container")
+        }
+    });
+});
 
 
 
