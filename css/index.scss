@@ -1186,3 +1186,78 @@ footer {
   //     background: rgb(253, 37, 37);  //背景顏色
   // }
 }
+
+.mainIndex {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../img/PXL_20201216_093128501.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 960px;
+  margin: 0 auto;
+  header {
+    background: none;
+    .logo_text {
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      margin: -10px 20px 0;
+    }
+  }
+  main {
+    height: 680px;
+    .main-icon {
+      transform: scale(7.7);
+      margin: 230px auto 320px;
+      opacity: 0.8;
+    }
+    .svg_box {
+      width: 100%;
+      height: 240px;
+      .svgWrap {
+        // margin-right: 75px;
+        transform: translateX(-105px);
+        opacity: 0.8;
+        .mainSvg {
+          width: 100%;
+        }
+        .svgText {
+          color: #aaaaaa;
+          font-size: 12px;
+          margin-top: 15px;
+        }
+      }
+      .svgWrap:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .svgWrap1 {
+        margin-left: 50px;
+      }
+      .svgWrap2 {
+        transform: translateY(-7%) translateX(-45px) scale(0.8);
+      }
+      .svgWrap3 {
+        transform: translateY(7%) translateX(15px);
+      }
+      .svgWrap4 {
+        transform: translateY(1%) translateX(75px);
+      }
+    }
+  }
+
+  footer {
+    background: none;
+    color: #aaaaaa;
+    transform: scale(0.9);
+    font-weight: lighter;
+    text-align: center;
+    .footerText1 {
+      font-size: 16px !important;
+    }
+    .footerText2 {
+      margin-right: 15px;
+    }
+  }
+}
