@@ -33,7 +33,7 @@ header .zhipin_icon_wrap {
 header .zhipin_icon_wrap .zhipin_icon {
   width: 50px;
   height: 50px;
-  margin: 6px 15px 0px 20px;
+  margin: 6px 5px 0px 20px;
 }
 
 header .zhipin_icon_wrap .logo_text {
@@ -41,6 +41,8 @@ header .zhipin_icon_wrap .logo_text {
   line-height: 75px;
   font-size: 12px;
   font-weight: 800;
+  -webkit-transform: scale(0.84);
+          transform: scale(0.84);
 }
 
 header .zhipin_icon_wrap .zhipin_icon:hover,
@@ -94,11 +96,14 @@ header .header_list_bot {
   font-size: 12px;
   position: absolute;
   bottom: -25%;
-  right: 2%;
+  right: 0%;
 }
 
 header .header_list_bot li {
-  padding: 8px 16px;
+  padding: 8px 4px;
+  -webkit-transform: scale(0.84);
+          transform: scale(0.84);
+  z-index: 3;
 }
 
 header .header_list_bot li .tel,
@@ -130,6 +135,37 @@ header .header_list_bot li .bot:hover {
 
 header .header_list_bot li .blue {
   color: #007bff;
+}
+
+header .header_list_bot li .dropdown-toggle::after {
+  -webkit-transform: translateY(3px) scale(0.8);
+          transform: translateY(3px) scale(0.8);
+}
+
+header .header_list_bot li .dropdown-menu {
+  background: #131313;
+  -webkit-transform: scale(0.84) translate(-18%, -10%);
+          transform: scale(0.84) translate(-18%, -10%);
+}
+
+header .header_list_bot li .dropdown-menu a {
+  color: white;
+}
+
+header .header_list_bot li .dropdown-menu a:hover {
+  color: #007bff;
+}
+
+header .header_list_bot li .dropdown-menu .dropdown-item:hover {
+  background: #131313;
+}
+
+header .header_list_bot li .dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+header .header_list_bot li .dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 header .header_list_bot_600 {
@@ -241,21 +277,21 @@ header .menu {
 }
 
 .carousel .carousel-item {
-  height: 350px;
+  height: 300px;
 }
 
 .carousel .carousel-item1 {
-  background: linear-gradient(255deg, rgba(0, 60, 255, 0.1) 0%, rgba(146, 0, 255, 0.4) 100%), linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: linear-gradient(255deg, rgba(0, 60, 255, 0.15) 0%, rgba(146, 0, 255, 0.5) 100%), linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
   background-size: cover;
 }
 
 .carousel .carousel-item2 {
-  background: linear-gradient(255deg, rgba(0, 60, 255, 0.1) 0%, rgba(146, 0, 255, 0.4) 100%), linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: linear-gradient(255deg, rgba(0, 60, 255, 0.15) 0%, rgba(146, 0, 255, 0.5) 100%), linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
   background-size: cover;
 }
 
 .carousel .carousel-item3 {
-  background: linear-gradient(255deg, rgba(0, 60, 255, 0.1) 0%, rgba(146, 0, 255, 0.4) 100%), linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: linear-gradient(255deg, rgba(0, 60, 255, 0.15) 0%, rgba(146, 0, 255, 0.5) 100%), linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
   background-size: cover;
 }
 

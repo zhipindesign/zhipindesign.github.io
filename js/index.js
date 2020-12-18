@@ -100,17 +100,17 @@ $(document).on("click", ".stiFileText", function(){
 })
 
 
-$(document).ready(function(){
-    $(window).resize(function() {
-        var wdth=$(window).width();
-        // console.log(wdth)
-        if(wdth < 1200){
-            $(".carousel, header, .index, footer").removeClass("container")
-        }else if(wdth >= 1200){
-            $(".carousel, header, .index, footer").addClass("container")
-        }
-    });
-});
+// $(document).ready(function(){
+//     $(window).resize(function() {
+//         var wdth=$(window).width();
+//         // console.log(wdth)
+//         if(wdth < 1200){
+//             $(".carousel, header, .index, footer").removeClass("container")
+//         }else if(wdth >= 1200){
+//             $(".carousel, header, .index, footer").addClass("container")
+//         }
+//     });
+// });
 
 
 

@@ -31,7 +31,7 @@ header {
       //icon本身樣式
       width: 50px; //寬度
       height: 50px; //高度
-      margin: 6px 15px 0px 20px; //對外寬度
+      margin: 6px 5px 0px 20px; //對外寬度
     }
 
     .logo_text {
@@ -40,6 +40,7 @@ header {
       line-height: 75px; //上下置中
       font-size: 12px; //字體大小
       font-weight: 800; //字體粗度
+      transform: scale(.84);
     }
     .zhipin_icon:hover,
     .logo_text:hover {
@@ -89,11 +90,11 @@ header {
     font-size: 12px; //字體大小
     position: absolute; //位置 absolute按到relative位置移動
     bottom: -25%; //位置 top: 距離relative最高點位置
-    right: 2%; //位置 right: 距離relative最右點位置
-
+    right: 0%; //位置 right: 距離relative最右點位置
     li {
-      padding: 8px 16px; //內縮寬度
-
+      padding: 8px 4px; //內縮寬度
+      transform: scale(.84);
+      z-index: 3;
       .tel,
       .contact {
         color: white; //字體顏色
@@ -120,6 +121,28 @@ header {
       }
       .blue {
         color: #007bff; //字體顏色
+      }
+      .dropdown-toggle::after{
+        transform: translateY(3px) scale(.8);
+      }
+      .dropdown-menu {
+        background: #131313;
+        transform: scale(.84) translate(-18%, -10%);
+        a{
+          color: white;
+        }
+        a:hover{
+          color: #007bff;
+        }
+        .dropdown-item:hover{
+          background: #131313;
+        }
+      }
+      .dropdown-menu li:hover .sub-menu{
+        visibility: visible;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
       }
     }
   }
@@ -251,18 +274,18 @@ header {
   }
   .carousel-item {
     //幻燈片外框樣式
-    height: 350px; //高度
+    height: 300px; //高度
   }
   .carousel-item1{
-    background:linear-gradient(255deg, rgba(0,60,255,0.1) 0%, rgba(146,0,255,0.4) 100%), linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background:linear-gradient(255deg, rgba(0,60,255,0.15) 0%, rgba(146,0,255,0.5) 100%), linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
     background-size: cover;
   }
   .carousel-item2{
-    background:linear-gradient(255deg, rgba(0,60,255,0.1) 0%, rgba(146,0,255,0.4) 100%), linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background:linear-gradient(255deg, rgba(0,60,255,0.15) 0%, rgba(146,0,255,0.5) 100%), linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
     background-size: cover;
   }
   .carousel-item3{
-    background:linear-gradient(255deg, rgba(0,60,255,0.1) 0%, rgba(146,0,255,0.4) 100%), linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background:linear-gradient(255deg, rgba(0,60,255,0.15) 0%, rgba(146,0,255,0.5) 100%), linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 34%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
     background-size: cover;
   }
   .carousel-item img {
@@ -340,7 +363,6 @@ header {
           text-align: center; //字體左右置中
           line-height: 250px; //字體上下置中(填入此區塊之高度)
           color: black; //字體顏色
-
           .box_text {
             //內容文字樣式
             height: 20px;
