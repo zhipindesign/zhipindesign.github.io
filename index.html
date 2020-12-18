@@ -13,7 +13,7 @@
   </head>
   <body>   
       <!-- 最上方選單+logo(header)  -->
-      <header class="container">
+      <header class="">
         <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
         <!-- <div class="language">
           <div class="language1 en">繁體</div>
@@ -22,13 +22,19 @@
         <!-- logo外框 -->
         <div class="zhipin_icon_wrap">
           <!-- logo圖片 src更改圖片位置 -->
-          <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()">
+          <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
+          <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+            <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+              <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
+              <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+            </g>
+          </svg> 
           <!-- logo文字 &nbsp是空格 -->
-          <div class="logo_text" onclick="home()">&nbsp&nbsp&nbspZHIPIN 3D PRINTING</div>
+          <div class="logo_text" onclick="home()">3D Printing Service</div>
         </div>
         <!-- 右上選單 -->
         <!-- 右上選單英文版 -->
-        <ul class="header_list_top en">
+        <!-- <ul class="header_list_top en">
           <li><a href="./LaserCutting.html">LASER CUTTING</a></li>
           <li><a href="./index.html">VACUUM FORMING</a></li>
           <li><a href="./index.html">SHARE SPACE</a></li>
@@ -36,9 +42,9 @@
             <p>English</p>/
             <p class="text_opacity">繁體中文</p>
           </li>
-        </ul>
+        </ul> -->
         <!-- 右上選單中文版 -->
-        <ul class="header_list_top zh-tw">
+        <!-- <ul class="header_list_top zh-tw">
           <li><a href="./index.html">雷射切割</a></li>
           <li><a href="./index.html">真空成形</a></li>
           <li><a href="./index.html">共享空間</a></li>
@@ -46,15 +52,19 @@
             <p class="text_opacity">English</p>/
             <p>繁體中文</p>
           </li>
-        </ul>
+        </ul> -->
         <!-- 右下選單英文版 -->
         <ul class="header_list_bot en">
           <li><a href="./index.html" class="blue bot">Home</a></li>
           <li><a href="./file.html" class="bot">3D printing service</a></li>
           <li><a href="./index.html" class="bot">View our work</a></li>
           <li><a href="./index.html" class="bot">Shop</a></li>
-          <li><a href="./index.html" class="contact">Contact</a></li>
-          <li><a href="./index.html" class="tel">+886 0226813986</a></li>
+          <!-- <li><a href="./index.html" class="contact">Contact</a></li>
+          <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
+          <li class="language1 d-flex">
+            <p>En</p>/
+            <p class="text_opacity">繁中</p>
+          </li>
           <img class="menu" src="./img/menu.png" alt="">
         </ul>
         <!-- 右下選單中文版 -->
@@ -63,8 +73,12 @@
           <li><a href="./index.html" class="bot">3D列印服務</a></li>
           <li><a href="./index.html" class="bot">作品</a></li>
           <li><a href="./index.html" class="bot">商店</a></li>
-          <li><a href="./index.html" class="contact">聯絡</a></li>
-          <li><a href="./index.html" class="tel">+886 26819865</a></li>
+          <!-- <li><a href="./index.html" class="contact">聯絡</a></li>
+          <li><a href="./index.html" class="tel">+886 26819865</a></li> -->
+          <li class="language2 d-flex">
+            <p class="text_opacity">En</p>/
+            <p>繁中</p>
+          </li>
           <img class="menu" src="./img/menu.png" alt="">
         </ul>
         <!-- 右下選單手機英文版 -->
@@ -97,30 +111,31 @@
         </div>
       </div> -->
       <!-- 幻燈片區  修改圖片就好-->
-      <div class="carousel slide container" data-ride="carousel" id="carousel-demo" data-interval="5000">
+      <div class="carousel slide" data-ride="carousel" id="carousel-demo" data-interval="5000">
         <ol class="carousel-indicators">
           <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-demo" data-slide-to="1"></li>
           <li data-target="#carousel-demo" data-slide-to="2"></li>
         </ol>
         <!-- 中間開始按鈕 -->
-        <div class="start_your_project">
-          <!-- 開始按鈕點擊後連結 用href="網址"更改 -->
+                  <!-- 開始按鈕點擊後連結 用href="網址"更改 -->
+        <!-- <div class="start_your_project">
           <a class="en" href="./file.html" target="">Start your project</a>
           <a class="zh-tw" href="./file.html" target="">開始您的項目</a>
-        </div>
+        </div> -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active carousel-item1">
             <!-- 幻燈片1 更改src換圖片 -->
-            <img class="d-block w-100" src="./img/bg-test.png" alt="">
+            <!-- <img class="d-block w-100" src="./img/PXL_20201216_093128501.jpg" alt=""> -->
+            <div class="d-block w-100 img"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carousel-item2">
             <!-- 幻燈片2 更改src換圖片 -->
-            <img class="d-block w-100" src="./img/bg-test.png" alt="">
+            <!-- <img class="d-block w-100" src="./img/PXL_20201216_093128501.jpg" alt=""> -->
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carousel-item3">
             <!-- 幻燈片3 更改src換圖片 -->
-            <img class="d-block w-100" src="./img/bg-test.png" alt="">
+            <!-- <img class="d-block w-100" src="./img/PXL_20201216_093128501.jpg" alt=""> -->
           </div>
           <!-- 左邊幻燈片箭頭 -->
           <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
@@ -168,7 +183,7 @@
             </div>
           </div>
           <!-- 步驟區塊 -->
-          <div class="step container">
+          <div class="step">
             <!-- 步驟文字 -->
             <div class="step_text en ">Start your Project</div>
             <div class="step_text zh-tw ">開始您的項目</div>
