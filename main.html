@@ -8,12 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel=stylesheet type="text/css" href="./css/index.css">
+    <link rel=stylesheet type="text/css" href="./css/main.css">
     <meta name="google-site-verification" content="_2V0Q37qxc30SzJ_9cTB8n8xOCqzfWTXy7Uf0zftl0U" />
   </head>
   <body class="mainIndex">   
       <!-- 最上方選單+logo(header)  -->
-      <header class="container">
+      <header class="">
         <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
         <!-- <div class="language">
           <div class="language1 en">繁體</div>
@@ -21,12 +21,13 @@
         </div> -->
         <!-- logo外框 -->
         <div class="zhipin_icon_wrap">
+          <!-- logo圖片 src更改圖片位置 -->
           <!-- logo文字 &nbsp是空格 -->
           <div class="logo_text" onclick="home()">zhipindesign</div>
         </div>
         <!-- 右上選單 -->
         <!-- 右上選單英文版 -->
-        <ul class="header_list_top en">
+        <!-- <ul class="header_list_top en">
           <li><a href="./LaserCutting.html">LASER CUTTING</a></li>
           <li><a href="./index.html">VACUUM FORMING</a></li>
           <li><a href="./index.html">SHARE SPACE</a></li>
@@ -34,9 +35,9 @@
             <p>English</p>/
             <p class="text_opacity">繁體中文</p>
           </li>
-        </ul>
+        </ul> -->
         <!-- 右上選單中文版 -->
-        <ul class="header_list_top zh-tw">
+        <!-- <ul class="header_list_top zh-tw">
           <li><a href="./index.html">雷射切割</a></li>
           <li><a href="./index.html">真空成形</a></li>
           <li><a href="./index.html">共享空間</a></li>
@@ -44,25 +45,57 @@
             <p class="text_opacity">English</p>/
             <p>繁體中文</p>
           </li>
-        </ul>
+        </ul> -->
         <!-- 右下選單英文版 -->
         <ul class="header_list_bot en">
           <li><a href="./index.html" class="blue bot">Home</a></li>
-          <li><a href="./file.html" class="bot">3D printing service</a></li>
+          <li>
+            <div class="dropdown">
+              <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our service
+              </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Coworkershop</a>
+                <a class="dropdown-item" href="#">3D printing service</a>
+                <a class="dropdown-item" href="#">Laser cutting engraving service</a>
+                <a class="dropdown-item" href="#">Vacumm forming service</a>
+              </div>
+            </div>
+          </li>
           <li><a href="./index.html" class="bot">View our work</a></li>
           <li><a href="./index.html" class="bot">Shop</a></li>
-          <li><a href="./index.html" class="contact">Contact</a></li>
-          <li><a href="./index.html" class="tel">+886 0226813986</a></li>
+          <!-- <li><a href="./index.html" class="contact">Contact</a></li>
+          <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
+          <li class="language1 d-flex mr-1">
+            <p>En</p>/
+            <p class="text_opacity">繁中</p>
+          </li>
           <img class="menu" src="./img/menu.png" alt="">
         </ul>
         <!-- 右下選單中文版 -->
         <ul class="header_list_bot zh-tw">
           <li><a href="./index.html" class="blue bot">首頁</a></li>
-          <li><a href="./index.html" class="bot">3D列印服務</a></li>
+          <li>
+            <div class="dropdown">
+            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our service
+            </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Coworkershop</a>
+                <a class="dropdown-item" href="#">3D printing service</a>
+                <a class="dropdown-item" href="#">Laser cutting engraving service</a>
+                <a class="dropdown-item" href="#">Vacumm forming service</a>
+              </div>
+            </div>
+          </li>
           <li><a href="./index.html" class="bot">作品</a></li>
           <li><a href="./index.html" class="bot">商店</a></li>
-          <li><a href="./index.html" class="contact">聯絡</a></li>
-          <li><a href="./index.html" class="tel">+886 26819865</a></li>
+          <!-- <li><a href="./index.html" class="contact">聯絡</a></li>
+          <li><a href="./index.html" class="tel">+886 26819865</a></li> -->
+          <li class="language2 d-flex mr-1">
+            <p class="text_opacity">En</p>/
+            <p>繁中</p>
+          </li>
           <img class="menu" src="./img/menu.png" alt="">
         </ul>
         <!-- 右下選單手機英文版 -->
@@ -83,7 +116,7 @@
             </g>
           </svg> 
           <div class="d-flex svg_box">
-            <div class="svgWrap svgWrap1">
+            <div class="svgWrap svgWrap1" onclick="coworkshop()">
                 <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 98.84"  fill="#aaaaaa">
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Layer_1-2" data-name="Layer 1">
@@ -93,7 +126,7 @@
                 </svg>    
                 <div class="svgText">共享工作室</div>
             </div>
-            <div class="svgWrap svgWrap2">
+            <div class="svgWrap svgWrap2" onclick="printing()">
                 <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.38 89.17" fill="#aaaaaa">
                     <title>3D printing</title>
                     <g id="Layer_2" data-name="Layer 2">
@@ -107,7 +140,7 @@
                 </svg>  
                 <div class="svgText">3D 列印服務</div>
             </div>
-            <div class="svgWrap svgWrap3">
+            <div class="svgWrap svgWrap3" onclick="laser()">
                 <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 78.88" fill="#aaaaaa">
                     <title>Laser cutting</title>
                     <g id="Layer_2" data-name="Layer 2" >

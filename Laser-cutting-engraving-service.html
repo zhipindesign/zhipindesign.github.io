@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ZHIPIN 3D LAB</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=stylesheet type="text/css" href="./css/Laser-cutting-engraving-service.css">
+  </head>
+  <body>
+    <header class="">
+      <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
+      <!-- <div class="language">
+        <div class="language1 en">繁體</div>
+        <div class="language2 zh-tw">English</div>
+      </div> -->
+      <!-- logo外框 -->
+      <div class="zhipin_icon_wrap">
+        <!-- logo圖片 src更改圖片位置 -->
+        <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
+        <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+          <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+            <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
+            <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+          </g>
+        </svg> 
+        <!-- logo文字 &nbsp是空格 -->
+        <div class="logo_text" onclick="home()">3D Printing Service</div>
+      </div>
+      <!-- 右上選單 -->
+      <!-- 右上選單英文版 -->
+      <!-- <ul class="header_list_top en">
+        <li><a href="./LaserCutting.html">LASER CUTTING</a></li>
+        <li><a href="./index.html">VACUUM FORMING</a></li>
+        <li><a href="./index.html">SHARE SPACE</a></li>
+        <li class="language1 d-flex">
+          <p>English</p>/
+          <p class="text_opacity">繁體中文</p>
+        </li>
+      </ul> -->
+      <!-- 右上選單中文版 -->
+      <!-- <ul class="header_list_top zh-tw">
+        <li><a href="./index.html">雷射切割</a></li>
+        <li><a href="./index.html">真空成形</a></li>
+        <li><a href="./index.html">共享空間</a></li>
+        <li class="language2 d-flex">
+          <p class="text_opacity">English</p>/
+          <p>繁體中文</p>
+        </li>
+      </ul> -->
+      <!-- 右下選單英文版 -->
+      <ul class="header_list_bot en">
+        <li><a href="./index.html" class="blue bot">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our service
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Coworkershop</a>
+              <a class="dropdown-item" href="#">3D printing service</a>
+              <a class="dropdown-item" href="#">Laser cutting engraving service</a>
+              <a class="dropdown-item" href="#">Vacumm forming service</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="./index.html" class="bot">View our work</a></li>
+        <li><a href="./index.html" class="bot">Shop</a></li>
+        <!-- <li><a href="./index.html" class="contact">Contact</a></li>
+        <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
+        <li class="language1 d-flex mr-1">
+          <p>En</p>/
+          <p class="text_opacity">繁中</p>
+        </li>
+        <img class="menu" src="./img/menu.png" alt="">
+      </ul>
+      <!-- 右下選單中文版 -->
+      <ul class="header_list_bot zh-tw">
+        <li><a href="./index.html" class="blue bot">首頁</a></li>
+        <li>
+          <div class="dropdown">
+          <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Our service
+          </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Coworkershop</a>
+              <a class="dropdown-item" href="#">3D printing service</a>
+              <a class="dropdown-item" href="#">Laser cutting engraving service</a>
+              <a class="dropdown-item" href="#">Vacumm forming service</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="./index.html" class="bot">作品</a></li>
+        <li><a href="./index.html" class="bot">商店</a></li>
+        <!-- <li><a href="./index.html" class="contact">聯絡</a></li>
+        <li><a href="./index.html" class="tel">+886 26819865</a></li> -->
+        <li class="language2 d-flex mr-1">
+          <p class="text_opacity">En</p>/
+          <p>繁中</p>
+        </li>
+        <img class="menu" src="./img/menu.png" alt="">
+      </ul>
+      <!-- 右下選單手機英文版 -->
+      <ul class="header_list_bot_600 en">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">3D printing service</a></li>
+        <li><a href="./index.html">View our work</a></li>
+        <li><a href="./index.html">Shop</a></li>
+        <li><a href="./index.html">Contact</a></li>
+        <li><a href="./index.html">+886 0226813986</a></li>
+      </ul>
+    </header>
+      <div class="file">
+        <main>
+          <!-- 步驟區塊 -->
+          <div class="step_cutting">
+            <!-- 步驟文字 -->
+            <div class="step_text en ">Start your Project</div>
+            <div class="step_text zh-tw ">開始您的項目</div>
+            <!-- 有檔案/無檔案圖片文字區塊 -->
+            <div class="file container">
+              <!-- 檔案區塊 -->
+              <div class="step_img_wrap step_img_wrap1">
+                <!-- 檔案圖片 用src="圖片位置"更改 -->
+                <div class="d-flex file_img">
+                  <!-- <img class="step_img step_img_STL_file" src="./img/STL-file.svg" alt=""> -->
+                  
+                  <a href="https://driveuploader.com/upload/iwcEytdFQH/" target="_blank">
+                    <svg class="step_img step_img_STL_file"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 90.63"><title>Laser cutting file</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M68.69,16.19,52.94.3a1,1,0,0,0-.71-.3H7.94A4.66,4.66,0,0,0,3.29,4.66v7.08H1a1,1,0,0,0-1,1V28.16a1,1,0,0,0,1,1H3.29V86a4.66,4.66,0,0,0,4.65,4.65H64.33A4.66,4.66,0,0,0,69,86V16.89A1,1,0,0,0,68.69,16.19ZM52.7,2.9l12.88,13H55.35a2.65,2.65,0,0,1-2.65-2.65ZM2,27.16V13.74H35V27.16ZM67,86a2.65,2.65,0,0,1-2.65,2.65H7.94A2.65,2.65,0,0,1,5.29,86V29.16H36a1,1,0,0,0,1-1V12.74a1,1,0,0,0-1-1H5.29V4.66A2.66,2.66,0,0,1,7.94,2H50.7V13.24a4.66,4.66,0,0,0,4.65,4.65H67ZM21.53,49.07a4.8,4.8,0,0,0,2.23.59h.4a5,5,0,0,0,3.54-1.33,4.21,4.21,0,0,0,1.39-3.2v-.41H24.91V45.8h2.75a2.27,2.27,0,0,1-.58,1.41,3.5,3.5,0,0,1-1.35,1,4.27,4.27,0,0,1-1.73.36,3.74,3.74,0,0,1-1.8-.5,4.16,4.16,0,0,1-1.55-1.44,3.54,3.54,0,0,1-.57-1.92l0-.07a3.15,3.15,0,0,1,.63-1.91,4.43,4.43,0,0,1,6.89-.24l1-.79a6.09,6.09,0,0,0-2-1.38,6.52,6.52,0,0,0-2.46-.42,5.54,5.54,0,0,0-1.56.25,5.18,5.18,0,0,0-3.08,2.31,4.26,4.26,0,0,0-.7,2.26A4.79,4.79,0,0,0,20,47.83,5,5,0,0,0,21.53,49.07Zm15.07-10-1-.41L29.79,50.63l1,.4ZM10.22,48.61a4.47,4.47,0,0,0,.55-2.45v-6H9.46v6a6.39,6.39,0,0,1-.09,1.15,1.71,1.71,0,0,1-.43.88,1.25,1.25,0,0,1-.95.4,2.26,2.26,0,0,1-1.07-.32l-.66,1a3.32,3.32,0,0,0,1.59.42A2.63,2.63,0,0,0,10.22,48.61Zm29.13-3.07h1.06a4.18,4.18,0,0,0,2.21-.59,2.33,2.33,0,0,0,1.17-2.12,2.55,2.55,0,0,0-.55-1.68,2.65,2.65,0,0,0-1.68-.89,11.24,11.24,0,0,0-1.85-.14H38l0,9.35h1.33Zm0-4.39h.57q2.64,0,2.64,1.57,0,1.87-2.77,1.79h-.44Zm6.76,1.33L54,49.85V40.11H52.71V47l-7.9-7.39v9.82h1.3ZM17.17,44.95a2.33,2.33,0,0,0,1.17-2.12,2.55,2.55,0,0,0-.55-1.68,2.65,2.65,0,0,0-1.68-.89,11.24,11.24,0,0,0-1.85-.14H12.59l0,9.35H13.9V45.54H15A4.18,4.18,0,0,0,17.17,44.95Zm-3.27-.44V41.15h.57q2.64,0,2.64,1.57,0,1.87-2.77,1.79Zm42.48,3.32a5,5,0,0,0,1.57,1.24,4.8,4.8,0,0,0,2.23.59h.4a5,5,0,0,0,3.54-1.33,4.21,4.21,0,0,0,1.39-3.2v-.41H61.32V45.8h2.75a2.27,2.27,0,0,1-.58,1.41,3.5,3.5,0,0,1-1.35,1,4.27,4.27,0,0,1-1.73.36,3.74,3.74,0,0,1-1.8-.5,4.16,4.16,0,0,1-1.55-1.44,3.54,3.54,0,0,1-.57-1.92l0-.07a3.15,3.15,0,0,1,.63-1.91A4.43,4.43,0,0,1,64,42.5l1-.79a6.09,6.09,0,0,0-2-1.38,6.52,6.52,0,0,0-2.46-.42,5.54,5.54,0,0,0-1.56.25,5.18,5.18,0,0,0-3.08,2.31,4.26,4.26,0,0,0-.7,2.26A4.79,4.79,0,0,0,56.38,47.83ZM60,71.49h1.33v-4.6h3.66V65.82H61.29V63.21h3.77V62.14H60Zm-48.8-5.54L10,65.54a1.28,1.28,0,0,1-1-1.24,1,1,0,0,1,.23-.6A1.77,1.77,0,0,1,10.67,63a1.93,1.93,0,0,1,1.72.9l1-.56a3,3,0,0,0-2.69-1.42,3.43,3.43,0,0,0-2.29.76,2,2,0,0,0-.82,1.59,2.14,2.14,0,0,0,1.27,2q.37.19,1.53.64a7.26,7.26,0,0,1,1.47.71,1.17,1.17,0,0,1,.56,1.12l0,.31a1.56,1.56,0,0,1-.61,1.11,2,2,0,0,1-1.3.44,2,2,0,0,1-1.72-.79,1.6,1.6,0,0,1-.32-1l-1.31.25a2.7,2.7,0,0,0,.56,1.37,3.24,3.24,0,0,0,2.72,1.25,3.56,3.56,0,0,0,1.27-.25,3.36,3.36,0,0,0,1.49-1.06,2.49,2.49,0,0,0,.56-1.59,2.73,2.73,0,0,0-.28-1.19A3.75,3.75,0,0,0,11.16,65.95Zm36.7-3.26a8.07,8.07,0,0,0-3.07-.55H42.59v9.35h2.32A6.16,6.16,0,0,0,49.32,70a4.42,4.42,0,0,0,1.38-3.34,4,4,0,0,0-.57-2.13A4.62,4.62,0,0,0,47.86,62.69Zm1,6q-1.13,1.75-4.13,1.75h-.8V63.21h.65a6.08,6.08,0,0,1,3.39.83,3.09,3.09,0,0,1,1.42,2.75A3.4,3.4,0,0,1,48.83,68.67Zm10-6.53h-1.5L55,65.53l-2.15-3.39H51.37l2.89,4.44L51,71.49h1.46L55,67.63l2.46,3.86H59l-3.21-4.9ZM18.66,69l-3.13-6.9H14.08L18.67,72l4.57-9.83H21.8Zm15.78,3.62,1,.4,5.8-11.94-1-.41Zm-4.88-4.83h2.75a2.27,2.27,0,0,1-.58,1.41,3.5,3.5,0,0,1-1.35,1,4.27,4.27,0,0,1-1.73.36,3.74,3.74,0,0,1-1.8-.5,4.16,4.16,0,0,1-1.55-1.44,3.54,3.54,0,0,1-.57-1.92l0-.07a3.15,3.15,0,0,1,.63-1.91,4.43,4.43,0,0,1,6.89-.24l1-.79a6.09,6.09,0,0,0-2-1.38,6.52,6.52,0,0,0-2.46-.42,5.54,5.54,0,0,0-1.56.25,5.18,5.18,0,0,0-3.08,2.31,4.26,4.26,0,0,0-.7,2.26,4.79,4.79,0,0,0,1.21,3.1,5,5,0,0,0,1.57,1.24,4.8,4.8,0,0,0,2.23.59h.4a5,5,0,0,0,3.54-1.33,4.21,4.21,0,0,0,1.39-3.2v-.41H29.57Z"/></g></g>
+                    </svg>
+                  </a>
+                    <!-- <img class="step_img step_img_No_file" src="./img/No-file.svg" alt=""> -->  
+                  <a href="./no_file.html">
+                    <svg class="step_img step_img_No_file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 90.63"><title>No file</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M68.69,16.19,52.94.3a1,1,0,0,0-.71-.3H7.94A4.66,4.66,0,0,0,3.29,4.66v7.08H1a1,1,0,0,0-1,1V28.16a1,1,0,0,0,1,1H3.29V86a4.66,4.66,0,0,0,4.65,4.65H64.33A4.66,4.66,0,0,0,69,86V16.89A1,1,0,0,0,68.69,16.19ZM52.7,2.9l12.88,13H55.35a2.65,2.65,0,0,1-2.65-2.65ZM2,13.74H35V27.16H2ZM64.33,88.63H7.94A2.65,2.65,0,0,1,5.29,86V29.16H36a1,1,0,0,0,1-1V12.74a1,1,0,0,0-1-1H5.29V4.66A2.66,2.66,0,0,1,7.94,2H50.7V13.24a4.66,4.66,0,0,0,4.65,4.65H67V86A2.65,2.65,0,0,1,64.33,88.63Z"/><path d="M36.14,35.44A22.41,22.41,0,1,0,58.55,57.85,22.43,22.43,0,0,0,36.14,35.44Zm0,4a18.31,18.31,0,0,1,11.51,4.07L21.8,69.36A18.39,18.39,0,0,1,36.14,39.44Zm0,36.82a18.31,18.31,0,0,1-11.51-4.07L50.48,46.34A18.39,18.39,0,0,1,36.14,76.26Z"/></g></g><!-- Code injected by live-server -->
+                    </svg>
+                  </a>
+                </div>
+                <!-- 檔案區塊文字 -->
+                <div class="img_text en">
+                  <h4>Step 1: Choose an option</h4><br>
+                  <p>Submit <a href="./no_file.html">JPG, PNG, SVG, DXF file</a>to our<br> website and our team will contact you<br> shortly.<a href="./no_file.html">No file? </a></p>
+                </div>
+                <div class="img_text zh-tw">
+                  <h4>Step 1: 選擇您的選項</h4>
+                  <p>上傳 <a href="./no_file.html">STL 檔案 / 任何參考圖案 </a> 到我們網站上<br>我們的團隊會盡快與您聯絡。</p>
+                </div>
+              </div>
+              <!-- 有檔案區塊 -->
+              <div class="step_img_wrap step_img_wrap2">
+                <!-- 有檔案圖片 用src="圖片位置"更改 -->
+                <img class="step_img step_img_3D_printing" src="./img/Laser-cutting.png" alt="">
+                <!-- 有檔案區塊文字 -->
+                <div class="img_text en">
+                  <h4>Step 2: Print</h4><br>
+                  <p>After confirming the file, we will start<br>your cutting engraving.</p>
+                </div>
+                <div class="img_text zh-tw">
+                  <h4>Step 2: 列印</h4>
+                  <p>一旦檔案可被列印我們將開始您的列印。</p>
+                </div>
+              </div>
+              <!-- 沒檔案區塊 -->
+              <div class="step_img_wrap step_img_wrap3">
+                <!-- 沒檔案區塊圖片 用src="圖片位置"更改 -->
+                <img class="step_img step_img_Dispatch" src="./img/Dispatch.png" alt="">
+                <!-- 沒檔案區塊文字 -->
+                <div class="img_text en">
+                  <h4>Step 3: Dispatch</h4><br>
+                  <p>Once the cutting engraving is<br>completed, we will ship your work or<br>arrange a pickup.</p>
+                </div>
+                <div class="img_text zh-tw">
+                  <h4>Step 3: 寄送</h4>
+                  <p>一旦列印完成，<br>我們將發運您的3D打樣或安排提貨。</p>
+                </div>
+              </div>
+            </div>
+            <!-- 步驟2(列印)/步驟3(寄送)區塊 -->
+            <div class="print container">
+              <!-- 步驟2(列印)區塊 -->
+              <div class="step_img_wrap step_img_wrap4">
+                <!-- 步驟2(列印)圖片 用src="圖片位置"更改 -->
+                <img class="step_img step_img_450" src="./img/10x10.jpg" alt="">
+                <!-- 步驟2(列印)文字 -->
+                <div class="img_text en">
+                  <h4>10x10(cm)</h4><br>
+                  <p>10 x 10(cm) Laser cutting engraving<br>
+                    NT$200~$500</p>
+                </div>
+                <div class="img_text zh-tw">
+                  <h4>10x10x10(cm)</h4>
+                  <p>10 x 10 x10(cm) 3D列印<br>
+                    NT$450(起)</p>
+                </div>
+              </div>
+              <!-- 步驟2(列印)區塊 -->
+              <div class="step_img_wrap step_img_wrap5">
+                <!-- 步驟2(列印)圖片 用src="圖片位置"更改 -->
+                <img class="step_img step_img_1200" src="./img/15x15.jpg" alt="">
+                <!-- 步驟2(列印)文字 -->
+                <div class="img_text en">
+                  <h4>15x15(cm)</h4><br>
+                  <p>15x15(cm) Laser cutting engraving<br>
+                    NT$500~$2000</p>
+                </div>
+                <div class="img_text zh-tw">
+                  <h4>15x15x15(cm)</h4>
+                  <p>15x15x15(cm) 3D print列印<br>
+                    NT$1200(起)</p>
+                </div>
+              </div>
+              <!-- 步驟3(寄送)區塊 -->
+              <div class="step_img_wrap step_img_wrap6">
+              <!-- 步驟3(寄送)圖片 用src="圖片位置"更改 -->
+                <img class="step_img step_img_3000" src="./img/20x20.jpg" alt="">
+                <!-- 步驟3(寄送)文字 -->
+                <div class="img_text en">
+                  <h4>20x20(cm)</h4><br>
+                  <p>20x20(cm) Laser cutting engraving<br>
+                    NT$2000~$4800</p>
+                </div>
+                <div class="img_text zh-tw">
+                  <h4>20x20x20(cm)</h4>
+                  <p>20x20x20(cm) 3D列印<br>
+                    NT$3000(起)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      
+      <footer class="">
+        <!-- footer中英文字 -->
+        <div class="en">
+          <br><br><div class="footer_title">
+            <span class="footerText1">zhipindesign     &nbsp </span>
+            <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#717474"/>
+                <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+              </g>
+            </svg>
+            <div class="footerText2">
+                智品設計股份有限公司
+            </div>
+        </div>
+         
+          <br>
+          <div>3F., No. 10, Sec. 2, Bao'an St., Shulin Dist.,New Taipei City 238, Taiwan</div>
+          <br>
+          <div>+886 0226813986</div>
+        </div>
+        <div class="zh-tw">
+          <br><br>
+          <div>
+            <div class="footer_title">ZHIPIN DESIGN &nbsp</div>    
+            <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076" fill="#717474">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" />
+              </g>
+            </svg> 
+          </div>
+          <br>
+          <div>新北市樹林區保安街二段10號3樓</div>
+          <div>New Taipei City 238, Taiwan</div><br>
+          <div>+886 0226813986</div>
+        </div>
+        <!-- 四大社群logo+超連結 -->
+        <div class="logo_img">
+          <!-- <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_FB" src="./img/FB.png" alt="" ></a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_IG" src="./img/IG.png" alt=""></a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_Twitter" src="./img/Twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_Youtube" src="./img/Youtube.png" alt=""></a> -->
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_FB" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="14.918" height="27.594" viewBox="0 0 14.918 27.594">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_45" data-name="Path 45" d="M14.355,0H10.777C6.758,0,4.159,2.665,4.159,6.79V9.911H.561A.562.562,0,0,0,0,10.485v4.538a.562.562,0,0,0,.562.562h3.6V27.032a.562.562,0,0,0,.562.562H9.415a.562.562,0,0,0,.562-.562V15.583h4.208a.562.562,0,0,0,.562-.56V10.485a.564.564,0,0,0-.564-.564h-4.2V7.268c0-1.276.3-1.924,1.967-1.924h2.41a.562.562,0,0,0,.562-.562V.568A.562.562,0,0,0,14.355,0Z" transform="translate(0.001)" fill="#717474"/>
+              </g>
+            </svg>
+            
+          </a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_IG" xmlns="http://www.w3.org/2000/svg" width="27.601" height="27.593" viewBox="0 0 27.601 27.593">
+              <path id="Path_46" data-name="Path 46" d="M41.506,34.4a7.08,7.08,0,1,0,7.075,7.078A7.08,7.08,0,0,0,41.506,34.4Zm0,11.675a4.593,4.593,0,1,1,3.25-1.346A4.595,4.595,0,0,1,41.506,46.075Z" transform="translate(-27.704 -27.687)" fill="#717474"/>
+              <path id="Path_47" data-name="Path 47" d="M19.484.081c-2.536-.119-8.827-.113-11.367,0A8.268,8.268,0,0,0,2.326,2.313C-.328,4.966.012,8.543.012,13.785c0,5.367-.3,8.86,2.314,11.472,2.663,2.663,6.29,2.314,11.472,2.314,5.317,0,7.151,0,9.031-.724,2.556-.993,4.487-3.276,4.683-7.379.119-2.536.113-8.827,0-11.367C27.276,3.259,24.677.321,19.484.081ZM23.5,23.494c-1.74,1.74-4.152,1.584-9.736,1.584-5.748,0-8.054.086-9.736-1.6-1.937-1.928-1.586-5.024-1.586-9.718,0-6.353-.652-10.926,5.722-11.254,1.465-.053,1.9-.068,5.582-.068l.053.035c6.126,0,10.926-.642,11.223,5.732.066,1.454.08,1.891.08,5.572,0,5.682.107,8-1.6,9.718Z" transform="translate(0.002 0.006)" fill="#717474"/>
+              <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="1.655" cy="1.655" rx="1.655" ry="1.655" transform="translate(19.507 4.779)" fill="#717474"/>
+            </svg>
+            
+          </a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_Twitter" xmlns="http://www.w3.org/2000/svg" width="33.949" height="27.58" viewBox="0 0 33.949 27.58">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+                <path id="Path_48" data-name="Path 48" d="M30.466,6.906a13.9,13.9,0,0,0,3.483-3.613h0a14.537,14.537,0,0,1-4.011,1.1A6.924,6.924,0,0,0,33,.544a13.929,13.929,0,0,1-4.413,1.686A6.961,6.961,0,0,0,16.551,6.988a7.168,7.168,0,0,0,.162,1.588A19.706,19.706,0,0,1,2.365,1.295a6.961,6.961,0,0,0,2.146,9.3,6.881,6.881,0,0,1-3.145-.857v.076a7,7,0,0,0,5.57,6.84,6.922,6.922,0,0,1-1.824.228,6.144,6.144,0,0,1-1.317-.119,7.024,7.024,0,0,0,6.5,4.85,13.993,13.993,0,0,1-8.633,2.968A13.166,13.166,0,0,1,0,24.491a19.6,19.6,0,0,0,10.678,3.122A19.674,19.674,0,0,0,30.466,6.9Z" transform="translate(0 -0.033)" fill="#717474"/>
+              </g>
+            </svg> 
+          </a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_Youtube" xmlns="http://www.w3.org/2000/svg" width="27.534" height="19.511" viewBox="0 0 27.534 19.511">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+                <path id="Path_49" data-name="Path 49" d="M26.949,2.788l.035.224A3.492,3.492,0,0,0,24.611.585h-.023C22.442,0,13.8,0,13.8,0S5.179-.012,3.009.585a3.494,3.494,0,0,0-2.39,2.4v.023A38.463,38.463,0,0,0,.648,16.724L.613,16.5a3.492,3.492,0,0,0,2.374,2.427h.023c2.146.585,10.787.585,10.787.585s8.618,0,10.787-.585a3.492,3.492,0,0,0,2.392-2.406V16.5a35.882,35.882,0,0,0,.574-6.481V9.5a37.019,37.019,0,0,0-.609-6.71ZM11.041,13.946V5.576l7.192,4.191Z" transform="translate(-0.017 0)" fill="#717474"/>
+              </g>
+            </svg>  
+          </a>
+        </div>
+      </footer>
+      <!-- Your Chat Plugin code -->
+      <!-- FB機器人 勿動 -->
+      <div class="fb-customerchat"
+      attribution=install_email
+      page_id="132698787336150">
+      </div>    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v9.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

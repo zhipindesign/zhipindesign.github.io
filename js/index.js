@@ -55,6 +55,15 @@ function noFile(){
 function home(){
     window.location.replace('./index.html');
 }
+function coworkshop(){
+    window.location.replace('./coworkshop.html');
+}
+function printing(){
+    window.location.replace('./index.html');
+}
+function laser(){
+    window.location.replace('./laser-cutting.html');
+}
 
 
 
