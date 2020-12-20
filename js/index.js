@@ -59,7 +59,7 @@ function coworkshop(){
     window.location.replace('./coworkshop.html');
 }
 function printing(){
-    window.location.replace('./index.html');
+    window.location.replace('./3D-printing.html');
 }
 function laser(){
     window.location.replace('./laser-cutting.html');
