@@ -2,9 +2,9 @@
 $(".zh-tw").css("display", "none");
 
 $(document).scroll(function(){
-    var scroH = $(document).scrollTop();  //æ»¾å‹•é«˜åº¦
-    var viewH = $(window).height();  //å¯è¦‹é«˜åº¦ 
-    var contentH = $(document).height();  //å…§å®¹é«˜åº¦
+    var scroH = $(document).scrollTop();  //æ»¾å??é«?åº?
+    var viewH = $(window).height();  //??¯è??é«?åº? 
+    var contentH = $(document).height();  //??§å®¹é«?åº?
     // console.log(scroH);
     if(scroH > 100 && scroH < 650){
         $(".language").css("color", "white");
@@ -62,7 +62,7 @@ function printing(){
     window.location.replace('./3D-printing.html');
 }
 function laser(){
-    window.location.replace('./laser-cutting.html');
+    window.location.replace('./Laser-cutting.html');
 }
 
 
