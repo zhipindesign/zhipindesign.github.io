@@ -2,9 +2,9 @@
 $(".zh-tw").css("display", "none");
 
 $(document).scroll(function(){
-    var scroH = $(document).scrollTop();  //æ»¾å??é«?åº?
-    var viewH = $(window).height();  //??¯è??é«?åº? 
-    var contentH = $(document).height();  //??§å®¹é«?åº?
+    var scroH = $(document).scrollTop();  //æ»¾ï¿½??ï¿½?ï¿½?
+    var viewH = $(window).height();  //??ï¿½ï¿½??ï¿½?ï¿½? 
+    var contentH = $(document).height();  //??ï¿½å®¹ï¿½?ï¿½?
     // console.log(scroH);
     if(scroH > 100 && scroH < 650){
         $(".language").css("color", "white");
@@ -120,6 +120,23 @@ $(document).on("click", ".stiFileText", function(){
 //         }
 //     });
 // });
+
+$(".other_img_wrap1").on("mouseover",function(){
+    $(".soon").removeClass("d-none");
+    $(".img_text_co").addClass("d-none");
+})
+$(".other_img_wrap1").on("mouseout",function(){
+    $(".img_text_co").removeClass("d-none");
+    $(".soon").addClass("d-none");
+})
+$(".other_img_wrap2").on("mouseover",function(){
+    $(".soon1").removeClass("d-none");
+    $(".img_text_vacuum").addClass("d-none");
+})
+$(".other_img_wrap2").on("mouseout",function(){
+    $(".img_text_vacuum").removeClass("d-none");
+    $(".soon1").addClass("d-none");
+})
 
 
 

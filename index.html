@@ -14,38 +14,12 @@
   <body class="mainIndex">   
       <!-- 最上方選單+logo(header)  -->
       <header class="">
-        <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
-        <!-- <div class="language">
-          <div class="language1 en">繁體</div>
-          <div class="language2 zh-tw">English</div>
-        </div> -->
         <!-- logo外框 -->
         <div class="zhipin_icon_wrap">
           <!-- logo圖片 src更改圖片位置 -->
           <!-- logo文字 &nbsp是空格 -->
           <div class="logo_text" onclick="home()">zhipindesign</div>
         </div>
-        <!-- 右上選單 -->
-        <!-- 右上選單英文版 -->
-        <!-- <ul class="header_list_top en">
-          <li><a href="./LaserCutting.html">LASER CUTTING</a></li>
-          <li><a href="./index.html">VACUUM FORMING</a></li>
-          <li><a href="./index.html">SHARE SPACE</a></li>
-          <li class="language1 d-flex">
-            <p>English</p>/
-            <p class="text_opacity">繁體中文</p>
-          </li>
-        </ul> -->
-        <!-- 右上選單中文版 -->
-        <!-- <ul class="header_list_top zh-tw">
-          <li><a href="./index.html">雷射切割</a></li>
-          <li><a href="./index.html">真空成形</a></li>
-          <li><a href="./index.html">共享空間</a></li>
-          <li class="language2 d-flex">
-            <p class="text_opacity">English</p>/
-            <p>繁體中文</p>
-          </li>
-        </ul> -->
         <!-- 右下選單英文版 -->
         <ul class="header_list_bot en">
           <li><a href="./index.html" class="blue bot">Home</a></li>
@@ -55,10 +29,10 @@
                 Our service
               </div>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Coworkershop</a>
-                <a class="dropdown-item" href="#">3D printing service</a>
-                <a class="dropdown-item" href="#">Laser cutting engraving service</a>
-                <a class="dropdown-item" href="#">Vacumm forming service</a>
+                <a class="dropdown-item" href="./coworkshop.html">Coworkershop</a>
+                <a class="dropdown-item" href="./3D-printing-service.html">3D printing service</a>
+                <a class="dropdown-item" href="./Laser-cutting-engraving-service.html">Laser cutting engraving service</a>
+                <a class="dropdown-item" href="./coworkshop.html">Vacumm forming service</a>
               </div>
             </div>
           </li>
@@ -78,17 +52,17 @@
           <li>
             <div class="dropdown">
             <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Our service
+              我們的服務
             </div>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Coworkershop</a>
-                <a class="dropdown-item" href="#">3D printing service</a>
-                <a class="dropdown-item" href="#">Laser cutting engraving service</a>
-                <a class="dropdown-item" href="#">Vacumm forming service</a>
+                <a class="dropdown-item" href="./coworkshop.html">共享工作室</a>
+                <a class="dropdown-item" href="./3D-printing-service.html">3D 列印服務</a>
+                <a class="dropdown-item" href="./Laser-cutting-engraving-service.html">雷射切割雕刻服務</a>
+                <a class="dropdown-item" href="./coworkshop.html">真空成型服務</a>
               </div>
             </div>
           </li>
-          <li><a href="./index.html" class="bot">作品</a></li>
+          <li><a href="./index.html" class="bot">案列展示</a></li>
           <li><a href="./index.html" class="bot">商店</a></li>
           <!-- <li><a href="./index.html" class="contact">聯絡</a></li>
           <li><a href="./index.html" class="tel">+886 26819865</a></li> -->
@@ -124,7 +98,8 @@
                         </g>
                     </g>
                 </svg>    
-                <div class="svgText">共享工作室</div>
+                <div class="svgText en">coworkshop</div>
+                <div class="svgText zh-tw">共享工作室</div>
             </div>
             <div class="svgWrap svgWrap2" onclick="printing()">
                 <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.38 89.17" fill="#aaaaaa">
@@ -138,7 +113,8 @@
                         </g>
                     </g>
                 </svg>  
-                <div class="svgText">3D 列印服務</div>
+                <div class="svgText en">3D printing service</div>
+                <div class="svgText zh-tw">3D 列印服務</div>
             </div>
             <div class="svgWrap svgWrap3" onclick="laser()">
                 <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 78.88" fill="#aaaaaa">
@@ -156,7 +132,8 @@
                         </g>
                     </g>
                 </svg>     
-                <div class="svgText">雷射切割服務</div>
+                <div class="svgText en">Laser cutting engraving service</div>
+                <div class="svgText zh-tw">雷射切割服務</div>
             </div>
             <div class="svgWrap svgWrap4">
                 <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 95.88" fill="#aaaaaa">
@@ -172,7 +149,8 @@
                         </g>
                     </g>
                 </svg>
-                <div class="svgText">真空成形服務</div>
+                <div class="svgText en">Vacumm forming service</div>
+                <div class="svgText zh-tw">真空成形服務</div>
             </div>
            
             
@@ -184,7 +162,8 @@
       <footer class="container">
         <!-- footer中英文字 -->
         <div class="en">
-          <br><br><div class="footer_title">
+          <br><br>
+          <div class="footer_title">
             <span class="footerText1">zhipindesign     &nbsp </span>
             <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
               <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
@@ -205,12 +184,18 @@
         <div class="zh-tw">
           <br><br>
           <div>
-            <div class="footer_title">ZHIPIN DESIGN &nbsp</div>    
+            <div class="footer_title">
+              <span class="footerText1">zhipindesign     &nbsp </span>
+               
             <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076" fill="#aaaaaa">
               <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
                 <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" />
               </g>
             </svg> 
+            <div class="footerText2">
+              智品設計股份有限公司
+            </div>
+          </div> 
           </div>
           <br>
           <div>新北市樹林區保安街二段10號3樓</div>
