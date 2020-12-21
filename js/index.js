@@ -2,10 +2,9 @@
 $(".zh-tw").css("display", "none");
 
 $(document).scroll(function(){
-    var scroH = $(document).scrollTop();  //滾�??�?�?
-    var viewH = $(window).height();  //??��??�?�? 
-    var contentH = $(document).height();  //??�容�?�?
-    // console.log(scroH);
+    var scroH = $(document).scrollTop();  
+    var viewH = $(window).height();  
+    var contentH = $(document).height();  
     if(scroH > 100 && scroH < 650){
         $(".language").css("color", "white");
     }else if(scroH < 100){
@@ -15,6 +14,21 @@ $(document).scroll(function(){
     }
 })
 
+var scrolltop = new Array();
+var i = 0;
+scrolltop[0] = 0;
+$(document).scroll(function(){
+    i++;
+    scrolltop[i] = $(document).scrollTop();
+    if($(document).scrollTop() > 65){
+        if (scrolltop[i] > scrolltop[i-1]) {
+            $("header").hide(2000)
+        }else{
+            $("header").show(2000)
+        };
+    }
+
+})
 $(".language1").on("click", function(){
     $(".zh-tw").css("display", "");
     $(".en").css("display", "none");
@@ -109,17 +123,6 @@ $(document).on("click", ".stiFileText", function(){
 })
 
 
-// $(document).ready(function(){
-//     $(window).resize(function() {
-//         var wdth=$(window).width();
-//         // console.log(wdth)
-//         if(wdth < 1200){
-//             $(".carousel, header, .index, footer").removeClass("container")
-//         }else if(wdth >= 1200){
-//             $(".carousel, header, .index, footer").addClass("container")
-//         }
-//     });
-// });
 
 $(".other_img_wrap1").on("mouseover",function(){
     $(".soon").removeClass("d-none");
@@ -136,6 +139,22 @@ $(".other_img_wrap2").on("mouseover",function(){
 $(".other_img_wrap2").on("mouseout",function(){
     $(".img_text_vacuum").removeClass("d-none");
     $(".soon1").addClass("d-none");
+})
+$(".step_img_STL_file").on("mouseover",function(){
+    $(".file_soon").removeClass("d-none");
+    $(".img_text_file").addClass("d-none");
+})
+$(".step_img_STL_file").on("mouseout",function(){
+    $(".file_soon").addClass("d-none");
+    $(".img_text_file").removeClass("d-none");
+})
+$(".step_img_No_file").on("mouseover",function(){
+    $(".file_soon1").removeClass("d-none");
+    $(".img_text_file").addClass("d-none");
+})
+$(".step_img_No_file").on("mouseout",function(){
+    $(".file_soon1").addClass("d-none");
+    $(".img_text_file").removeClass("d-none");
 })
 
 

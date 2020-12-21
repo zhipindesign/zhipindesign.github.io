@@ -1,11 +1,12 @@
 @charset "UTF-8";
 header {
-  max-width: 100vw;
+  width: 100vw;
   height: 65px;
   background: #131313;
-  position: relative;
+  position: fixed;
   font-family: "Open Sans", "微軟正黑體";
   color: white;
+  z-index: 10;
 }
 
 header .language {
@@ -94,7 +95,7 @@ header .header_list_bot {
   font-size: 14px;
   position: absolute;
   bottom: -60%;
-  right: 0%;
+  right: 2%;
 }
 
 header .header_list_bot li {
@@ -221,6 +222,8 @@ header .menu {
 }
 
 .carousel {
+  -webkit-transform: translateY(65px);
+          transform: translateY(65px);
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -365,8 +368,6 @@ header .menu {
 }
 
 .index main .our_services .item_wrap .arch_box:hover {
-  text-decoration: none;
-  color: #5adbbb;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/img/01 A.jpg") center center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/img/01 A.jpg") center center;
   background-position: 80%;
@@ -375,8 +376,6 @@ header .menu {
 }
 
 .index main .our_services .item_wrap .design_box:hover {
-  text-decoration: none;
-  color: #5adbbb;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/img/02 .jpg") center center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/img/02 .jpg") center center;
   background-position: 45%;
@@ -385,8 +384,6 @@ header .menu {
 }
 
 .index main .our_services .item_wrap .craft_box:hover {
-  text-decoration: none;
-  color: #5adbbb;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/img/03 .jpg") center center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/img/03 .jpg") center center;
   background-size: 360px;
@@ -394,8 +391,6 @@ header .menu {
 }
 
 .index main .our_services .item_wrap .engineer_box:hover {
-  text-decoration: none;
-  color: #5adbbb;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/img/04 .jpg") center center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/img/04 .jpg") center center;
   background-size: 450px;
@@ -480,16 +475,16 @@ header .menu {
 }
 
 .index main .step .step_img_wrap1, .index main .step .step_img_wrap2, .index main .step .step_img_wrap3 {
-  -webkit-transform: scale(0.65) translateX(50%);
-          transform: scale(0.65) translateX(50%);
+  -webkit-transform: scale(0.65) translateX(60%);
+          transform: scale(0.65) translateX(60%);
 }
 
 .index main .step .step_img_wrap4,
 .index main .step .step_img_wrap5,
 .index main .step .step_img_wrap6 {
   margin-right: -20px;
-  -webkit-transform: translate(30%, -10%) scale(0.65);
-          transform: translate(30%, -10%) scale(0.65);
+  -webkit-transform: translate(35%, -10%) scale(0.65);
+          transform: translate(35%, -10%) scale(0.65);
 }
 
 .index main .step .file {
@@ -546,8 +541,8 @@ header .menu {
 .index main .other_services .other .other_img_wrap_wrap .other_img_wrap {
   width: 400px;
   height: 350px;
-  -webkit-transform: scale(0.7) translateX(40%);
-          transform: scale(0.7) translateX(40%);
+  -webkit-transform: scale(0.7) translateX(45%);
+          transform: scale(0.7) translateX(45%);
   margin: -40px -50px -50px 0;
 }
 
