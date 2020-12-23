@@ -158,10 +158,10 @@ $(".step_img_No_file").on("mouseout",function(){
 })
 
 $(document).on("click", ".borderOn", function(){
-    $(".title, .main, .equipment, .boxWrap, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "1px solid red");
+    $(".title, .main, .equipment, .start_your_project, .boxWrap, .ourService, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "1px solid red");
 })
 $(document).on("click", ".borderClose", function(){
-    $(".title, .main, .equipment, .boxWrap, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "none");
+    $(".title, .main, .equipment, .start_your_project, .boxWrap, .ourService, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "none");
 })
 
 
