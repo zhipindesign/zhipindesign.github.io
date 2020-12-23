@@ -221,14 +221,29 @@ header .menu {
 }
 
 .mainIndex {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url(../img/PXL_20201216_093128501.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/PXL_20201216_093128501.jpg);
+  background-color: #1D1D1F;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+}
+
+.mainIndex .toggle {
+  position: fixed;
+  top: 35px;
+  right: 0px;
+  border-radius: 20px;
+  background-color: #1D1D1F;
+}
+
+.mainIndex .toggle .toggle-on {
+  background-color: #1D1D1F;
+}
+
+.mainIndex .toggle .toggle-off {
+  background-color: #E9E9E9;
 }
 
 .mainIndex header {
@@ -249,7 +264,7 @@ header .menu {
 .mainIndex main .main-icon {
   -webkit-transform: scale(7.7);
           transform: scale(7.7);
-  margin: 230px auto 320px;
+  margin: 200px auto 200px;
   opacity: 0.8;
 }
 
@@ -324,6 +339,7 @@ footer {
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  margin-top: 0px;
 }
 
 footer .en,

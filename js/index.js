@@ -70,13 +70,13 @@ function home(){
     window.location.replace('./index.html');
 }
 function coworkshop(){
-    window.location.replace('./coworkshop.html');
+    window.location.replace('./Co-Workshop.html');
 }
 function printing(){
-    window.location.replace('./3D-printing.html');
+    window.location.replace('./3D-Printing-Home.html');
 }
 function laser(){
-    window.location.replace('./Laser-cutting.html');
+    window.location.replace('./Laser-Cutting-Engraving-Home.html');
 }
 
 

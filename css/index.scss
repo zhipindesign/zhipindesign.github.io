@@ -223,14 +223,28 @@ header {
 }
 .mainIndex {
   //real homepage
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url(../img/PXL_20201216_093128501.jpg);
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+  //   url(../img/PXL_20201216_093128501.jpg);
+  background-color: #1D1D1F;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+  .toggle{
+    position: fixed;
+    top: 35px;
+    right: 0px;
+    border-radius: 20px;
+    background-color: #1D1D1F;
+    .toggle-on{
+      background-color: #1D1D1F;
+    }
+    .toggle-off{
+      background-color: #E9E9E9;
+    }
+  }
   header {
     background: none;
     .logo_text {
@@ -244,7 +258,7 @@ header {
     height: 680px;
     .main-icon {
       transform: scale(7.7);
-      margin: 230px auto 320px;
+      margin: 200px auto 200px;
       opacity: 0.8;
     }
     .svg_box {
@@ -306,6 +320,7 @@ footer {
   font-size: 12px; //字體大小
   font-weight: 600; //字體粗度
   text-align: center; //字體左右置中
+  margin-top: 0px ;
   // transform: scale(0.9);
   .en,
   .zh-tw,

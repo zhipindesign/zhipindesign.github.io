@@ -19,7 +19,16 @@ $(document).on("click", ".clickOn", function(){
     $(".menu").removeClass("clickOn");
 });
 
-
+$(document).on("click", ".toggle-on", function(){
+    $(".mainIndex").css("background-color", "#E9E9E9");
+    $("#Path_56, .s-icon").attr("fill", "#717474")
+    $("header, .bot, .logo_text").css("color", "#717474")
+})
+$(document).on("click", ".toggle-off", function(){
+    $(".mainIndex").css("background-color", "#1D1D1F");
+    $("#Path_56, .s-icon").attr("fill", "#FFFFFF")
+    $("header, .bot, .logo_text").css("color", "#FFFFFF")
+})
 
 function uploadFile(){
     window.open('https://driveuploader.com/upload/P3bXC1HZlF/');
@@ -31,11 +40,11 @@ function home(){
     window.location.replace('./index.html');
 }
 function coworkshop(){
-    window.location.replace('./coworkshop.html');
+    window.location.replace('./Co-Workshop.html');
 }
 function printing(){
-    window.location.replace('./3D-printing.html');
+    window.location.replace('./3D-Printing-Home.html');
 }
 function laser(){
-    window.location.replace('./Laser-cutting.html');
+    window.location.replace('./Laser-Cutting-Engraving-Home.html');
 }
