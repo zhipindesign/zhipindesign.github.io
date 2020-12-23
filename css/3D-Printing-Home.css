@@ -305,6 +305,23 @@ header .menu {
   font-family: "Open Sans", "微軟正黑體";
 }
 
+.threeD .toggle {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  border-radius: 20px;
+  opacity: .5;
+  background-color: #1D1D1F;
+}
+
+.threeD .toggle .toggle-on {
+  background-color: #1D1D1F;
+}
+
+.threeD .toggle .toggle-off {
+  background-color: #E9E9E9;
+}
+
 .threeD .title {
   border: 1px solid red;
   font-weight: 600;

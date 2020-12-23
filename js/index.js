@@ -164,4 +164,15 @@ $(document).on("click", ".borderClose", function(){
     $(".title, .main, .equipment, .start_your_project, .boxWrap, .ourService, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "none");
 })
 
+$(document).on("click", ".toggle-on", function(){
+    $("header").css("background-color", "#E9E9E9");
+    $("#Path_56, .s-icon").attr("fill", "#717474")
+    $("header, .bot, .logo_text").css("color", "#717474")
+})
+$(document).on("click", ".toggle-off", function(){
+    $("header").css("background-color", "#1D1D1F");
+    $("#Path_56, .s-icon").attr("fill", "#FFFFFF")
+    $("header, .bot, .logo_text").css("color", "#FFFFFF")
+})
+
 
