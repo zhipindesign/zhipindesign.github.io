@@ -221,6 +221,205 @@ header .menu {
   }
 }
 
+@media screen and (max-width: 700px) {
+  header {
+    width: 100vw;
+    height: 65px;
+    background: #131313;
+    position: fixed;
+    font-family: "Open Sans", "微軟正黑體";
+    color: white;
+    z-index: 10;
+  }
+  header .language {
+    position: fixed;
+    z-index: 20;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  header .language:hover {
+    cursor: pointer;
+    color: #5adbbb !important;
+  }
+  header .zhipin_icon_wrap {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .zhipin_icon_wrap .zhipin_icon {
+    width: 48px;
+    height: 48px;
+    margin: 6px 0px 0px 15px;
+  }
+  header .zhipin_icon_wrap .logo_text {
+    text-align: center;
+    line-height: 74px;
+    font-size: 12px;
+    font-weight: 400;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  header .zhipin_icon_wrap .zhipin_icon:hover,
+  header .zhipin_icon_wrap .logo_text:hover {
+    cursor: pointer;
+  }
+  header .header_list_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+  }
+  header .header_list_top li {
+    padding: 8px 12px;
+  }
+  header .header_list_top li a {
+    color: white;
+    padding: 4px 0px;
+    -webkit-text-decoration: black underline;
+            text-decoration: black underline;
+    font-weight: 500;
+  }
+  header .header_list_top li a:hover {
+    color: #007bff;
+    -webkit-text-decoration: #007bff underline;
+            text-decoration: #007bff underline;
+  }
+  header .header_list_top li p {
+    cursor: default;
+  }
+  header .header_list_top li .text_opacity:hover {
+    opacity: 100%;
+    cursor: pointer;
+  }
+  header .header_list_bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    position: absolute;
+    bottom: -60%;
+    right: 2%;
+  }
+  header .header_list_bot li {
+    padding: 8px 3px;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    z-index: 3;
+  }
+  header .header_list_bot li .tel,
+  header .header_list_bot li .contact {
+    color: white;
+    font-weight: 600;
+  }
+  header .header_list_bot li .tel:hover,
+  header .header_list_bot li .contact:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+  header .header_list_bot li .text_opacity {
+    opacity: 30%;
+    cursor: pointer;
+  }
+  header .header_list_bot li .bot {
+    color: white;
+    font-weight: 400;
+    padding: 1px;
+  }
+  header .header_list_bot li .bot:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  header .header_list_bot li .blue {
+    color: #007bff;
+  }
+  header .header_list_bot li .dropdown-toggle::after {
+    -webkit-transform: translateY(3px) scale(0.8);
+            transform: translateY(3px) scale(0.8);
+  }
+  header .header_list_bot li .dropdown-menu {
+    background: #13131380;
+    -webkit-transform: scale(0.84) translate(-18%, -10%);
+            transform: scale(0.84) translate(-18%, -10%);
+  }
+  header .header_list_bot li .dropdown-menu a {
+    color: white;
+  }
+  header .header_list_bot li .dropdown-menu a:hover {
+    color: #007bff;
+  }
+  header .header_list_bot li .dropdown-menu .dropdown-item:hover {
+    background: #131313;
+  }
+  header .header_list_bot li .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+  header .header_list_bot li .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  header .header_list_bot_600 {
+    display: none;
+  }
+  header .menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-width: 600px) {
+  header .en {
+    font-size: 10px;
+  }
+  header .zhipin_icon_wrap .zhipin_icon {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  header .zhipin_icon_wrap .logo_text {
+    display: none;
+  }
+  header .header_list_top {
+    display: none;
+  }
+  header .header_list_bot li {
+    display: none;
+  }
+  header .header_list_bot .menu {
+    display: block;
+    position: relative;
+  }
+  header .header_list_bot .menu:hover {
+    cursor: pointer;
+  }
+  header .header_list_bot_600 {
+    z-index: 10;
+    background: rgba(110, 110, 110, 0.658);
+    width: 180px;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    font-size: 14px;
+  }
+  header .header_list_bot_600 a {
+    color: white;
+  }
+  header .header_list_bot_600 a:hover {
+    color: #5adbbb;
+    text-decoration: none;
+  }
+}
+
 .carousel {
   -webkit-transform: translateY(65px);
           transform: translateY(65px);
@@ -297,6 +496,76 @@ header .menu {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #0070e0;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel {
+    -webkit-transform: translateY(65px);
+            transform: translateY(65px);
+    font-family: "Open Sans", "微軟正黑體";
+  }
+  .carousel .carousel-indicators li {
+    width: 30px;
+    height: 10px;
+    border-radius: 100%;
+    background: #007bff;
+    -webkit-transform: scale(0.2) translateY(12vh);
+            transform: scale(0.2) translateY(12vh);
+    margin-right: -15px;
+  }
+  .carousel .carousel-item {
+    height: 250px;
+  }
+  .carousel .carousel-item1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, rgba(19, 19, 19, 0))), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 45%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(1);
+  }
+  .carousel .carousel-item2 {
+    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background-size: cover;
+  }
+  .carousel .carousel-item3 {
+    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background-size: cover;
+  }
+  .carousel .carousel-item img {
+    min-height: 540px;
+    max-height: 1600px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+  .carousel .start_your_project {
+    width: 160px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #0063c5;
+    border-radius: 30px;
+    position: absolute;
+    padding: 0px -10px;
+    font-weight: 600;
+    top: calc(50% - 25px);
+    left: calc(50% - 65px);
+    z-index: 10;
+  }
+  .carousel .start_your_project a {
+    color: white;
+  }
+  .carousel .start_your_project a:hover {
+    text-decoration: none;
+  }
+  .carousel .start_your_project:hover {
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #0070e0;
+  }
 }
 
 .LaserCutting {
