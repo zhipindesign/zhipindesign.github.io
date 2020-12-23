@@ -633,12 +633,27 @@ header .menu {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .threeD .main .ourService .boxWrap .box .box_img img {
   max-width: 100%;
   height: auto;
   margin: 0 auto 0;
+}
+
+.threeD .main .ourService .boxWrap .box .box_img .mask {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(101, 101, 101, 0.6);
+  color: #ffffff;
+  opacity: 0;
+}
+
+.threeD .main .ourService .boxWrap .box .box_img a:hover .mask {
+  opacity: 0.8;
 }
 
 .threeD .main .ourService .boxWrap .box .box_text {
