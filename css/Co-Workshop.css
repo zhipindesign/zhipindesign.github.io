@@ -441,8 +441,8 @@ header .menu {
 }
 
 .carousel .carousel-item1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, rgba(19, 19, 19, 0))), url(/images/Coworkshop/coworkshop_index.jpg) right 100% bottom 70%;
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 45%), url(/images/Coworkshop/coworkshop_index.jpg) right 100% bottom 70%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, rgba(19, 19, 19, 0))), url(/images/Coworkshop/index.png) right 100% bottom 70%;
+  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 45%), url(/images/Coworkshop/index.png) right 100% bottom 70%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -623,14 +623,14 @@ header .menu {
 .coworkshop .main .equipment .boxWrap .box {
   border: 1px solid red;
   height: 250px;
-  width: 30%;
+  width: 35%;
   margin: 0 auto;
 }
 
 .coworkshop .main .equipment .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -707,7 +707,7 @@ header .menu {
 .coworkshop .main .tool2 .boxWrap .box {
   border: 1px solid red;
   height: 250px;
-  width: 30%;
+  width: 35%;
   margin: 0 auto;
 }
 
@@ -756,8 +756,8 @@ header .menu {
 
 .coworkshop .main .other_services .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
 }
 
@@ -766,7 +766,7 @@ header .menu {
   height: auto;
   margin: 30px auto 0;
   position: absolute;
-  bottom: 0%;
+  bottom: 20%;
 }
 
 .coworkshop .main .other_services .boxWrap .box .box_text {
