@@ -95,7 +95,7 @@ header .header_list_bot {
   line-height: 50px;
   width: 100%;
   position: absolute;
-  left: 32%;
+  left: 18%;
 }
 
 header .header_list_bot li {
@@ -168,7 +168,7 @@ header .header_list_bot li .dropdown:hover .dropdown-menu {
 
 header .header_list_bot .language1, header .header_list_bot .language2 {
   position: absolute;
-  left: 58%;
+  left: 48%;
 }
 
 header .header_list_bot_600 {

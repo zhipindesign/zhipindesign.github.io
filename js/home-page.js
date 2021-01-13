@@ -48,3 +48,6 @@ function printing(){
 function laser(){
     window.location.replace('./Laser-Cutting-Engraving-Home.html');
 }
+function Vacuum(){
+    window.location.replace('./Vacuum-Forming-Home.html');
+}

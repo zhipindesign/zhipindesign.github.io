@@ -94,7 +94,7 @@ header {
     width: 100%;
     position: absolute; //位置 absolute按到relative位置移動
     // bottom: -60%; //位置 top: 距離relative最高點位置
-    left: 32%; //位置 right: 距離relative最右點位置
+    left: 18%; //位置 right: 距離relative最右點位置
     li {
       padding: 8px 9px; //內縮寬度
       // transform: scale(0.84);
@@ -152,7 +152,7 @@ header {
     }
     .language1, .language2{
       position: absolute; //位置 absolute按到relative位置移動
-      left: 58%; //位置 right: 距離relative最右點位置
+      left: 48%; //位置 right: 距離relative最右點位置
     }
   }
   .header_list_bot_600 {
