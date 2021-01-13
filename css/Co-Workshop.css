@@ -494,6 +494,29 @@ header .menu {
   text-decoration: none;
 }
 
+.carousel .mainTitle {
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: #3e4141ec;
+  position: absolute;
+  padding: 0px -10px;
+  font-weight: 600;
+  top: 12px;
+  left: 20px;
+  z-index: 10;
+}
+
+.carousel .mainTitle a {
+  color: white;
+}
+
+.carousel .mainTitle a:hover {
+  text-decoration: none;
+}
+
 .carousel .start_your_project:hover {
   cursor: pointer;
   -webkit-transition: 0.5s;

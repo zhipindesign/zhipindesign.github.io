@@ -169,7 +169,7 @@ $(".step_img_No_file").on("mouseout",function(){
     $(".file_soon1").addClass("d-none");
     $(".img_text_file").removeClass("d-none");
 })
-
+$(".title, .main, .equipment, .start_your_project, .boxWrap, .ourService, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "none");
 $(document).on("click", ".borderOn", function(){
     $(".title, .main, .equipment, .start_your_project, .boxWrap, .ourService, .box, .box1, .box_img, .tool1, .tool2, .other_services").css("border", "1px solid red");
 })
@@ -180,10 +180,10 @@ $(document).on("click", ".borderClose", function(){
 $(document).on("click", ".toggle-on", function(){
     $("header").css("background-color", "#E9E9E9");
     $("#Path_56").attr("fill", "#717474")
-    $("header, .bot, .logo_text").css("color", "#717474")
+    $("header, .bot, .logo_text").css("color", "#3E4141")
 })
 $(document).on("click", ".toggle-off", function(){
-    $("header").css("background-color", "#1D1D1F");
+    $("header").css("background-color", "#3E4141");
     $("#Path_56").attr("fill", "#FFFFFF")
     $("header, .bot, .logo_text").css("color", "#FFFFFF")
 })

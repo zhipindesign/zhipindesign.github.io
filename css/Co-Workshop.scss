@@ -544,6 +544,29 @@ header {
       text-decoration: none; //將預設底線拿掉
     }
   }
+  .mainTitle {
+    //開始專案按鈕樣式
+    width: 180px; //寬度
+    height: 40px; //高度
+    text-align: center; //文字左右置中
+    line-height: 40px; //上下置中
+    font-size: 20px; //字體大小
+    background:#3e4141ec; //背景樣式 顏色
+    position: absolute; //位置 absolute按到relative位置移動
+    padding: 0px -10px; //內縮寬度
+    font-weight: 600; //字體粗度
+    top: 12px; //位置 top: 距離relative最高點位置
+    left: 20px; //位置 right: 距離relative最右點位置
+    z-index: 10;
+    a {
+      //超連結樣式
+      color: white; //字體顏色
+    }
+    a:hover {
+      //hover: 滑鼠移上去後之效果
+      text-decoration: none; //將預設底線拿掉
+    }
+  }
   .start_your_project:hover {
     //hover: 滑鼠移上去後之效果
     cursor: pointer; //滑鼠樣式 pointer: 手指頭
