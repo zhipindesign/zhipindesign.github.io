@@ -2,7 +2,7 @@
 header {
   width: 100vw;
   height: 65px;
-  background: #131313;
+  background: #3E4141;
   position: fixed;
   font-family: "Open Sans", "微軟正黑體";
   color: white;
@@ -24,8 +24,6 @@ header .language:hover {
 }
 
 header .zhipin_icon_wrap {
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,10 +90,12 @@ header .header_list_bot {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
+  margin: 0 auto;
+  line-height: 50px;
+  width: 100%;
   position: absolute;
-  bottom: -60%;
-  right: 2%;
+  left: 32%;
 }
 
 header .header_list_bot li {
@@ -166,6 +166,11 @@ header .header_list_bot li .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+header .header_list_bot .language1, header .header_list_bot .language2 {
+  position: absolute;
+  left: 58%;
+}
+
 header .header_list_bot_600 {
   display: none;
 }
@@ -174,6 +179,51 @@ header .menu {
   width: 30px;
   height: 30px;
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .en {
+    font-size: 10px;
+  }
+  header .zhipin_icon_wrap .zhipin_icon {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  header .zhipin_icon_wrap .logo_text {
+    display: none;
+  }
+  header .header_list_top {
+    display: none;
+  }
+  header .header_list_bot li {
+    display: none;
+  }
+  header .header_list_bot .menu {
+    display: block;
+    position: relative;
+  }
+  header .header_list_bot .menu:hover {
+    cursor: pointer;
+  }
+  header .header_list_bot_600 {
+    z-index: 10;
+    background: rgba(110, 110, 110, 0.658);
+    width: 180px;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    font-size: 14px;
+  }
+  header .header_list_bot_600 a {
+    color: white;
+  }
+  header .header_list_bot_600 a:hover {
+    color: #5adbbb;
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -351,20 +401,18 @@ header .menu {
 }
 
 .carousel .carousel-item1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, rgba(19, 19, 19, 0))), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 45%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-filter: grayscale(1);
 }
 
 .carousel .carousel-item2 {
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
   background-size: cover;
 }
 
 .carousel .carousel-item3 {
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
   background-size: cover;
 }
 
@@ -398,6 +446,29 @@ header .menu {
 }
 
 .carousel .start_your_project a:hover {
+  text-decoration: none;
+}
+
+.carousel .mainTitle {
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: #3e414156;
+  position: absolute;
+  padding: 0px -10px;
+  font-weight: 600;
+  top: 12px;
+  left: 20px;
+  z-index: 10;
+}
+
+.carousel .mainTitle a {
+  color: white;
+}
+
+.carousel .mainTitle a:hover {
   text-decoration: none;
 }
 
@@ -479,7 +550,7 @@ header .menu {
 }
 
 .threeD {
-  height: 1600px;
+  height: 1200px;
   margin: 100px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -509,10 +580,10 @@ header .menu {
 
 .threeD .main {
   border: 1px solid red;
-  height: 1600px;
+  height: 1000px;
   width: 100%;
   margin: -30px auto 0;
-  color: #717474;
+  color: black;
 }
 
 .threeD .main .ourService {

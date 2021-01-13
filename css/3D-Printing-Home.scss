@@ -3,12 +3,11 @@ header {
 
   width: 100vw; //最大寬度
   height: 65px; //高度
-  background: #131313; //背景 rgb:顏色
+  background: #3E4141; //背景 rgb:顏色
   position: fixed; //位置 absolute按到relative位置移動
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   color: white;
   z-index: 10;
-
   .language {
     //切換語言樣式
     position: fixed; //跟著螢幕滾動
@@ -25,7 +24,7 @@ header {
   }
   //icon
   .zhipin_icon_wrap {
-    transform: translateY(8px);
+    // transform: translateY(8px);
     //icon外框樣式
     display: flex; //讓物件並排
     .zhipin_icon {
@@ -88,10 +87,13 @@ header {
 
     display: flex; //讓列表並排
     list-style: none; //list取消預設樣式
-    font-size: 14px; //字體大小
+    font-size: 18px; //字體大小
+    margin: 0 auto;
+    line-height: 50px;
+    width: 100%;
     position: absolute; //位置 absolute按到relative位置移動
-    bottom: -60%; //位置 top: 距離relative最高點位置
-    right: 2%; //位置 right: 距離relative最右點位置
+    // bottom: -60%; //位置 top: 距離relative最高點位置
+    left: 32%; //位置 right: 距離relative最右點位置
     li {
       padding: 8px 9px; //內縮寬度
       // transform: scale(0.84);
@@ -147,6 +149,10 @@ header {
         display: block;
       }
     }
+    .language1, .language2{
+      position: absolute; //位置 absolute按到relative位置移動
+      left: 58%; //位置 right: 距離relative最右點位置
+    }
   }
   .header_list_bot_600 {
     //手機版選單(三條橫線，預設隱藏)
@@ -158,69 +164,69 @@ header {
     height: 30px; //高度
     display: none; //隱藏
   }
-  // @media screen and (max-width: 600px) {
-  //   //當螢幕寬度小於600px
-  //   .en {
-  //     //英文文字樣式
-  //     font-size: 10px; //字體大小
-  //   }
-  //   .zhipin_icon_wrap {
-  //     //logo外框樣式
+  @media screen and (max-width: 600px) {
+    //當螢幕寬度小於600px
+    .en {
+      //英文文字樣式
+      font-size: 10px; //字體大小
+    }
+    .zhipin_icon_wrap {
+      //logo外框樣式
 
-  //     .zhipin_icon {
-  //       //logo樣式
-  //       width: 100px; //寬度
-  //       height: auto; //高度(隨著寬度改變)
-  //       display: block; //取消隱藏
-  //       margin: auto; //logo置中
-  //     }
+      .zhipin_icon {
+        //logo樣式
+        width: 100px; //寬度
+        height: auto; //高度(隨著寬度改變)
+        display: block; //取消隱藏
+        margin: auto; //logo置中
+      }
 
-  //     .logo_text {
-  //       //logo文字樣式
-  //       display: none; //隱藏logo文字
-  //     }
-  //   }
+      .logo_text {
+        //logo文字樣式
+        display: none; //隱藏logo文字
+      }
+    }
 
-  //   .header_list_top {
-  //     //電腦版選單樣式
-  //     display: none; //隱藏
-  //   }
-  //   .header_list_bot {
-  //     //電腦版選單樣式
-  //     li {
-  //       display: none; //隱藏
-  //     }
-  //     .menu {
-  //       //手機版選單按鈕樣式
-  //       display: block; //取消隱藏
-  //       position: relative; //位置 absolute按到relative位置移動
-  //     }
-  //     .menu:hover {
-  //       //手機版選單按鈕 hover(滑鼠移上去後之效果)
-  //       cursor: pointer; //滑鼠樣式改為手指
-  //     }
-  //   }
-  //   .header_list_bot_600 {
-  //     //手機版選單樣式
-  //     z-index: 10; //出現在最上面(數字越大越上面)
-  //     background: rgba(110, 110, 110, 0.658); //背景顏色(R, G, B, 透明度)
-  //     width: 180px; //寬度
-  //     list-style: none; //列表樣式取消
-  //     position: absolute; //位置 absolute按到relative位置移動
-  //     right: 0; //位置 right: 距離relative最右點位置
-  //     top: 100%; //位置 top: 距離relative最高點位置
-  //     font-size: 14px; //字體大小
-  //     a {
-  //       //超連結樣式
-  //       color: white; //字體顏色
-  //     }
-  //     a:hover {
-  //       //超連結樣式(當滑鼠移上去後)
-  //       color: rgb(90, 219, 187); //字體顏色
-  //       text-decoration: none; //將預設底線拿掉
-  //     }
-  //   }
-  // }
+    .header_list_top {
+      //電腦版選單樣式
+      display: none; //隱藏
+    }
+    .header_list_bot {
+      //電腦版選單樣式
+      li {
+        display: none; //隱藏
+      }
+      .menu {
+        //手機版選單按鈕樣式
+        display: block; //取消隱藏
+        position: relative; //位置 absolute按到relative位置移動
+      }
+      .menu:hover {
+        //手機版選單按鈕 hover(滑鼠移上去後之效果)
+        cursor: pointer; //滑鼠樣式改為手指
+      }
+    }
+    .header_list_bot_600 {
+      //手機版選單樣式
+      z-index: 10; //出現在最上面(數字越大越上面)
+      background: rgba(110, 110, 110, 0.658); //背景顏色(R, G, B, 透明度)
+      width: 180px; //寬度
+      list-style: none; //列表樣式取消
+      position: absolute; //位置 absolute按到relative位置移動
+      right: 0; //位置 right: 距離relative最右點位置
+      top: 100%; //位置 top: 距離relative最高點位置
+      font-size: 14px; //字體大小
+      a {
+        //超連結樣式
+        color: white; //字體顏色
+      }
+      a:hover {
+        //超連結樣式(當滑鼠移上去後)
+        color: rgb(90, 219, 187); //字體顏色
+        text-decoration: none; //將預設底線拿掉
+      }
+    }
+  }
 }
 @media screen and (max-width: 700px) {
   header {
@@ -464,20 +470,21 @@ header {
     height: 385px; //高度
   }
   .carousel-item1 {
-    background: linear-gradient(
-        180deg,
-        rgba(19, 19, 19, 1) 0%,
-        rgba(19, 19, 19, 0) 45%
-      ),
+    background: 
+    // linear-gradient(
+    //     180deg,
+    //     rgba(19, 19, 19, 1) 0%,
+    //     rgba(19, 19, 19, 0) 45%
+    //   ),
       //   linear-gradient(
       //     255deg,
       //     rgba(0, 60, 255, 0.4) 0%,
       //     rgba(146, 0, 255, 0.4) 100%
       //   ),
-      url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(1);
+    // -webkit-filter: grayscale(1);
   }
   .carousel-item2 {
     background: linear-gradient(
@@ -490,7 +497,7 @@ header {
         rgba(0, 60, 255, 0.4) 0%,
         rgba(146, 0, 255, 0.4) 100%
       ),
-      url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
     background-size: cover;
   }
   .carousel-item3 {
@@ -504,7 +511,7 @@ header {
         rgba(0, 60, 255, 0.4) 0%,
         rgba(146, 0, 255, 0.4) 100%
       ),
-      url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
     background-size: cover;
   }
   .carousel-item img {
@@ -528,6 +535,29 @@ header {
     font-weight: 600; //字體粗度
     top: calc(50% - 25px); //位置 top: 距離relative最高點位置
     left: calc(50% - 65px); //位置 right: 距離relative最右點位置
+    z-index: 10;
+    a {
+      //超連結樣式
+      color: white; //字體顏色
+    }
+    a:hover {
+      //hover: 滑鼠移上去後之效果
+      text-decoration: none; //將預設底線拿掉
+    }
+  }
+  .mainTitle {
+    //開始專案按鈕樣式
+    width: 220px; //寬度
+    height: 40px; //高度
+    text-align: center; //文字左右置中
+    line-height: 40px; //上下置中
+    font-size: 20px; //字體大小
+    background:#3e414156; //背景樣式 顏色
+    position: absolute; //位置 absolute按到relative位置移動
+    padding: 0px -10px; //內縮寬度
+    font-weight: 600; //字體粗度
+    top: 12px; //位置 top: 距離relative最高點位置
+    left: 20px; //位置 right: 距離relative最右點位置
     z-index: 10;
     a {
       //超連結樣式
@@ -648,7 +678,7 @@ header {
   }
 }
 .threeD {
-  height: 1600px;
+  height: 1200px;
   margin: 100px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -672,10 +702,10 @@ header {
   }
   .main {
     border: 1px solid red;
-    height: 1600px;
+    height: 1000px;
     width: 100%;
     margin: -30px auto 0;
-    color: #717474;
+    color: black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);
       height: 270px;

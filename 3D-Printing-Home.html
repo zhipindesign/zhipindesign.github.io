@@ -15,98 +15,84 @@
   <body class="">   
       <!-- 最上方選單+logo(header)  -->
       <header class="">
-
         <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
         <!-- <div class="language">
           <div class="language1 en">繁體</div>
           <div class="language2 zh-tw">English</div>
         </div> -->
         <!-- logo外框 -->
-        <div class="zhipin_icon_wrap">
-          <!-- logo圖片 src更改圖片位置 -->
-          <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
-          <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
-            <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
-              <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
-              <!--svg 標籤 裡面的fill 是圖片框線顏色-->
-            </g>
-          </svg> 
-          <!-- logo文字 &nbsp是空格 -->
-          <div class="logo_text" onclick="home()">3D Printing Service</div>
-        </div>
-        <!-- 右上選單 -->
-        <!-- 右上選單英文版 -->
-        <!-- <ul class="header_list_top en">
-          <li><a href="./LaserCutting.html">LASER CUTTING</a></li>
-          <li><a href="./index.html">VACUUM FORMING</a></li>
-          <li><a href="./index.html">SHARE SPACE</a></li>
-          <li class="language1 d-flex">
-            <p>English</p>/
-            <p class="text_opacity">繁體中文</p>
-          </li>
-        </ul> -->
-        <!-- 右上選單中文版 -->
-        <!-- <ul class="header_list_top zh-tw">
-          <li><a href="./index.html">雷射切割</a></li>
-          <li><a href="./index.html">真空成形</a></li>
-          <li><a href="./index.html">共享空間</a></li>
-          <li class="language2 d-flex">
-            <p class="text_opacity">English</p>/
-            <p>繁體中文</p>
-          </li>
-        </ul> -->
-        <!-- 右下選單英文版 -->
-        <ul class="header_list_bot en">
-          <li><a href="./index.html" class="blue bot">Home</a></li>
-          <li>
-            <div class="dropdown">
+        <div class="d-flex justify-content-between">
+          <div class="zhipin_icon_wrap">
+            <!-- logo圖片 src更改圖片位置 -->
+            <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
+            <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
+                <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+              </g>
+            </svg> 
+            <!-- logo文字 &nbsp是空格 -->
+            <!-- <div class="logo_text" onclick="home()">3D Printing Service</div> -->
+          </div>
+          <!-- 右下選單英文版 -->
+          <ul class="header_list_bot en">
+            <li class="mid"><a href="./index.html" class="blue bot">Home</a></li>
+            <li class="mid">
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Our service
+                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="./coworkshop.html">Coworkershop</a>
+                  <a class="dropdown-item" href="./3D-printing-service.html">3D printing service</a>
+                  <a class="dropdown-item" href="./Laser-cutting-engraving-service.html">Laser cutting engraving service</a>
+                  <a class="dropdown-item" href="#">Vacumm forming service</a>
+                </div>
+              </div>
+            </li>
+            <li class="mid"><a href="./index.html" class="bot">View our work</a></li>
+            <li class="mid"><a href="./index.html" class="bot">Shop</a></li>
+            <!-- <li><a href="./index.html" class="contact">Contact</a></li>
+            <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
+  
+          </ul>
+          <ul class="header_list_bot en">
+            <li class="language1 d-flex mr-1">
+              <p>En</p>/
+              <p class="text_opacity">繁中</p>
+            </li>
+            <img class="menu" src="./img/menu.png" alt="">
+          </ul>
+                    <!-- 右下選單中文版 -->
+          <ul class="header_list_bot zh-tw">
+            <li><a href="./index.html" class="blue bot">首頁 &nbsp&nbsp</a></li>
+            <li>
+              <div class="dropdown">
               <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Our service
+                我們的服務
               </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="./coworkshop.html">Coworkershop</a>
-                <a class="dropdown-item" href="./3D-printing-service.html">3D printing service</a>
-                <a class="dropdown-item" href="./Laser-cutting-engraving-service.html">Laser cutting engraving service</a>
-                <a class="dropdown-item" href="#">Vacumm forming service</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">共享工作室</a>
+                  <a class="dropdown-item" href="#">3D 列印服務</a>
+                  <a class="dropdown-item" href="#">雷射切割雕刻服務</a>
+                  <a class="dropdown-item" href="#">真空成形服務</a>
+                </div>&nbsp
               </div>
-            </div>
-          </li>
-          <li><a href="./index.html" class="bot">View our work</a></li>
-          <li><a href="./index.html" class="bot">Shop</a></li>
-          <!-- <li><a href="./index.html" class="contact">Contact</a></li>
-          <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
-          <li class="language1 d-flex mr-1">
-            <p>En</p>/
-            <p class="text_opacity">繁中</p>
-          </li>
-          <img class="menu" src="./img/menu.png" alt="">
-        </ul>
-        <!-- 右下選單中文版 -->
-        <ul class="header_list_bot zh-tw">
-          <li><a href="./index.html" class="blue bot">首頁</a></li>
-          <li>
-            <div class="dropdown">
-            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Our service
-            </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Coworkershop</a>
-                <a class="dropdown-item" href="#">3D printing service</a>
-                <a class="dropdown-item" href="#">Laser cutting engraving service</a>
-                <a class="dropdown-item" href="#">Vacumm forming service</a>
-              </div>
-            </div>
-          </li>
-          <li><a href="./index.html" class="bot">作品</a></li>
-          <li><a href="./index.html" class="bot">商店</a></li>
-          <!-- <li><a href="./index.html" class="contact">聯絡</a></li>
-          <li><a href="./index.html" class="tel">+886 26819865</a></li> -->
-          <li class="language2 d-flex mr-1">
-            <p class="text_opacity">En</p>/
-            <p>繁中</p>
-          </li>
-          <img class="menu" src="./img/menu.png" alt="">
-        </ul>
+            </li>
+            <li><a href="./index.html" class="bot">案例展示</a></li>&nbsp&nbsp&nbsp&nbsp
+            <li><a href="./index.html" class="bot">商店</a></li>
+            <!-- <li><a href="./index.html" class="contact">聯絡</a></li>
+            <li><a href="./index.html" class="tel">+886 26819865</a></li> -->
+          </ul>
+          <ul class="header_list_bot zh-tw">
+            <li class="language2 d-flex mr-1">
+              <p class="text_opacity">En</p>/
+              <p>繁中</p>
+            </li>
+            <img class="menu" src="./img/menu.png" alt="">
+          </ul>
+        </div>
+        
         <!-- 右下選單手機英文版 -->
         <ul class="header_list_bot_600 en">
           <li><a href="./index.html">Home</a></li>
@@ -130,6 +116,10 @@
           <a class="en" href="./file.html" target="">Start your project</a>
           <a class="zh-tw" href="./file.html" target="">開始您的項目</a>
         </div> -->
+        <div class="mainTitle">
+          <a class="en" href="./file.html" target="">3D Printing service</a>
+          <a class="zh-tw" href="./file.html" target="">3D 列印服務</a>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active carousel-item1">
             <!-- 幻燈片1 更改src換圖片 -->
@@ -160,8 +150,8 @@
         <div class="borderOn btn btn-danger position-fixed">On</div>
         <div class="borderClose btn btn-danger position-fixed" style="transform: translateX(50px);">Close</div>
         <div class="main">
-          <div class="title">Our Service</div>
-          <div class="ourService">
+          <!-- <div class="title">Our Service</div> -->
+          <!-- <div class="ourService">
               <div class="boxWrap">
                   <div class="box">
                     <div class="box_img">
@@ -210,14 +200,15 @@
                     </div>
                   </div>
               </div>
-          </div>
-          <div class="title title1">Start your Project</div>  
+          </div> -->
+          <div class="title title1 en">Start your Project</div>  
+          <div class="title title1 zh-tw">開始您的項目</div>  
           <div class="start_your_project container">
             <div class="boxWrap">
               <div class="box1"></div>
               <div class="box">
                 <div class="box_img box_img2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 90.63" class="svg_stlFile" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 90.63" class="svg_stlFile" fill="">
                         <title>STL file</title>
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -232,7 +223,7 @@
                             </g>
                         </g>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 90.63" class="svg_noFile" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 90.63" class="svg_noFile" fill="">
                         <title>No file</title>
                         <g id="Layer_2" data-name="Layer 2">
                                 <g id="Layer_1-2" data-name="Layer 1">
@@ -242,12 +233,26 @@
                             </g>
                     </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     Step 1: Choose an option
                   </div>
                   <div class="box_text_content box_text_content_old">
-                    Submit <a href="">STL_file</a> to pur website and our team will contact you shortly. <a href="">No file?</a>
+                    Submit <a href="">STL_file</a> to our website and our team will contact you shortly. <a href="">No file?</a>
+                  </div>
+                  <div class="box_text_content box_text_content_okay">
+                    It's okay, please describe what you want, We can help you find relevant 3D files, You can also upload any reference images
+                  </div>
+                  <div class="box_text_content box_text_content_submit">
+                    Submit
+                  </div>
+                </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    步驟 1: 選擇您的項目
+                  </div>
+                  <div class="box_text_content box_text_content_old">
+                    上傳 <a href="">STL 檔案</a>到我們網站，我們的團隊會盡快與您聯絡。 <a href="">沒有檔案嗎?</a>
                   </div>
                   <div class="box_text_content box_text_content_okay">
                     It's okay, please describe what you want, We can help you find relevant 3D files, You can also upload any reference images
@@ -259,7 +264,7 @@
               </div>
               <div class="box">
                 <div class="box_img">                 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.38 89.17" class="svg_3d_printing" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.38 89.17" class="svg_3d_printing" fill="">
                         <title>3D printing</title>
                         <g id="Layer_2" data-name="Layer 2">
                           <g id="Layer_1-2" data-name="Layer 1">
@@ -271,7 +276,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     Step 2: Print
                   </div>
@@ -279,10 +284,18 @@
                    After confirming the file, we will start your printing.
                   </div>
                 </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    步驟 2: 列印
+                  </div>
+                  <div class="box_text_content">
+                   檔案確認後，我們將開始您的列印
+                  </div>
+                </div>
               </div>
               <div class="box">
                 <div class="box_img">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.46 89.77" class="svg_dispatch" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.46 89.77" class="svg_dispatch" fill="">
                         <title>Dispatch</title>
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -300,12 +313,20 @@
                         </g>
                     </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     Step 3: Dispatch
                   </div>
                   <div class="box_text_content">
-                    Once the print is completed, we will ship your 3D model or arrange a pickup.
+                    Once the print is completed, we will ship your 3D prints or arrange a pickup.
+                  </div>
+                </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    步驟 3: 寄送
+                  </div>
+                  <div class="box_text_content">
+                    列印完成後，即刻寄出您的列印模型或安排提貨
                   </div>
                 </div>
               </div>
@@ -315,7 +336,7 @@
               <div class="box1"></div>
               <div class="box">
                 <div class="box_img box_img1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.24 105.25" class="10*10" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.24 105.25" class="10*10" fill="">
                         <title>Asset 38</title>
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -324,7 +345,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     10x10x10(cm)
                   </div>
@@ -333,10 +354,19 @@
                     NT$200-500
                   </div>
                 </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    10x10x10(cm)
+                  </div>
+                  <div class="box_text_content">
+                    10 x 10 x 10(cm) 3D 列印 <br>
+                    NT$200-500
+                  </div>
+                </div>
               </div>
               <div class="box">
                 <div class="box_img box_img1">                 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.24 105.25" class="15*15" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.24 105.25" class="15*15" fill="">
                         <title>Asset 39</title>
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -345,7 +375,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     15x15x15(cm)
                   </div>
@@ -354,10 +384,19 @@
                     NT$500-2000
                   </div>
                 </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    15x15x15(cm)
+                  </div>
+                  <div class="box_text_content">
+                    15 x 15 x 15(cm) 3D 列印 <br>
+                    NT$500-2000
+                  </div>
+                </div>
               </div>
               <div class="box">
                 <div class="box_img box_img1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.24 105.25" class="20*20" fill="#717474">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.24 105.25" class="20*20" fill="">
                         <title>Asset 40</title>
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -366,7 +405,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     20x20x20(cm)
                   </div>
@@ -375,36 +414,58 @@
                     NT$2000-4800
                   </div>
                 </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    20x20x20(cm)
+                  </div>
+                  <div class="box_text_content">
+                    20 x 20 x 20(cm) 3D 列印 <br>
+                    NT$2000-4800
+                  </div>
+                </div>
               </div>
               <div class="box1"></div>
             </div>
           </div>
-          <div class="title">Other Services</div>
+          <div class="title en">Other Services</div>
+          <div class="title zh-tw">其他服務</div>
           <div class="other_services container">
             <div class="boxWrap">
               <div class="box1"></div>
               <div class="box">
                 <div class="box_img">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 98.84" class="svg_coworkshop" fill="#717474">
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <path d="M173.79,96.84H158.5a4.67,4.67,0,0,0,.85-2.68V28.33l3.18,1a2.31,2.31,0,0,0,3-2.21v-2a2.33,2.33,0,0,0-1.65-2.21L88.05.1a2.28,2.28,0,0,0-1.32,0L10.93,22.84a2.32,2.32,0,0,0-1.64,2.21v2a2.3,2.3,0,0,0,3,2.21l3.18-1V94.16a4.73,4.73,0,0,0,.84,2.68H1a1,1,0,0,0,0,2H173.79a1,1,0,0,0,0-2ZM11.68,27.37a.3.3,0,0,1-.39-.3v-2a.31.31,0,0,1,.21-.29L87.3,2l.09,0,.09,0,75.8,22.74a.31.31,0,0,1,.22.29v2a.31.31,0,0,1-.12.25.36.36,0,0,1-.27.05L88.06,4.85a2.32,2.32,0,0,0-1.33,0ZM67.59,96.54a.69.69,0,0,1-.57.28H27a.69.69,0,0,1-.57-.28.68.68,0,0,1-.13-.61l1.11-4.25a.72.72,0,0,1,.69-.54H65.92a.73.73,0,0,1,.69.54l1.11,4.25A.71.71,0,0,1,67.59,96.54Zm-16.15-42V41.44h16.3V52.85a1.68,1.68,0,0,1-1.68,1.68Zm13,2-2,5.68H57.49l-2-5.68ZM25.73,39.44v-3a1.69,1.69,0,0,1,1.68-1.68H66.06a1.68,1.68,0,0,1,1.68,1.68v3Zm23.71,2V54.53h-22a1.68,1.68,0,0,1-1.68-1.68V41.44ZM33,57.26V89.14H28.82V57.26ZM93,96.67H82.82A1.68,1.68,0,0,1,81.14,95V74.7H93ZM149.05,95a1.68,1.68,0,0,1-1.68,1.68H95v-22h54.09Zm0-22.29H81.14v-7A1.68,1.68,0,0,1,82.82,64h64.55a1.68,1.68,0,0,1,1.68,1.68ZM98.73,54.54l.48-2.12,2.85,2.09.6-.72c.38-.44.75-.84,1.1-1.19l.4-.39-.66-3.14,1.25-1.8,1.86,3,.83-.45c.48-.26,1-.49,1.46-.7l.5-.2.57-3.16,1.83-1.2.6,3.54.95-.12a12.66,12.66,0,0,1,1.57-.09h.55l1.74-2.75,2.14-.43-.77,3.53.91.25c.47.14,1,.3,1.47.5l.51.2,2.68-1.92,2.14.41-2.06,3,.74.58a13.53,13.53,0,0,1,1.14,1l.39.38,3.28-.79,1.84,1.18-3.09,2.06.47.81c.23.4.46.84.68,1.31l.23.49,3.38.51L134.55,60l-3.69.75.14.93,0,.34H118.68a3.9,3.9,0,0,0-7.16,0H97.28l-.93-.63L96,59.25l3.47.89.28-.93a13.42,13.42,0,0,1,.54-1.5l.08-.2V57ZM116.21,62H114a1.86,1.86,0,0,1,1.11-.36A1.89,1.89,0,0,1,116.21,62Zm41.14,32.13a2.67,2.67,0,0,1-2.62,2.68h-4.19a3.64,3.64,0,0,0,.51-1.85V65.71A3.68,3.68,0,0,0,147.37,62H134.64l3.3-.68-3.5-5-3.18-.48a1.09,1.09,0,0,1-.08-.15L135.27,53l-5.12-3.28-3.06.73-.17-.15,2.74-4-6-1.13L121.18,47l-.25-.09,1-4.7-6,1.19-1.62,2.56h-.3l-.79-4.69-5.11,3.34-.53,2.94-.3.13-2.49-4-3.47,5,.61,2.93-.23.24L97.94,49,96.6,54.94l1.65,2.49-.11.3-4.59-1.18L94.43,62H82.82a3.68,3.68,0,0,0-3.68,3.68V95a3.74,3.74,0,0,0,.51,1.85h-10a2.63,2.63,0,0,0,0-1.42l-1.1-4.24a2.73,2.73,0,0,0-2.63-2H35V76.77l.1,0H62.65a1,1,0,0,0,0-2H35.06l-.1,0V56.53H53.4l2.67,7.68H59v5a1,1,0,0,0,2,0v-5h2.9l2.68-7.73a3.68,3.68,0,0,0,3.2-3.63V36.4a3.68,3.68,0,0,0-3.68-3.68H27.41a3.68,3.68,0,0,0-3.68,3.68V52.85a3.68,3.68,0,0,0,3.09,3.62v33a2.73,2.73,0,0,0-1.39,1.73l-1.11,4.24a2.73,2.73,0,0,0,0,1.42H20.06a2.67,2.67,0,0,1-2.62-2.68V27.73l69.87-21a.25.25,0,0,1,.17,0l69.87,21Zm-54.49-.6h38.29a1,1,0,0,0,0-2H102.86a1,1,0,0,0,0,2Zm0-9.17h38.29a1,1,0,0,0,0-2H102.86a1,1,0,0,0,0,2Zm0,4.58h38.29a1,1,0,0,0,0-2H102.86a1,1,0,1,0,0,2Zm0-9.16h38.29a1,1,0,0,0,0-2H102.86a1,1,0,0,0,0,2Z"/>
-                            </g>
-                        </g>
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.38 89.17" class="svg_3d_printing">
+                    <title>3D printing</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path d="M135.38,87.17H120.31a4.62,4.62,0,0,0,.84-2.65V4.66A4.66,4.66,0,0,0,116.49,0H19.88a4.65,4.65,0,0,0-4.65,4.65V84.52a4.62,4.62,0,0,0,.84,2.65H1a1,1,0,0,0,0,2H135.38a1,1,0,0,0,0-2ZM86.13,51.71H51.25V50H86.13a1,1,0,0,0,1-1V45.38a1,1,0,0,0-1-1H51.25V42.71H86.13a1,1,0,0,0,1-1V38a1,1,0,0,0-1-1H51.25V35.38H86.13a1,1,0,0,0,1-1v-3.3a1,1,0,0,0-1-1H69.19v-3.2a1,1,0,0,0-2,0v4.2a1,1,0,0,0,1,1H85.13v1.3H50.25a1,1,0,0,0-1,1V38a1,1,0,0,0,1,1H85.13v1.67H50.25a1,1,0,0,0-1,1v3.67a1,1,0,0,0,1,1H85.13V48H50.25a1,1,0,0,0-1,1v3.67a1,1,0,0,0,1,1H85.13V56H17.24V13.23H62.6v5.49a1,1,0,0,0,0,.14.69.69,0,0,0,.14.39.94.94,0,0,0,.07.12l4.59,5.38a1,1,0,0,0,1.52,0l4.59-5.38a.94.94,0,0,0,.07-.12.69.69,0,0,0,.14-.39.94.94,0,0,0,0-.14V13.23h45.36V56h-32V52.71A1,1,0,0,0,86.13,51.71ZM71.78,13.23v5.12l-3.59,4.21L64.6,18.35V13.23ZM19.88,2h96.6a2.66,2.66,0,0,1,2.66,2.66v6.57H17.24V4.65A2.65,2.65,0,0,1,19.88,2ZM31.45,85.59l.89.45a3.81,3.81,0,0,1,3.38-2h64.94a3.81,3.81,0,0,1,3.38,2,5.82,5.82,0,0,0,.78,1.12H31.56a5.83,5.83,0,0,0,.77-1.11Zm77.75,1.57a3.81,3.81,0,0,1-3.38-2A5.81,5.81,0,0,0,100.66,82H35.72a5.81,5.81,0,0,0-5.15,3.1h0a3.81,3.81,0,0,1-3.38,2h-7.3a2.65,2.65,0,0,1-2.65-2.65V58H119.14V84.52a2.65,2.65,0,0,1-2.65,2.65Z"/>
+                        <path d="M99.16,65.6A4.42,4.42,0,1,0,103.58,70,4.43,4.43,0,0,0,99.16,65.6Zm0,6.85A2.42,2.42,0,1,1,101.58,70,2.43,2.43,0,0,1,99.16,72.45Z"/>
+                        <path d="M110.63,65.6A4.42,4.42,0,1,0,115.05,70,4.43,4.43,0,0,0,110.63,65.6Zm0,6.85A2.42,2.42,0,1,1,113.05,70,2.43,2.43,0,0,1,110.63,72.45Z"/>
+                        <path d="M83.25,63.3H53.13a1,1,0,0,0-1,1V75.75a1,1,0,0,0,1,1H83.25a1,1,0,0,0,1-1V64.3A1,1,0,0,0,83.25,63.3Zm-1,11.45H54.13V65.3H82.25Z"/>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
-                    Coworkshop
+                    3D printing service
                   </div>
                   <div class="box_text_content">
-                    We provide all kinds of equipment and safe working space, free your imagination and get your hands dirty.
+                    Want to bring your desugn to reality? 3D printing do the job for you
+                  </div>
+                </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    3D 列印服務
+                  </div>
+                  <div class="box_text_content">
+                   想把心中的設計帶到現實嗎? 3D列印能為您完成任務
                   </div>
                 </div>
               </div>
               <div class="box">
                 <div class="box_img">                 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 78.88" class="svg_laser_cutting" fill="#717474">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 78.88" class="svg_laser_cutting">
                   <title>Laser cutting</title>
                   <g id="Layer_2" data-name="Layer 2">
                     <g id="Layer_1-2" data-name="Layer 1">
@@ -420,7 +481,7 @@
                   </g>
                 </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     Laser cutting engraving service
                   </div>
@@ -428,10 +489,18 @@
                     Create unique customized products with wood, leather, acrylic and more
                   </div>
                 </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    雷射切割雕刻服務
+                  </div>
+                  <div class="box_text_content">
+                    切割並雕刻木頭、皮革、壓克力等材料，創作獨一無二的作品
+                  </div>
+                </div>
               </div>
               <div class="box">
                 <div class="box_img">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 95.88" class="svg_vacuum_forming" fill="#717474">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.79 95.88" class="svg_vacuum_forming">
                     <title>vacuum forming</title>
                     <g id="Layer_2" data-name="Layer 2">
                       <g id="Layer_1-2" data-name="Layer 1">
@@ -445,12 +514,20 @@
                     </g>
                   </svg>
                 </div>
-                <div class="box_text">
+                <div class="box_text en">
                   <div class="box_text_title">
                     Vacuum forming service
                   </div>
                   <div class="box_text_content">
                     Quickly turn your imagination into trality and mass production
+                  </div>
+                </div>
+                <div class="box_text zh-tw">
+                  <div class="box_text_title">
+                    真空成形服務
+                  </div>
+                  <div class="box_text_content">
+                    運用熱壓塑料板翻模，快速將你的想像化為現實及量產
                   </div>
                 </div>
               </div>
@@ -484,12 +561,15 @@
         <div class="zh-tw">
           <br><br>
           <div>
-            <div class="footer_title">ZHIPIN DESIGN &nbsp</div>    
+            <span class="footerText1"> &nbsp &nbsp&nbsp zhipindesign     &nbsp </span>   
             <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076" fill="#717474">
               <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
                 <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" />
               </g>
             </svg> 
+            <div class="footerText2">
+              智品設計股份有限公司
+            </div>
           </div>
           <br>
           <div>新北市樹林區保安街二段10號3樓</div>
