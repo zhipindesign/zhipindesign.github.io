@@ -801,6 +801,14 @@ header {
               fill: #0071e3;
               cursor: pointer;
             }
+            .svg_coworkshop {
+              max-width: 100%;
+              height: auto;
+              margin: 30px auto 0;
+              position: absolute;
+              bottom: -8%;
+              transform: scale(0.7);
+            }
             .svg_3d_printing {
               max-width: 100%;
               height: auto;
