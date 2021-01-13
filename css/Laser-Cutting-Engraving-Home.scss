@@ -3,7 +3,7 @@ header {
 
   width: 100vw; //最大寬度
   height: 65px; //高度
-  background: #131313; //背景 rgb:顏色
+  background: #3E4141; //背景 rgb:顏色
   position: fixed; //位置 absolute按到relative位置移動
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   color: white;
@@ -24,7 +24,7 @@ header {
   }
   //icon
   .zhipin_icon_wrap {
-    transform: translateY(8px);
+    // transform: translateY(8px);
     //icon外框樣式
     display: flex; //讓物件並排
     .zhipin_icon {
@@ -87,10 +87,13 @@ header {
 
     display: flex; //讓列表並排
     list-style: none; //list取消預設樣式
-    font-size: 14px; //字體大小
+    font-size: 18px; //字體大小
+    margin: 0 auto;
+    line-height: 50px;
+    width: 100%;
     position: absolute; //位置 absolute按到relative位置移動
-    bottom: -60%; //位置 top: 距離relative最高點位置
-    right: 2%; //位置 right: 距離relative最右點位置
+    // bottom: -60%; //位置 top: 距離relative最高點位置
+    left: 32%; //位置 right: 距離relative最右點位置
     li {
       padding: 8px 9px; //內縮寬度
       // transform: scale(0.84);
@@ -145,6 +148,10 @@ header {
       .dropdown:hover .dropdown-menu {
         display: block;
       }
+    }
+    .language1, .language2{
+      position: absolute; //位置 absolute按到relative位置移動
+      left: 58%; //位置 right: 距離relative最右點位置
     }
   }
   .header_list_bot_600 {
@@ -463,20 +470,21 @@ header {
     height: 385px; //高度
   }
   .carousel-item1 {
-    background: linear-gradient(
-        180deg,
-        rgba(19, 19, 19, 1) 0%,
-        rgba(19, 19, 19, 0) 45%
-      ),
+    background: 
+    // linear-gradient(
+    //     180deg,
+    //     rgba(19, 19, 19, 1) 0%,
+    //     rgba(19, 19, 19, 0) 45%
+    //   ),
       //   linear-gradient(
       //     255deg,
       //     rgba(0, 60, 255, 0.4) 0%,
       //     rgba(146, 0, 255, 0.4) 100%
       //   ),
-      url(/images/LCEservice/Laser_cutting_index.jpg) right 100% bottom 50%;
+      url(/images/LCEservice/laser-index.png) right 100% bottom 90%;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(1);
+    // -webkit-filter: grayscale(1);
   }
   .carousel-item2 {
     background: linear-gradient(
@@ -527,6 +535,29 @@ header {
     font-weight: 600; //字體粗度
     top: calc(50% - 25px); //位置 top: 距離relative最高點位置
     left: calc(50% - 65px); //位置 right: 距離relative最右點位置
+    z-index: 10;
+    a {
+      //超連結樣式
+      color: white; //字體顏色
+    }
+    a:hover {
+      //hover: 滑鼠移上去後之效果
+      text-decoration: none; //將預設底線拿掉
+    }
+  }
+  .mainTitle {
+    //開始專案按鈕樣式
+    width: 320px; //寬度
+    height: 40px; //高度
+    text-align: center; //文字左右置中
+    line-height: 40px; //上下置中
+    font-size: 20px; //字體大小
+    background:#3e41415b; //背景樣式 顏色
+    position: absolute; //位置 absolute按到relative位置移動
+    padding: 0px -10px; //內縮寬度
+    font-weight: 600; //字體粗度
+    top: 12px; //位置 top: 距離relative最高點位置
+    right: 20px; //位置 right: 距離relative最右點位置
     z-index: 10;
     a {
       //超連結樣式
@@ -674,7 +705,7 @@ header {
     height: 1600px;
     width: 100%;
     margin: 50px auto 0;
-    color: #717474;
+    color:black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);
       height: 270px;

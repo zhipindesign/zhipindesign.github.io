@@ -4,7 +4,7 @@ header {
   height: 65px;
   background: #3E4141;
   position: fixed;
-  font-family: "Open Sans", "微軟正黑體";
+  font-family: "Open Sans", "�L�n������";
   color: white;
   z-index: 10;
 }
@@ -232,7 +232,7 @@ header .menu {
     height: 65px;
     background: #131313;
     position: fixed;
-    font-family: "Open Sans", "微軟正黑體";
+    font-family: "Open Sans", "�L�n������";
     color: white;
     z-index: 10;
   }
@@ -428,7 +428,7 @@ header .menu {
 .carousel {
   -webkit-transform: translateY(65px);
           transform: translateY(65px);
-  font-family: "Open Sans", "微軟正黑體";
+  font-family: "Open Sans", "�L�n������";
 }
 
 .carousel .carousel-indicators li {
@@ -446,7 +446,7 @@ header .menu {
 }
 
 .carousel .carousel-item1 {
-  background: url(/images/LCEservice/laser-index.png) right 100% bottom 90%;
+  background: url(/images/VFsevicre/vacuum-index.png) right 100% bottom 70%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -495,7 +495,7 @@ header .menu {
 }
 
 .carousel .mainTitle {
-  width: 320px;
+  width: 280px;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -505,7 +505,7 @@ header .menu {
   padding: 0px -10px;
   font-weight: 600;
   top: 12px;
-  right: 20px;
+  left: 20px;
   z-index: 10;
 }
 
@@ -528,7 +528,7 @@ header .menu {
   .carousel {
     -webkit-transform: translateY(65px);
             transform: translateY(65px);
-    font-family: "Open Sans", "微軟正黑體";
+    font-family: "Open Sans", "�L�n������";
   }
   .carousel .carousel-indicators li {
     width: 30px;
@@ -594,13 +594,13 @@ header .menu {
   }
 }
 
-.LaserCutting {
+.VacuumForming {
   height: 1600px;
   margin: 100px auto 0;
-  font-family: "Open Sans", "微軟正黑體";
+  font-family: "Open Sans", "�L�n������";
 }
 
-.LaserCutting .toggle {
+.VacuumForming .toggle {
   position: fixed;
   top: 100px;
   right: 0px;
@@ -609,21 +609,21 @@ header .menu {
   background-color: #1d1d1f;
 }
 
-.LaserCutting .toggle .toggle-on {
+.VacuumForming .toggle .toggle-on {
   background-color: #1d1d1f;
 }
 
-.LaserCutting .toggle .toggle-off {
+.VacuumForming .toggle .toggle-off {
   background-color: #e9e9e9;
 }
 
-.LaserCutting .title {
+.VacuumForming .title {
   border: 1px solid red;
   font-weight: 600;
   margin: 0 2%;
 }
 
-.LaserCutting .main {
+.VacuumForming .main {
   border: 1px solid red;
   height: 1600px;
   width: 100%;
@@ -631,14 +631,14 @@ header .menu {
   color: black;
 }
 
-.LaserCutting .main .ourService {
+.VacuumForming .main .ourService {
   border: 1px solid #73ff00;
   height: 270px;
   width: 100%;
   margin: 0 auto;
 }
 
-.LaserCutting .main .ourService .boxWrap {
+.VacuumForming .main .ourService .boxWrap {
   border: 1px solid red;
   height: 250px;
   width: 100%;
@@ -648,14 +648,14 @@ header .menu {
   margin: 0px auto 0;
 }
 
-.LaserCutting .main .ourService .boxWrap .box {
+.VacuumForming .main .ourService .boxWrap .box {
   border: 1px solid red;
   height: 250px;
   width: 25%;
   margin: 0 auto;
 }
 
-.LaserCutting .main .ourService .boxWrap .box .box_img {
+.VacuumForming .main .ourService .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: auto;
@@ -663,13 +663,13 @@ header .menu {
   position: relative;
 }
 
-.LaserCutting .main .ourService .boxWrap .box .box_img img {
+.VacuumForming .main .ourService .boxWrap .box .box_img img {
   max-width: 100%;
   height: auto;
   margin: 0 auto 0;
 }
 
-.LaserCutting .main .ourService .boxWrap .box .box_img .mask {
+.VacuumForming .main .ourService .boxWrap .box .box_img .mask {
   position: absolute;
   top: 0px;
   width: 100%;
@@ -681,24 +681,24 @@ header .menu {
   transition: 0.5s;
 }
 
-.LaserCutting .main .ourService .boxWrap .box .box_img a:hover .mask {
+.VacuumForming .main .ourService .boxWrap .box .box_img a:hover .mask {
   opacity: 0.8;
 }
 
-.LaserCutting .main .ourService .boxWrap .box .box_text {
+.VacuumForming .main .ourService .boxWrap .box .box_text {
   text-align: center;
   font-size: 12px;
   margin: -10% auto 0;
 }
 
-.LaserCutting .main .start_your_project {
+.VacuumForming .main .start_your_project {
   border: 1px solid red;
   height: 700px;
   width: 80%;
   margin: 0% auto 5%;
 }
 
-.LaserCutting .main .start_your_project .boxWrap {
+.VacuumForming .main .start_your_project .boxWrap {
   border: 1px solid red;
   height: 250px;
   width: 100%;
@@ -708,7 +708,7 @@ header .menu {
   margin: 0% auto 15%;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box {
+.VacuumForming .main .start_your_project .boxWrap .box {
   border: 1px solid red;
   height: 250px;
   width: 20%;
@@ -716,15 +716,15 @@ header .menu {
   position: relative;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img img,
-.LaserCutting .main .start_your_project .boxWrap .box .box_img svg {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img img,
+.VacuumForming .main .start_your_project .boxWrap .box .box_img svg {
   max-width: 100%;
   height: auto;
   margin: 30px auto 0;
@@ -732,21 +732,21 @@ header .menu {
   bottom: 0%;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover {
   fill: #0071e3;
   cursor: pointer;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover .box_text_content_okay {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover .box_text_content_okay {
   background-color: red;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_noFile:hover {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_noFile:hover {
   fill: #0071e3;
   cursor: pointer;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_3d_printing {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_learn {
   max-width: 100%;
   height: auto;
   margin: 30px auto 0;
@@ -756,15 +756,35 @@ header .menu {
           transform: scale(0.7);
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img1 {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_bring {
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto 0;
+  position: absolute;
+  bottom: -55px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_vacuum {
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto 0;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.VacuumForming .main .start_your_project .boxWrap .box .box_img1 {
   border: 1px solid black;
   width: 50%;
   height: 50%;
   margin: 0 auto;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img1 img,
-.LaserCutting .main .start_your_project .boxWrap .box .box_img1 svg {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img1 img,
+.VacuumForming .main .start_your_project .boxWrap .box .box_img1 svg {
   max-width: 50%;
   height: auto;
   margin: 30px auto 0;
@@ -772,15 +792,15 @@ header .menu {
   bottom: 50%;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img2 {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img2 {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img2 img,
-.LaserCutting .main .start_your_project .boxWrap .box .box_img2 svg {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img2 img,
+.VacuumForming .main .start_your_project .boxWrap .box .box_img2 svg {
   max-width: 50%;
   height: auto;
   margin: 30px auto 0;
@@ -791,7 +811,7 @@ header .menu {
           transform: scale(0.7);
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_img2 .svg_noFile {
+.VacuumForming .main .start_your_project .boxWrap .box .box_img2 .svg_noFile {
   max-width: 50%;
   height: auto;
   margin: 30px auto 0;
@@ -800,21 +820,21 @@ header .menu {
   left: 45%;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_text {
+.VacuumForming .main .start_your_project .boxWrap .box .box_text {
   text-align: center;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_title {
+.VacuumForming .main .start_your_project .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
   margin: 6% auto;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_content {
+.VacuumForming .main .start_your_project .boxWrap .box .box_text .box_text_content {
   font-size: 12px;
 }
 
-.LaserCutting .main .start_your_project .boxWrap .box1 {
+.VacuumForming .main .start_your_project .boxWrap .box1 {
   border: 1px solid red;
   height: 250px;
   width: 5%;
@@ -822,14 +842,14 @@ header .menu {
   position: relative;
 }
 
-.LaserCutting .main .other_services {
+.VacuumForming .main .other_services {
   border: 1px solid red;
   height: 270px;
   width: 80%;
   margin: 0% auto 5%;
 }
 
-.LaserCutting .main .other_services .boxWrap {
+.VacuumForming .main .other_services .boxWrap {
   border: 1px solid red;
   height: 250px;
   width: 100%;
@@ -839,7 +859,7 @@ header .menu {
   margin: 0% auto 0;
 }
 
-.LaserCutting .main .other_services .boxWrap .box {
+.VacuumForming .main .other_services .boxWrap .box {
   border: 1px solid red;
   height: 250px;
   width: 20%;
@@ -847,15 +867,15 @@ header .menu {
   position: relative;
 }
 
-.LaserCutting .main .other_services .boxWrap .box .box_img {
+.VacuumForming .main .other_services .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
-.LaserCutting .main .other_services .boxWrap .box .box_img img,
-.LaserCutting .main .other_services .boxWrap .box .box_img svg {
+.VacuumForming .main .other_services .boxWrap .box .box_img img,
+.VacuumForming .main .other_services .boxWrap .box .box_img svg {
   max-width: 100%;
   height: auto;
   margin: 30px auto 0;
@@ -863,21 +883,21 @@ header .menu {
   bottom: 0%;
 }
 
-.LaserCutting .main .other_services .boxWrap .box .box_text {
+.VacuumForming .main .other_services .boxWrap .box .box_text {
   text-align: center;
 }
 
-.LaserCutting .main .other_services .boxWrap .box .box_text .box_text_title {
+.VacuumForming .main .other_services .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
   margin: 6% auto;
 }
 
-.LaserCutting .main .other_services .boxWrap .box .box_text .box_text_content {
+.VacuumForming .main .other_services .boxWrap .box .box_text .box_text_content {
   font-size: 12px;
 }
 
-.LaserCutting .main .other_services .boxWrap .box1 {
+.VacuumForming .main .other_services .boxWrap .box1 {
   border: 1px solid red;
   height: 250px;
   width: 5%;
@@ -889,7 +909,7 @@ header .menu {
   .LaserCutting {
     height: 1000px;
     margin: 100px auto 0;
-    font-family: "Open Sans", "微軟正黑體";
+    font-family: "Open Sans", "�L�n������";
   }
   .LaserCutting .title {
     border: 1px solid red;
@@ -1112,7 +1132,7 @@ header .menu {
 }
 
 footer {
-  font-family: "Open Sans", "微軟正黑體";
+  font-family: "Open Sans", "�L�n������";
   max-width: 100vw;
   height: 200px;
   background: #f4f6f8;
@@ -1165,4 +1185,4 @@ footer .logo_img .logo_img_Youtube {
   margin-right: 20px;
   border-radius: 30%;
 }
-/*# sourceMappingURL=Laser-Cutting-Engraving-Home.css.map */
+/*# sourceMappingURL=Vacuum-Forming-Home.css.map */
