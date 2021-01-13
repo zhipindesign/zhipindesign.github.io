@@ -2,7 +2,7 @@
 header {
   width: 100vw;
   height: 65px;
-  background: #3E4141;
+  background: #3e4141;
   position: fixed;
   font-family: "Open Sans", "微軟正黑體";
   color: white;
@@ -166,7 +166,8 @@ header .header_list_bot li .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-header .header_list_bot .language1, header .header_list_bot .language2 {
+header .header_list_bot .language1,
+header .header_list_bot .language2 {
   position: absolute;
   left: 48%;
 }
@@ -227,7 +228,7 @@ header .menu {
 }
 
 .mainIndex {
-  background-color: #3E4141;
+  background-color: #3e4141;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -241,15 +242,15 @@ header .menu {
   top: 35px;
   right: 0px;
   border-radius: 20px;
-  background-color: #3E4141;
+  background-color: #3e4141;
 }
 
 .mainIndex .toggle .toggle-on {
-  background-color: #3E4141;
+  background-color: #3e4141;
 }
 
 .mainIndex .toggle .toggle-off {
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
 }
 
 .mainIndex header {
@@ -263,14 +264,18 @@ header .menu {
   margin: -10px 20px 0;
 }
 
+.mainIndex header .indexTitle {
+  line-height: 70px;
+}
+
 .mainIndex main {
-  height: 680px;
+  height: 780px;
 }
 
 .mainIndex main .main-icon {
   -webkit-transform: scale(7.7);
           transform: scale(7.7);
-  margin: 200px auto 200px;
+  margin: 340px auto 280px;
   opacity: 0.8;
 }
 
@@ -280,8 +285,8 @@ header .menu {
 }
 
 .mainIndex main .svg_box .svgWrap {
-  -webkit-transform: translateX(-105px);
-          transform: translateX(-105px);
+  -webkit-transform: translateX(-60px) scale(0.8);
+          transform: translateX(-60px) scale(0.8);
   opacity: 0.7;
 }
 
@@ -304,19 +309,39 @@ header .menu {
   margin-left: 50px;
 }
 
+.mainIndex main .svg_box .svgWrap1 .svgText {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .mainIndex main .svg_box .svgWrap2 {
-  -webkit-transform: translateY(-7%) translateX(-45px) scale(0.8);
-          transform: translateY(-7%) translateX(-45px) scale(0.8);
+  -webkit-transform: translateY(-5%) translateX(-30px) scale(0.64);
+          transform: translateY(-5%) translateX(-30px) scale(0.64);
+}
+
+.mainIndex main .svg_box .svgWrap2 .svgText {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .mainIndex main .svg_box .svgWrap3 {
-  -webkit-transform: translateY(7%) translateX(15px);
-          transform: translateY(7%) translateX(15px);
+  -webkit-transform: translateY(7%) translateX(0px) scale(0.8);
+          transform: translateY(7%) translateX(0px) scale(0.8);
+}
+
+.mainIndex main .svg_box .svgWrap3 .svgText {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .mainIndex main .svg_box .svgWrap4 {
-  -webkit-transform: translateY(1%) translateX(75px);
-          transform: translateY(1%) translateX(75px);
+  -webkit-transform: translateY(1%) translateX(30px) scale(0.8);
+          transform: translateY(1%) translateX(30px) scale(0.8);
+}
+
+.mainIndex main .svg_box .svgWrap4 .svgText {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .mainIndex footer {

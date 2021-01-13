@@ -2,7 +2,7 @@
 header {
   width: 100vw;
   height: 65px;
-  background: #3E4141;
+  background: #3e4141;
   position: fixed;
   font-family: "Open Sans", "微軟正黑體";
   color: white;
@@ -166,7 +166,8 @@ header .header_list_bot li .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-header .header_list_bot .language1, header .header_list_bot .language2 {
+header .header_list_bot .language1,
+header .header_list_bot .language2 {
   position: absolute;
   left: 58%;
 }
@@ -605,16 +606,16 @@ header .menu {
   top: 100px;
   right: 0px;
   border-radius: 20px;
-  opacity: .5;
-  background-color: #1D1D1F;
+  opacity: 0.5;
+  background-color: #1d1d1f;
 }
 
 .coworkshop .toggle .toggle-on {
-  background-color: #1D1D1F;
+  background-color: #1d1d1f;
 }
 
 .coworkshop .toggle .toggle-off {
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
 }
 
 .coworkshop .title {
@@ -640,7 +641,7 @@ header .menu {
 .coworkshop .main .equipment .boxWrap {
   border: 1px solid red;
   height: 250px;
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,6 +653,7 @@ header .menu {
   height: 250px;
   width: 35%;
   margin: 0 auto;
+  position: relative;
 }
 
 .coworkshop .main .equipment .boxWrap .box .box_img {
@@ -665,11 +667,18 @@ header .menu {
   max-width: 100%;
   height: auto;
   margin: 30px auto 0;
+  position: absolute;
+  bottom: -10px;
 }
 
 .coworkshop .main .equipment .boxWrap .box .box_text {
   text-align: center;
   font-size: 12px;
+  margin-top: 10%;
+  position: absolute;
+  bottom: -40px;
+  left: 36%;
+  z-index: 10;
 }
 
 .coworkshop .main .tool1 {
@@ -788,7 +797,8 @@ header .menu {
   margin: 0 auto;
 }
 
-.coworkshop .main .other_services .boxWrap .box .box_img img, .coworkshop .main .other_services .boxWrap .box .box_img svg {
+.coworkshop .main .other_services .boxWrap .box .box_img img,
+.coworkshop .main .other_services .boxWrap .box .box_img svg {
   max-width: 100%;
   height: auto;
   margin: 30px auto 0;
@@ -972,7 +982,8 @@ header .menu {
     height: 70%;
     margin: 0 auto;
   }
-  .coworkshop .main .other_services .boxWrap .box .box_img img, .coworkshop .main .other_services .boxWrap .box .box_img svg {
+  .coworkshop .main .other_services .boxWrap .box .box_img img,
+  .coworkshop .main .other_services .boxWrap .box .box_img svg {
     max-width: 70%;
     height: auto;
     margin: 0px auto 0;

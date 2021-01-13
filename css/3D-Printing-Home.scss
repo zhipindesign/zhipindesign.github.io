@@ -3,7 +3,7 @@ header {
 
   width: 100vw; //最大寬度
   height: 65px; //高度
-  background: #3E4141; //背景 rgb:顏色
+  background: #3e4141; //背景 rgb:顏色
   position: fixed; //位置 absolute按到relative位置移動
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   color: white;
@@ -130,16 +130,22 @@ header {
         transform: translateY(3px) scale(0.8);
       }
       .dropdown-menu {
-        background: #13131380;
+        background: #3e4141;
         transform: scale(0.84) translate(-18%, -10%);
+        font-size: 18px;
         a {
           color: white;
+          font-size: 20px;
+          height: 40px;
+          transform: translateY(-20%);
         }
         a:hover {
           color: #007bff;
         }
+        .dropdown-item {
+        }
         .dropdown-item:hover {
-          background: #131313;
+          background: #3e4141;
         }
       }
       .dropdown-menu li:hover .sub-menu {
@@ -149,7 +155,8 @@ header {
         display: block;
       }
     }
-    .language1, .language2{
+    .language1,
+    .language2 {
       position: absolute; //位置 absolute按到relative位置移動
       left: 58%; //位置 right: 距離relative最右點位置
     }
@@ -552,7 +559,7 @@ header {
     text-align: center; //文字左右置中
     line-height: 40px; //上下置中
     font-size: 20px; //字體大小
-    background:#3e414156; //背景樣式 顏色
+    background: #3e414156; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
     padding: 0px -10px; //內縮寬度
     font-weight: 600; //字體粗度
@@ -678,7 +685,7 @@ header {
   }
 }
 .threeD {
-  height: 1200px;
+  height: 1000px;
   margin: 100px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -702,7 +709,7 @@ header {
   }
   .main {
     border: 1px solid red;
-    height: 1000px;
+    height: 800px;
     width: 100%;
     margin: -30px auto 0;
     color: black;
@@ -759,15 +766,15 @@ header {
     }
     .start_your_project {
       border: 1px solid red;
-      height: 700px;
+      height: 500px;
       width: 80%;
-      margin: 0% auto 5%;
+      margin: 4% auto 0%;
       .boxWrap {
         border: 1px solid red;
         height: 250px;
         width: 100%;
         display: flex;
-        margin: 0% auto 15%;
+        margin: 0% auto 8%;
         .box {
           border: 1px solid red;
           height: 150px;
@@ -787,6 +794,12 @@ header {
               max-width: 100%;
               height: auto;
               margin: 30px auto 0;
+              position: absolute;
+              bottom: -8%;
+              transform: scale(0.65);
+            }
+            .svg_dispatch {
+              transform: scale(0.8);
               position: absolute;
               bottom: 0%;
             }
@@ -876,7 +889,7 @@ header {
     .other_services {
       border: 1px solid red;
       height: 270px;
-      width: 100%;
+      width: 80%;
       margin: 0% auto 5%;
       .boxWrap {
         border: 1px solid red;
@@ -905,6 +918,7 @@ header {
               margin: 30px auto 0;
               position: absolute;
               bottom: 20%;
+              transform: scale(0.7);
             }
           }
           .box_text {
