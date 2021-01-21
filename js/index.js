@@ -1,6 +1,8 @@
 
 $(".zh-tw").css("display", "none");
 
+$(".borderOn").hide();
+$(".borderClose").hide();
 $(document).scroll(function(){
     var scroH = $(document).scrollTop();  
     var viewH = $(window).height();  
@@ -93,6 +95,9 @@ function laser(){
 }
 function Vacuum(){
     window.location.replace('./Vacuum-Forming-Home.html');
+}
+function form(){
+    window.open('https://forms.gle/nbG6k4j6g2W1PbbF7');
 }
 
 

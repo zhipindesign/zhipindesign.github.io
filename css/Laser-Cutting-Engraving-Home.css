@@ -599,7 +599,7 @@ header .menu {
 }
 
 .LaserCutting {
-  height: 1600px;
+  height: 1200px;
   margin: 100px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -625,11 +625,12 @@ header .menu {
   border: 1px solid red;
   font-weight: 600;
   margin: 0 2%;
+  font-size: 24px;
 }
 
 .LaserCutting .main {
   border: 1px solid red;
-  height: 1600px;
+  height: 1200px;
   width: 100%;
   margin: 50px auto 0;
   color: black;
@@ -840,7 +841,7 @@ header .menu {
   border: 1px solid red;
   height: 270px;
   width: 80%;
-  margin: 0% auto 5%;
+  margin: -5% auto 5%;
 }
 
 .LaserCutting .main .other_services .boxWrap {
@@ -859,6 +860,7 @@ header .menu {
   width: 20%;
   margin: 0 auto;
   position: relative;
+  cursor: pointer;
 }
 
 .LaserCutting .main .other_services .boxWrap .box .box_img {
@@ -872,9 +874,11 @@ header .menu {
 .LaserCutting .main .other_services .boxWrap .box .box_img svg {
   max-width: 100%;
   height: auto;
-  margin: 30px auto 0;
+  margin: 0 auto -50px;
   position: absolute;
-  bottom: 0%;
+  bottom: 20%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .LaserCutting .main .other_services .boxWrap .box .box_text {
@@ -884,7 +888,7 @@ header .menu {
 .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
-  margin: 6% auto;
+  margin: 0 auto;
 }
 
 .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_content {

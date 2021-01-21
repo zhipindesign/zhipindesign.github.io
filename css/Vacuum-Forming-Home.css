@@ -599,7 +599,7 @@ header .menu {
 }
 
 .VacuumForming {
-  height: 1600px;
+  height: 1000px;
   margin: 100px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -623,13 +623,14 @@ header .menu {
 
 .VacuumForming .title {
   border: 1px solid red;
+  font-size: 24px;
   font-weight: 600;
   margin: 0 2%;
 }
 
 .VacuumForming .main {
   border: 1px solid red;
-  height: 1600px;
+  height: 1200px;
   width: 100%;
   margin: 50px auto 0;
   color: black;
@@ -697,7 +698,7 @@ header .menu {
 
 .VacuumForming .main .start_your_project {
   border: 1px solid red;
-  height: 700px;
+  height: 550px;
   width: 80%;
   margin: 0% auto 5%;
 }
@@ -709,7 +710,7 @@ header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0% auto 15%;
+  margin: -5% auto 15%;
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box {
@@ -778,6 +779,12 @@ header .menu {
   bottom: 0px;
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
+}
+
+.VacuumForming .main .start_your_project .boxWrap .box .box_img .twenty {
+  -webkit-transform: scale(1.45);
+          transform: scale(1.45);
+  margin: 30px auto 15px;
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_img1 {
@@ -850,7 +857,7 @@ header .menu {
   border: 1px solid red;
   height: 270px;
   width: 80%;
-  margin: 0% auto 5%;
+  margin: -5% auto 5%;
 }
 
 .VacuumForming .main .other_services .boxWrap {
@@ -874,16 +881,16 @@ header .menu {
 
 .VacuumForming .main .other_services .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
 .VacuumForming .main .other_services .boxWrap .box .box_img img,
 .VacuumForming .main .other_services .boxWrap .box .box_img svg {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
-  margin: 30px auto 0;
+  margin: 0 auto -50px;
   position: absolute;
   bottom: 20%;
   -webkit-transform: scale(0.7);
@@ -897,7 +904,7 @@ header .menu {
 .VacuumForming .main .other_services .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
-  margin: 6% auto;
+  margin: 0 auto;
 }
 
 .VacuumForming .main .other_services .boxWrap .box .box_text .box_text_content {

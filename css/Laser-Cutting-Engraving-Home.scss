@@ -681,7 +681,7 @@ header {
   }
 }
 .LaserCutting {
-  height: 1600px;
+  height: 1200px;
   margin: 100px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -702,10 +702,11 @@ header {
     border: 1px solid red;
     font-weight: 600;
     margin: 0 2%;
+    font-size: 24px;
   }
   .main {
     border: 1px solid red;
-    height: 1600px;
+    height: 1200px;
     width: 100%;
     margin: 50px auto 0;
     color:black;
@@ -888,7 +889,7 @@ header {
       border: 1px solid red;
       height: 270px;
       width: 80%;
-      margin: 0% auto 5%;
+      margin: -5% auto 5%;
       .boxWrap {
         border: 1px solid red;
         height: 250px;
@@ -901,6 +902,7 @@ header {
           width: 20%;
           margin: 0 auto;
           position: relative;
+          cursor: pointer;
           // transform: scale(.5);
           .box_img {
             border: 1px solid black;
@@ -913,9 +915,10 @@ header {
             svg {
               max-width: 100%;
               height: auto;
-              margin: 30px auto 0;
+              margin: 0 auto -50px;
               position: absolute;
-              bottom: 0%;
+              bottom: 20%;
+              transform: scale(0.7);
             }
           }
           .box_text {
@@ -923,7 +926,7 @@ header {
             .box_text_title {
               font-size: 14px;
               font-weight: 600;
-              margin: 6% auto;
+              margin: 0 auto;
             }
             .box_text_content {
               font-size: 12px;
