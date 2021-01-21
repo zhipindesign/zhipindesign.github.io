@@ -270,6 +270,8 @@ header .menu {
 
 .mainIndex header .indexTitle {
   line-height: 70px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .mainIndex main {
