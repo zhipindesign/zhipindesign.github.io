@@ -148,6 +148,10 @@ header .header_list_bot li .dropdown-menu {
 
 header .header_list_bot li .dropdown-menu a {
   color: white;
+  font-size: 20px;
+  height: 40px;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 header .header_list_bot li .dropdown-menu a:hover {
@@ -799,11 +803,13 @@ header .menu {
 
 .coworkshop .main .other_services .boxWrap .box .box_img img,
 .coworkshop .main .other_services .boxWrap .box .box_img svg {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   margin: 30px auto 0;
   position: absolute;
   bottom: 20%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .coworkshop .main .other_services .boxWrap .box .box_text {
@@ -818,6 +824,10 @@ header .menu {
 
 .coworkshop .main .other_services .boxWrap .box .box_text .box_text_content {
   font-size: 12px;
+}
+
+.coworkshop .main .other_services .boxWrap .box:hover {
+  cursor: pointer;
 }
 
 .coworkshop .main .other_services .boxWrap .box1 {

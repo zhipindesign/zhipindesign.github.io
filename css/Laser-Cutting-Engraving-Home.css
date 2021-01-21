@@ -148,6 +148,10 @@ header .header_list_bot li .dropdown-menu {
 
 header .header_list_bot li .dropdown-menu a {
   color: white;
+  font-size: 20px;
+  height: 40px;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 header .header_list_bot li .dropdown-menu a:hover {

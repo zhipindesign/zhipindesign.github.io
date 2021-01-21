@@ -134,6 +134,9 @@ header {
         transform: scale(0.84) translate(-18%, -10%);
         a {
           color: white;
+          font-size: 20px;
+          height: 40px;
+          transform: translateY(-20%);
         }
         a:hover {
           color: #007bff;
@@ -848,11 +851,12 @@ header {
             // background-size: cover;
             img,
             svg {
-              max-width: 100%;
+              max-width: 80%;
               height: auto;
               margin: 30px auto 0;
               position: absolute;
               bottom: 20%;
+              transform: scale(0.7);
             }
           }
           .box_text {
@@ -867,6 +871,9 @@ header {
             }
           }
         }
+        .box:hover{
+          cursor: pointer;
+        }
         .box1 {
           border: 1px solid red;
           height: 250px;
@@ -874,6 +881,7 @@ header {
           margin: 0 auto;
           position: relative;
         }
+
       }
     }
   }

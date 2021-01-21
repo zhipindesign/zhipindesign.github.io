@@ -815,6 +815,7 @@ header .menu {
   width: 20%;
   margin: 0 auto;
   position: relative;
+  cursor: pointer;
 }
 
 .threeD .main .other_services .boxWrap .box .box_img {
