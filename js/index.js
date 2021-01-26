@@ -1,5 +1,5 @@
 
-$(".zh-tw").css("display", "none");
+$(".en").css("display", "none");
 
 $(".borderOn").hide();
 $(".borderClose").hide();
@@ -44,6 +44,20 @@ $(document).ready(function(){
         // }
     });
 });
+$(".languageEn").on("click", function(){
+    $(".languageZh").addClass("text_opacity");
+    $(".languageEn").removeClass("text_opacity");
+    $(".zh-tw").hide();
+    $(".en").show();
+    $(".header_mid").find("ul").css("width","65%");
+})
+$(".languageZh").on("click", function(){
+    $(".languageEn").addClass("text_opacity");
+    $(".languageZh").removeClass("text_opacity");
+    $(".zh-tw").show();
+    $(".en").hide();
+    $(".header_mid").find("ul").css("width","50%");
+})
 $(".language1").on("click", function(){
     $(".zh-tw").css("display", "");
     $(".en").css("display", "none");

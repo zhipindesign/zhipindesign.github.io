@@ -3,28 +3,28 @@ header {
   height: 60px;
   color: white;
   line-height: 60px;
+  font-size: 16px;
   font-weight: 600;
-  font-size: 20px;
   font-family: "Open Sans", "微軟正黑體";
 }
 
 header .header_left {
   width: 15%;
   height: 60px;
-  border: 1px red solid;
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 header .header_mid {
   width: 70%;
   height: 60px;
-  border: 1px red solid;
   text-align: center;
   margin: 0 auto;
 }
 
 header .header_mid ul {
-  width: 70%;
+  width: 50%;
   text-align: center;
   margin: 0 auto;
 }
@@ -36,8 +36,33 @@ header .header_mid ul li {
   padding-right: 4px;
 }
 
+header .header_mid ul li .dropdown-toggle::after {
+  -webkit-transform: translate(-5px, 3px) scale(0.8);
+          transform: translate(-5px, 3px) scale(0.8);
+}
+
 header .header_mid ul li .dropdown-menu {
-  background-color: #131313;
+  background-color: #3e4141;
+  border: none;
+  margin-top: -20px;
+}
+
+header .header_mid ul li .dropdown-menu .dropdown-item {
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+header .header_mid ul li .dropdown-menu .dropdown-item:hover {
+  background-color: #3e4141;
+}
+
+header .header_mid ul li .dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+header .header_mid ul li .dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 header .header_mid ul li a {
@@ -52,7 +77,16 @@ header .header_mid ul li a:hover {
 header .header_right {
   width: 15%;
   height: 60px;
-  border: 1px red solid;
-  text-align: center;
+  text-align: right;
+}
+
+header .header_right .text_opacity {
+  opacity: 30%;
+  cursor: pointer;
+}
+
+header .header_right .languageEn:hover,
+header .header_right .languageZh:hover {
+  opacity: 100%;
 }
 /*# sourceMappingURL=header.css.map */

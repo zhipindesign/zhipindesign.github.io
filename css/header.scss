@@ -1,48 +1,77 @@
-header{
+header {
+  height: 60px;
+  color: white;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", "微軟正黑體";
+  .header_left {
+    width: 15%;
     height: 60px;
-    color: white;
-    line-height: 60px;
-    font-weight: 600;
+    // border: 1px red solid;
+    text-align: left;
     font-size: 20px;
-    font-family: "Open Sans", "微軟正黑體";
-    .header_left{
-        width: 15%;
-        height: 60px;
-        border: 1px red solid;
-        text-align: center;
-    }
-    .header_mid{
-        width: 70%;
-        height: 60px;
-        border: 1px red solid;
+    cursor: pointer;
+  }
+  .header_mid {
+    width: 70%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: center;
+    margin: 0 auto;
+    ul {
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      li {
+        list-style: none;
         text-align: center;
         margin: 0 auto;
-        ul{
-            width: 70%;
-            text-align: center;
-            margin: 0 auto;
-            li{
-                list-style: none;
-                text-align: center;
-                margin: 0 auto;
-                padding-right: 4px;
-                .dropdown-menu{
-                    background-color: #131313;
-                }
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-                a:hover{
-                    color:#007bff;
-                }
-            }
+        padding-right: 4px;
+        .dropdown-toggle::after {
+          transform: translate(-5px, 3px) scale(0.8);
         }
+        .dropdown-menu {
+          background-color: #3e4141;
+          border: none;
+          margin-top: -20px;
+          .dropdown-item {
+            padding: 0;
+            height: 30px;
+            line-height: 30px;
+          }
+          .dropdown-item:hover {
+            background-color: #3e4141;
+          }
+        }
+        .dropdown-menu li:hover .sub-menu {
+          visibility: visible;
+        }
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: #007bff;
+        }
+      }
     }
-    .header_right{
-        width: 15%;
-        height: 60px;
-        border: 1px red solid;
-        text-align: center;
-    } 
+  }
+  .header_right {
+    width: 15%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: right;
+    .text_opacity {
+      opacity: 30%;
+      cursor: pointer;
+    }
+    .languageEn:hover,
+    .languageZh:hover {
+      opacity: 100%;
+    }
+  }
 }

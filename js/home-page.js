@@ -1,7 +1,21 @@
 
-$(".zh-tw").css("display", "none");
+$(".en").css("display", "none");
+$(".addEn").css("display", "none");
 
-
+$(".languageEn").on("click", function(){
+    $(".languageZh").addClass("text_opacity");
+    $(".languageEn").removeClass("text_opacity");
+    $(".zh-tw", ".addZh").hide();
+    $(".en", ".addEn").show();
+    $(".header_mid").find("ul").css("width","65%");
+})
+$(".languageZh").on("click", function(){
+    $(".languageEn").addClass("text_opacity");
+    $(".languageZh").removeClass("text_opacity");
+    $(".zh-tw", ".addZh").show();
+    $(".en", ".addEn").hide();
+    $(".header_mid").find("ul").css("width","50%");
+})
 $(".language1").on("click", function(){
     $(".zh-tw").css("display", "");
     $(".en").css("display", "none");

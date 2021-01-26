@@ -1,224 +1,78 @@
 //header樣式
 header {
-  //最上方區塊樣式
-
-  width: 100vw; //最大寬度
-  height: 65px; //高度
-  background: #131313; //背景 rgb:顏色
-  position: fixed; //位置 absolute按到relative位置移動
-  font-family: "Open Sans", "微軟正黑體"; //字型樣式
+  height: 60px;
   color: white;
-  z-index: 10;
-  .language {
-    //切換語言樣式
-    position: fixed; //跟著螢幕滾動
-    z-index: 20; //放在最上層 不會被遮擋 數字越高越上層
-    transition: 0.3s; //變化時間
-    font-size: 20px; //字體大小
-    font-weight: 600; //字體粗度
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", "微軟正黑體";
+  .header_left {
+    width: 15%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
   }
-  .language:hover {
-    //切換語言模式(滑鼠移上去後)
-    cursor: pointer; //滑鼠變成手指
-    // background: coral;
-    color: rgb(90, 219, 187) !important; //字體顏色
-  }
-  //icon
-  .zhipin_icon_wrap {
-    transform: translateY(8px);
-    //icon外框樣式
-    display: flex; //讓物件並排
-    .zhipin_icon {
-      //icon本身樣式
-      width: 55px; //寬度
-      height: 55px; //高度
-      margin: 6px 15px 0px 20px; //對外寬度
-    }
-
-    .logo_text {
-      //logo文字樣式
-      text-align: center; //左右置中
-      line-height: 80px; //上下置中
-      font-size: 14px; //字體大小
-      font-weight: 400; //字體粗度
-      // transform: scale(.84);
-    }
-    .zhipin_icon:hover,
-    .logo_text:hover {
-      //滑鼠移上去後
-      cursor: pointer; //滑鼠變成手指
-    }
-  }
-
-  //主選單
-  .header_list_top {
-    //上方主選單(雷切/真空/共享空間)
-
-    display: flex; //讓列表並排
-    list-style: none; //list取消預設樣式
-    font-size: 12px; //字體大小
-    position: absolute; //位置 absolute按到relative位置移動
-    top: 0%; //位置 top: 距離relative最高點位置
-    right: 2%; //位置 right: 距離relative最右點位置
-
-    li {
-      padding: 8px 12px; //內縮寬度
-      a {
-        color: white; //字體顏色
-        padding: 4px 0px; //內縮寬度
-        text-decoration: black underline;
-        font-weight: 500;
-      }
-      a:hover {
-        //hover: 滑鼠移上去後之效果
-        color: #007bff; //字體顏色
-        text-decoration: #007bff underline;
-      }
-      p {
-        cursor: default;
-      }
-      .text_opacity:hover {
-        opacity: 100%;
-        cursor: pointer;
-      }
-    }
-  }
-  .header_list_bot {
-    //上方主選單(首頁/3D列印/作品/商店/聯絡我們/電話)
-
-    display: flex; //讓列表並排
-    list-style: none; //list取消預設樣式
-    font-size: 14px; //字體大小
-    position: absolute; //位置 absolute按到relative位置移動
-    bottom: -60%; //位置 top: 距離relative最高點位置
-    right: 2%; //位置 right: 距離relative最右點位置
-    li {
-      padding: 8px 9px; //內縮寬度
-      // transform: scale(0.84);
-      z-index: 3;
-      .tel,
-      .contact {
-        color: white; //字體顏色
-        font-weight: 600; //字體粗度
-      }
-      .tel:hover,
-      .contact:hover {
-        text-decoration: none; //將預設底線拿掉
-        cursor: default;
-      }
-      .text_opacity {
-        opacity: 30%;
-        cursor: pointer;
-      }
-      .bot {
-        //超連結樣式
-        color: white; //字體顏色
-        font-weight: 400; //字體粗度
-        padding: 1px;
-      }
-      .bot:hover {
-        //hover: 滑鼠移上去後之效果
-        color: #007bff; //字體顏色
-        text-decoration: none; //將預設底線拿掉
-      }
-      .blue {
-        color: #007bff; //字體顏色
-      }
-      .dropdown-toggle::after {
-        transform: translateY(3px) scale(0.8);
-      }
-      .dropdown-menu {
-        background: #13131380;
-        transform: scale(0.84) translate(-18%, -10%);
+  .header_mid {
+    width: 70%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: center;
+    margin: 0 auto;
+    ul {
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      li {
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 4px;
+        .dropdown-toggle::after {
+          transform: translate(-5px, 3px) scale(0.8);
+        }
+        .dropdown-menu {
+          background-color: #3e4141;
+          border: none;
+          margin-top: -20px;
+          .dropdown-item {
+            padding: 0;
+            height: 30px;
+            line-height: 30px;
+          }
+          .dropdown-item:hover {
+            background-color: #3e4141;
+          }
+        }
+        .dropdown-menu li:hover .sub-menu {
+          visibility: visible;
+        }
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
         a {
+          text-decoration: none;
           color: white;
         }
         a:hover {
           color: #007bff;
         }
-        .dropdown-item:hover {
-          background: #131313;
-        }
-      }
-      .dropdown-menu li:hover .sub-menu {
-        visibility: visible;
-      }
-      .dropdown:hover .dropdown-menu {
-        display: block;
       }
     }
   }
-  .header_list_bot_600 {
-    //手機版選單(三條橫線，預設隱藏)
-    display: none; //隱藏
-  }
-  .menu {
-    //手機版選單按鈕(三條橫線，預設隱藏)
-    width: 30px; //寬度
-    height: 30px; //高度
-    display: none; //隱藏
-  }
-  @media screen and (max-width: 600px) {
-    //當螢幕寬度小於600px
-    .en {
-      //英文文字樣式
-      font-size: 10px; //字體大小
+  .header_right {
+    width: 15%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: right;
+    .text_opacity {
+      opacity: 30%;
+      cursor: pointer;
     }
-    .zhipin_icon_wrap {
-      //logo外框樣式
-
-      .zhipin_icon {
-        //logo樣式
-        width: 100px; //寬度
-        height: auto; //高度(隨著寬度改變)
-        display: block; //取消隱藏
-        margin: auto; //logo置中
-      }
-
-      .logo_text {
-        //logo文字樣式
-        display: none; //隱藏logo文字
-      }
-    }
-
-    .header_list_top {
-      //電腦版選單樣式
-      display: none; //隱藏
-    }
-    .header_list_bot {
-      //電腦版選單樣式
-      li {
-        display: none; //隱藏
-      }
-      .menu {
-        //手機版選單按鈕樣式
-        display: block; //取消隱藏
-        position: relative; //位置 absolute按到relative位置移動
-      }
-      .menu:hover {
-        //手機版選單按鈕 hover(滑鼠移上去後之效果)
-        cursor: pointer; //滑鼠樣式改為手指
-      }
-    }
-    .header_list_bot_600 {
-      //手機版選單樣式
-      z-index: 10; //出現在最上面(數字越大越上面)
-      background: rgba(110, 110, 110, 0.658); //背景顏色(R, G, B, 透明度)
-      width: 180px; //寬度
-      list-style: none; //列表樣式取消
-      position: absolute; //位置 absolute按到relative位置移動
-      right: 0; //位置 right: 距離relative最右點位置
-      top: 100%; //位置 top: 距離relative最高點位置
-      font-size: 14px; //字體大小
-      a {
-        //超連結樣式
-        color: white; //字體顏色
-      }
-      a:hover {
-        //超連結樣式(當滑鼠移上去後)
-        color: rgb(90, 219, 187); //字體顏色
-        text-decoration: none; //將預設底線拿掉
-      }
+    .languageEn:hover,
+    .languageZh:hover {
+      opacity: 100%;
     }
   }
 }
@@ -372,44 +226,44 @@ header {
         }
         .arch_box:hover {
           background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 100%
-          ),
-          url("/img/W.jpg");
+              180deg,
+              rgba(0, 0, 0, 0.2) 0%,
+              rgba(0, 0, 0, 0.2) 100%
+            ),
+            url("/img/W.jpg");
           background-position: left 34% bottom 13%;
           background-size: 520px;
           margin-right: 5px;
         }
         .design_box:hover {
           background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 100%
-          ),
-          url("/img/L.jpg") center center;
+              180deg,
+              rgba(0, 0, 0, 0.2) 0%,
+              rgba(0, 0, 0, 0.2) 100%
+            ),
+            url("/img/L.jpg") center center;
           background-position: left 44% bottom 33%;
           background-size: 570px;
           margin-right: 5px;
         }
         .craft_box:hover {
           background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 100%
-          ),
-          url("/img/L.jpg") center center;
+              180deg,
+              rgba(0, 0, 0, 0.2) 0%,
+              rgba(0, 0, 0, 0.2) 100%
+            ),
+            url("/img/L.jpg") center center;
           background-position: left 44% bottom 33%;
           background-size: 570px;
           margin-right: 5px;
         }
         .engineer_box:hover {
           background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 100%
-          ),
-          url("/img/04\ .jpg") center center;
+              180deg,
+              rgba(0, 0, 0, 0.2) 0%,
+              rgba(0, 0, 0, 0.2) 100%
+            ),
+            url("/img/04\ .jpg") center center;
           background-size: 450px;
           background-position: 50% 60%;
         }
@@ -461,7 +315,7 @@ header {
           height: auto; //高度，隨寬度改變
           display: block; //左右置中
           margin: auto; //左右置中
-          transform: scale(.8);
+          transform: scale(0.8);
         }
         .step_img_Dispatch {
           //寄送之圖片樣式
@@ -495,7 +349,9 @@ header {
           cursor: pointer;
         }
       }
-      .step_img_wrap1, .step_img_wrap2, .step_img_wrap3{
+      .step_img_wrap1,
+      .step_img_wrap2,
+      .step_img_wrap3 {
         transform: scale(0.65);
       }
       .step_img_wrap4,
@@ -503,8 +359,8 @@ header {
       .step_img_wrap6 {
         margin-right: 0px;
         margin-top: 10px;
-        transform: translate(2%,-10%) scale(0.65);
-        .img_text{
+        transform: translate(2%, -10%) scale(0.65);
+        .img_text {
           margin-top: 30px;
         }
       }
@@ -517,16 +373,16 @@ header {
         }
         .step_img_wrap1 {
           margin-right: -10px;
-          transform:  scale(.65) translate(15%,0%);
+          transform: scale(0.65) translate(15%, 0%);
           .img_text {
-            transform: translate(0%,10%);
+            transform: translate(0%, 10%);
           }
         }
         .step_img_wrap2 {
-          transform:  translate(10%,17%);
+          transform: translate(10%, 17%);
           margin-right: 10px;
           .img_text {
-            transform: scale(.65) translate(-5%,0%);
+            transform: scale(0.65) translate(-5%, 0%);
           }
         }
         .step_img_wrap3 {

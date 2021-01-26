@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>header</title>
+    <title>zhipindesign</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -61,8 +61,28 @@
     </nav> -->
     <header>
         <div class="container d-flex">
-            <div class="header_left">zhipindesign</div>
-            <div class="header_mid">
+            <div class="header_left" onclick="home()">zhipindesign</div>
+            <div class="header_mid zh-tw">
+                <ul class="d-flex align-center">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                我們的服務
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./Co-Workshop.html">共享工作室</a>
+                                <a class="dropdown-item" href="./3D-Printing-Home.html">3D列印服務</a>
+                                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">雷射切割雕刻服務</a>
+                                <a class="dropdown-item" href="Vacuum-Forming-Home.html">真空成行服務</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./our-work.html" class="bot">案例展示</a></li>
+                    <li><a href="./all-product.html" class="bot">商店</a></li>
+                </ul>
+            </div>
+            <div class="header_mid en">
                 <ul class="d-flex align-center">
                     <li><a href="./index.html">Home</a></li>
                     <li>
@@ -82,12 +102,16 @@
                     <li><a href="./all-product.html" class="bot">Shop</a></li>
                 </ul>
             </div>
-            <div class="header_right">en/繁中</div>
+            <div class="header_right">
+                <span class="text_opacity languageEn">En</span> /
+                <span class="languageZh">繁中</span>
+            </div>
         </div>
     </header>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
