@@ -1,0 +1,58 @@
+@charset "UTF-8";
+header {
+  height: 60px;
+  color: white;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Open Sans", "微軟正黑體";
+}
+
+header .header_left {
+  width: 15%;
+  height: 60px;
+  border: 1px red solid;
+  text-align: center;
+}
+
+header .header_mid {
+  width: 70%;
+  height: 60px;
+  border: 1px red solid;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header .header_mid ul {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header .header_mid ul li {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 4px;
+}
+
+header .header_mid ul li .dropdown-menu {
+  background-color: #131313;
+}
+
+header .header_mid ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header_mid ul li a:hover {
+  color: #007bff;
+}
+
+header .header_right {
+  width: 15%;
+  height: 60px;
+  border: 1px red solid;
+  text-align: center;
+}
+/*# sourceMappingURL=header.css.map */
