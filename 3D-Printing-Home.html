@@ -14,96 +14,69 @@
   </head>
   <body class="">   
       <!-- 最上方選單+logo(header)  -->
-      <header class="">
-        <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
-        <!-- <div class="language">
-          <div class="language1 en">繁體</div>
-          <div class="language2 zh-tw">English</div>
-        </div> -->
-        <!-- logo外框 -->
-        <div class="d-flex justify-content-between">
-          <div class="zhipin_icon_wrap">
-            <!-- logo圖片 src更改圖片位置 -->
-            <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
-            <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
-              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
-                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
-                <!--svg 標籤 裡面的fill 是圖片框線顏色-->
-              </g>
-            </svg> 
-            <!-- logo文字 &nbsp是空格 -->
-            <!-- <div class="logo_text" onclick="home()">3D Printing Service</div> -->
+      <header>
+        <div class=" d-flex">
+          <div class="header_left">
+            <div class="zhipin_icon_wrap">
+              <!-- logo圖片 src更改圖片位置 -->
+              <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
+              <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+                <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                  <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
+                  <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+                </g>
+              </svg> 
+              <!-- logo文字 &nbsp是空格 -->
+              <!-- <div class="logo_text" onclick="home()">3D Printing Service</div> -->
+            </div>
           </div>
-          <!-- 右下選單英文版 -->
-          <ul class="header_list_bot en">
-            <li class="mid"><a href="./index.html" class="blue bot">Home</a></li>
-            <li class="mid">
-              <div class="dropdown">
-                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Our service
-                </div>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="./Co-Workshop.html">Coworkershop</a>
-                  <a class="dropdown-item" href="./3D-Printing-Home.html">3D printing service</a>
-                  <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">Laser cutting engraving service</a>
-                  <a class="dropdown-item" href="Vacuum-Forming-Home.html">Vacumm forming service</a>
-                </div>
-              </div>
-            </li>
-            <li class="mid"><a href="./our-work.html" class="bot">View our work</a></li>
-            <li class="mid"><a href="./all-product.html" class="bot">Shop</a></li>
-            <!-- <li><a href="./index.html" class="contact">Contact</a></li>
-            <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
-  
-          </ul>
 
-                    <!-- 右下選單中文版 -->
-          <ul class="header_list_bot zh-tw">
-            <li class="mid"><a href="./index.html" class="blue bot">首頁</a></li> &nbsp&nbsp&nbsp
-            <li class="mid">
-              <div class="dropdown">
-                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  我們的服務
-                </div>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="./Co-Workshop.html">共享工作室</a>
-                  <a class="dropdown-item" href="./3D-Printing-Home.html">3D列印服務</a>
-                  <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">雷射切割雕刻服務</a>
-                  <a class="dropdown-item" href="Vacuum-Forming-Home.html">真空成形服務</a>
-                </div>
-              </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            </li>
-            <li class="mid"><a href="./our-work.html" class="bot">案例展示</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <li class="mid"><a href="./all-product.html" class="bot">商店</a></li>
-            <!-- <li><a href="./index.html" class="contact">Contact</a></li>
-            <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
-  
-          </ul>
-          <ul class="header_list_bot en">
-            <li class="language1 d-flex mr-1">
-              <p>En</p>/
-              <p class="text_opacity">繁中</p>
-            </li>
-            <img class="menu" src="./img/menu.png" alt="">
-          </ul>
-          <ul class="header_list_bot zh-tw">
-            <li class="language2 d-flex mr-1">
-              <p class="text_opacity">En</p>/
-              <p>繁中</p>
-            </li>
-            <img class="menu" src="./img/menu.png" alt="">
-          </ul>
+            <!-- <div class="header_left" onclick="home()">zhipindesign</div> -->
+            <div class="header_mid zh-tw">
+                <ul class="d-flex align-center">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                我們的服務
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./Co-Workshop.html">共享工作室</a>
+                                <a class="dropdown-item" href="./3D-Printing-Home.html">3D列印服務</a>
+                                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">雷射切割雕刻服務</a>
+                                <a class="dropdown-item" href="Vacuum-Forming-Home.html">真空成形服務</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./our-work.html" class="bot">案例展示</a></li>
+                    <li><a href="./all-product.html" class="bot">商店</a></li>
+                </ul>
+            </div>
+            <div class="header_mid en">
+                <ul class="d-flex align-center">
+                    <li><a href="./index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our service
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./Co-Workshop.html">Coworkershop</a>
+                                <a class="dropdown-item" href="./3D-Printing-Home.html">3D printing service</a>
+                                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">Laser cutting engraving service</a>
+                                <a class="dropdown-item" href="Vacuum-Forming-Home.html">Vacumm forming service</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./our-work.html" class="bot">View our work</a></li>
+                    <li><a href="./all-product.html" class="bot">Shop</a></li>
+                </ul>
+            </div>
+            <div class="header_right">
+                <span class="text_opacity languageEn">En</span> /
+                <span class="languageZh">繁中</span>
+            </div>
         </div>
-        
-        <!-- 右下選單手機英文版 -->
-        <ul class="header_list_bot_600 en">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html">3D printing service</a></li>
-          <li><a href="./index.html">View our work</a></li>
-          <li><a href="./index.html">Shop</a></li>
-          <li><a href="./index.html">Contact</a></li>
-          <li><a href="./index.html">+886 0226813986</a></li>
-        </ul>
       </header>
       <!-- 幻燈片區  修改圖片就好-->
       <div class="carousel slide" data-ride="carousel" id="carousel-demo" data-interval="5000">
