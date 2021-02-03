@@ -319,17 +319,17 @@ header .header_right .languageZh:hover {
 }
 
 .carousel .mainTitle {
-  width: 220px;
+  padding: 0 5px;
   height: 40px;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
-  background: #3e414156;
+  background: #3e414171;
   position: absolute;
+  top: 12px;
+  left: 8%;
   padding: 0px -10px;
   font-weight: 600;
-  top: 12px;
-  left: 20px;
   z-index: 10;
 }
 
@@ -420,7 +420,7 @@ header .header_right .languageZh:hover {
 
 .threeD {
   height: 1000px;
-  margin: 100px auto 0;
+  margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -444,7 +444,7 @@ header .header_right .languageZh:hover {
 .threeD .title {
   border: 1px solid red;
   font-weight: 600;
-  margin: 0 2%;
+  margin: 0 6%;
   font-size: 24px;
 }
 

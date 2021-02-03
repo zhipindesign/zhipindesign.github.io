@@ -364,17 +364,17 @@ header .header_right .languageZh:hover {
 }
 
 .carousel .mainTitle {
-  width: 280px;
+  padding: 0 5px;
   height: 40px;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
-  background: #3e41415b;
+  background: #3e414171;
   position: absolute;
+  top: 12px;
+  left: 8%;
   padding: 0px -10px;
   font-weight: 600;
-  top: 12px;
-  left: 20px;
   z-index: 10;
 }
 
@@ -465,7 +465,7 @@ header .header_right .languageZh:hover {
 
 .VacuumForming {
   height: 1000px;
-  margin: 100px auto 0;
+  margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -488,16 +488,16 @@ header .header_right .languageZh:hover {
 
 .VacuumForming .title {
   border: 1px solid red;
-  font-size: 24px;
   font-weight: 600;
-  margin: 0 2%;
+  margin: 0 6%;
+  font-size: 24px;
 }
 
 .VacuumForming .main {
   border: 1px solid red;
   height: 1200px;
   width: 100%;
-  margin: 50px auto 0;
+  margin: 0px auto 0;
   color: black;
 }
 

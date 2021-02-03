@@ -399,17 +399,18 @@ header {
   }
   .mainTitle {
     //開始專案按鈕樣式
-    width: 320px; //寬度
+    // width: 190px; //寬度
+    padding: 0 5px;
     height: 40px; //高度
     text-align: center; //文字左右置中
     line-height: 40px; //上下置中
     font-size: 20px; //字體大小
-    background:#3e41415b; //背景樣式 顏色
+    background: #3e414171; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
+    top: 12px; //位置 top: 距離relative最高點位置
+    left: 8%; //位置 right: 距離relative最右點位置
     padding: 0px -10px; //內縮寬度
     font-weight: 600; //字體粗度
-    top: 12px; //位置 top: 距離relative最高點位置
-    right: 20px; //位置 right: 距離relative最右點位置
     z-index: 10;
     a {
       //超連結樣式
@@ -531,7 +532,7 @@ header {
 }
 .LaserCutting {
   height: 1200px;
-  margin: 100px auto 0;
+  margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
     position: fixed;
@@ -550,14 +551,14 @@ header {
   .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 0 2%;
+    margin: 0 6%;
     font-size: 24px;
   }
   .main {
     border: 1px solid red;
     height: 1200px;
     width: 100%;
-    margin: 50px auto 0;
+    margin: 0px auto 0;
     color:black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);

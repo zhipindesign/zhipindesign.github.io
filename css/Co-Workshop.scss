@@ -398,7 +398,8 @@ header {
   }
   .mainTitle {
     //開始專案按鈕樣式
-    width: 140px; //寬度
+    // width: 140px; //寬度
+    padding: 0 5px;
     height: 40px; //高度
     text-align: center; //文字左右置中
     line-height: 40px; //上下置中
@@ -530,7 +531,7 @@ header {
 }
 .coworkshop {
   height: 2550px;
-  margin: 100px auto 0;
+  margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
     position: fixed;
@@ -556,7 +557,7 @@ header {
     border: 1px solid red;
     height: 2000px;
     width: 100%;
-    margin: 50px auto 0;
+    margin: 0px auto 0;
     .equipment {
       border: 1px solid rgb(115, 255, 0);
       height: 810px;

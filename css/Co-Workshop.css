@@ -364,7 +364,7 @@ header .header_right .languageZh:hover {
 }
 
 .carousel .mainTitle {
-  width: 140px;
+  padding: 0 5px;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -465,7 +465,7 @@ header .header_right .languageZh:hover {
 
 .coworkshop {
   height: 2550px;
-  margin: 100px auto 0;
+  margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -497,7 +497,7 @@ header .header_right .languageZh:hover {
   border: 1px solid red;
   height: 2000px;
   width: 100%;
-  margin: 50px auto 0;
+  margin: 0px auto 0;
 }
 
 .coworkshop .main .equipment {
