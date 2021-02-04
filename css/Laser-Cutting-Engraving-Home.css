@@ -497,7 +497,7 @@ header .header_right .languageZh:hover {
   border: 1px solid red;
   height: 1000px;
   width: 100%;
-  margin: -80px auto 0;
+  margin: -40px auto 0;
   color: black;
 }
 
@@ -599,7 +599,7 @@ header .header_right .languageZh:hover {
   height: auto;
   margin: 30px auto 0;
   position: absolute;
-  bottom: 0%;
+  bottom: -16%;
 }
 
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover {
@@ -622,8 +622,6 @@ header .header_right .languageZh:hover {
   margin: 30px auto 0;
   position: absolute;
   bottom: -8%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_3d_printing {
@@ -631,9 +629,11 @@ header .header_right .languageZh:hover {
   height: auto;
   margin: 30px auto 0;
   position: absolute;
-  bottom: -8%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+}
+
+.LaserCutting .main .start_your_project .boxWrap .box .box_img .S, .LaserCutting .main .start_your_project .boxWrap .box .box_img .M, .LaserCutting .main .start_your_project .boxWrap .box .box_img .L {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .LaserCutting .main .start_your_project .boxWrap .box .box_img1 {
@@ -746,8 +746,6 @@ header .header_right .languageZh:hover {
   margin: 0 auto -50px;
   position: absolute;
   bottom: 20%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .LaserCutting .main .other_services .boxWrap .box .box_text {

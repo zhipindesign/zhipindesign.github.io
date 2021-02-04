@@ -558,7 +558,7 @@ header {
     border: 1px solid red;
     height: 1000px;
     width: 100%;
-    margin: -80px auto 0;
+    margin: -40px auto 0;
     color: black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);
@@ -642,7 +642,7 @@ header {
               height: auto;
               margin: 30px auto 0;
               position: absolute;
-              bottom: 0%;
+              bottom: -16%;
             }
             .svg_laserFile:hover {
               fill: #0071e3;
@@ -661,15 +661,16 @@ header {
               margin: 30px auto 0;
               position: absolute;
               bottom: -8%;
-              transform: scale(0.7);
             }
             .svg_3d_printing {
               max-width: 100%;
               height: auto;
               margin: 30px auto 0;
               position: absolute;
-              bottom: -8%;
-              transform: scale(0.7);
+
+            }
+            .S, .M, .L{
+              transform: scale(1.5);
             }
           }
           .box_img1 {
@@ -771,7 +772,6 @@ header {
               margin: 0 auto -50px;
               position: absolute;
               bottom: 20%;
-              transform: scale(0.7);
             }
           }
           .box_text {

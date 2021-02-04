@@ -497,7 +497,7 @@ header .header_right .languageZh:hover {
   border: 1px solid red;
   height: 1000px;
   width: 100%;
-  margin: -80px auto 0;
+  margin: -40px auto 0;
   color: black;
 }
 
@@ -619,37 +619,22 @@ header .header_right .languageZh:hover {
 .VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_learn {
   max-width: 100%;
   height: auto;
-  margin: 30px auto 0;
-  position: absolute;
-  bottom: -8%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_bring {
   max-width: 100%;
   height: auto;
-  margin: 30px auto 0;
-  position: absolute;
-  bottom: -55px;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_img .svg_vacuum {
   max-width: 100%;
   height: auto;
-  margin: 30px auto 0;
-  position: absolute;
-  bottom: 0px;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_img .twenty {
-  -webkit-transform: scale(1.45);
-          transform: scale(1.45);
   margin: 30px auto 15px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_img1 {
@@ -683,8 +668,6 @@ header .header_right .languageZh:hover {
   position: absolute;
   bottom: -8%;
   left: 5%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_img2 .svg_noFile {
@@ -762,8 +745,6 @@ header .header_right .languageZh:hover {
   margin: 0 auto -50px;
   position: absolute;
   bottom: 20%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .VacuumForming .main .other_services .boxWrap .box .box_text {

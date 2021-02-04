@@ -558,7 +558,7 @@ header {
     border: 1px solid red;
     height: 1000px;
     width: 100%;
-    margin: -80px auto 0;
+    margin: -40px auto 0;
     color: black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);
@@ -658,30 +658,21 @@ header {
             .svg_learn {
               max-width: 100%;
               height: auto;
-              margin: 30px auto 0;
-              position: absolute;
-              bottom: -8%;
-              transform: scale(0.7);
+              // margin: 30px auto 0;
             }
             .svg_bring {
               max-width: 100%;
               height: auto;
-              margin: 30px auto 0;
-              position: absolute;
-              bottom: -55px;
-              transform: scale(0.5);
+              // margin: 30px auto 0;
             }
             .svg_vacuum {
               max-width: 100%;
               height: auto;
-              margin: 30px auto 0;
-              position: absolute;
-              bottom: 0px;
-              transform: scale(0.7);
+              // margin: 30px auto 0;
             }
             .twenty {
-              transform: scale(1.45);
               margin: 30px auto 15px;
+              transform: scale(2);
             }
           }
           .box_img1 {
@@ -715,7 +706,7 @@ header {
               position: absolute;
               bottom: -8%;
               left: 5%;
-              transform: scale(0.7);
+              // transform: scale(0.7);
             }
             .svg_noFile {
               max-width: 50%;
@@ -783,7 +774,7 @@ header {
               margin: 0 auto -50px;
               position: absolute;
               bottom: 20%;
-              transform: scale(0.7);
+              // transform: scale(0.7);
             }
           }
           .box_text {
