@@ -674,8 +674,6 @@ header .header_right .languageZh:hover {
   margin: 0 auto -50px;
   position: absolute;
   bottom: 20%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 .coworkshop .main .other_services .boxWrap .box .box_text {
