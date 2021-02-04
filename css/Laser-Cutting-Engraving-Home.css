@@ -464,7 +464,7 @@ header .header_right .languageZh:hover {
 }
 
 .LaserCutting {
-  height: 1200px;
+  height: 1000px;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -489,15 +489,15 @@ header .header_right .languageZh:hover {
 .LaserCutting .title {
   border: 1px solid red;
   font-weight: 600;
-  margin: 0 6%;
+  margin: 0 8%;
   font-size: 24px;
 }
 
 .LaserCutting .main {
   border: 1px solid red;
-  height: 1200px;
+  height: 1000px;
   width: 100%;
-  margin: 0px auto 0;
+  margin: -80px auto 0;
   color: black;
 }
 
@@ -563,9 +563,9 @@ header .header_right .languageZh:hover {
 
 .LaserCutting .main .start_your_project {
   border: 1px solid red;
-  height: 700px;
+  height: 620px;
   width: 80%;
-  margin: 0% auto 5%;
+  margin: -80px auto 5%;
 }
 
 .LaserCutting .main .start_your_project .boxWrap {
@@ -691,7 +691,11 @@ header .header_right .languageZh:hover {
 }
 
 .LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_content {
+  width: 76%;
   font-size: 12px;
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
+  margin-top: 5%;
 }
 
 .LaserCutting .main .start_your_project .boxWrap .box1 {
@@ -757,7 +761,11 @@ header .header_right .languageZh:hover {
 }
 
 .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_content {
+  width: 76%;
   font-size: 12px;
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
+  margin-top: 5%;
 }
 
 .LaserCutting .main .other_services .boxWrap .box1 {
@@ -784,7 +792,7 @@ header .header_right .languageZh:hover {
     border: 1px solid red;
     height: 900px;
     width: 100%;
-    margin: 50px auto 0;
+    margin: 0px auto 0;
   }
   .LaserCutting .main .ourService {
     border: 1px solid #73ff00;
@@ -1005,8 +1013,6 @@ footer {
   text-align: center;
 }
 
-footer .en,
-footer .zh-tw,
 footer .logo_img {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

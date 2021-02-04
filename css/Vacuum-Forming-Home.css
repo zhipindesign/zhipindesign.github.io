@@ -489,15 +489,15 @@ header .header_right .languageZh:hover {
 .VacuumForming .title {
   border: 1px solid red;
   font-weight: 600;
-  margin: 0 6%;
+  margin: 0 8%;
   font-size: 24px;
 }
 
 .VacuumForming .main {
   border: 1px solid red;
-  height: 1200px;
+  height: 1000px;
   width: 100%;
-  margin: 0px auto 0;
+  margin: -80px auto 0;
   color: black;
 }
 
@@ -707,7 +707,11 @@ header .header_right .languageZh:hover {
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box .box_text .box_text_content {
+  width: 76%;
   font-size: 12px;
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
+  margin-top: 5%;
 }
 
 .VacuumForming .main .start_your_project .boxWrap .box1 {
@@ -773,7 +777,11 @@ header .header_right .languageZh:hover {
 }
 
 .VacuumForming .main .other_services .boxWrap .box .box_text .box_text_content {
+  width: 76%;
   font-size: 12px;
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
+  margin-top: 5%;
 }
 
 .VacuumForming .main .other_services .boxWrap .box1 {
@@ -1021,8 +1029,6 @@ footer {
   text-align: center;
 }
 
-footer .en,
-footer .zh-tw,
 footer .logo_img {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

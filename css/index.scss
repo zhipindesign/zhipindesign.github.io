@@ -26,6 +26,7 @@
   header {
     height: 60px;
     color: white;
+    background: #3e4141;
     line-height: 60px;
     font-size: 16px;
     font-weight: 600;
@@ -34,9 +35,12 @@
       width: 15%;
       height: 60px;
       // border: 1px red solid;
-      text-align: center;
+      text-align: right;
       font-size: 20px;
       cursor: pointer;
+      .zhipin_icon_wrap {
+        position: relative;
+      }
     }
     .header_mid {
       width: 70%;
@@ -45,7 +49,7 @@
       text-align: center;
       margin: 0 auto;
       ul {
-        width: 50%;
+        width: 390px;
         text-align: center;
         margin: 0 auto;
         li {
@@ -60,8 +64,9 @@
             background-color: #3e4141;
             border: none;
             margin-top: -20px;
+            transform: translateX(-10px);
             .dropdown-item {
-              padding: 0;
+              padding: 0 10px 5px 10px;
               height: 30px;
               line-height: 30px;
             }
@@ -101,10 +106,10 @@
     }
   }
   main {
-    height: 840px;
+    height: 740px;
     .main-icon {
-      transform: scale(7.7);
-      margin: 340px auto 280px;
+      transform: scale(6.5);
+      margin: 250px auto 300px;
       opacity: 0.8;
     }
     .svg_box {
@@ -124,8 +129,11 @@
         }
       }
       .svgWrap:hover {
-        opacity: 1;
+        // opacity: 1;
         cursor: pointer;
+        .mainSvg {
+          fill: white;
+        }
       }
       .svgWrap1 {
         margin-left: 50px;
@@ -180,8 +188,8 @@ footer {
   text-align: center; //字體左右置中
   margin-top: 0px;
   // transform: scale(0.9);
-  .en,
-  .zh-tw,
+  // .en,
+  // .zh-tw,
   .logo_img {
     transform: scale(0.9);
   }

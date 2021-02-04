@@ -552,14 +552,14 @@ header {
   .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 0 6%;
+    margin: 0 8%;
     font-size: 24px;
   }
   .main {
     border: 1px solid red;
     height: 800px;
     width: 100%;
-    margin: -30px auto 0;
+    margin: -80px auto 0;
     color: black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);
@@ -571,7 +571,7 @@ header {
         height: 250px;
         width: 100%;
         display: flex;
-        margin: 0px auto 0;
+        margin: -30px auto 0;
         .box {
           border: 1px solid red;
           height: 250px;
@@ -614,7 +614,7 @@ header {
     }
     .start_your_project {
       border: 1px solid red;
-      height: 500px;
+      height: 550px;
       width: 80%;
       margin: 4% auto 0%;
       .boxWrap {
@@ -721,7 +721,10 @@ header {
               margin: 6% auto;
             }
             .box_text_content {
+              width: 76%;
               font-size: 12px;
+              transform: translateX(12%);
+              margin-top: 5%;
             }
           }
         }
@@ -744,7 +747,7 @@ header {
         height: 250px;
         width: 100%;
         display: flex;
-        margin: 0% auto 0;
+        margin: -80px auto 0;
         .box {
           border: 1px solid red;
           height: 250px;
@@ -778,7 +781,10 @@ header {
               margin: 0 auto;
             }
             .box_text_content {
+              width: 76%;
               font-size: 12px;
+              transform: translateX(12%);
+              margin-top: 5%;
             }
           }
         }
@@ -1035,8 +1041,8 @@ footer {
   font-weight: 600; //字體粗度
   text-align: center; //字體左右置中
   // transform: scale(0.9);
-  .en,
-  .zh-tw,
+  // .en,
+  // .zh-tw,
   .logo_img {
     transform: scale(0.9);
   }

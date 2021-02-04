@@ -27,6 +27,7 @@
 .mainIndex header {
   height: 60px;
   color: white;
+  background: #3e4141;
   line-height: 60px;
   font-size: 16px;
   font-weight: 600;
@@ -36,9 +37,13 @@
 .mainIndex header .header_left {
   width: 15%;
   height: 60px;
-  text-align: center;
+  text-align: right;
   font-size: 20px;
   cursor: pointer;
+}
+
+.mainIndex header .header_left .zhipin_icon_wrap {
+  position: relative;
 }
 
 .mainIndex header .header_mid {
@@ -49,7 +54,7 @@
 }
 
 .mainIndex header .header_mid ul {
-  width: 50%;
+  width: 390px;
   text-align: center;
   margin: 0 auto;
 }
@@ -70,10 +75,12 @@
   background-color: #3e4141;
   border: none;
   margin-top: -20px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .mainIndex header .header_mid ul li .dropdown-menu .dropdown-item {
-  padding: 0;
+  padding: 0 10px 5px 10px;
   height: 30px;
   line-height: 30px;
 }
@@ -116,13 +123,13 @@
 }
 
 .mainIndex main {
-  height: 840px;
+  height: 740px;
 }
 
 .mainIndex main .main-icon {
-  -webkit-transform: scale(7.7);
-          transform: scale(7.7);
-  margin: 340px auto 280px;
+  -webkit-transform: scale(6.5);
+          transform: scale(6.5);
+  margin: 250px auto 300px;
   opacity: 0.8;
 }
 
@@ -148,8 +155,11 @@
 }
 
 .mainIndex main .svg_box .svgWrap:hover {
-  opacity: 1;
   cursor: pointer;
+}
+
+.mainIndex main .svg_box .svgWrap:hover .mainSvg {
+  fill: white;
 }
 
 .mainIndex main .svg_box .svgWrap1 {
@@ -220,8 +230,6 @@ footer {
   margin-top: 0px;
 }
 
-footer .en,
-footer .zh-tw,
 footer .logo_img {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

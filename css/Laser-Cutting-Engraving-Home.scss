@@ -531,7 +531,7 @@ header {
   }
 }
 .LaserCutting {
-  height: 1200px;
+  height: 1000px;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -551,15 +551,15 @@ header {
   .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 0 6%;
+    margin: 0 8%;
     font-size: 24px;
   }
   .main {
     border: 1px solid red;
-    height: 1200px;
+    height: 1000px;
     width: 100%;
-    margin: 0px auto 0;
-    color:black;
+    margin: -80px auto 0;
+    color: black;
     .ourService {
       border: 1px solid rgb(115, 255, 0);
       height: 270px;
@@ -613,9 +613,9 @@ header {
     }
     .start_your_project {
       border: 1px solid red;
-      height: 700px;
+      height: 620px;
       width: 80%;
-      margin: 0% auto 5%;
+      margin: -80px auto 5%;
       .boxWrap {
         border: 1px solid red;
         height: 250px;
@@ -722,7 +722,10 @@ header {
               margin: 6% auto;
             }
             .box_text_content {
+              width: 76%;
               font-size: 12px;
+              transform: translateX(12%);
+              margin-top: 5%;
             }
           }
         }
@@ -779,7 +782,10 @@ header {
               margin: 0 auto;
             }
             .box_text_content {
+              width: 76%;
               font-size: 12px;
+              transform: translateX(12%);
+              margin-top: 5%;
             }
           }
         }
@@ -809,7 +815,7 @@ header {
       border: 1px solid red;
       height: 900px;
       width: 100%;
-      margin: 50px auto 0;
+      margin: 0px auto 0;
       .ourService {
         border: 1px solid rgb(115, 255, 0);
         height: 160px;
@@ -1036,8 +1042,8 @@ footer {
   font-weight: 600; //字體粗度
   text-align: center; //字體左右置中
   // transform: scale(0.9);
-  .en,
-  .zh-tw,
+  // .en,
+  // .zh-tw,
   .logo_img {
     transform: scale(0.9);
   }

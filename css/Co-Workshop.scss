@@ -550,7 +550,7 @@ header {
   .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 0 6%;
+    margin: 0 8%;
     font-size: 24px;
   }
   .main {
@@ -718,7 +718,10 @@ header {
               margin: 0 auto;
             }
             .box_text_content {
+              width: 76%;
               font-size: 12px;
+              transform: translateX(12%);
+              margin-top: 5%;
             }
           }
         }
@@ -932,8 +935,8 @@ footer {
   font-weight: 600; //字體粗度
   text-align: center; //字體左右置中
   // transform: scale(0.9);
-  .en,
-  .zh-tw,
+  // .en,
+  // .zh-tw,
   .logo_img {
     transform: scale(0.9);
   }
