@@ -30,20 +30,20 @@ $(document).scroll(function(){
         };
     }
 })
-var wdth=$(window).width();
-$(".title1").css("margin-top", (wdth - 1060)/4)
+// var wdth=$(window).width();
+// $(".title1").css("margin-top", (wdth - 1060)/4)
 
-$(document).ready(function(){
-    $(window).resize(function() {
-        var wdth=$(window).width();
-        console.log(wdth)
-        console.log($(".title1").css("margin-top"))
-        // if(wdth > 1060){
-        // console.log(wdth -1060)
-            $(".title1").css("margin-top", (wdth - 1060)/4)
-        // }
-    });
-});
+// $(document).ready(function(){
+//     $(window).resize(function() {
+//         var wdth=$(window).width();
+//         console.log(wdth)
+//         console.log($(".title1").css("margin-top"))
+//         // if(wdth > 1060){
+//         // console.log(wdth -1060)
+//             $(".title1").css("margin-top", (wdth - 1060)/4)
+//         // }
+//     });
+// });
 $(".languageEn").on("click", function(){
     $(".languageZh").addClass("text_opacity");
     $(".languageEn").removeClass("text_opacity");

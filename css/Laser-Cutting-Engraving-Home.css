@@ -497,7 +497,7 @@ header .header_right .languageZh:hover {
   border: 1px solid red;
   height: 1000px;
   width: 100%;
-  margin: -40px auto 0;
+  margin: 0px auto 0;
   color: black;
 }
 
