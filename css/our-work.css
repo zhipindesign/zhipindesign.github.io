@@ -6,6 +6,9 @@ header {
   line-height: 60px;
   font-size: 16px;
   font-weight: 600;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
   font-family: "Open Sans", "微軟正黑體";
 }
 

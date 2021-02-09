@@ -6,6 +6,9 @@ header {
   line-height: 60px;
   font-size: 16px;
   font-weight: 600;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -297,6 +300,9 @@ header .header_right .languageZh:hover {
 }
 
 .carousel {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  margin-bottom: 60px;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -464,7 +470,7 @@ header .header_right .languageZh:hover {
 }
 
 .coworkshop {
-  height: 2700px;
+  height: 3200px;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -504,31 +510,35 @@ header .header_right .languageZh:hover {
   width: 100%;
   height: 300px;
   background: #0070e0;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 300px;
 }
 
 .coworkshop .main .equipment {
   border: 1px solid red;
   width: 100%;
-  height: 900px;
+  height: 1080px;
 }
 
 .coworkshop .main .equipment .boxWrap {
   border: 1px solid red;
   width: 100%;
-  height: 300px;
+  height: 360px;
 }
 
 .coworkshop .main .equipment .boxWrap .box {
   border: 1px solid red;
-  width: 55%;
-  height: 300px;
+  width: 60%;
+  height: 360px;
   margin: 0 auto;
 }
 
 .coworkshop .main .equipment .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 45%;
-  height: 45%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -539,6 +549,7 @@ header .header_right .languageZh:hover {
 
 .coworkshop .main .equipment .boxWrap .box .box_img .box_text {
   text-align: center;
+  font-size: 14px;
 }
 
 .coworkshop .main .equipment .boxWrap .box .box_img1 {
@@ -550,26 +561,26 @@ header .header_right .languageZh:hover {
 .coworkshop .main .tool1 {
   border: 1px solid red;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .coworkshop .main .tool1 .boxWrap {
   border: 1px solid red;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .coworkshop .main .tool1 .boxWrap .box {
   border: 1px solid red;
-  width: 55%;
-  height: 300px;
+  width: 60%;
+  height: 400px;
   margin: 0 auto;
 }
 
 .coworkshop .main .tool1 .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 45%;
-  height: 45%;
+  width: 60%;
+  height: 60%;
   margin: 0 auto;
 }
 
@@ -580,6 +591,7 @@ header .header_right .languageZh:hover {
 
 .coworkshop .main .tool1 .boxWrap .box .box_img .box_text {
   text-align: center;
+  font-size: 14px;
 }
 
 .coworkshop .main .tool1 .boxWrap .box .box_img1 {
@@ -591,26 +603,26 @@ header .header_right .languageZh:hover {
 .coworkshop .main .tool2 {
   border: 1px solid red;
   width: 100%;
-  height: 600px;
+  height: 800px;
 }
 
 .coworkshop .main .tool2 .boxWrap {
   border: 1px solid red;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .coworkshop .main .tool2 .boxWrap .box {
   border: 1px solid red;
-  width: 55%;
-  height: 300px;
+  width: 60%;
+  height: 400px;
   margin: 0 auto;
 }
 
 .coworkshop .main .tool2 .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 45%;
-  height: 45%;
+  width: 60%;
+  height: 60%;
   margin: 0 auto;
 }
 
@@ -621,6 +633,7 @@ header .header_right .languageZh:hover {
 
 .coworkshop .main .tool2 .boxWrap .box .box_img .box_text {
   text-align: center;
+  font-size: 14px;
 }
 
 .coworkshop .main .tool2 .boxWrap .box .box_img1 {

@@ -6,6 +6,9 @@ header {
   line-height: 60px;
   font-size: 16px;
   font-weight: 600;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -297,6 +300,9 @@ header .header_right .languageZh:hover {
 }
 
 .carousel {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  margin-bottom: 60px;
   font-family: "Open Sans", "微軟正黑體";
 }
 
