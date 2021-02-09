@@ -464,7 +464,7 @@ header .header_right .languageZh:hover {
 }
 
 .coworkshop {
-  height: 2550px;
+  height: 2700px;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -498,6 +498,12 @@ header .header_right .languageZh:hover {
   height: 2000px;
   width: 100%;
   margin: 0px auto 0;
+}
+
+.coworkshop .main .content {
+  width: 100%;
+  height: 300px;
+  background: #0070e0;
 }
 
 .coworkshop .main .equipment {
