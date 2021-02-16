@@ -31,6 +31,7 @@
     font-size: 16px;
     font-weight: 600;
     font-family: "Open Sans", "微軟正黑體";
+
     .header_left {
       width: 15%;
       height: 60px;
@@ -111,6 +112,38 @@
       transform: scale(6.5);
       margin: 250px auto 300px;
       opacity: 0.8;
+    }
+    /* external css: flickity.css */
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .gallery {
+      background: #eee;
+    }
+
+    .gallery-cell {
+      width: 66%;
+      height: 200px;
+      margin-right: 10px;
+      background: #212529;
+      counter-increment: gallery-cell;
+    }
+
+    /* cell number */
+    .gallery-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
     }
     .svg_box {
       width: 100%;

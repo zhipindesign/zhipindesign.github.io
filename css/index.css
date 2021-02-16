@@ -124,6 +124,8 @@
 
 .mainIndex main {
   height: 740px;
+  /* external css: flickity.css */
+  /* cell number */
 }
 
 .mainIndex main .main-icon {
@@ -131,6 +133,36 @@
           transform: scale(6.5);
   margin: 250px auto 300px;
   opacity: 0.8;
+}
+
+.mainIndex main * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mainIndex main body {
+  font-family: sans-serif;
+}
+
+.mainIndex main .gallery {
+  background: #eee;
+}
+
+.mainIndex main .gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #212529;
+  counter-increment: gallery-cell;
+}
+
+.mainIndex main .gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 
 .mainIndex main .svg_box {
