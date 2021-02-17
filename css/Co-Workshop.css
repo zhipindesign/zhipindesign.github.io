@@ -470,7 +470,6 @@ header .header_right .languageZh:hover {
 }
 
 .coworkshop {
-  height: 3200px;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -716,7 +715,6 @@ header .header_right .languageZh:hover {
 
 @media screen and (max-width: 700px) {
   .coworkshop {
-    height: 240vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -730,7 +728,6 @@ header .header_right .languageZh:hover {
     display: none;
   }
   .coworkshop .mobileMain {
-    height: 240vh;
     display: block;
   }
   .coworkshop .mobileMain .gallery {

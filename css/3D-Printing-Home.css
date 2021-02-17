@@ -100,7 +100,7 @@ header .header_right .languageZh:hover {
   opacity: 100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   header {
     width: 100vw;
     height: 65px;
@@ -354,7 +354,7 @@ header .header_right .languageZh:hover {
   background: #0070e0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .carousel {
     -webkit-transform: translateY(65px);
             transform: translateY(65px);
@@ -739,7 +739,7 @@ header .header_right .languageZh:hover {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .threeD {
     height: 150vh;
     margin: 80px auto 0;

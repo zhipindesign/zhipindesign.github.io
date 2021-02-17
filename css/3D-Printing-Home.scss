@@ -84,7 +84,7 @@ header {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   header {
     //最上方區塊樣式
 
@@ -434,7 +434,7 @@ header {
     background: #0070e0; //背景樣式 顏色
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .carousel {
     //幻燈片樣式
     transform: translateY(65px);
@@ -807,7 +807,7 @@ header {
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .threeD {
     height: 150vh;
     margin: 80px auto 0;
@@ -825,8 +825,10 @@ header {
       height: 130vh;
       display: block;
       .mobileStart{
+
         .gallery{
           height: 40vh;
+          // position: relative;
           .box{
             width: 70vw;
             .box_img{
@@ -835,6 +837,10 @@ header {
               }
             }
           }
+          // .flickity-page-dots{
+          //   position: absolute;
+          //   top: 10vh;
+          // }
           .mobilebox{
             transform: translateY(10vh);
             width: 80vw;
