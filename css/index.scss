@@ -177,6 +177,11 @@
     }
   }
   @media screen and (max-width: 700px){
+    header{
+      .header_mid{
+        display: none;
+      }
+    }
     main{
       .svg_box{
         .svgWrap{
@@ -186,7 +191,7 @@
       .gallery{
         display: block;
         .svgWrap{
-          width: 70%;
+          width: 60%;
           color: #aaaaaa;
         }
       }
