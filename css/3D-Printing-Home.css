@@ -735,9 +735,13 @@ header .header_right .languageZh:hover {
   position: relative;
 }
 
+.threeD .mobileMain {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .threeD {
-    height: 1000px;
+    height: 150vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -745,218 +749,71 @@ header .header_right .languageZh:hover {
     border: 1px solid red;
     font-weight: 600;
     margin: 10px 2% 0px;
-    font-size: 12px;
+    font-size: px;
   }
   .threeD .main {
-    border: 1px solid red;
-    height: 900px;
-    width: 100%;
-    margin: 50px auto 0;
+    display: none;
   }
-  .threeD .main .ourService {
-    border: 1px solid #73ff00;
-    height: 200px;
-    width: 100%;
-    margin: 100px auto;
+  .threeD .mobileMain {
+    height: 130vh;
+    display: block;
   }
-  .threeD .main .ourService .boxWrap {
-    border: 1px solid red;
-    height: 160px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0px auto 0;
+  .threeD .mobileMain .mobileStart .gallery {
+    height: 40vh;
   }
-  .threeD .main .ourService .boxWrap .box {
-    border: 1px solid red;
-    height: 160px;
-    width: 25%;
-    margin: 0 auto;
-    padding: 0px 5px 0 5px;
+  .threeD .mobileMain .mobileStart .gallery .box {
+    width: 80vw;
   }
-  .threeD .main .ourService .boxWrap .box .box_img {
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #f0f0f0;
-    overflow: hidden;
-  }
-  .threeD .main .ourService .boxWrap .box .box_img img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 0;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-  .threeD .main .ourService .boxWrap .box .box_text {
-    text-align: center;
-    font-size: 12px;
-    margin: -10% auto 0;
-  }
-  .threeD .main .start_your_project {
-    border: 1px solid red;
-    height: 400px;
-    width: 100%;
-    margin: 10% auto 5%;
-  }
-  .threeD .main .start_your_project .boxWrap {
-    border: 1px solid red;
-    height: 250px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0% auto 0%;
-  }
-  .threeD .main .start_your_project .boxWrap .box {
-    border: 1px solid red;
-    height: 120px;
-    width: 33%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .threeD .main .start_your_project .boxWrap .box .box_img {
-    border: 1px solid black;
+  .threeD .mobileMain .mobileStart .gallery .box .box_img svg {
     width: 80%;
-    height: 80%;
-    margin: 0 auto;
   }
-  .threeD .main .start_your_project .boxWrap .box .box_img img,
-  .threeD .main .start_your_project .boxWrap .box .box_img svg {
-    max-width: 80%;
-    height: auto;
-    margin: 30px auto 0;
-    position: absolute;
-    bottom: 0%;
+  .threeD .mobileMain .mobileStart .gallery .mobilebox {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+    width: 80vw;
   }
-  .threeD .main .start_your_project .boxWrap .box .box_img .svg_3d_printing {
-    max-width: 80%;
-    height: auto;
-    margin: 30px auto 0;
-    position: absolute;
-    bottom: -8%;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .threeD .main .start_your_project .boxWrap .box .box_img1 {
-    border: 1px solid black;
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-  }
-  .threeD .main .start_your_project .boxWrap .box .box_img1 img,
-  .threeD .main .start_your_project .boxWrap .box .box_img1 svg {
-    max-width: 50%;
-    height: auto;
-    margin: 30px auto 0;
-    position: absolute;
-    bottom: 50%;
-  }
-  .threeD .main .start_your_project .boxWrap .box .box_img2 {
-    border: 1px solid black;
+  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img svg {
     width: 80%;
-    height: 80%;
-    margin: 0 auto;
   }
-  .threeD .main .start_your_project .boxWrap .box .box_img2 img,
-  .threeD .main .start_your_project .boxWrap .box .box_img2 svg {
-    max-width: 40%;
-    height: auto;
-    margin: 30px auto 0;
-    position: absolute;
-    bottom: -8%;
-    left: 15%;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img2 {
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
   }
-  .threeD .main .start_your_project .boxWrap .box .box_img2 .svg_noFile {
-    max-width: 40%;
-    height: auto;
-    margin: 30px auto 0;
-    position: absolute;
-    bottom: -8%;
-    left: 45%;
+  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img2 svg {
+    width: 35%;
   }
-  .threeD .main .start_your_project .boxWrap .box .box_text {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    text-align: center;
-    width: 100%;
+  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_text {
+    margin-top: 3vh;
   }
-  .threeD .main .start_your_project .boxWrap .box .box_text .box_text_title {
-    font-size: 14px;
-    font-weight: 600;
-    margin: 6% auto;
-    white-space: nowrap;
+  .threeD .mobileMain .mobileOthers {
+    margin-top: 10vh;
   }
-  .threeD .main .start_your_project .boxWrap .box .box_text .box_text_content {
-    font-size: 12px;
+  .threeD .mobileMain .mobileOthers .gallery {
+    height: 40vh;
   }
-  .threeD .main .start_your_project .boxWrap .box1 {
-    border: 1px solid red;
-    height: 250px;
-    width: 0%;
-    margin: 0 auto;
-    position: relative;
+  .threeD .mobileMain .mobileOthers .gallery .box {
+    width: 80vw;
   }
-  .threeD .main .other_services {
-    border: 1px solid red;
-    height: 250px;
+  .threeD .mobileMain .mobileOthers .gallery .box .box_img svg {
     width: 80%;
-    margin: 0% auto 5%;
   }
-  .threeD .main .other_services .boxWrap {
-    border: 1px solid red;
-    height: 100px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0% auto 0;
+  .threeD .mobileMain .mobileOthers .gallery .mobilebox {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+    width: 80vw;
   }
-  .threeD .main .other_services .boxWrap .box {
-    border: 1px solid red;
-    height: 100px;
-    width: 33%;
-    margin: 0 auto;
-    position: relative;
+  .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_img svg {
+    width: 80%;
   }
-  .threeD .main .other_services .boxWrap .box .box_img {
-    border: 1px solid black;
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
+  .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_img2 {
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
   }
-  .threeD .main .other_services .boxWrap .box .box_img img,
-  .threeD .main .other_services .boxWrap .box .box_img svg {
-    max-width: 70%;
-    height: auto;
-    margin: 0px auto 0;
-    position: absolute;
-    bottom: 30%;
+  .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_img2 svg {
+    width: 35%;
   }
-  .threeD .main .other_services .boxWrap .box .box_text {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    text-align: center;
-    width: 100%;
-  }
-  .threeD .main .other_services .boxWrap .box .box_text .box_text_title {
-    font-size: 14px;
-    font-weight: 600;
-    margin: 6% auto;
-  }
-  .threeD .main .other_services .boxWrap .box .box_text .box_text_content {
-    font-size: 12px;
-  }
-  .threeD .main .other_services .boxWrap .box1 {
-    border: 1px solid red;
-    height: 250px;
-    width: 0%;
-    margin: 0 auto;
-    position: relative;
+  .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_text {
+    margin-top: 3vh;
   }
 }
 
