@@ -65,3 +65,10 @@ function laser(){
 function Vacuum(){
     window.location.replace('./Vacuum-Forming-Home.html');
 }
+
+
+$('.main-gallery').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+});
