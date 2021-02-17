@@ -762,10 +762,10 @@ header .header_right .languageZh:hover {
     height: 40vh;
   }
   .threeD .mobileMain .mobileStart .gallery .box {
-    width: 80vw;
+    width: 70vw;
   }
   .threeD .mobileMain .mobileStart .gallery .box .box_img svg {
-    width: 80%;
+    width: 70vw;
   }
   .threeD .mobileMain .mobileStart .gallery .mobilebox {
     -webkit-transform: translateY(10vh);
@@ -773,7 +773,7 @@ header .header_right .languageZh:hover {
     width: 80vw;
   }
   .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img svg {
-    width: 80%;
+    width: 80vw;
   }
   .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img2 {
     -webkit-transform: translateX(10vw);
@@ -783,7 +783,7 @@ header .header_right .languageZh:hover {
     width: 35%;
   }
   .threeD .mobileMain .mobileStart .gallery .mobilebox .box_text {
-    margin-top: 3vh;
+    margin-top: 2.6vh;
   }
   .threeD .mobileMain .mobileOthers {
     margin-top: 10vh;
@@ -792,18 +792,18 @@ header .header_right .languageZh:hover {
     height: 40vh;
   }
   .threeD .mobileMain .mobileOthers .gallery .box {
-    width: 80vw;
+    width: 70vw;
   }
   .threeD .mobileMain .mobileOthers .gallery .box .box_img svg {
-    width: 80%;
+    width: 70vw;
   }
   .threeD .mobileMain .mobileOthers .gallery .mobilebox {
     -webkit-transform: translateY(10vh);
             transform: translateY(10vh);
-    width: 80vw;
+    width: 70vw;
   }
   .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_img svg {
-    width: 80%;
+    width: 70vw;
   }
   .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_img2 {
     -webkit-transform: translateX(10vw);
@@ -813,7 +813,7 @@ header .header_right .languageZh:hover {
     width: 35%;
   }
   .threeD .mobileMain .mobileOthers .gallery .mobilebox .box_text {
-    margin-top: 3vh;
+    margin-top: 2.6vh;
   }
 }
 

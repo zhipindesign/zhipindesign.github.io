@@ -710,81 +710,45 @@ header .header_right .languageZh:hover {
   position: relative;
 }
 
+.coworkshop .mobileMain {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .coworkshop {
-    height: 2200px;
-    margin: 100px auto 0;
+    height: 240vh;
+    margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
   .coworkshop .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 0 2%;
-    font-size: 12px;
+    margin: 10px 2% 0px;
+    font-size: 24px;
   }
   .coworkshop .main {
-    border: 1px solid red;
-    height: 2200px;
-    width: 100%;
-    margin: 50px auto 0;
+    display: none;
   }
-  .coworkshop .main .other_services {
-    border: 1px solid red;
-    height: 250px;
-    width: 80%;
-    margin: 10% auto 5%;
+  .coworkshop .mobileMain {
+    height: 240vh;
+    display: block;
   }
-  .coworkshop .main .other_services .boxWrap {
-    border: 1px solid red;
-    height: 100px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0% auto 0;
+  .coworkshop .mobileMain .gallery {
+    width: 100vw;
+    margin-bottom: 10vh;
   }
-  .coworkshop .main .other_services .boxWrap .box {
-    border: 1px solid red;
-    height: 100px;
-    width: 33%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .coworkshop .main .other_services .boxWrap .box .box_img {
-    border: 1px solid black;
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
-  }
-  .coworkshop .main .other_services .boxWrap .box .box_img img,
-  .coworkshop .main .other_services .boxWrap .box .box_img svg {
-    max-width: 70%;
-    height: auto;
-    margin: 0px auto 0;
-    position: absolute;
-    bottom: 30%;
-  }
-  .coworkshop .main .other_services .boxWrap .box .box_text {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+  .coworkshop .mobileMain .gallery .box_img {
+    width: 100vw;
     text-align: center;
-    width: 100%;
   }
-  .coworkshop .main .other_services .boxWrap .box .box_text .box_text_title {
-    font-size: 14px;
-    font-weight: 600;
-    margin: 6% auto;
-    white-space: nowrap;
+  .coworkshop .mobileMain .gallery .box_img img {
+    width: 90vw;
   }
-  .coworkshop .main .other_services .boxWrap .box .box_text .box_text_content {
-    font-size: 12px;
+  .coworkshop .mobileMain .gallery .box {
+    width: 70vw;
   }
-  .coworkshop .main .other_services .boxWrap .box1 {
-    border: 1px solid red;
-    height: 250px;
-    width: 0%;
-    margin: 0 auto;
-    position: relative;
+  .coworkshop .mobileMain .gallery .box .box_img {
+    width: 70vw;
   }
 }
 
