@@ -67,8 +67,9 @@ function Vacuum(){
 }
 
 
-$('.main-gallery').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true
-});
+// $('.main-gallery').flickity({
+//     // options
+//     cellAlign: 'left',
+//     contain: true,
+//     wrapAround:true
+// });

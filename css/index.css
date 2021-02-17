@@ -122,6 +122,10 @@
   opacity: 100%;
 }
 
+.mainIndex nav {
+  display: none;
+}
+
 .mainIndex main {
   height: 800px;
   /* external css: flickity.css */
@@ -164,7 +168,7 @@
 .mainIndex main .svg_box .svgWrap .svgText {
   color: #aaaaaa;
   font-size: 12px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .mainIndex main .svg_box .svgWrap:hover {
@@ -176,8 +180,33 @@
 }
 
 @media screen and (max-width: 700px) {
-  .mainIndex header .header_mid {
+  .mainIndex {
+    height: 1300px;
+  }
+  .mainIndex header {
     display: none;
+  }
+  .mainIndex nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #aaaaaa;
+    text-align: center;
+    background: #3e4141;
+  }
+  .mainIndex nav a {
+    color: #aaaaaa;
+  }
+  .mainIndex nav button .mobileMenu {
+    width: 30px;
+  }
+  .mainIndex nav .dropdown-menu {
+    width: 100vw;
+    text-align: center;
+    background: #3e4141;
+  }
+  .mainIndex nav .dropdown-menu .dropdown-item {
+    width: 100vw;
   }
   .mainIndex main .svg_box .svgWrap {
     display: none;
@@ -191,7 +220,7 @@
   }
 }
 
-.mainIndex footer {
+footer {
   background: none;
   color: #aaaaaa;
   -webkit-transform: scale(1);
@@ -200,11 +229,11 @@
   text-align: center;
 }
 
-.mainIndex footer .footerText1 {
+footer .footerText1 {
   font-size: 16px !important;
 }
 
-.mainIndex footer .footerText2 {
+footer .footerText2 {
   margin-right: 15px;
 }
 

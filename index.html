@@ -16,10 +16,9 @@
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <meta name="google-site-verification" content="oUVAG5aiPzcQJKunEdnzBo7AIBy1V0SDNCAGjkMCI7c" />
-  </head>
   <body class="mainIndex">   
       <!-- 最上方選單+logo(header)  -->
-      <input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" class="dark darkmodel">
+      <!-- <input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" class="dark darkmodel"> -->
       <header>
         <div class=" d-flex">
             <div class="header_left" onclick="home()">zhipindesign</div>
@@ -68,7 +67,42 @@
                 <span class="languageZh">繁中</span>
             </div>
         </div>
-    </header>
+      </header>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="mobileMenu" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg" fill="#aaaaaa">
+            <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+          </svg>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our service
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Co-workshop</a>
+                <a class="dropdown-item" href="#">3D printing service</a>
+                <a class="dropdown-item" href="#">Laser cutting engraving service</a>
+                <a class="dropdown-item" href="#">Vacuum forming service</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">View our work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <main style="text-align:center;" class="container">
 
         <svg class="main-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
@@ -112,7 +146,7 @@
               <div class="svgText zh-tw">真空成形服務</div>
           </div>
         </div>
-        
+
         <div class="d-flex svg_box">
           <div class="svgWrap svgWrap1" onclick="coworkshop()">
             <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="#aaaaaa">
@@ -238,6 +272,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
-
   </body>
 </html>
