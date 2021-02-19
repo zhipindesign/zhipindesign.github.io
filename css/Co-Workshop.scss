@@ -534,7 +534,7 @@ header {
   }
 }
 .coworkshop {
-  // height: 3200px;
+  height: 3200px;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -752,7 +752,7 @@ header {
 }
 @media screen and (max-width: 700px) {
   .coworkshop {
-    // max-height: 400vh;
+    height: 250vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
     .title {
