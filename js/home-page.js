@@ -73,3 +73,11 @@ function Vacuum(){
 //     contain: true,
 //     wrapAround:true
 // });
+$(document).ready(function(){
+    if($(window).width() < 700){
+        $(document).on("click", ".our", function(){
+            console.log($(window).width())
+            $(".our").parent().parent().parent().css("transform", "translateX(-4.6%)")
+        })   
+    }
+});

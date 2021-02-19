@@ -200,12 +200,12 @@
   .mainIndex nav button .mobileMenu {
     width: 30px;
   }
-  .mainIndex nav .dropdown-menu {
+  .mainIndex nav .navbar-collapse .dropdown-menu {
     width: 100vw;
     text-align: center;
     background: #3e4141;
   }
-  .mainIndex nav .dropdown-menu .dropdown-item {
+  .mainIndex nav .navbar-collapse .dropdown-menu .dropdown-item {
     width: 100vw;
   }
   .mainIndex main .svg_box .svgWrap {
