@@ -827,22 +827,28 @@ header {
       height: 130vh;
       display: block;
       .mobileStart{
+
         .gallery{
           height: 40vh;
+          // position: relative;
           .box{
-            width: 80vw;
+            width: 70vw;
             .box_img{
               svg{
-                width: 80%;
+                width: 70vw;
               }
             }
           }
+          // .flickity-page-dots{
+          //   position: absolute;
+          //   top: 10vh;
+          // }
           .mobilebox{
             transform: translateY(10vh);
             width: 80vw;
             .box_img{
               svg{
-                width: 80%;
+                width: 80vw;
               }
             }
             .box_img2{
@@ -862,19 +868,19 @@ header {
         .gallery{
           height: 40vh;
           .box{
-            width: 80vw;
+            width: 70vw;
             .box_img{
               svg{
-                width: 80%;
+                width: 70vw;
               }
             }
           }
           .mobilebox{
             transform: translateY(10vh);
-            width: 80vw;
+            width: 70vw;
             .box_img{
               svg{
-                width: 80%;
+                width: 70vw;
               }
             }
             .box_img2{
