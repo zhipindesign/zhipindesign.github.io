@@ -181,7 +181,7 @@
 
 @media screen and (max-width: 700px) {
   .mainIndex {
-    height: 1100px;
+    height: 75vh;
   }
   .mainIndex header {
     display: none;
@@ -190,6 +190,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 10;
     color: #aaaaaa;
     text-align: center;
     background: #3e4141;
@@ -203,10 +204,17 @@
   .mainIndex nav .navbar-collapse .dropdown-menu {
     width: 100vw;
     text-align: center;
+    border: none;
     background: #3e4141;
   }
-  .mainIndex nav .navbar-collapse .dropdown-menu .dropdown-item {
-    width: 100vw;
+  .mainIndex main {
+    height: 75vh;
+  }
+  .mainIndex main .main-icon {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin: 180px auto 140px;
+    opacity: 0.8;
   }
   .mainIndex main .svg_box .svgWrap {
     display: none;
@@ -217,6 +225,18 @@
   .mainIndex main .gallery .svgWrap {
     width: 60%;
     color: #aaaaaa;
+  }
+  .mainIndex main .gallery .flickity-page-dots {
+    -webkit-transform: translateY(2vh) scale(0.7);
+            transform: translateY(2vh) scale(0.7);
+  }
+  .mainIndex main .gallery .flickity-page-dots .dot.is-selected {
+    background-color: #aaaaaa;
+    opacity: 0.5;
+  }
+  .mainIndex main .gallery .flickity-prev-next-button {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 

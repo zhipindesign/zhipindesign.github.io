@@ -741,7 +741,7 @@ header .header_right .languageZh:hover {
 
 @media screen and (max-width: 600px) {
   .threeD {
-    height: 150vh;
+    height: 240vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -755,35 +755,55 @@ header .header_right .languageZh:hover {
     display: none;
   }
   .threeD .mobileMain {
-    height: 130vh;
+    height: 240vh;
     display: block;
   }
-  .threeD .mobileMain .mobileStart .gallery {
-    height: 40vh;
+  .threeD .mobileMain .mobileStart .box_container {
+    width: 60vw;
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
+    height: 130vh;
   }
-  .threeD .mobileMain .mobileStart .gallery .box {
+  .threeD .mobileMain .mobileStart .box_container .box {
     width: 70vw;
   }
-  .threeD .mobileMain .mobileStart .gallery .box .box_img svg {
+  .threeD .mobileMain .mobileStart .box_container .box .box_img svg {
     width: 70vw;
+    -webkit-transform: scale(0.6) translateX(10vw);
+            transform: scale(0.6) translateX(10vw);
   }
-  .threeD .mobileMain .mobileStart .gallery .mobilebox {
+  .threeD .mobileMain .mobileStart .box_container .box .box_text {
+    text-align: center;
+    width: 62vw;
+    -webkit-transform: translate(8vw, -5vh);
+            transform: translate(8vw, -5vh);
+  }
+  .threeD .mobileMain .mobileStart .box_container .mobilebox {
     -webkit-transform: translateY(10vh);
             transform: translateY(10vh);
     width: 80vw;
   }
-  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img svg {
+  .threeD .mobileMain .mobileStart .box_container .mobilebox .box_img svg {
     width: 80vw;
   }
-  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img2 {
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
+  .threeD .mobileMain .mobileStart .box_container .mobilebox .box_img2 {
+    -webkit-transform: translateX(8vw);
+            transform: translateX(8vw);
   }
-  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_img2 svg {
+  .threeD .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
     width: 35%;
+    margin-right: -5vw;
+    margin-left: -5vw;
+    -webkit-transform: translateX(15vw) scale(0.6);
+            transform: translateX(15vw) scale(0.6);
   }
-  .threeD .mobileMain .mobileStart .gallery .mobilebox .box_text {
-    margin-top: 2.6vh;
+  .threeD .mobileMain .mobileStart .box_container .mobilebox .box_text {
+    margin-top: 6.8vh;
+    text-align: center;
+  }
+  .threeD .mobileMain .mobileStart .gallery .flickity-page-dots {
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
   }
   .threeD .mobileMain .mobileOthers {
     margin-top: 10vh;
@@ -791,11 +811,17 @@ header .header_right .languageZh:hover {
   .threeD .mobileMain .mobileOthers .gallery {
     height: 40vh;
   }
+  .threeD .mobileMain .mobileOthers .gallery .flickity-page-dots {
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
   .threeD .mobileMain .mobileOthers .gallery .box {
     width: 70vw;
   }
   .threeD .mobileMain .mobileOthers .gallery .box .box_img svg {
     width: 70vw;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
   .threeD .mobileMain .mobileOthers .gallery .mobilebox {
     -webkit-transform: translateY(10vh);
