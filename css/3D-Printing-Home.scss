@@ -309,6 +309,50 @@ header {
     // }
   }
 }
+nav {
+  display: none !important; 
+    a{
+    display: none;
+    }
+}
+@media screen and (max-width: 700px){
+  header {
+    display: none;
+  }
+  nav {
+    // position: relative;
+    display: flex !important;
+    // position: fixed;
+    z-index: 10;
+    color: #aaaaaa !important;
+    text-align: center;
+    background: #3e4141;
+    a {
+      color: #aaaaaa;
+    }
+    button {
+      // position: absolute;
+      // top: 1vh;
+      // left: 80vw;
+      .mobileMenu {
+        width: 30px;
+      }
+    }
+    .navbar-collapse {
+      .dropdown-menu {
+        width: 100vw;
+        text-align: center;
+        border: none;
+        background: #3e4141;
+        // transform: translateX(15px);
+        .dropdown-item {
+          // width: 100vw;
+          color: #aaaaaa !important;
+        }
+      }
+    }
+  }
+}
 .carousel {
   //幻燈片樣式
   transform: translateY(60px);
@@ -828,10 +872,11 @@ header {
         .box_container {
           width: 60vw;
           transform: translateX(10vw);
-          height: 130vh;
+          height: 110vh;
           // position: relative;
           .box {
             width: 70vw;
+            height: 35vh;
             .box_img {
               svg {
                 width: 70vw;
@@ -870,8 +915,37 @@ header {
           }
         }
         .gallery {
+          text-align: center;
+          height: 40vh;
           .flickity-page-dots {
             transform: translateY(6vh);
+          }
+          .box {
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+                transform: scale(0.6);
+              }
+            }
+          }
+          .mobilebox {
+            transform: translateY(10vh);
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+              }
+            }
+            .box_img2 {
+              transform: translateX(10vw);
+              svg {
+                width: 35%;
+              }
+            }
+            .box_text {
+              margin-top: 2.6vh;
+            }
           }
         }
       }

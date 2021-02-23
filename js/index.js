@@ -30,7 +30,9 @@ $(document).scroll(function(){
             $("header").show(2000)
         };
     }
+
 })
+
 // var wdth=$(window).width();
 // $(".title1").css("margin-top", (wdth - 1060)/4)
 

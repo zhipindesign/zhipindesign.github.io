@@ -299,6 +299,44 @@ header .header_right .languageZh:hover {
   }
 }
 
+nav {
+  display: none !important;
+}
+
+nav a {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    display: none;
+  }
+  nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    z-index: 10;
+    color: #aaaaaa !important;
+    text-align: center;
+    background: #3e4141;
+  }
+  nav a {
+    color: #aaaaaa;
+  }
+  nav button .mobileMenu {
+    width: 30px;
+  }
+  nav .navbar-collapse .dropdown-menu {
+    width: 100vw;
+    text-align: center;
+    border: none;
+    background: #3e4141;
+  }
+  nav .navbar-collapse .dropdown-menu .dropdown-item {
+    color: #aaaaaa !important;
+  }
+}
+
 .carousel {
   -webkit-transform: translateY(60px);
           transform: translateY(60px);

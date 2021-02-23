@@ -308,6 +308,50 @@ header {
     }
   }
 }
+nav {
+  display: none !important; 
+    a{
+    display: none;
+    }
+}
+@media screen and (max-width: 700px){
+  header {
+    display: none;
+  }
+  nav {
+    // position: relative;
+    display: flex !important;
+    // position: fixed;
+    z-index: 10;
+    color: #aaaaaa !important;
+    text-align: center;
+    background: #3e4141;
+    a {
+      color: #aaaaaa;
+    }
+    button {
+      // position: absolute;
+      // top: 1vh;
+      // left: 80vw;
+      .mobileMenu {
+        width: 30px;
+      }
+    }
+    .navbar-collapse {
+      .dropdown-menu {
+        width: 100vw;
+        text-align: center;
+        border: none;
+        background: #3e4141;
+        // transform: translateX(15px);
+        .dropdown-item {
+          // width: 100vw;
+          color: #aaaaaa !important;
+        }
+      }
+    }
+  }
+}
 .carousel {
   transform: translateY(60px);
   margin-bottom: 60px;
@@ -811,7 +855,7 @@ header {
 }
 @media screen and (max-width: 700px) {
   .VacuumForming {
-    height: 150vh;
+    height: 240vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
     .title {
@@ -824,72 +868,121 @@ header {
       display: none;
     }
     .mobileMain{
-      height: 130vh;
+      height: 240vh;
       display: block;
+      text-align: center;
       .mobileStart{
-
-        .gallery{
-          height: 40vh;
+        .box_container {
+          width: 60vw;
+          transform: translateX(10vw);
+          height: 110vh;
           // position: relative;
-          .box{
+          .box {
             width: 70vw;
-            .box_img{
-              svg{
+            height: 35vh;
+            .box_img {
+              svg {
                 width: 70vw;
+                transform: scale(0.6) translateX(10vw);
               }
             }
+            .box_text {
+              text-align: center;
+              width: 62vw;
+              transform: translate(8vw, -5vh);
+            }
           }
-          // .flickity-page-dots{
-          //   position: absolute;
-          //   top: 10vh;
-          // }
-          .mobilebox{
+
+          .mobilebox {
             transform: translateY(10vh);
             width: 80vw;
-            .box_img{
-              svg{
+            .box_img {
+              svg {
                 width: 80vw;
               }
             }
-            .box_img2{
+
+            .box_img2 {
+              transform: translateX(8vw);
+              svg {
+                width: 35%;
+                margin-right: -5vw;
+                margin-left: -5vw;
+                transform: translateX(15vw) scale(0.6);
+              }
+            }
+            .box_text {
+              margin-top: 6.8vh;
+              text-align: center;
+            }
+          }
+        }
+        .gallery {
+          text-align: center;
+          height: 40vh;
+          .flickity-page-dots {
+            transform: translateY(6vh);
+          }
+          .box {
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+                transform: scale(0.6);
+              }
+            }
+          }
+          .mobilebox {
+            transform: translateY(10vh);
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+              }
+            }
+            .box_img2 {
               transform: translateX(10vw);
-              svg{
+              svg {
                 width: 35%;
               }
             }
-            .box_text{
+            .box_text {
               margin-top: 2.6vh;
             }
           }
         }
       }
-      .mobileOthers{
+      .mobileOthers {
         margin-top: 10vh;
-        .gallery{
+        .gallery {
           height: 40vh;
-          .box{
+          .flickity-page-dots {
+            transform: translateY(6vh);
+          }
+          .box {
             width: 70vw;
-            .box_img{
-              svg{
+            .box_img {
+              svg {
                 width: 70vw;
+                transform: scale(0.6);
               }
             }
           }
-          .mobilebox{
+          .mobilebox {
             transform: translateY(10vh);
             width: 70vw;
-            .box_img{
-              svg{
+            .box_img {
+              svg {
                 width: 70vw;
               }
             }
-            .box_img2{
+            .box_img2 {
               transform: translateX(10vw);
-              svg{
+              svg {
                 width: 35%;
               }
             }
-            .box_text{
+            .box_text {
               margin-top: 2.6vh;
             }
           }
