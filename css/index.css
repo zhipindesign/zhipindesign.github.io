@@ -255,7 +255,7 @@
     display: block;
   }
   .mainIndex main .gallery .svgWrap {
-    width: 70%;
+    width: 75%;
     color: #aaaaaa;
   }
   .mainIndex main .gallery .flickity-page-dots {
@@ -335,7 +335,7 @@ footer .logo_img {
 
 footer .logo_img .logo_img_FB {
   width: 15px;
-  margin-right: 20px;
+  margin-right: 30px;
   border-radius: 30%;
 }
 
@@ -347,7 +347,7 @@ footer .logo_img .logo_img_IG,
 footer .logo_img .logo_img_Twitter,
 footer .logo_img .logo_img_Youtube {
   width: 30px;
-  margin-right: 20px;
+  margin-right: 30px;
   border-radius: 30%;
 }
 /*# sourceMappingURL=index.css.map */
