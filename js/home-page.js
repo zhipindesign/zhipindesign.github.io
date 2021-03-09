@@ -89,17 +89,20 @@ function Vacuum(){
 //   }
 $(document).on("click", ".closeMenu", function(){
     $(".mobileMenu").find("path:nth-child(1)").css("display","none");
-    $(".mobileMenu").find("path:nth-child(2)").css({"transform": "rotate(45deg) translate(40px,-25px)","transition": "1s"});
-    $(".mobileMenu").find("path:nth-child(3)").css({"transform": "rotate(-45deg) translate(-200px,-50px)","transition": "1s"});
+    $(".mobileMenu").find("path:nth-child(2)").css({"transform": "rotate(45deg) translate(40px,-25px)","transition": ".5s"});
+    $(".mobileMenu").find("path:nth-child(3)").css({"transform": "rotate(-45deg) translate(-200px,-50px)","transition": ".5s"});
+    $("nav").css({"background": "#111313","transition": "0"});
     $(".mobileMenu").addClass("openMenu");
     $(".mobileMenu").removeClass("closeMenu");
     console.log('open')
 });
 $(document).on("click", ".openMenu", function(){
     $(".mobileMenu").find("path:nth-child(1)").css("display","block");
-    $(".mobileMenu").find("path:nth-child(2)").css({"transform": "rotate(0) translate(0)","transition": "1s"});
-    $(".mobileMenu").find("path:nth-child(3)").css({"transform": "rotate(-0) translate(0)","transition": "1s"});
+    $(".mobileMenu").find("path:nth-child(2)").css({"transform": "rotate(0) translate(0)","transition": ".5s"});
+    $(".mobileMenu").find("path:nth-child(3)").css({"transform": "rotate(-0) translate(0)","transition": ".5s"});
     $(".mobileMenu").addClass("closeMenu");
     $(".mobileMenu").removeClass("openMenu");
+    // setTimeout($("nav").css({"background": "#3e4141","transition": ".2s"}), 500);
+    setTimeout(function(){$("nav").css({"background": "#3e4141","transition": ".3s"});},280);
     console.log('close')
 });
