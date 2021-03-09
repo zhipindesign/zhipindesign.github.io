@@ -190,13 +190,6 @@
   .mainIndex header {
     display: none;
   }
-  .mainIndex .black {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    display: block;
-    z-index: 12;
-  }
   .mainIndex nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -252,7 +245,7 @@
   .mainIndex main .main-icon {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
-    margin: 140px auto 140px;
+    margin: 15vh auto 15vh;
     opacity: 0.8;
   }
   .mainIndex main .svg_box .svgWrap {
