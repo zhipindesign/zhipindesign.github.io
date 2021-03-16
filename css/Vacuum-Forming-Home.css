@@ -439,8 +439,8 @@ nav a {
 
 @media screen and (max-width: 700px) {
   .carousel {
-    -webkit-transform: translateY(65px);
-            transform: translateY(65px);
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
     font-family: "Open Sans", "微軟正黑體";
   }
   .carousel .carousel-indicators li {
@@ -453,14 +453,12 @@ nav a {
     margin-right: -15px;
   }
   .carousel .carousel-item {
-    height: 250px;
+    height: 500px;
   }
   .carousel .carousel-item1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, rgba(19, 19, 19, 0))), url(/images/LCEservice/Laser_cutting_index.jpg) right 100% bottom 50%;
-    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 45%), url(/images/LCEservice/Laser_cutting_index.jpg) right 100% bottom 50%;
+    background: url(/images/VFsevicre/vacuum-index.png) right 100% bottom 70%;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(1);
   }
   .carousel .carousel-item2 {
     background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
@@ -477,6 +475,26 @@ nav a {
        object-fit: contain;
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%);
+  }
+  .carousel .mainTitle {
+    padding: 0 5px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 32px;
+    background: #3e414171;
+    position: absolute;
+    top: 12px;
+    left: 26%;
+    padding: 0px -10px;
+    font-weight: 600;
+    z-index: 10;
+  }
+  .carousel .mainTitle a {
+    color: white;
+  }
+  .carousel .mainTitle a:hover {
+    text-decoration: none;
   }
   .carousel .start_your_project {
     width: 160px;
@@ -823,7 +841,7 @@ nav a {
 
 @media screen and (max-width: 700px) {
   .VacuumForming {
-    height: 240vh;
+    height: 180vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -837,7 +855,7 @@ nav a {
     display: none;
   }
   .VacuumForming .mobileMain {
-    height: 240vh;
+    height: 140vh;
     display: block;
     text-align: center;
   }
@@ -845,7 +863,7 @@ nav a {
     width: 60vw;
     -webkit-transform: translateX(10vw);
             transform: translateX(10vw);
-    height: 110vh;
+    height: 100vh;
   }
   .VacuumForming .mobileMain .mobileStart .box_container .box {
     width: 70vw;
@@ -853,8 +871,8 @@ nav a {
   }
   .VacuumForming .mobileMain .mobileStart .box_container .box .box_img svg {
     width: 70vw;
-    -webkit-transform: scale(0.6) translateX(10vw);
-            transform: scale(0.6) translateX(10vw);
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
   }
   .VacuumForming .mobileMain .mobileStart .box_container .box .box_text {
     text-align: center;
@@ -921,6 +939,7 @@ nav a {
   }
   .VacuumForming .mobileMain .mobileOthers {
     margin-top: 10vh;
+    display: none;
   }
   .VacuumForming .mobileMain .mobileOthers .gallery {
     height: 40vh;
