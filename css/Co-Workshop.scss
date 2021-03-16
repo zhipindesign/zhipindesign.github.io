@@ -479,7 +479,7 @@ nav {
 @media screen and (max-width: 700px) {
   .carousel {
     //幻燈片樣式
-    transform: translateY(65px);
+    transform: translateY(55px);
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
     .carousel-indicators li {
       width: 30px;
@@ -491,23 +491,20 @@ nav {
     }
     .carousel-item {
       //幻燈片外框樣式
-      height: 250px; //高度
+      height: 500px; //高度
     }
     .carousel-item1 {
-      background: linear-gradient(
-          180deg,
-          rgba(19, 19, 19, 1) 0%,
-          rgba(19, 19, 19, 0) 45%
-        ),
+      background: 
         //   linear-gradient(
         //     255deg,
         //     rgba(0, 60, 255, 0.4) 0%,
         //     rgba(146, 0, 255, 0.4) 100%
         //   ),
-        url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+        // url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+        url(/images/Coworkshop/index.png) right 50% bottom 10%;
+
       background-size: cover;
       background-repeat: no-repeat;
-      -webkit-filter: grayscale(1);
     }
     .carousel-item2 {
       background: linear-gradient(
@@ -543,6 +540,30 @@ nav {
       max-height: 1600px; //最大高度
       object-fit: contain;
       transform: translateY(-35%);
+    }
+    .mainTitle {
+      //開始專案按鈕樣式
+      // width: 140px; //寬度
+      padding: 0 5px;
+      height: 40px; //高度
+      text-align: center; //文字左右置中
+      line-height: 40px; //上下置中
+      font-size: 32px; //字體大小
+      background: #3e414171; //背景樣式 顏色
+      position: absolute; //位置 absolute按到relative位置移動
+      top: 12px; //位置 top: 距離relative最高點位置
+      left: 26%; //位置 right: 距離relative最右點位置
+      padding: 0px -10px; //內縮寬度
+      font-weight: 600; //字體粗度
+      z-index: 10;
+      a {
+        //超連結樣式
+        color: white; //字體顏色
+      }
+      a:hover {
+        //hover: 滑鼠移上去後之效果
+        text-decoration: none; //將預設底線拿掉
+      }
     }
     .start_your_project {
       //開始專案按鈕樣式
@@ -796,7 +817,7 @@ nav {
 }
 @media screen and (max-width: 700px) {
   .coworkshop {
-    height: 250vh;
+    height: 200vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
     .title {
@@ -804,13 +825,208 @@ nav {
       font-weight: 600;
       margin: 10px 2% 0px;
       font-size: 24px;
+      text-align: center;
     }
-    .main{
-      display: none;
+    .main {
+      border: 1px solid red;
+      height: 1200px;
+      width: 100%;
+      margin: 0px auto 0;
+      .content {
+        width: 100%;
+        height: 300px;
+        background: #0070e0;
+        text-align: center;
+        color: white;
+        font-size: 36px;
+        line-height: 300px;
+        display: none;
+      }
+      .des{
+        display: none;
+      }
+      .equipment {
+        border: 1px solid red;
+        width: 100%;
+        height: 600px;
+        .boxWrap {
+          border: 1px solid red;
+          width: 100%;
+          height: 160px;
+          margin-top: 20px;
+          .box {
+            border: 1px solid red;
+            width: 90%;
+            height: 360px;
+            margin: 0 auto;
+            .box_img {
+              border: 1px solid black;
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img {
+                width: 100%;
+                height: auto;
+              }
+              .box_text {
+                text-align: center;
+                font-size: 14px;
+              }
+            }
+            .box_img1 {
+              // border: 1px solid black;
+              width: 20%;
+              height: 100%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .tool1 {
+        border: 1px solid red;
+        width: 100%;
+        height: 210px;
+        margin-top: 40px;
+        .boxWrap {
+          border: 1px solid red;
+          width: 100%;
+          height: 400px;
+          .box {
+            border: 1px solid red;
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
+            .box_img {
+              border: 1px solid black;
+              width: 60%;
+              height: 60%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img {
+                width: 100%;
+                height: auto;
+              }
+              .box_text {
+                text-align: center;
+                font-size: 14px;
+              }
+            }
+            .box_img1 {
+              // border: 1px solid black;
+              width: 20%;
+              height: 100%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .tool2 {
+        border: 1px solid red;
+        width: 100%;
+        height: 480px;
+        margin-top: 40px;
+        .boxWrap {
+          border: 1px solid red;
+          width: 100%;
+          height: 220px;
+          .box {
+            border: 1px solid red;
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
+            .box_img {
+              border: 1px solid black;
+              width: 60%;
+              height: 60%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img {
+                width: 100%;
+                height: auto;
+              }
+              .box_text {
+                text-align: center;
+                font-size: 14px;
+              }
+            }
+            .box_img1 {
+              // border: 1px solid black;
+              width: 20%;
+              height: 100%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+  
+      .other_services {
+        border: 1px solid red;
+        height: 270px;
+        width: 80%;
+        margin: 0% auto 5%;
+        display: none;
+        .boxWrap {
+          border: 1px solid red;
+          height: 250px;
+          width: 100%;
+          display: flex;
+          margin: 0% auto 0;
+          .box {
+            border: 1px solid red;
+            height: 250px;
+            width: 20%;
+            margin: 0 auto;
+            position: relative;
+            cursor: pointer;
+            // transform: scale(.5);
+            .box_img {
+              border: 1px solid black;
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img,
+              svg {
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto -50px;
+                position: absolute;
+                bottom: 20%;
+              }
+            }
+            .box_text {
+              text-align: center;
+              .box_text_title {
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0 auto;
+              }
+              .box_text_content {
+                width: 76%;
+                font-size: 12px;
+                transform: translateX(12%);
+                margin-top: 5%;
+              }
+            }
+          }
+          .box1 {
+            border: 1px solid red;
+            height: 250px;
+            width: 5%;
+            margin: 0 auto;
+            position: relative;
+          }
+        }
+      }
     }
     .mobileMain{
       // height: 240vh;
-      display: block;
+      display: none;
       .gallery{
         width: 100vw;
         margin-bottom: 10vh;
