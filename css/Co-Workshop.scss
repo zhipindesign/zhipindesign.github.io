@@ -309,12 +309,12 @@ header {
   }
 }
 nav {
-  display: none !important; 
-    a{
+  display: none !important;
+  a {
     display: none;
-    }
+  }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   header {
     display: none;
   }
@@ -452,7 +452,7 @@ nav {
     text-align: center; //文字左右置中
     line-height: 40px; //上下置中
     font-size: 20px; //字體大小
-    background: #3e414171; //背景樣式 顏色
+    // background: #3e414171; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
     top: 12px; //位置 top: 距離relative最高點位置
     left: 8%; //位置 right: 距離relative最右點位置
@@ -501,7 +501,8 @@ nav {
         //     rgba(146, 0, 255, 0.4) 100%
         //   ),
         // url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-        url(/images/Coworkshop/index.png) right 50% bottom 10%;
+        // url(/images/Coworkshop/index.png) right 50% bottom 10%;
+        gray;
 
       background-size: cover;
       background-repeat: no-repeat;
@@ -549,7 +550,7 @@ nav {
       text-align: center; //文字左右置中
       line-height: 40px; //上下置中
       font-size: 32px; //字體大小
-      background: #3e414171; //背景樣式 顏色
+      // background: #3e414171; //背景樣式 顏色
       position: absolute; //位置 absolute按到relative位置移動
       top: 12px; //位置 top: 距離relative最高點位置
       left: 26%; //位置 right: 距離relative最右點位置
@@ -811,13 +812,13 @@ nav {
       }
     }
   }
-  .mobileMain{
+  .mobileMain {
     display: none;
   }
 }
 @media screen and (max-width: 700px) {
   .coworkshop {
-    height: 200vh;
+    height: 180vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
     .title {
@@ -842,7 +843,7 @@ nav {
         line-height: 300px;
         display: none;
       }
-      .des{
+      .des {
         display: none;
       }
       .equipment {
@@ -856,7 +857,7 @@ nav {
           margin-top: 20px;
           .box {
             border: 1px solid red;
-            width: 90%;
+            width: 85%;
             height: 360px;
             margin: 0 auto;
             .box_img {
@@ -872,12 +873,12 @@ nav {
               }
               .box_text {
                 text-align: center;
-                font-size: 14px;
+                font-size: 12px;
               }
             }
             .box_img1 {
               // border: 1px solid black;
-              width: 20%;
+              width: 0%;
               height: 100%;
               margin: 0 auto;
             }
@@ -895,7 +896,7 @@ nav {
           height: 400px;
           .box {
             border: 1px solid red;
-            width: 90%;
+            width: 85%;
             height: 400px;
             margin: 0 auto;
             .box_img {
@@ -911,12 +912,12 @@ nav {
               }
               .box_text {
                 text-align: center;
-                font-size: 14px;
+                font-size: 12px;
               }
             }
             .box_img1 {
               // border: 1px solid black;
-              width: 20%;
+              width: 0%;
               height: 100%;
               margin: 0 auto;
             }
@@ -934,7 +935,7 @@ nav {
           height: 220px;
           .box {
             border: 1px solid red;
-            width: 90%;
+            width: 75%;
             height: 400px;
             margin: 0 auto;
             .box_img {
@@ -950,7 +951,8 @@ nav {
               }
               .box_text {
                 text-align: center;
-                font-size: 14px;
+                font-size: 12px;
+                // transform: scale(0.8);
               }
             }
             .box_img1 {
@@ -962,7 +964,7 @@ nav {
           }
         }
       }
-  
+
       .other_services {
         border: 1px solid red;
         height: 270px;
@@ -1024,22 +1026,22 @@ nav {
         }
       }
     }
-    .mobileMain{
+    .mobileMain {
       // height: 240vh;
       display: none;
-      .gallery{
+      .gallery {
         width: 100vw;
         margin-bottom: 10vh;
-        .box_img{
+        .box_img {
           width: 100vw;
           text-align: center;
-          img{
+          img {
             width: 90vw;
           }
         }
-        .box{
+        .box {
           width: 70vw;
-          .box_img{
+          .box_img {
             width: 70vw;
           }
         }

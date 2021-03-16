@@ -843,7 +843,7 @@ nav a {
 
 @media screen and (max-width: 700px) {
   .LaserCutting {
-    height: 240vh;
+    height: 230vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -858,7 +858,7 @@ nav a {
     display: none;
   }
   .LaserCutting .mobileMain {
-    height: 240vh;
+    height: 230vh;
     display: block;
   }
   .LaserCutting .mobileMain .mobileStart .box_container {
@@ -872,15 +872,21 @@ nav a {
     height: 35vh;
   }
   .LaserCutting .mobileMain .mobileStart .box_container .box .box_img svg {
-    width: 70vw;
-    -webkit-transform: translateX(5vw);
-            transform: translateX(5vw);
+    width: 100%;
+    -webkit-transform: translateX(5vw) scale(0.7);
+            transform: translateX(5vw) scale(0.7);
   }
   .LaserCutting .mobileMain .mobileStart .box_container .box .box_text {
     text-align: center;
     width: 62vw;
-    -webkit-transform: translate(8vw, -5vh);
-            transform: translate(8vw, -5vh);
+    -webkit-transform: translate(8vw, -8vh);
+            transform: translate(8vw, -8vh);
+    font-size: 12px;
+  }
+  .LaserCutting .mobileMain .mobileStart .box_container .box .box_text .box_text_title {
+    font-size: 16px;
+    margin-bottom: 2vh;
+    font-weight: 800;
   }
   .LaserCutting .mobileMain .mobileStart .box_container .mobilebox {
     width: 80vw;
@@ -889,14 +895,20 @@ nav a {
     width: 80vw;
   }
   .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
-    width: 30%;
+    width: 25%;
     margin: 4vh 0;
-    -webkit-transform: translateX(15vw);
-            transform: translateX(15vw);
+    -webkit-transform: translateX(20vw);
+            transform: translateX(20vw);
   }
   .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_text {
     margin-top: 6.8vh;
     text-align: center;
+    font-size: 12px;
+  }
+  .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_text .box_text_title {
+    font-size: 16px;
+    margin-bottom: 2vh;
+    font-weight: 800;
   }
   .LaserCutting .mobileMain .mobileStart .gallery {
     text-align: center;
@@ -931,6 +943,11 @@ nav a {
   }
   .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_text {
     margin-top: 2.6vh;
+    font-size: 12px;
+  }
+  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_text .box_text_title {
+    font-size: 16px;
+    margin-bottom: 2vh;
   }
   .LaserCutting .mobileMain .mobileOthers {
     margin-top: 10vh;
@@ -968,6 +985,7 @@ nav a {
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_text {
     margin-top: 2.6vh;
+    font-size: 12px;
   }
 }
 
