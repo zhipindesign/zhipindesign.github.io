@@ -392,10 +392,10 @@ nav a {
   background: #0070e0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .carousel {
-    -webkit-transform: translateY(65px);
-            transform: translateY(65px);
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
     font-family: "Open Sans", "微軟正黑體";
   }
   .carousel .carousel-indicators li {
@@ -408,14 +408,12 @@ nav a {
     margin-right: -15px;
   }
   .carousel .carousel-item {
-    height: 250px;
+    height: 500px;
   }
   .carousel .carousel-item1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, rgba(19, 19, 19, 0))), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 45%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background: url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(1);
   }
   .carousel .carousel-item2 {
     background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
@@ -432,6 +430,24 @@ nav a {
        object-fit: contain;
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%);
+  }
+  .carousel .mainTitle {
+    padding: 0 5px;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 32px;
+    background: #3e414171;
+    padding: 0px -10px;
+    font-weight: 600;
+    z-index: 10;
+  }
+  .carousel .mainTitle a {
+    color: white;
+  }
+  .carousel .mainTitle a:hover {
+    text-decoration: none;
   }
   .carousel .start_your_project {
     width: 160px;
@@ -787,7 +803,8 @@ nav a {
     border: 1px solid red;
     font-weight: 600;
     margin: 10px 2% 0px;
-    font-size: px;
+    font-size: 24px;
+    text-align: center;
   }
   .threeD .main {
     display: none;
@@ -808,8 +825,8 @@ nav a {
   }
   .threeD .mobileMain .mobileStart .box_container .box .box_img svg {
     width: 70vw;
-    -webkit-transform: scale(0.6) translateX(10vw);
-            transform: scale(0.6) translateX(10vw);
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
   }
   .threeD .mobileMain .mobileStart .box_container .box .box_text {
     text-align: center;
@@ -818,23 +835,16 @@ nav a {
             transform: translate(8vw, -5vh);
   }
   .threeD .mobileMain .mobileStart .box_container .mobilebox {
-    -webkit-transform: translateY(10vh);
-            transform: translateY(10vh);
     width: 80vw;
   }
   .threeD .mobileMain .mobileStart .box_container .mobilebox .box_img svg {
     width: 80vw;
   }
-  .threeD .mobileMain .mobileStart .box_container .mobilebox .box_img2 {
-    -webkit-transform: translateX(8vw);
-            transform: translateX(8vw);
-  }
   .threeD .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
-    width: 35%;
-    margin-right: -5vw;
-    margin-left: -5vw;
-    -webkit-transform: translateX(15vw) scale(0.6);
-            transform: translateX(15vw) scale(0.6);
+    width: 30%;
+    margin: 4vh 0;
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
   }
   .threeD .mobileMain .mobileStart .box_container .mobilebox .box_text {
     margin-top: 6.8vh;
@@ -876,6 +886,7 @@ nav a {
   }
   .threeD .mobileMain .mobileOthers {
     margin-top: 10vh;
+    display: none;
   }
   .threeD .mobileMain .mobileOthers .gallery {
     height: 40vh;
