@@ -208,6 +208,9 @@
   .mainIndex nav button .mobileMenu {
     width: 30px;
   }
+  .mainIndex nav .shopCart {
+    width: 30px;
+  }
   .mainIndex nav .navbar-collapse {
     margin: 0 -4vw 0 -4vw;
     background: #111313;
