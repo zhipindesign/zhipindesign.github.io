@@ -867,7 +867,7 @@ nav a {
 
 @media screen and (max-width: 700px) {
   .VacuumForming {
-    height: 180vh;
+    height: 150vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -875,59 +875,65 @@ nav a {
     border: 1px solid red;
     font-weight: 600;
     margin: 10px 2% 0px;
-    font-size: px;
+    font-size: 24px;
+    text-align: center;
   }
   .VacuumForming .main {
     display: none;
   }
   .VacuumForming .mobileMain {
-    height: 140vh;
+    height: 150vh;
     display: block;
-    text-align: center;
   }
   .VacuumForming .mobileMain .mobileStart .box_container {
     width: 60vw;
     -webkit-transform: translateX(10vw);
             transform: translateX(10vw);
-    height: 100vh;
+    margin-bottom: 10vh;
+    height: 80vh;
   }
   .VacuumForming .mobileMain .mobileStart .box_container .box {
     width: 70vw;
-    height: 35vh;
+    height: 30vh;
   }
   .VacuumForming .mobileMain .mobileStart .box_container .box .box_img svg {
-    width: 70vw;
-    -webkit-transform: translateX(5vw);
-            transform: translateX(5vw);
+    width: 100%;
+    -webkit-transform: translateX(5vw) scale(0.7);
+            transform: translateX(5vw) scale(0.7);
   }
   .VacuumForming .mobileMain .mobileStart .box_container .box .box_text {
     text-align: center;
     width: 62vw;
-    -webkit-transform: translate(8vw, -5vh);
-            transform: translate(8vw, -5vh);
+    -webkit-transform: translate(8vw, -8vh);
+            transform: translate(8vw, -8vh);
+    font-size: 12px;
+  }
+  .VacuumForming .mobileMain .mobileStart .box_container .box .box_text .box_text_title {
+    font-size: 16px;
+    margin-bottom: 2vh;
+    font-weight: 800;
   }
   .VacuumForming .mobileMain .mobileStart .box_container .mobilebox {
-    -webkit-transform: translateY(10vh);
-            transform: translateY(10vh);
     width: 80vw;
   }
   .VacuumForming .mobileMain .mobileStart .box_container .mobilebox .box_img svg {
     width: 80vw;
   }
-  .VacuumForming .mobileMain .mobileStart .box_container .mobilebox .box_img2 {
-    -webkit-transform: translateX(8vw);
-            transform: translateX(8vw);
-  }
   .VacuumForming .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
-    width: 35%;
-    margin-right: -5vw;
-    margin-left: -5vw;
-    -webkit-transform: translateX(15vw) scale(0.6);
-            transform: translateX(15vw) scale(0.6);
+    width: 25%;
+    margin: 4vh 0;
+    -webkit-transform: translateX(20vw);
+            transform: translateX(20vw);
   }
   .VacuumForming .mobileMain .mobileStart .box_container .mobilebox .box_text {
     margin-top: 6.8vh;
     text-align: center;
+    font-size: 12px;
+  }
+  .VacuumForming .mobileMain .mobileStart .box_container .mobilebox .box_text .box_text_title {
+    font-size: 16px;
+    margin-bottom: 2vh;
+    font-weight: 800;
   }
   .VacuumForming .mobileMain .mobileStart .gallery {
     text-align: center;
@@ -962,6 +968,11 @@ nav a {
   }
   .VacuumForming .mobileMain .mobileStart .gallery .mobilebox .box_text {
     margin-top: 2.6vh;
+    font-size: 12px;
+  }
+  .VacuumForming .mobileMain .mobileStart .gallery .mobilebox .box_text .box_text_title {
+    font-size: 16px;
+    margin-bottom: 2vh;
   }
   .VacuumForming .mobileMain .mobileOthers {
     margin-top: 10vh;
@@ -999,6 +1010,7 @@ nav a {
   }
   .VacuumForming .mobileMain .mobileOthers .gallery .mobilebox .box_text {
     margin-top: 2.6vh;
+    font-size: 12px;
   }
 }
 

@@ -908,46 +908,53 @@ nav {
 }
 @media screen and (max-width: 700px) {
   .VacuumForming {
-    height: 180vh;
+    height: 150vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
     .title {
       border: 1px solid red;
       font-weight: 600;
       margin: 10px 2% 0px;
-      font-size: px;
+      font-size: 24px;
+      text-align: center;
     }
-    .main{
+    .main {
       display: none;
     }
-    .mobileMain{
-      height: 140vh;
+    .mobileMain {
+      height: 150vh;
       display: block;
-      text-align: center;
-      .mobileStart{
+      .mobileStart {
         .box_container {
           width: 60vw;
           transform: translateX(10vw);
-          height: 100vh;
+          margin-bottom: 10vh;
+          height: 80vh;
           // position: relative;
           .box {
             width: 70vw;
-            height: 35vh;
+            height: 30vh;
             .box_img {
               svg {
-                width: 70vw;
-                transform: translateX(5vw);
+                width: 100%;
+                transform: translateX(5vw) scale(0.7);
               }
             }
             .box_text {
               text-align: center;
               width: 62vw;
-              transform: translate(8vw, -5vh);
+              transform: translate(8vw, -8vh);
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+                font-weight: 800;
+              }
             }
           }
 
           .mobilebox {
-            transform: translateY(10vh);
+            // transform: translateY(10vh);
             width: 80vw;
             .box_img {
               svg {
@@ -956,17 +963,22 @@ nav {
             }
 
             .box_img2 {
-              transform: translateX(8vw);
+              // transform: translate(0vw,-10vh);
               svg {
-                width: 35%;
-                margin-right: -5vw;
-                margin-left: -5vw;
-                transform: translateX(15vw) scale(0.6);
+                width: 25%;
+                margin: 4vh 0;
+                transform: translateX(20vw);
               }
             }
             .box_text {
               margin-top: 6.8vh;
               text-align: center;
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+                font-weight: 800;
+              }
             }
           }
         }
@@ -1001,6 +1013,11 @@ nav {
             }
             .box_text {
               margin-top: 2.6vh;
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+              }
             }
           }
         }
@@ -1038,6 +1055,7 @@ nav {
             }
             .box_text {
               margin-top: 2.6vh;
+              font-size: 12px;
             }
           }
         }
