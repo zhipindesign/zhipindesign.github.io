@@ -445,7 +445,7 @@ nav a {
   line-height: 40px;
   font-size: 36px;
   position: absolute;
-  top: 10vh;
+  top: 2vh;
   font-weight: 600;
   z-index: 10;
 }
@@ -508,11 +508,11 @@ nav a {
     padding: 0 5px;
     height: 40px;
     text-align: center;
-    margin: 0 auto;
+    margin: -5vh auto 0;
     line-height: 40px;
     font-size: 32px;
     padding: 0px -10px;
-    font-weight: 600;
+    font-weight: 1000;
     z-index: 10;
   }
   .carousel .mainTitle a {
@@ -551,7 +551,7 @@ nav a {
 }
 
 .LaserCutting {
-  height: 1000px;
+  height: 120vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -870,149 +870,276 @@ nav a {
 
 @media screen and (max-width: 700px) {
   .LaserCutting {
-    height: 230vh;
-    margin: 80px auto 0;
+    height: 130vh;
+    margin: 20px auto 0;
     font-family: "Open Sans", "微軟正黑體";
+  }
+  .LaserCutting .toggle {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    border-radius: 20px;
+    opacity: 0.5;
+    background-color: #1d1d1f;
+  }
+  .LaserCutting .toggle .toggle-on {
+    background-color: #1d1d1f;
+  }
+  .LaserCutting .toggle .toggle-off {
+    background-color: #e9e9e9;
   }
   .LaserCutting .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 10px 2% 0px;
+    margin: 10vh 8vh;
     font-size: 24px;
     text-align: center;
   }
   .LaserCutting .main {
-    display: none;
+    border: 1px solid red;
+    height: 800px;
+    width: 100%;
+    margin: 0px auto 0;
+    color: black;
+  }
+  .LaserCutting .main .ourService {
+    border: 1px solid #73ff00;
+    height: 270px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .ourService .boxWrap {
+    border: 1px solid red;
+    height: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -30px auto 0;
+  }
+  .LaserCutting .main .ourService .boxWrap .box {
+    border: 1px solid red;
+    height: 250px;
+    width: 25%;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .ourService .boxWrap .box .box_img {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  .LaserCutting .main .ourService .boxWrap .box .box_img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 0;
+  }
+  .LaserCutting .main .ourService .boxWrap .box .box_img .mask {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .LaserCutting .main .ourService .boxWrap .box .box_img a:hover .mask {
+    opacity: 0.8;
+  }
+  .LaserCutting .main .ourService .boxWrap .box .box_text {
+    text-align: center;
+    font-size: 12px;
+    margin: -10% auto 0;
+  }
+  .LaserCutting .main .start_your_project {
+    border: 1px solid red;
+    height: 550px;
+    width: 80%;
+    margin: 4% auto 0%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap {
+    border: 1px solid red;
+    height: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0% auto 8%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box {
+    border: 1px solid red;
+    height: 150px;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img img,
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img svg {
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto 0;
+    position: absolute;
+    bottom: -20%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_dispatch {
+    position: absolute;
+    bottom: -20%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .s10,
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .m15,
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .l20 {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_stlFile:hover {
+    fill: #0071e3;
+    cursor: pointer;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_stlFile:hover .box_text_content_okay {
+    background-color: red;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_noFile:hover {
+    fill: #0071e3;
+    cursor: pointer;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_coworkshop {
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto 0;
+    position: absolute;
+    bottom: -8%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img1 {
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img1 img,
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img1 svg {
+    max-width: 50%;
+    height: auto;
+    margin: 30px auto 0;
+    position: absolute;
+    bottom: 50%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img2 {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img2 img,
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img2 svg {
+    max-width: 50%;
+    height: auto;
+    margin: 30px auto 0;
+    position: absolute;
+    bottom: -8%;
+    left: 5%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_img2 .svg_noFile {
+    max-width: 50%;
+    height: auto;
+    margin: 30px auto 0;
+    position: absolute;
+    bottom: -8%;
+    left: 45%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_text {
+    text-align: center;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 6% auto;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_content {
+    width: 76%;
+    font-size: 12px;
+    -webkit-transform: translateX(12%);
+            transform: translateX(12%);
+    margin-top: 5%;
+  }
+  .LaserCutting .main .start_your_project .boxWrap .box1 {
+    border: 1px solid red;
+    height: 250px;
+    width: 5%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .LaserCutting .main .other_services {
+    border: 1px solid red;
+    height: 270px;
+    width: 80%;
+    margin: 0% auto 5%;
+  }
+  .LaserCutting .main .other_services .boxWrap {
+    border: 1px solid red;
+    height: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -80px auto 0;
+  }
+  .LaserCutting .main .other_services .boxWrap .box {
+    border: 1px solid red;
+    height: 250px;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+  }
+  .LaserCutting .main .other_services .boxWrap .box .box_img {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .other_services .boxWrap .box .box_img img,
+  .LaserCutting .main .other_services .boxWrap .box .box_img svg {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto -50px;
+    position: absolute;
+    bottom: 16%;
+  }
+  .LaserCutting .main .other_services .boxWrap .box .box_text {
+    text-align: center;
+  }
+  .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+  .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_content {
+    width: 76%;
+    font-size: 12px;
+    -webkit-transform: translateX(12%);
+            transform: translateX(12%);
+    margin-top: 5%;
+  }
+  .LaserCutting .main .other_services .boxWrap .box1 {
+    border: 1px solid red;
+    height: 250px;
+    width: 5%;
+    margin: 0 auto;
+    position: relative;
   }
   .LaserCutting .mobileMain {
-    height: 230vh;
-    display: block;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container {
-    width: 60vw;
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
-    height: 110vh;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .box {
-    width: 70vw;
-    height: 35vh;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .box .box_img svg {
-    width: 100%;
-    -webkit-transform: translateX(5vw) scale(0.7);
-            transform: translateX(5vw) scale(0.7);
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .box .box_text {
-    text-align: center;
-    width: 62vw;
-    -webkit-transform: translate(8vw, -8vh);
-            transform: translate(8vw, -8vh);
-    font-size: 12px;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .box .box_text .box_text_title {
-    font-size: 16px;
-    margin-bottom: 2vh;
-    font-weight: 800;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .mobilebox {
-    width: 80vw;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_img svg {
-    width: 80vw;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
-    width: 25%;
-    margin: 4vh 0;
-    -webkit-transform: translateX(20vw);
-            transform: translateX(20vw);
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_text {
-    margin-top: 6.8vh;
-    text-align: center;
-    font-size: 12px;
-  }
-  .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_text .box_text_title {
-    font-size: 16px;
-    margin-bottom: 2vh;
-    font-weight: 800;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery {
-    text-align: center;
-    height: 40vh;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .flickity-page-dots {
-    -webkit-transform: translateY(6vh);
-            transform: translateY(6vh);
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .box {
-    width: 70vw;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .box .box_img svg {
-    width: 70vw;
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox {
-    -webkit-transform: translateY(10vh);
-            transform: translateY(10vh);
-    width: 70vw;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_img svg {
-    width: 70vw;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_img2 {
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_img2 svg {
-    width: 35%;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_text {
-    margin-top: 2.6vh;
-    font-size: 12px;
-  }
-  .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_text .box_text_title {
-    font-size: 16px;
-    margin-bottom: 2vh;
-  }
-  .LaserCutting .mobileMain .mobileOthers {
-    margin-top: 10vh;
     display: none;
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery {
-    height: 40vh;
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .flickity-page-dots {
-    -webkit-transform: translateY(6vh);
-            transform: translateY(6vh);
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .box {
-    width: 70vw;
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .box .box_img svg {
-    width: 70vw;
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox {
-    -webkit-transform: translateY(10vh);
-            transform: translateY(10vh);
-    width: 70vw;
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_img svg {
-    width: 70vw;
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_img2 {
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_img2 svg {
-    width: 35%;
-  }
-  .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_text {
-    margin-top: 2.6vh;
-    font-size: 12px;
   }
 }
 

@@ -348,7 +348,7 @@ nav {
         width: 30px;
       }
     }
-    .shopCart{
+    .shopCart {
       width: 30px;
     }
 
@@ -486,7 +486,7 @@ nav {
     font-size: 36px; //字體大小
     // background: #3e414171; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
-    top: 10vh; //位置 top: 距離relative最高點位置
+    top: 2vh; //位置 top: 距離relative最高點位置
     // transform: translateY(30vh);
     font-weight: 600; //字體粗度
     z-index: 10;
@@ -578,7 +578,7 @@ nav {
       padding: 0 5px;
       height: 40px; //高度
       text-align: center; //文字左右置中
-      margin: 0 auto;
+      margin: -5vh auto 0;
       line-height: 40px; //上下置中
       font-size: 32px; //字體大小
       // background: #3e414171; //背景樣式 顏色
@@ -586,7 +586,7 @@ nav {
       // top: 12px; //位置 top: 距離relative最高點位置
       // left: 26%; //位置 right: 距離relative最右點位置
       padding: 0px -10px; //內縮寬度
-      font-weight: 600; //字體粗度
+      font-weight: 1000; //字體粗度
       z-index: 10;
       a {
         //超連結樣式
@@ -631,7 +631,7 @@ nav {
   }
 }
 .LaserCutting {
-  height: 1000px;
+  height: 120vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -907,157 +907,276 @@ nav {
 }
 @media screen and (max-width: 700px) {
   .LaserCutting {
-    height: 230vh;
-    margin: 80px auto 0;
+    height: 130vh;
+    margin: 20px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    .toggle {
+      position: fixed;
+      top: 100px;
+      right: 0px;
+      border-radius: 20px;
+      opacity: 0.5;
+      background-color: #1d1d1f;
+      .toggle-on {
+        background-color: #1d1d1f;
+      }
+      .toggle-off {
+        background-color: #e9e9e9;
+      }
+    }
     .title {
       border: 1px solid red;
       font-weight: 600;
-      margin: 10px 2% 0px;
+      margin: 10vh 8vh;
       font-size: 24px;
       text-align: center;
     }
     .main {
-      display: none;
+      border: 1px solid red;
+      height: 800px;
+      width: 100%;
+      margin: 0px auto 0;
+      color: black;
+      .ourService {
+        border: 1px solid rgb(115, 255, 0);
+        height: 270px;
+        width: 100%;
+        margin: 0 auto;
+        .boxWrap {
+          border: 1px solid red;
+          height: 250px;
+          width: 100%;
+          display: flex;
+          margin: -30px auto 0;
+          .box {
+            border: 1px solid red;
+            height: 250px;
+            width: 25%;
+            margin: 0 auto;
+            .box_img {
+              border: 1px solid black;
+              width: 100%;
+              height: auto;
+              margin: 0 auto;
+              position: relative;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img {
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto 0;
+              }
+              .mask {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background: rgba(101, 101, 101, 0.6);
+                color: #ffffff;
+                opacity: 0;
+                transition: 0.5s;
+              }
+            }
+            .box_img a:hover .mask {
+              opacity: 0.8;
+            }
+            .box_text {
+              text-align: center;
+              font-size: 12px;
+              margin: -10% auto 0;
+            }
+          }
+        }
+      }
+      .start_your_project {
+        border: 1px solid red;
+        height: 550px;
+        width: 80%;
+        margin: 4% auto 0%;
+        .boxWrap {
+          border: 1px solid red;
+          height: 250px;
+          width: 100%;
+          display: flex;
+          margin: 0% auto 8%;
+          .box {
+            border: 1px solid red;
+            height: 150px;
+            width: 20%;
+            margin: 0 auto;
+            position: relative;
+            // transform: scale(.5);
+            .box_img {
+              border: 1px solid black;
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img,
+              svg {
+                max-width: 100%;
+                height: auto;
+                margin: 30px auto 0;
+                position: absolute;
+                bottom: -20%;
+              }
+              .svg_dispatch {
+                position: absolute;
+                bottom: -20%;
+              }
+              .s10,
+              .m15,
+              .l20 {
+                transform: scale(1.5);
+              }
+              .svg_stlFile:hover {
+                fill: #0071e3;
+                cursor: pointer;
+              }
+              .svg_stlFile:hover .box_text_content_okay {
+                background-color: red;
+              }
+              .svg_noFile:hover {
+                fill: #0071e3;
+                cursor: pointer;
+              }
+              .svg_coworkshop {
+                max-width: 100%;
+                height: auto;
+                margin: 30px auto 0;
+                position: absolute;
+                bottom: -8%;
+              }
+            }
+            .box_img1 {
+              border: 1px solid black;
+              width: 50%;
+              height: 50%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img,
+              svg {
+                max-width: 50%;
+                height: auto;
+                margin: 30px auto 0;
+                position: absolute;
+                bottom: 50%;
+              }
+            }
+            .box_img2 {
+              border: 1px solid black;
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img,
+              svg {
+                max-width: 50%;
+                height: auto;
+                margin: 30px auto 0;
+                position: absolute;
+                bottom: -8%;
+                left: 5%;
+                transform: scale(0.7);
+              }
+              .svg_noFile {
+                max-width: 50%;
+                height: auto;
+                margin: 30px auto 0;
+                position: absolute;
+                bottom: -8%;
+                left: 45%;
+              }
+            }
+            .box_text {
+              text-align: center;
+              .box_text_title {
+                font-size: 14px;
+                font-weight: 600;
+                margin: 6% auto;
+              }
+              .box_text_content {
+                width: 76%;
+                font-size: 12px;
+                transform: translateX(12%);
+                margin-top: 5%;
+              }
+            }
+          }
+          .box1 {
+            border: 1px solid red;
+            height: 250px;
+            width: 5%;
+            margin: 0 auto;
+            position: relative;
+          }
+        }
+      }
+      .other_services {
+        border: 1px solid red;
+        height: 270px;
+        width: 80%;
+        margin: 0% auto 5%;
+        .boxWrap {
+          border: 1px solid red;
+          height: 250px;
+          width: 100%;
+          display: flex;
+          margin: -80px auto 0;
+          .box {
+            border: 1px solid red;
+            height: 250px;
+            width: 20%;
+            margin: 0 auto;
+            position: relative;
+            cursor: pointer;
+            // transform: scale(.5);
+            .box_img {
+              border: 1px solid black;
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              // background: url(../images/Coworkshop/box_img.png) center center;
+              // background-size: cover;
+              img,
+              svg {
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto -50px;
+                position: absolute;
+                bottom: 16%;
+              }
+            }
+            .box_text {
+              text-align: center;
+              .box_text_title {
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0 auto;
+              }
+              .box_text_content {
+                width: 76%;
+                font-size: 12px;
+                transform: translateX(12%);
+                margin-top: 5%;
+              }
+            }
+          }
+          .box1 {
+            border: 1px solid red;
+            height: 250px;
+            width: 5%;
+            margin: 0 auto;
+            position: relative;
+          }
+        }
+      }
     }
     .mobileMain {
-      height: 230vh;
-      display: block;
-      .mobileStart {
-        .box_container {
-          width: 60vw;
-          transform: translateX(10vw);
-          height: 110vh;
-          // position: relative;
-          .box {
-            width: 70vw;
-            height: 35vh;
-            .box_img {
-              svg {
-                width: 100%;
-                transform: translateX(5vw) scale(0.7);
-              }
-            }
-            .box_text {
-              text-align: center;
-              width: 62vw;
-              transform: translate(8vw, -8vh);
-              font-size: 12px;
-              .box_text_title {
-                font-size: 16px;
-                margin-bottom: 2vh;
-                font-weight: 800;
-              }
-            }
-          }
-
-          .mobilebox {
-            // transform: translateY(10vh);
-            width: 80vw;
-            .box_img {
-              svg {
-                width: 80vw;
-              }
-            }
-
-            .box_img2 {
-              // transform: translate(0vw,-10vh);
-              svg {
-                width: 25%;
-                margin: 4vh 0;
-                transform: translateX(20vw);
-              }
-            }
-            .box_text {
-              margin-top: 6.8vh;
-              text-align: center;
-              font-size: 12px;
-              .box_text_title {
-                font-size: 16px;
-                margin-bottom: 2vh;
-                font-weight: 800;
-              }
-            }
-          }
-        }
-        .gallery {
-          text-align: center;
-          height: 40vh;
-          .flickity-page-dots {
-            transform: translateY(6vh);
-          }
-          .box {
-            width: 70vw;
-            .box_img {
-              svg {
-                width: 70vw;
-                transform: scale(0.6);
-              }
-            }
-          }
-          .mobilebox {
-            transform: translateY(10vh);
-            width: 70vw;
-            .box_img {
-              svg {
-                width: 70vw;
-              }
-            }
-            .box_img2 {
-              transform: translateX(10vw);
-              svg {
-                width: 35%;
-              }
-            }
-            .box_text {
-              margin-top: 2.6vh;
-              font-size: 12px;
-              .box_text_title {
-                font-size: 16px;
-                margin-bottom: 2vh;
-              }
-            }
-          }
-        }
-      }
-      .mobileOthers {
-        margin-top: 10vh;
-        display: none;
-        .gallery {
-          height: 40vh;
-          .flickity-page-dots {
-            transform: translateY(6vh);
-          }
-          .box {
-            width: 70vw;
-            .box_img {
-              svg {
-                width: 70vw;
-                transform: scale(0.6);
-              }
-            }
-          }
-          .mobilebox {
-            transform: translateY(10vh);
-            width: 70vw;
-            .box_img {
-              svg {
-                width: 70vw;
-              }
-            }
-            .box_img2 {
-              transform: translateX(10vw);
-              svg {
-                width: 35%;
-              }
-            }
-            .box_text {
-              margin-top: 2.6vh;
-              font-size: 12px;
-            }
-          }
-        }
-      }
+      display: none;
     }
   }
 }

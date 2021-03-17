@@ -309,10 +309,10 @@ header {
   }
 }
 nav {
-  display: none !important; 
-    a{
+  display: none !important;
+  a {
     display: none;
-    }
+  }
 }
 @media screen and (max-width: 700px) {
   header {
@@ -348,7 +348,7 @@ nav {
         width: 30px;
       }
     }
-    .shopCart{
+    .shopCart {
       width: 30px;
     }
 
@@ -577,7 +577,7 @@ nav {
       padding: 0 5px;
       height: 40px; //高度
       text-align: center; //文字左右置中
-      margin: 0 auto;
+      margin: -5vh auto 0;
       line-height: 40px; //上下置中
       font-size: 32px; //字體大小
       // background: #3e414171; //背景樣式 顏色
@@ -585,7 +585,7 @@ nav {
       // top: 12px; //位置 top: 距離relative最高點位置
       // left: 26%; //位置 right: 距離relative最右點位置
       padding: 0px -10px; //內縮寬度
-      font-weight: 600; //字體粗度
+      font-weight: 1000; //字體粗度
       z-index: 10;
       a {
         //超連結樣式
@@ -630,7 +630,7 @@ nav {
   }
 }
 .VacuumForming {
-  height: 1000px;
+  height: 130vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -902,7 +902,7 @@ nav {
       }
     }
   }
-  .mobileMain{
+  .mobileMain {
     display: none;
   }
 }

@@ -508,11 +508,11 @@ nav a {
     padding: 0 5px;
     height: 40px;
     text-align: center;
-    margin: 0 auto;
+    margin: -5vh auto 0;
     line-height: 40px;
     font-size: 32px;
     padding: 0px -10px;
-    font-weight: 600;
+    font-weight: 1000;
     z-index: 10;
   }
   .carousel .mainTitle a {
@@ -551,7 +551,7 @@ nav a {
 }
 
 .VacuumForming {
-  height: 1000px;
+  height: 130vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
