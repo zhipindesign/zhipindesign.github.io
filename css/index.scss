@@ -115,9 +115,9 @@
   main {
     height: 800px;
     .main-icon {
-      transform: scale(6.5);
-      margin: 250px auto 250px;
-      opacity: 0.8;
+      transform: scale(6.5); //變形_放大(倍率)
+      margin: 250px auto 250px; //外框邊界(上 右 下 左)
+      opacity: 0.8; //透明度
     }
     /* external css: flickity.css */
 
@@ -144,8 +144,8 @@
           width: 100%;
         }
         .svgText {
-          color: #aaaaaa;
-          font-size: 12px;
+          color: #aaaaaa; //字體顏色
+          font-size: 12px; 
           margin-top: -20px;
         }
       }

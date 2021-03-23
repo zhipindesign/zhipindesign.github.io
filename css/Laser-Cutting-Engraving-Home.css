@@ -781,10 +781,10 @@ nav a {
 }
 
 .LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_content {
-  width: 76%;
+  width: 120%;
   font-size: 12px;
-  -webkit-transform: translateX(12%);
-          transform: translateX(12%);
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
   margin-top: 5%;
 }
 
@@ -849,10 +849,10 @@ nav a {
 }
 
 .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_content {
-  width: 76%;
+  width: 120%;
   font-size: 12px;
-  -webkit-transform: translateX(12%);
-          transform: translateX(12%);
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
   margin-top: 5%;
 }
 
