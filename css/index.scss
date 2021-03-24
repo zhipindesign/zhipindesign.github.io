@@ -173,16 +173,16 @@
           margin-left: -24vw; // 外框邊界靠左
         }
       }
-      button {
+      button { //手機板選單 三槓樣式
         .mobileMenu {
-          width: 30px;
+          width: 30px; //寬度(大小)
         }
       }
-      .shopCart{
-        width: 30px;
+      .shopCart{ // 購物車樣式
+        width: 30px; //大小
       }
 
-      .navbar-collapse {
+      .navbar-collapse { //下拉選單外框樣式
         margin: 0 -4vw 0 -4vw;
         background: #111313;
         .navbar-nav {
@@ -195,7 +195,7 @@
           #navbarDropdown {
             margin-bottom: -2vh;
           }
-          .dropdown-menu {
+          .dropdown-menu { //下拉選單樣式
             width: 100vw;
             text-align: left;
             border: none;
@@ -212,25 +212,25 @@
         }
       }
     }
-    main {
+    main { // 主要內容樣式
       height: 75vh;
-      .main-icon {
+      .main-icon { //中間icon樣式
         transform: scale(1.5);
         margin: 15vh auto 15vh;
         opacity: 0.8;
       }
-      .svg_box {
+      .svg_box { //下面四個Svg外框樣式
         .svgWrap {
           display: none;
         }
       }
-      .gallery {
+      .gallery {//下面四個Svg外框樣式
         display: block;
         .svgWrap {
           width: 75%;
           color: #aaaaaa;
         }
-        .flickity-page-dots {
+        .flickity-page-dots {  //下方白色點點樣式
           transform: translateY(2vh) scale(0.7);
           .dot {
             width: 20px;
@@ -239,12 +239,12 @@
             background-color: #aaaaaa;
             margin-right: -2px;
           }
-          .dot.is-selected {
+          .dot.is-selected { //被選擇的白色點點樣式
             background-color: white;
             opacity: 0.5;
           }
         }
-        .flickity-prev-next-button {
+        .flickity-prev-next-button { //左右選單樣式
           transform: scale(0.8);
         }
       }
@@ -314,27 +314,4 @@ footer {
       border-radius: 30%;
     }
   }
-  // .logo_img .logo_img_FB:hover path{  //FB logo移上去後樣式
-  //     transition: .5s;  //變化時間
-  //     transform: scale(1.3);  //放大
-  //     background: rgb(26, 132, 202);  //背景顏色
-  // }
-  // .logo_img .logo_img_IG:hover{  //IG logo移上去後樣式
-  //     transition: .5s;  //變化時間
-  //     transform: scale(1.3);  //放大
-  //     background: linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
-  //     background: -moz-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
-  //     background: -webkit-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
-  //     background: -o-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
-  // }
-  // .logo_img .logo_img_Twitter:hover{  //Twitter logo移上去後樣式
-  //     transition: .5s;  //變化時間
-  //     transform: scale(1.3);  //放大
-  //     background: rgb(62, 178, 255);  //背景顏色
-  // }
-  // .logo_img .logo_img_Youtube:hover{  //Youtube logo移上去後樣式
-  //     transition: .5s;  //變化時間
-  //     transform: scale(1.3);  //放大
-  //     background: rgb(253, 37, 37);  //背景顏色
-  // }
 }

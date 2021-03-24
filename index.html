@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <meta name="google-site-verification" content="oUVAG5aiPzcQJKunEdnzBo7AIBy1V0SDNCAGjkMCI7c" />
   <body class="mainIndex">   
-      <!-- 最上方選單+logo(header)  -->
       <!-- <input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" class="dark darkmodel"> -->
+      <!-- 最上方選單+logo(header)  -->
       <header>
         <div class=" d-flex">
           <div class="header_left" onclick="home()">zhipindesign</div>
@@ -70,7 +70,10 @@
         </div>
       </header>
       <!-- <div class="black"></div> -->
+
+      <!-- 手機板選單header -->
       <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- 選單 -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="menuButton">
           <svg class="mobileMenu closeMenu" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg" fill="#717474">
             <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
@@ -78,7 +81,9 @@
             <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
           </svg>
         </button>
+        <!-- 中間文字 -->
         <a class="navbar-brand" href="./index.html"><span>zhipindesign</span></a>
+        <!-- 購物車圖示 -->
         <a href="./all-product.html">          <svg class="shopCart" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background:new 0 0 511.997 511.997;" xml:space="preserve" fill="#aaaaaa">
           <g>
             <g>
@@ -104,11 +109,13 @@
         </svg></a>
 
         </button>
+        <!-- 下拉選單 -->
         <div class="collapse navbar-collapse navbar-collapse-center zh-tw" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto navbar-center">
             <li class="nav-item active">
               <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
             </li>
+            <!-- 下拉選單子項目 -->
             <li class="nav-item dropdown">
               <a class="nav-link our" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 我們的服務 +
@@ -126,6 +133,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./all-product.html">商店</a>
             </li>
+            <!-- 中英切換 -->
             <li class="nav-item" style="height: 100vh;">
               <span class="text_opacity languageEn">En</span> /
               <span class="languageZh">繁中</span>
@@ -161,7 +169,7 @@
           </ul>
         </div>
       </nav>
-
+      <!-- 主要內容 -->
       <main style="text-align:center;" class="container">
 
         <svg class="main-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
@@ -171,10 +179,11 @@
             </g>
           </svg> 
         <!-- Flickity HTML init -->
+        <!-- 四個svg -->
         <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,"prevNextButtons": false }'>
           <!-- <div class="gallery-cell"></div> -->
 
-
+          <!-- 共享工作室svg -->
           <div class="svgWrap svgWrap1" onclick="coworkshop()">
             <a href="./Co-Workshop.html">            
               <svg class="mainSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="#AAAAAA">
@@ -184,6 +193,7 @@
               <div class="svgText en">coworkshop</div>
               <div class="svgText zh-tw">共享工作室</div>
           </div>
+          <!-- 3D列印svg -->
           <div class="svgWrap svgWrap2" onclick="printing()">
             <a href="./3D-Printing-Home.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="mainSvg" fill="#AAAAAA">
@@ -194,6 +204,7 @@
               <div class="svgText en">3D printing service</div>
               <div class="svgText zh-tw">3D 列印服務</div>
           </div>
+          <!-- 雷射切割svg -->
           <div class="svgWrap svgWrap3" onclick="laser()">
             <a href="./Laser-Cutting-Engraving-Home.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="mainSvg" fill="#AAAAAA">
@@ -205,6 +216,7 @@
               <div class="svgText en">Laser cutting engraving service</div>
               <div class="svgText zh-tw">雷射切割服務</div>
           </div>
+          <!-- 真空成形svg -->
           <div class="svgWrap svgWrap4" onclick="Vacuum()">
             <a href="./Vacuum-Forming-Home.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="mainSvg" fill="#AAAAAA">

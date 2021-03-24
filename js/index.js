@@ -47,12 +47,14 @@ $(document).scroll(function(){
 //         // }
 //     });
 // });
+window.localStorage.setItem("language", "zh-tw");
 $(".languageEn").on("click", function(){
     $(".languageZh").addClass("text_opacity");
     $(".languageEn").removeClass("text_opacity");
     $(".zh-tw").hide();
     $(".en").show();
     $(".header_mid").find("ul").css("width","45%");
+    window.localStorage.setItem("language", "en");
 })
 $(".languageZh").on("click", function(){
     $(".languageEn").addClass("text_opacity");
@@ -60,6 +62,7 @@ $(".languageZh").on("click", function(){
     $(".zh-tw").show();
     $(".en").hide();
     $(".header_mid").find("ul").css("width","");
+    window.localStorage.setItem("language", "zh-tw");
 })
 $(".language1").on("click", function(){
     $(".zh-tw").css("display", "");
