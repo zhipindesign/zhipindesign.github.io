@@ -227,9 +227,9 @@
           <div class="title en">Equipment</div>
           <div class="title zh-tw">設備</div>
           <div class="container equipment">
-            <div class="boxWrap">
+            <div class="boxWrap" id="boxWrap1">
               <div class="d-flex box">
-                <div class="box_img">
+                <!-- <div class="box_img">
                   <img src="./images/Coworkshop/Drill.jpg" alt="">
                   <div class="box_text zh-tw">鑽床</div>
                   <div class="box_text en">Drill Press</div>
@@ -240,12 +240,12 @@
                   <img src="./images/Coworkshop/Band.jpg" alt="">
                   <div class="box_text zh-tw">帶鉅機</div>
                   <div class="box_text en">Band Saw</div>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="boxWrap">
+            <div class="boxWrap" id="boxWrap2">
               <div class="d-flex box">
-                <div class="box_img">
+                <!-- <div class="box_img">
                   <img src="./images/Coworkshop/TS.jpg" alt="">
                   <div class="box_text zh-tw">桌上型圓鉅機</div>
                   <div class="box_text en">Table Saw</div>
@@ -256,7 +256,7 @@
                   <img src="./images/Coworkshop/Blet.jpg" alt="">
                   <div class="box_text zh-tw">砂待機</div>
                   <div class="box_text en">Belt Sander</div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="boxWrap">
@@ -685,5 +685,57 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      fetch("https://spreadsheets.google.com/feeds/list/149Mk3-jRjNL3vd2DLyWUBsa7GF-uGCqbYR9isUaKaLY/1/public/values?alt=json")
+      .then(res => {
+          return res.json();
+      }).then(result => {
+        console.log(result)
+        console.log(result.feed.entry.length)
+        let Equipment1 = '';
+        let Equipment2 = '';
+        for(let i = 0; i < result.feed.entry.length; i++){
+          let s_num = (result.feed.entry[i].gsx$snum.$t)
+          let type  = (result.feed.entry[i].gsx$type.$t)
+          let img   = (result.feed.entry[i].gsx$img.$t)
+          let zh    = (result.feed.entry[i].gsx$zh.$t)
+          let en    = (result.feed.entry[i].gsx$en.$t)
+          console.log(s_num)
+          console.log(type)
+          console.log(img)
+          console.log(zh)
+          console.log(en)
+          if(type == "設備1"){
+            Equipment1 += `
+                        <div class="box_img" style="border: none;">
+                          <img src="./images/Coworkshop/${img}" alt="">
+                          <div class="box_text zh-tw">${zh}</div>
+                          <div class="box_text en" style="display: none;">${en}</div>
+                        </div>
+                        <div class="box_img1">
+                        </div>
+                       `;
+          }else if(type == "設備2"){
+            Equipment2 += `
+                        <div class="box_img" style="border: none;">
+                          <img src="./images/Coworkshop/${img}" alt="">
+                          <div class="box_text zh-tw">${zh}</div>
+                          <div class="box_text en" style="display: none;">${en}</div>
+                        </div>
+                        <div class="box_img1">
+                        </div>
+                       `;
+          }
+        }
+        document.querySelector("#boxWrap1 .box").innerHTML += Equipment1;
+        document.querySelector("#boxWrap2 .box").innerHTML += Equipment2;
+
+
+      // console.log($(".totalCalories").text().replace("大卡",""))
+      }).catch(function(err) {
+
+      });
+    </script>
   </body>
 </html>
