@@ -47,7 +47,20 @@ $(document).scroll(function(){
 //         // }
 //     });
 // });
-window.localStorage.setItem("language", "zh-tw");
+let lan = localStorage.getItem('language');
+if(lan == 'en'){
+    $(".languageZh").addClass("text_opacity");
+    $(".languageEn").removeClass("text_opacity");
+    $(".zh-tw").hide();
+    $(".en").show();
+    $(".header_mid").find("ul").css("width","45%");
+}else if(lan == 'zh-tw'){
+    $(".languageEn").addClass("text_opacity");
+    $(".languageZh").removeClass("text_opacity");
+    $(".zh-tw").show();
+    $(".en").hide();
+    $(".header_mid").find("ul").css("width","");
+}
 $(".languageEn").on("click", function(){
     $(".languageZh").addClass("text_opacity");
     $(".languageEn").removeClass("text_opacity");

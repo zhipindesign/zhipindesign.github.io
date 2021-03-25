@@ -1,13 +1,27 @@
 
 $(".en").css("display", "none");
 $(".addEn").css("display", "none");
-
+let lan = localStorage.getItem('language');
+if(lan == 'en'){
+    $(".languageZh").addClass("text_opacity");
+    $(".languageEn").removeClass("text_opacity");
+    $(".zh-tw").hide();
+    $(".en").show();
+    $(".header_mid").find("ul").css("width","45%");
+}else if(lan == 'zh-tw'){
+    $(".languageEn").addClass("text_opacity");
+    $(".languageZh").removeClass("text_opacity");
+    $(".zh-tw").show();
+    $(".en").hide();
+    $(".header_mid").find("ul").css("width","");
+}
 $(".languageEn").on("click", function(){
     $(".languageZh").addClass("text_opacity");
     $(".languageEn").removeClass("text_opacity");
     $(".zh-tw").hide();
     $(".en").show();
     $(".header_mid").find("ul").css("width","65%");
+    window.localStorage.setItem("language", "en");
 })
 $(".languageZh").on("click", function(){
     $(".languageEn").addClass("text_opacity");
@@ -15,6 +29,7 @@ $(".languageZh").on("click", function(){
     $(".zh-tw").show();
     $(".en").hide();
     $(".header_mid").find("ul").css("width","50%");
+    window.localStorage.setItem("language", "zh-tw");
 })
 $(".language1").on("click", function(){
     $(".zh-tw").css("display", "");
