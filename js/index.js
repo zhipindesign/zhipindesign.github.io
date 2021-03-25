@@ -53,20 +53,20 @@ if(lan == 'en'){
     $(".languageEn").removeClass("text_opacity");
     $(".zh-tw").hide();
     $(".en").show();
-    $(".header_mid").find("ul").css("width","45%");
 }else if(lan == 'zh-tw'){
     $(".languageEn").addClass("text_opacity");
     $(".languageZh").removeClass("text_opacity");
     $(".zh-tw").show();
     $(".en").hide();
-    $(".header_mid").find("ul").css("width","");
 }
 $(".languageEn").on("click", function(){
     $(".languageZh").addClass("text_opacity");
     $(".languageEn").removeClass("text_opacity");
     $(".zh-tw").hide();
     $(".en").show();
-    $(".header_mid").find("ul").css("width","45%");
+    $(".zh-tw1").hide();
+    $(".en1").show();
+    $(".header_mid").find("ul").css("width","65%");
     window.localStorage.setItem("language", "en");
 })
 $(".languageZh").on("click", function(){
@@ -74,7 +74,9 @@ $(".languageZh").on("click", function(){
     $(".languageZh").removeClass("text_opacity");
     $(".zh-tw").show();
     $(".en").hide();
-    $(".header_mid").find("ul").css("width","");
+    $(".zh-tw1").show();
+    $(".en1").hide();
+    $(".header_mid").find("ul").css("width","50%");
     window.localStorage.setItem("language", "zh-tw");
 })
 $(".language1").on("click", function(){
@@ -248,12 +250,19 @@ $(document).on("mouseout", ".box", function(){
 })
 $(document).on("click", ".closeMenu", function(){
     $(".mobileMenu").find("path:nth-child(1)").css("display","none");
-    $(".mobileMenu").find("path:nth-child(2)").css({"transform": "rotate(45deg) translate(40px,-25px)","transition": ".5s"});
-    $(".mobileMenu").find("path:nth-child(3)").css({"transform": "rotate(-45deg) translate(-200px,-50px)","transition": ".5s"});
+    $(".mobileMenu").find("path:nth-child(2)").css({"transform": "rotate(45deg) translate(30px,-10px)","transition": ".5s"});
+    $(".mobileMenu").find("path:nth-child(3)").css({"transform": "rotate(-45deg) translate(-195px,-45px)","transition": ".5s"});
     $("nav").css({"background": "#111313","transition": "0"});
     $(".mobileMenu").addClass("openMenu");
     $(".mobileMenu").removeClass("closeMenu");
     console.log('open')
+    if(lan == 'zh-tw'){
+        $(".zh-tw1").show();
+        $(".en1").hide();
+    }else if(lan == 'en'){
+        $(".zh-tw1").hide();
+        $(".en1").show();
+    }
 });
 $(document).on("click", ".openMenu", function(){
     $(".mobileMenu").find("path:nth-child(1)").css("display","block");
