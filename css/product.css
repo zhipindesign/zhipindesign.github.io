@@ -9,6 +9,7 @@ header {
   width: 100vw;
   z-index: 10;
   position: fixed;
+  top: 0;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -322,192 +323,9 @@ nav a {
   }
 }
 
-.carousel {
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
-  margin-bottom: 60px;
-  font-family: "Open Sans", "微軟正黑體";
-}
-
-.carousel .carousel-indicators li {
-  width: 30px;
-  height: 10px;
-  border-radius: 100%;
-  background: #007bff;
-  -webkit-transform: scale(0.2) translateY(12vh);
-          transform: scale(0.2) translateY(12vh);
-  margin-right: -15px;
-}
-
-.carousel .carousel-item {
-  height: 385px;
-}
-
-.carousel .carousel-item1 {
-  background: url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.carousel .carousel-item2 {
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
-  background-size: cover;
-}
-
-.carousel .carousel-item3 {
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
-  background-size: cover;
-}
-
-.carousel .carousel-item img {
-  min-height: 540px;
-  max-height: 1600px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
-}
-
-.carousel .start_your_project {
-  width: 160px;
-  height: 32px;
-  text-align: center;
-  line-height: 32px;
-  font-size: 14px;
-  background: #0063c5;
-  border-radius: 30px;
-  position: absolute;
-  padding: 0px -10px;
-  font-weight: 600;
-  top: calc(50% - 25px);
-  left: calc(50% - 65px);
-  z-index: 10;
-}
-
-.carousel .start_your_project a {
-  color: white;
-}
-
-.carousel .start_your_project a:hover {
-  text-decoration: none;
-}
-
-.carousel .mainTitle {
-  width: 100%;
-  padding: 0 5px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 60px;
-  position: absolute;
-  top: 10vh;
-  font-weight: 600;
-  z-index: 10;
-}
-
-.carousel .mainTitle a {
-  color: white;
-}
-
-.carousel .mainTitle a:hover {
-  text-decoration: none;
-}
-
-.carousel .start_your_project:hover {
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: #0070e0;
-}
-
-@media screen and (max-width: 700px) {
-  .carousel {
-    -webkit-transform: translateY(55px);
-            transform: translateY(55px);
-    font-family: "Open Sans", "微軟正黑體";
-  }
-  .carousel .carousel-indicators li {
-    width: 30px;
-    height: 10px;
-    border-radius: 100%;
-    background: #007bff;
-    -webkit-transform: scale(0.2) translateY(12vh);
-            transform: scale(0.2) translateY(12vh);
-    margin-right: -15px;
-  }
-  .carousel .carousel-item {
-    height: 62vh;
-  }
-  .carousel .carousel-item1 {
-    background: gray;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .carousel .carousel-item2 {
-    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-    background-size: cover;
-  }
-  .carousel .carousel-item3 {
-    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-    background-size: cover;
-  }
-  .carousel .carousel-item img {
-    min-height: 540px;
-    max-height: 1600px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-transform: translateY(-35%);
-            transform: translateY(-35%);
-  }
-  .carousel .mainTitle {
-    padding: 0 5px;
-    height: 40px;
-    text-align: center;
-    margin: -5vh auto 0;
-    line-height: 40px;
-    font-size: 32px;
-    padding: 0px -10px;
-    font-weight: 1000;
-    z-index: 10;
-  }
-  .carousel .mainTitle a {
-    color: white;
-  }
-  .carousel .mainTitle a:hover {
-    text-decoration: none;
-  }
-  .carousel .start_your_project {
-    width: 160px;
-    height: 32px;
-    text-align: center;
-    line-height: 32px;
-    font-size: 14px;
-    background: #0063c5;
-    border-radius: 30px;
-    position: absolute;
-    padding: 0px -10px;
-    font-weight: 600;
-    top: calc(50% - 25px);
-    left: calc(50% - 65px);
-    z-index: 10;
-  }
-  .carousel .start_your_project a {
-    color: white;
-  }
-  .carousel .start_your_project a:hover {
-    text-decoration: none;
-  }
-  .carousel .start_your_project:hover {
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    background: #0070e0;
-  }
-}
-
 .allProduct {
   height: 160vh;
-  margin: 80px auto 0;
+  margin: 0 auto;
   width: 100%;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -518,47 +336,6 @@ nav a {
   margin: 10vh 8vh;
   font-size: 24px;
   text-align: center;
-}
-
-.allProduct .boxWrap {
-  border: 1px red solid;
-  width: 100%;
-  margin-bottom: 20vh;
-}
-
-.allProduct .boxWrap .boxP {
-  border: 1px black solid;
-  width: 25%;
-  height: 50vh;
-}
-
-.allProduct .boxWrap .boxP .box_imgWrap {
-  width: 80%;
-  height: 30vh;
-  margin: 0 auto;
-  border: blue 1px solid;
-}
-
-.allProduct .boxWrap .boxP .box_imgWrap img {
-  width: 100%;
-  margin: 5vh auto 0;
-  border: red 1px solid;
-}
-
-.allProduct .boxWrap .boxP .box_textWrap {
-  width: 80%;
-  height: 20vh;
-  border: blue 1px solid;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.allProduct .boxWrap .boxP .box_textWrap .box_title {
-  font-size: 20px;
-}
-
-.allProduct .boxWrap .boxP .box_textWrap .box_text {
-  font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -761,4 +538,4 @@ footer .logo_img .logo_img_Youtube {
   margin-right: 20px;
   border-radius: 30%;
 }
-/*# sourceMappingURL=all-product.css.map */
+/*# sourceMappingURL=product.css.map */
