@@ -333,7 +333,7 @@ nav a {
 .product .title {
   border: 1px solid red;
   font-weight: 600;
-  margin: 10vh 8vh;
+  margin: 10vh 0 4vh;
   font-size: 24px;
   text-align: center;
 }
@@ -345,13 +345,14 @@ nav a {
 }
 
 .product .boxWrapP .box_imgWrap {
-  height: 65vh;
+  height: 75vh;
   width: 40%;
   border: 1px darkcyan solid;
 }
 
 .product .boxWrapP .box_imgWrap .imgWrap {
   width: 80%;
+  height: 50vh;
   margin: 0 auto 3vh;
 }
 
@@ -375,7 +376,7 @@ nav a {
 }
 
 .product .boxWrapP .box_textWrap {
-  height: 65vh;
+  height: 75vh;
   width: 60%;
   border: 1px darkcyan solid;
 }
@@ -389,6 +390,10 @@ nav a {
   text-align: center;
   font-size: 24px;
   margin: 0 auto 5vh;
+}
+
+.product .boxWrapP .box_textWrap .text_content {
+  height: 45vh;
 }
 
 .product .boxWrapP .box_textWrap .price {
