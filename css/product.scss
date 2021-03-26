@@ -388,7 +388,7 @@ header {
   }
 
   
-  .allProduct{
+  .product{
     height: 160vh;
     margin: 0 auto;
     width: 100%;
@@ -399,6 +399,22 @@ header {
       margin: 10vh 8vh;
       font-size: 24px;
       text-align: center;
+    }
+    .boxWrapP{
+        width: 100%;
+        // height: 70vh;
+        border: 1px red solid;
+        padding: 10px;
+        .box_imgWrap{
+            height: 65vh;
+            width: 40%;
+            border: 1px darkcyan solid;
+        }
+        .box_textWrap{
+            height: 65vh;
+            width: 60%;
+            border: 1px darkcyan solid;
+        }
     }
   }
   @media screen and (max-width: 600px) {

@@ -207,80 +207,8 @@
         <div class="title title1 en">PRODUCT</div>  
         <div class="title title1 zh-tw">商品頁</div>  
         <div class="boxWrap d-flex" id="boxWrap1">
-          <div class="boxP box1">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品1</div>
-              <div class="box_text">我是商品1描述我是商品1描述我是商品1描述我是商品1描述我是商品1描述我是商品1描述我是商品1描述</div>
-            </div>
-          </div>
-          <div class="boxP box2">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品2</div>
-              <div class="box_text">我是商品2描述我是商品2描述我是商品2描述我是商品2描述我是商品2描述我是商品2描述我是商品2描述</div>
-            </div>
-          </div>
-          <div class="boxP box3">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品3</div>
-              <div class="box_text">我是商品3描述我是商品3描述我是商品3描述我是商品3描述我是商品3描述我是商品3描述我是商品3描述</div>
-            </div>
-          </div>
-          <div class="boxP box4">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品4</div>
-              <div class="box_text">我是商品4描述我是商品4描述我是商品4描述我是商品4描述我是商品4描述我是商品4描述我是商品4描述</div>
-            </div>
-          </div>
         </div>
         <div class="boxWrap d-flex" id="boxWrap2">
-          <div class="boxP box5">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品5</div>
-              <div class="box_text">我是商品5描述我是商品5描述我是商品5描述我是商品5描述我是商品5描述我是商品5描述我是商品5描述</div>
-            </div>
-          </div>
-          <div class="boxP box6">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品6</div>
-              <div class="box_text">我是商品6描述我是商品6描述我是商品6描述我是商品6描述我是商品6描述我是商品6描述我是商品6描述</div>
-            </div>
-          </div>
-          <div class="boxP box7">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品7</div>
-              <div class="box_text">我是商品7描述我是商品7描述我是商品7描述我是商品7描述我是商品7描述我是商品7描述我是商品7描述</div>
-            </div>
-          </div>
-          <div class="boxP box8">
-            <div class="box_imgWrap">
-              <img src="./img/10x10.jpg" alt="">
-            </div>
-            <div class="box_textWrap">
-              <div class="box_title">商品8</div>
-              <div class="box_text">我是商品8描述我是商品8描述我是商品8描述我是商品8描述我是商品8描述我是商品8描述我是商品8描述</div>
-            </div>
-          </div>
         </div>
         <div class="boxWrap d-flex" id="boxWrap3">
         </div>
@@ -409,16 +337,122 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <script>
       $(document).on("click",".boxP", function(){
-        let img = $(this).find(".box_imgWrap").html();
-        let name = $(this).find(".box_textWrap").find(".box_title").text();
-        let url = "./product.html?" + name;
-        console.log(img)
-        console.log(name)
-        console.log(url)
+        let num = $(this).data('num');
+        let url = "./product.html?" + num;
         window.open(url);
       });
 
+      fetch("https://spreadsheets.google.com/feeds/list/149Mk3-jRjNL3vd2DLyWUBsa7GF-uGCqbYR9isUaKaLY/2/public/values?alt=json")
+      .then(res => {
+          return res.json();
+      }).then(result => {
+        console.log(result)
+        console.log(result.feed.entry.length)
+        let boxWrap1 = '';
+        let boxWrap2 = '';
+        let boxWrap3 = '';
+        let boxWrap4 = '';
+        for(let i = 0; i < result.feed.entry.length; i++){
+          let s_num      = (result.feed.entry[i].gsx$snum.$t)
+          let type       = (result.feed.entry[i].gsx$type.$t)
+          let img        = (result.feed.entry[i].gsx$img.$t)
+          let zh_title   = (result.feed.entry[i].gsx$zhtitle.$t)
+          let zh_text    = (result.feed.entry[i].gsx$zhtext.$t)
+          let en_title   = (result.feed.entry[i].gsx$entitle.$t)
+          let en_text    = (result.feed.entry[i].gsx$entext.$t)
+          // console.log(s_num)
+          // console.log(type)
+          // console.log(img)
+          // console.log(zh_title)
+          // console.log(zh_text)
+          // console.log(en_title)
+          // console.log(en_text)
+          if(type == "1"){
+            boxWrap1 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                            <div class="box_imgWrap">
+                              <img src="./images/3DPservice/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en" style="display: none;">${en_title}</div>
+                              <div class="box_text en" style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }else if(type == "2"){
+            boxWrap2 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                            <div class="box_imgWrap">
+                              <img src="./images/3DPservice/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en" style="display: none;">${en_title}</div>
+                              <div class="box_text en" style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }else if(type == "3"){
+            boxWrap3 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                            <div class="box_imgWrap">
+                              <img src="./images/3DPservice/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en" style="display: none;">${en_title}</div>
+                              <div class="box_text en" style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }else if(type == "4"){
+            boxWrap4 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                            <div class="box_imgWrap">
+                              <img src="./images/3DPservice/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en"  style="display: none;">${en_title}</div>
+                              <div class="box_text en"  style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }
 
+
+
+
+          // console.log(boxWrap1)
+        }
+        document.querySelector("#boxWrap1").innerHTML = boxWrap1;
+        document.querySelector("#boxWrap2").innerHTML = boxWrap2;
+        document.querySelector("#boxWrap3").innerHTML = boxWrap3;
+        document.querySelector("#boxWrap4").innerHTML = boxWrap4;
+      }).catch(function(err) {
+
+      });
     </script>
   </body>
 </html>
