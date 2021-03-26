@@ -409,9 +409,28 @@ header {
             height: 65vh;
             width: 40%;
             border: 1px darkcyan solid;
-            img{
-                width: 100%;
+            .imgWrap{
+                width: 80%;
+                margin: 0 auto 3vh;
+                img{
+                    width: 100%;
+                    border: springgreen 1px solid;
+                }
             }
+            .inner_imgWrap{
+                .inner_img{
+                    width: 33%;
+                    padding: 10px;
+                    border: solid 1px red;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .inner_img:hover{
+                    cursor: pointer;
+                }
+            }
+
         }
         .box_textWrap{
             height: 65vh;
@@ -428,6 +447,7 @@ header {
             }
             .price{
                 margin-top: 10vh;
+                text-align: right;
             }
         }
     }

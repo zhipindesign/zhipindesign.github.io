@@ -350,8 +350,28 @@ nav a {
   border: 1px darkcyan solid;
 }
 
-.product .boxWrapP .box_imgWrap img {
+.product .boxWrapP .box_imgWrap .imgWrap {
+  width: 80%;
+  margin: 0 auto 3vh;
+}
+
+.product .boxWrapP .box_imgWrap .imgWrap img {
   width: 100%;
+  border: springgreen 1px solid;
+}
+
+.product .boxWrapP .box_imgWrap .inner_imgWrap .inner_img {
+  width: 33%;
+  padding: 10px;
+  border: solid 1px red;
+}
+
+.product .boxWrapP .box_imgWrap .inner_imgWrap .inner_img img {
+  width: 100%;
+}
+
+.product .boxWrapP .box_imgWrap .inner_imgWrap .inner_img:hover {
+  cursor: pointer;
 }
 
 .product .boxWrapP .box_textWrap {
@@ -373,6 +393,7 @@ nav a {
 
 .product .boxWrapP .box_textWrap .price {
   margin-top: 10vh;
+  text-align: right;
 }
 
 @media screen and (max-width: 600px) {

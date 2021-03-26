@@ -178,7 +178,14 @@
         <div class="title title1 zh-tw">商品頁</div>  
         <div class="boxWrapP d-flex">
             <!-- <div class="box_imgWrap">
-                <img src="./images/3DPservice/E2.jpg" alt="">
+                <div class="imgWrap">
+                    <img src="./images/3DPservice/E2.jpg" alt="">
+                </div>
+                <div class="inner_imgWrap d-flex">
+                    <div class="inner_img"><img src="./images/3DPservice/S.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/3DPservice/S2.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/3DPservice/E.jpg" alt=""></div>
+                </div>
             </div>
             <div class="box_textWrap zh-tw">
                 <div class="text_title">我是title</div>
@@ -318,6 +325,11 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <script>
+        $(document).on("click",".inner_img",function() {
+            newImg = $(this).html();
+            console.log(newImg)
+            $(this).parent().parent().find(".imgWrap").html(newImg)
+        })
         var url = location.href; 
         var num = url.substring(url.indexOf("?")+1,url.length).split("&"); 
 
@@ -333,6 +345,8 @@
           let s_num      = (result.feed.entry[i].gsx$snum.$t)
           let type       = (result.feed.entry[i].gsx$type.$t)
           let img        = (result.feed.entry[i].gsx$img.$t)
+          let img1       = (result.feed.entry[i].gsx$img1.$t)
+          let img2       = (result.feed.entry[i].gsx$img2.$t)
           let zh_title   = (result.feed.entry[i].gsx$zhtitle.$t)
           let zh_text    = (result.feed.entry[i].gsx$zhtext.$t)
           let zh_content = (result.feed.entry[i].gsx$zhcontent.$t)
@@ -352,7 +366,14 @@
             // console.log(num)
             content += `
                             <div class="box_imgWrap">
-                                <img src="./images/3DPservice/${img}" alt="">
+                                <div class="imgWrap">
+                                    <img src="./images/3DPservice/${img}" alt="">
+                                </div>
+                                <div class="inner_imgWrap d-flex">
+                                    <div class="inner_img"><img src="./images/3DPservice/${img}" alt=""></div>
+                                    <div class="inner_img"><img src="./images/3DPservice/${img1}" alt=""></div>
+                                    <div class="inner_img"><img src="./images/3DPservice/${img2}" alt=""></div>
+                                </div>
                             </div>
                             <div class="box_textWrap zh-tw">
                                 <div class="text_title">${zh_title}</div>
