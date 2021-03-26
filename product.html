@@ -177,8 +177,23 @@
         <div class="title title1 en">PRODUCT</div>  
         <div class="title title1 zh-tw">商品頁</div>  
         <div class="boxWrapP d-flex">
-            <div class="box_imgWrap"></div>
-            <div class="box_textWrap"></div>
+            <!-- <div class="box_imgWrap">
+                <img src="./images/3DPservice/E2.jpg" alt="">
+            </div>
+            <div class="box_textWrap zh-tw">
+                <div class="text_title">我是title</div>
+                <div class="text_content">
+                    我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文
+                </div>
+                <div class="price">NT99</div>
+            </div>
+            <div class="box_textWrap en" style="display: none;">
+                <div class="text_title">I'm title</div>
+                <div class="text_content">
+                    I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.
+                </div>
+                <div class="price">NT99</div>
+            </div> -->
             
         </div>
       </div>
@@ -302,5 +317,66 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        var url = location.href; 
+        var num = url.substring(url.indexOf("?")+1,url.length).split("&"); 
+
+
+        fetch("https://spreadsheets.google.com/feeds/list/149Mk3-jRjNL3vd2DLyWUBsa7GF-uGCqbYR9isUaKaLY/2/public/values?alt=json")
+      .then(res => {
+          return res.json();
+      }).then(result => {
+        console.log(result)
+        console.log(result.feed.entry.length)
+        let content = '';
+        for(let i = 0; i < result.feed.entry.length; i++){
+          let s_num      = (result.feed.entry[i].gsx$snum.$t)
+          let type       = (result.feed.entry[i].gsx$type.$t)
+          let img        = (result.feed.entry[i].gsx$img.$t)
+          let zh_title   = (result.feed.entry[i].gsx$zhtitle.$t)
+          let zh_text    = (result.feed.entry[i].gsx$zhtext.$t)
+          let zh_content = (result.feed.entry[i].gsx$zhcontent.$t)
+          let en_title   = (result.feed.entry[i].gsx$entitle.$t)
+          let en_text    = (result.feed.entry[i].gsx$entext.$t)
+          let en_content = (result.feed.entry[i].gsx$encontent.$t)
+          let price      = (result.feed.entry[i].gsx$price.$t)
+          // console.log(s_num)
+          // console.log(type)
+          // console.log(img)
+          // console.log(zh_title)
+          // console.log(zh_text)
+        //   console.log(en_content)
+        //   console.log(zh_content)
+          if(s_num == num){
+            // console.log(s_num)
+            // console.log(num)
+            content += `
+                            <div class="box_imgWrap">
+                                <img src="./images/3DPservice/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap zh-tw">
+                                <div class="text_title">${zh_title}</div>
+                                <div class="text_content">
+                                    ${zh_content}
+                                </div>
+                                <div class="price">${price}</div>
+                            </div>
+                            <div class="box_textWrap en" style="display: none;">
+                                <div class="text_title">${en_title}</div>
+                                <div class="text_content">
+                                    ${en_content}
+                                </div>
+                                <div class="price">${price}</div>
+                            </div>
+                        `;
+          }
+
+          console.log(content)
+        }
+        document.querySelector(".boxWrapP").innerHTML = content;
+      }).catch(function(err) {
+
+      });
+    </script>
   </body>
 </html>

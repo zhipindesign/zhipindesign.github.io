@@ -350,10 +350,29 @@ nav a {
   border: 1px darkcyan solid;
 }
 
+.product .boxWrapP .box_imgWrap img {
+  width: 100%;
+}
+
 .product .boxWrapP .box_textWrap {
   height: 65vh;
   width: 60%;
   border: 1px darkcyan solid;
+}
+
+.product .boxWrapP .box_textWrap .text_title, .product .boxWrapP .box_textWrap .text_content, .product .boxWrapP .box_textWrap .price {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product .boxWrapP .box_textWrap .text_title {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 auto 5vh;
+}
+
+.product .boxWrapP .box_textWrap .price {
+  margin-top: 10vh;
 }
 
 @media screen and (max-width: 600px) {
