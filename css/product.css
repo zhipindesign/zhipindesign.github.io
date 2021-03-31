@@ -338,11 +338,11 @@ nav a {
 
 .product .boxWrapP {
   width: 100%;
+  margin-bottom: 10vh;
   padding: 10px;
 }
 
 .product .boxWrapP .box_imgWrap {
-  height: 75vh;
   width: 60%;
 }
 

@@ -636,7 +636,7 @@ nav {
 }
 
 .allProduct{
-  height: 160vh;
+  // height: 160vh;
   margin: 80px auto 0;
   width: 100%;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
@@ -649,12 +649,13 @@ nav {
   }
   .boxWrap{
     border: 1px red solid;
-    width: 100%;
+    width: 80%;
     // height: 50vh;
     margin-bottom: 20vh;
+    margin-left: 10%;
     .boxP{
       border: 1px black solid;
-      width: 25%;
+      width: 33%;
       height: 50vh;
       .box_imgWrap{
         width: 80%;
