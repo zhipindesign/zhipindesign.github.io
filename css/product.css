@@ -338,7 +338,8 @@ nav a {
 
 .product .boxWrapP {
   width: 100%;
-  margin-bottom: 10vh;
+  margin-bottom: -18vh;
+  margin-top: 10vh;
   padding: 10px;
 }
 
@@ -380,7 +381,6 @@ nav a {
 }
 
 .product .boxWrapP .box_textWrap {
-  height: 75vh;
   width: 40%;
 }
 
@@ -391,18 +391,21 @@ nav a {
 
 .product .boxWrapP .box_textWrap .text_title {
   text-align: center;
-  font-size: 24px;
-  margin: 5vh auto 5vh;
+  font-size: 32px;
+  margin: 5vh auto 0vh;
+  font-weight: 600;
 }
 
 .product .boxWrapP .box_textWrap .text_content {
   height: 45vh;
+  font-size: 14px;
 }
 
 .product .boxWrapP .box_textWrap .price {
   text-align: center;
-  margin-bottom: 15vh;
-  margin-top: 5vh;
+  margin-top: 0vh;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .product .boxWrapP .box_textWrap .family_logo {
@@ -413,6 +416,8 @@ nav a {
   text-align: center;
   color: white;
   z-index: 10;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
 }
 
 .product .boxWrapP .box_textWrap .family_logo svg {
