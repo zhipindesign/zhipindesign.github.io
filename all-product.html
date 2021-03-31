@@ -360,6 +360,7 @@
           let zh_text    = (result.feed.entry[i].gsx$zhtext.$t)
           let en_title   = (result.feed.entry[i].gsx$entitle.$t)
           let en_text    = (result.feed.entry[i].gsx$entext.$t)
+          let shopID     = (result.feed.entry[i].gsx$shopid.$t)
           // console.log(s_num)
           // console.log(type)
           // console.log(img)
@@ -369,9 +370,9 @@
           // console.log(en_text)
           if(type == "1"){
             boxWrap1 += `
-                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
                             <div class="box_imgWrap">
-                              <img src="./images/3DPservice/${img}" alt="">
+                              <img src="./images/product/${img}" alt="">
                             </div>
                             <div class="box_textWrap">
                               <div class="box_title zh-tw">${zh_title}</div>
@@ -387,9 +388,9 @@
                         `;
           }else if(type == "2"){
             boxWrap2 += `
-                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
                             <div class="box_imgWrap">
-                              <img src="./images/3DPservice/${img}" alt="">
+                              <img src="./images/product/${img}" alt="">
                             </div>
                             <div class="box_textWrap">
                               <div class="box_title zh-tw">${zh_title}</div>
@@ -405,9 +406,9 @@
                         `;
           }else if(type == "3"){
             boxWrap3 += `
-                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
                             <div class="box_imgWrap">
-                              <img src="./images/3DPservice/${img}" alt="">
+                              <img src="./images/product/${img}" alt="">
                             </div>
                             <div class="box_textWrap">
                               <div class="box_title zh-tw">${zh_title}</div>
@@ -423,9 +424,9 @@
                         `;
           }else if(type == "4"){
             boxWrap4 += `
-                        <div class="boxP" id="context${s_num}" data-num="${s_num}">
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
                             <div class="box_imgWrap">
-                              <img src="./images/3DPservice/${img}" alt="">
+                              <img src="./images/product/${img}" alt="">
                             </div>
                             <div class="box_textWrap">
                               <div class="box_title zh-tw">${zh_title}</div>

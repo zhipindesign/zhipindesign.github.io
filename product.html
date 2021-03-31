@@ -182,9 +182,9 @@
                     <img src="./images/3DPservice/E2.jpg" alt="">
                 </div>
                 <div class="inner_imgWrap d-flex">
-                    <div class="inner_img"><img src="./images/3DPservice/S.jpg" alt=""></div>
-                    <div class="inner_img"><img src="./images/3DPservice/S2.jpg" alt=""></div>
-                    <div class="inner_img"><img src="./images/3DPservice/E.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/product/S.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/product/S2.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/product/E.jpg" alt=""></div>
                 </div>
             </div>
             <div class="box_textWrap zh-tw">
@@ -338,8 +338,8 @@
       .then(res => {
           return res.json();
       }).then(result => {
-        console.log(result)
-        console.log(result.feed.entry.length)
+        // console.log(result)
+        // console.log(result.feed.entry.length)
         let content = '';
         for(let i = 0; i < result.feed.entry.length; i++){
           let s_num      = (result.feed.entry[i].gsx$snum.$t)
@@ -354,7 +354,8 @@
           let en_text    = (result.feed.entry[i].gsx$entext.$t)
           let en_content = (result.feed.entry[i].gsx$encontent.$t)
           let price      = (result.feed.entry[i].gsx$price.$t)
-          // console.log(s_num)
+          let shopID     = (result.feed.entry[i].gsx$shopid.$t)
+          // console.log(shopID)
           // console.log(type)
           // console.log(img)
           // console.log(zh_title)
@@ -365,14 +366,14 @@
             // console.log(s_num)
             // console.log(num)
             content += `
-                            <div class="box_imgWrap">
+                            <div class="box_imgWrap" data-id="${shopID}">
                                 <div class="imgWrap">
-                                    <img src="./images/3DPservice/${img}" alt="">
+                                    <img src="./images/product/${img}" alt="">
                                 </div>
                                 <div class="inner_imgWrap">
-                                    <div class="inner_img"><img src="./images/3DPservice/${img}" alt=""></div>
-                                    <div class="inner_img"><img src="./images/3DPservice/${img1}" alt=""></div>
-                                    <div class="inner_img"><img src="./images/3DPservice/${img2}" alt=""></div>
+                                    <div class="inner_img"><img src="./images/product/${img}" alt=""></div>
+                                    <div class="inner_img"><img src="./images/product/${img1}" alt=""></div>
+                                    <div class="inner_img"><img src="./images/product/${img2}" alt=""></div>
                                 </div>
                             </div>
                             <div class="box_textWrap zh-tw">
@@ -453,15 +454,19 @@
                         `;
           }
 
-          console.log(content)
+          // console.log(content)
         }
         document.querySelector(".boxWrapP").innerHTML = content;
       }).catch(function(err) {
 
       });
       $("svg").on("click", function(){
-        windowOpen('https://famistore.famiport.com.tw/234599/index.php?action=fmall_8420368', '_blank');
-      })
+        let id = $(".box_imgWrap").data('id');
+        let url = "https://famistore.famiport.com.tw/234599/index.php?action=" + id;
+        console.log(url) ;
+        window.open(url);
+        // windowOpen('https://famistore.famiport.com.tw/234599/index.php?action=fmall_8616820', '_blank');
+      });
     </script>
   </body>
 </html>
