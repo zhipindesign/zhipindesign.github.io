@@ -346,8 +346,11 @@
       .then(res => {
           return res.json();
       }).then(result => {
-        console.log(result)
+        // console.log(result)
+        let length = result.feed.entry.length;
         console.log(result.feed.entry.length)
+        let boxLength = parseInt(length / 3) + 1;
+        console.log(boxLength)
         let boxWrap1 = '';
         let boxWrap2 = '';
         let boxWrap3 = '';
@@ -368,6 +371,10 @@
           // console.log(zh_text)
           // console.log(en_title)
           // console.log(en_text)
+
+          for(let i = 0; i < length; i++){
+            
+          }
           if(type == "1"){
             boxWrap1 += `
                         <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
