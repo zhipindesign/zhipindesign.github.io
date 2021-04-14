@@ -445,7 +445,7 @@ nav a {
   line-height: 40px;
   font-size: 60px;
   position: absolute;
-  top: 10vh;
+  top: 5vh;
   font-weight: 600;
   z-index: 10;
 }
@@ -456,6 +456,14 @@ nav a {
 
 .carousel .mainTitle a:hover {
   text-decoration: none;
+}
+
+.carousel .mainTitle .mainText {
+  font-size: 30px;
+  color: white;
+  margin: 5vh auto 0;
+  text-align: center;
+  width: 80%;
 }
 
 .carousel .start_your_project:hover {

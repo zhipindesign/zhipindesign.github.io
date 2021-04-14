@@ -486,7 +486,7 @@ nav {
     font-size: 60px; //字體大小
     // background: #3e414171; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
-    top: 10vh; //位置 top: 距離relative最高點位置
+    top: 5vh; //位置 top: 距離relative最高點位置
     // transform: translateY(30vh);
     font-weight: 600; //字體粗度
     z-index: 10;
@@ -497,6 +497,13 @@ nav {
     a:hover {
       //hover: 滑鼠移上去後之效果
       text-decoration: none; //將預設底線拿掉
+    }
+    .mainText{
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      margin: 5vh auto 0;
+      text-align: center;
+      width: 80%;
     }
   }
   .start_your_project:hover {
