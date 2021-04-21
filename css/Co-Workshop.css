@@ -459,11 +459,11 @@ nav a {
 }
 
 .carousel .mainTitle .mainText {
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   margin: 5vh auto 0;
   text-align: center;
-  width: 80%;
+  width: 60%;
 }
 
 .carousel .start_your_project:hover {
@@ -645,6 +645,7 @@ nav a {
 .coworkshop .main .equipment .boxWrap .box .box_img .box_text {
   text-align: center;
   font-size: 14px;
+  font-weight: 800;
 }
 
 .coworkshop .main .equipment .boxWrap .box .box_img1 {

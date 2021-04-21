@@ -499,11 +499,11 @@ nav {
       text-decoration: none; //將預設底線拿掉
     }
     .mainText{
-      font-size: 20px;
+      font-size: 24px;
       color: rgb(255, 255, 255);
       margin: 5vh auto 0;
       text-align: center;
-      width: 80%;
+      width: 60%;
     }
   }
   .start_your_project:hover {
@@ -708,6 +708,7 @@ nav {
             .box_text {
               text-align: center;
               font-size: 14px;
+              font-weight: 800;
             }
           }
           .box_img1 {
