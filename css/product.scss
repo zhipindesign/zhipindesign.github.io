@@ -402,6 +402,7 @@ header {
     }
     .boxWrapP{
         width: 100%;
+        display: flex;
         // height: 70vh;
         // border: 1px red solid;
         margin-bottom: -18vh;
@@ -487,8 +488,8 @@ header {
     }
   }
   @media screen and (max-width: 600px) {
-    .allProduct {
-      height: 230vh;
+    .product {
+      // height: 230vh;
       margin: 80px auto 0;
       font-family: "Open Sans", "微軟正黑體"; //字型樣式
       .title {
@@ -498,148 +499,96 @@ header {
         font-size: 24px;
         text-align: center;
       }
-      .main {
-        display: none;
-      }
-      .mobileMain {
-        height: 230vh;
+      .boxWrapP{
+        width: 100%;
         display: block;
-        .mobileStart {
-          .box_container {
-            width: 60vw;
-            transform: translateX(10vw);
-            height: 110vh;
-            // position: relative;
-            .box {
-              width: 70vw;
-              height: 35vh;
-              .box_img {
-                svg {
+        // height: 70vh;
+        // border: 1px red solid;
+        margin-bottom: -18vh;
+        margin-top: 10vh;
+        padding: 10px;
+        .box_imgWrap{
+            // height: 75vh;
+            width: 60%;
+            // border: 1px darkcyan solid;
+            .imgWrap{
+              width: 40vh;
+              height: 40vh;
+              margin: 0 auto 3vh;
+              border: springgreen 1px solid;
+              background: #efefef;
+              img{
                   width: 100%;
-                  transform: translateX(5vw) scale(0.7);
-                }
-              }
-              .box_text {
-                text-align: center;
-                width: 62vw;
-                transform: translate(8vw, -8vh);
-                font-size: 12px;
-                .box_text_title {
-                  font-size: 16px;
-                  margin-bottom: 2vh;
-                  font-weight: 800;
-                }
+                  // opacity: 0%;
               }
             }
-  
-            .mobilebox {
-              // transform: translateY(10vh);
-              width: 80vw;
-              .box_img {
-                svg {
-                  width: 80vw;
+            .inner_imgWrap{
+              width: 100%;
+              transform: translate(35%,-50%) scale(1.6);
+              display: flex;
+                .inner_img{
+                  width: 150px;
+                  height: auto;
+                  border: solid 1px red;
+                  background: #9c9c9c;
+                  margin-bottom: 0vh;
+                  margin-right: 1vh;
+                  img{
+                      width: 100%;
+                      // opacity: 0%;
+                  }
                 }
-              }
-  
-              .box_img2 {
-                // transform: translate(0vw,-10vh);
-                svg {
-                  width: 25%;
-                  margin: 4vh 0;
-                  transform: translateX(20vw);
+                .inner_img:hover{
+                    cursor: pointer;
                 }
-              }
-              .box_text {
-                margin-top: 6.8vh;
-                text-align: center;
-                font-size: 12px;
-                .box_text_title {
-                  font-size: 16px;
-                  margin-bottom: 2vh;
-                  font-weight: 800;
-                }
-              }
             }
-          }
-          .gallery {
-            text-align: center;
-            height: 40vh;
-            .flickity-page-dots {
-              transform: translateY(6vh);
-            }
-            .box {
-              width: 70vw;
-              .box_img {
-                svg {
-                  width: 70vw;
-                  transform: scale(0.6);
-                }
-              }
-            }
-            .mobilebox {
-              transform: translateY(10vh);
-              width: 70vw;
-              .box_img {
-                svg {
-                  width: 70vw;
-                }
-              }
-              .box_img2 {
-                transform: translateX(10vw);
-                svg {
-                  width: 35%;
-                }
-              }
-              .box_text {
-                margin-top: 2.6vh;
-                font-size: 12px;
-                .box_text_title {
-                  font-size: 16px;
-                  margin-bottom: 2vh;
-                }
-              }
-            }
-          }
+
         }
-        .mobileOthers {
-          margin-top: 10vh;
-          display: none;
-          .gallery {
-            height: 40vh;
-            .flickity-page-dots {
-              transform: translateY(6vh);
+        .box_textWrap{
+            // height: 50vh;
+            width: 100%;
+            margin-bottom: 5vh;
+            // border: 1px darkcyan solid;
+            .text_title, .text_content, .price{
+                width: 80%;
+                margin: 0 auto;
             }
-            .box {
-              width: 70vw;
-              .box_img {
-                svg {
-                  width: 70vw;
-                  transform: scale(0.6);
-                }
+            .text_title{
+                text-align: center;
+                font-size: 32px;
+                margin: 5vh auto 0vh;
+                font-weight: 600;
+            }
+            .text_content{
+                height: 45vh;
+                font-size: 14px;
+            }
+            .price{
+                text-align: center;
+                // margin-bottom: 10vh;
+                margin-top: 0vh;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .family_logo{
+              width: 50%;
+              margin: 0 auto;
+              border-radius: 20px;
+              background: #008ED3;
+              text-align: center;
+              color: white;
+              z-index: 10;
+              margin-bottom: 4vh;
+              margin-top: 2vh;
+              svg{
+                transform: scale(.6);
               }
             }
-            .mobilebox {
-              transform: translateY(10vh);
-              width: 70vw;
-              .box_img {
-                svg {
-                  width: 70vw;
-                }
-              }
-              .box_img2 {
-                transform: translateX(10vw);
-                svg {
-                  width: 35%;
-                }
-              }
-              .box_text {
-                margin-top: 2.6vh;
-                font-size: 12px;
-              }
+            .family_logo:hover {
+              cursor: pointer;
             }
-          }
         }
-      }
+    }
     }
   }
   //footer樣式

@@ -338,6 +338,9 @@ nav a {
 
 .product .boxWrapP {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: -18vh;
   margin-top: 10vh;
   padding: 10px;
@@ -430,150 +433,100 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
-  .allProduct {
-    height: 230vh;
+  .product {
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
-  .allProduct .title {
+  .product .title {
     border: 1px solid red;
     font-weight: 600;
     margin: 10px 2% 0px;
     font-size: 24px;
     text-align: center;
   }
-  .allProduct .main {
-    display: none;
-  }
-  .allProduct .mobileMain {
-    height: 230vh;
-    display: block;
-  }
-  .allProduct .mobileMain .mobileStart .box_container {
-    width: 60vw;
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
-    height: 110vh;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .box {
-    width: 70vw;
-    height: 35vh;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .box .box_img svg {
+  .product .boxWrapP {
     width: 100%;
-    -webkit-transform: translateX(5vw) scale(0.7);
-            transform: translateX(5vw) scale(0.7);
-  }
-  .allProduct .mobileMain .mobileStart .box_container .box .box_text {
-    text-align: center;
-    width: 62vw;
-    -webkit-transform: translate(8vw, -8vh);
-            transform: translate(8vw, -8vh);
-    font-size: 12px;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .box .box_text .box_text_title {
-    font-size: 16px;
-    margin-bottom: 2vh;
-    font-weight: 800;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .mobilebox {
-    width: 80vw;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .mobilebox .box_img svg {
-    width: 80vw;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
-    width: 25%;
-    margin: 4vh 0;
-    -webkit-transform: translateX(20vw);
-            transform: translateX(20vw);
-  }
-  .allProduct .mobileMain .mobileStart .box_container .mobilebox .box_text {
-    margin-top: 6.8vh;
-    text-align: center;
-    font-size: 12px;
-  }
-  .allProduct .mobileMain .mobileStart .box_container .mobilebox .box_text .box_text_title {
-    font-size: 16px;
-    margin-bottom: 2vh;
-    font-weight: 800;
-  }
-  .allProduct .mobileMain .mobileStart .gallery {
-    text-align: center;
-    height: 40vh;
-  }
-  .allProduct .mobileMain .mobileStart .gallery .flickity-page-dots {
-    -webkit-transform: translateY(6vh);
-            transform: translateY(6vh);
-  }
-  .allProduct .mobileMain .mobileStart .gallery .box {
-    width: 70vw;
-  }
-  .allProduct .mobileMain .mobileStart .gallery .box .box_img svg {
-    width: 70vw;
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  .allProduct .mobileMain .mobileStart .gallery .mobilebox {
-    -webkit-transform: translateY(10vh);
-            transform: translateY(10vh);
-    width: 70vw;
-  }
-  .allProduct .mobileMain .mobileStart .gallery .mobilebox .box_img svg {
-    width: 70vw;
-  }
-  .allProduct .mobileMain .mobileStart .gallery .mobilebox .box_img2 {
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
-  }
-  .allProduct .mobileMain .mobileStart .gallery .mobilebox .box_img2 svg {
-    width: 35%;
-  }
-  .allProduct .mobileMain .mobileStart .gallery .mobilebox .box_text {
-    margin-top: 2.6vh;
-    font-size: 12px;
-  }
-  .allProduct .mobileMain .mobileStart .gallery .mobilebox .box_text .box_text_title {
-    font-size: 16px;
-    margin-bottom: 2vh;
-  }
-  .allProduct .mobileMain .mobileOthers {
+    display: block;
+    margin-bottom: -18vh;
     margin-top: 10vh;
-    display: none;
+    padding: 10px;
   }
-  .allProduct .mobileMain .mobileOthers .gallery {
+  .product .boxWrapP .box_imgWrap {
+    width: 60%;
+  }
+  .product .boxWrapP .box_imgWrap .imgWrap {
+    width: 40vh;
     height: 40vh;
+    margin: 0 auto 3vh;
+    border: springgreen 1px solid;
+    background: #efefef;
   }
-  .allProduct .mobileMain .mobileOthers .gallery .flickity-page-dots {
-    -webkit-transform: translateY(6vh);
-            transform: translateY(6vh);
+  .product .boxWrapP .box_imgWrap .imgWrap img {
+    width: 100%;
   }
-  .allProduct .mobileMain .mobileOthers .gallery .box {
-    width: 70vw;
+  .product .boxWrapP .box_imgWrap .inner_imgWrap {
+    width: 100%;
+    -webkit-transform: translate(35%, -50%) scale(1.6);
+            transform: translate(35%, -50%) scale(1.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .allProduct .mobileMain .mobileOthers .gallery .box .box_img svg {
-    width: 70vw;
+  .product .boxWrapP .box_imgWrap .inner_imgWrap .inner_img {
+    width: 150px;
+    height: auto;
+    border: solid 1px red;
+    background: #9c9c9c;
+    margin-bottom: 0vh;
+    margin-right: 1vh;
+  }
+  .product .boxWrapP .box_imgWrap .inner_imgWrap .inner_img img {
+    width: 100%;
+  }
+  .product .boxWrapP .box_imgWrap .inner_imgWrap .inner_img:hover {
+    cursor: pointer;
+  }
+  .product .boxWrapP .box_textWrap {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  .product .boxWrapP .box_textWrap .text_title, .product .boxWrapP .box_textWrap .text_content, .product .boxWrapP .box_textWrap .price {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .product .boxWrapP .box_textWrap .text_title {
+    text-align: center;
+    font-size: 32px;
+    margin: 5vh auto 0vh;
+    font-weight: 600;
+  }
+  .product .boxWrapP .box_textWrap .text_content {
+    height: 45vh;
+    font-size: 14px;
+  }
+  .product .boxWrapP .box_textWrap .price {
+    text-align: center;
+    margin-top: 0vh;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .product .boxWrapP .box_textWrap .family_logo {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #008ED3;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+  }
+  .product .boxWrapP .box_textWrap .family_logo svg {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
-  .allProduct .mobileMain .mobileOthers .gallery .mobilebox {
-    -webkit-transform: translateY(10vh);
-            transform: translateY(10vh);
-    width: 70vw;
-  }
-  .allProduct .mobileMain .mobileOthers .gallery .mobilebox .box_img svg {
-    width: 70vw;
-  }
-  .allProduct .mobileMain .mobileOthers .gallery .mobilebox .box_img2 {
-    -webkit-transform: translateX(10vw);
-            transform: translateX(10vw);
-  }
-  .allProduct .mobileMain .mobileOthers .gallery .mobilebox .box_img2 svg {
-    width: 35%;
-  }
-  .allProduct .mobileMain .mobileOthers .gallery .mobilebox .box_text {
-    margin-top: 2.6vh;
-    font-size: 12px;
+  .product .boxWrapP .box_textWrap .family_logo:hover {
+    cursor: pointer;
   }
 }
 
