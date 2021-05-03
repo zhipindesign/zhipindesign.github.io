@@ -170,12 +170,34 @@
         </div>
       </nav>
       <!-- 首頁主要內容 index -->
-      <div class="ourWork">
-        <input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" class="dark darkmodel">
-        <div class="borderOn btn btn-danger position-fixed">On</div>
-        <div class="borderClose btn btn-danger position-fixed" style="transform: translateX(50px);">Close</div>
-        <div class="main">
-            <div class="title title1">Our work</div>  
+      <div class="shoppingCart container">
+        <div class="title">Shopping Cart</div>
+        <div class="shoppingCartWrap d-flex">
+          <div class="shoppingCartLeftWrap">
+            <!-- <div class="shoppingBox d-flex">
+              <div class="imgWrap">
+                <img src="./images/product/switch.webp" alt="">
+              </div>
+              <div class="textWrap">
+                <div class="d-flex">
+                  <div class="productName">我是商品1</div>
+                  <div class="price">NT$360</div>
+                </div>
+                <div class="stock">有存貨</div>
+                <div class="style">顏色</div>
+                <div class="number">數量</div>
+              </div>
+            </div> -->
+            <hr>
+          </div>
+          <div class="shoppingCartRightWrap">
+            <div class="checkbox">
+              <div>Your order qualifies for FREE Shipping.</div>
+              <div class="itemNumber">Subtotal ( 2 items): </div>
+              <div class="totalPrice">NT$720</div>
+              <button type="button" class="btn btn-primary">Proceed to checkout</button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- 最下方文字區塊(footer) -->
@@ -294,6 +316,104 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+      <script>
+          var url = location.href; 
+          var num = url.substring(url.indexOf("?")+1,url.length).split("&"); 
+          var cartArr = JSON.parse(localStorage.getItem("product"));
+          if(cartArr == null){cartArr = [];}
+          console.log(cartArr);
+          // console.log(cartArr.length);
+          // console.log(cartArr[0]);
+          // console.log(cartArr[1]);
+          // console.log(cartArr[2]);
+  
+        fetch("https://spreadsheets.google.com/feeds/list/149Mk3-jRjNL3vd2DLyWUBsa7GF-uGCqbYR9isUaKaLY/2/public/values?alt=json")
+        .then(res => {
+            return res.json();
+        }).then(result => {
+          // console.log(result)
+          // console.log(result.feed.entry.length)
+          let content = '';
+          for(let i = 0; i < cartArr.length; i++){
+            let j = cartArr[i] - 1;
+            let s_num      = (result.feed.entry[j].gsx$snum.$t)
+            let type       = (result.feed.entry[j].gsx$type.$t)
+            let img        = (result.feed.entry[j].gsx$img.$t)
+            let img1       = (result.feed.entry[j].gsx$img1.$t)
+            let img2       = (result.feed.entry[j].gsx$img2.$t)
+            let zh_title   = (result.feed.entry[j].gsx$zhtitle.$t)
+            let zh_text    = (result.feed.entry[j].gsx$zhtext.$t)
+            let zh_content = (result.feed.entry[j].gsx$zhcontent.$t)
+            let en_title   = (result.feed.entry[j].gsx$entitle.$t)
+            let en_text    = (result.feed.entry[j].gsx$entext.$t)
+            let en_content = (result.feed.entry[j].gsx$encontent.$t)
+            let price      = (result.feed.entry[j].gsx$price.$t)
+            let shopID     = (result.feed.entry[j].gsx$shopid.$t)
+            // console.log(i)
+            // console.log(cartArr[i])
+            // console.log(s_num)
+            // console.log(shopID)
+            // console.log(type)
+            // console.log(img)
+            // console.log(zh_title)
+            // console.log(zh_text)
+          //   console.log(en_content)
+          //   console.log(zh_content)
+            // if(s_num == num){
+              // console.log(s_num)
+              // console.log(num)
+              content += `
+                            <div class="shoppingBox d-flex"  data-id="${s_num}">
+                              <div class="imgWrap">
+                                <img src="./images/product/${img}" alt="">
+                              </div>
+                              <div class="textWrap">
+                                <div class="d-flex">
+                                  <div class="productName">${zh_title}</div>
+                                  <div class="price">${price}</div>
+                                </div>
+                                <div class="stock">有存貨</div>
+                                <div class="style">顏色</div>
+                                <div class="number">數量</div>
+                              </div>
+                            </div>
+                            <hr>
+                          `;
+            // }
+  
+            // console.log(content)
+          }
+          document.querySelector(".shoppingCartLeftWrap").innerHTML = content;
+          let q = $(".price").length;
+          let totalPrice = 0;
+          for(let i = 0; i < q; i++){
+            let price = parseFloat($(".price").eq(i).text().slice(2));
+            totalPrice += price;
+            console.log(price);
+            console.log(totalPrice);
+          }
+          console.log(q)
+          $(".totalPrice").text('NT$' + totalPrice);
+        }).catch(function(err) {
+  
+        });
+        $(".family_logo").on("click", function(){
+  
+        });
+        $(document).on("click", ".family_logo", function(){
+  
+          let id = $(".box_imgWrap").data('id');
+          // let url = "https://famistore.famiport.com.tw/234599/index.php?action=" + id;
+          cartArr.push(id);
+          console.log(cartArr);
+          let cartStr = JSON.stringify(cartArr);
+          console.log(cartStr);
+          localStorage.setItem("product", cartStr);
+          // window.open(url);
+          // windowOpen('https://famistore.famiport.com.tw/234599/index.php?action=fmall_8616820', '_blank');
+        });
+      </script>
   </body>
 </html>
