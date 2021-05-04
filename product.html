@@ -13,6 +13,8 @@
     <link rel=stylesheet type="text/css" href="./css/product.css">
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
     <meta name="google-site-verification" content="oUVAG5aiPzcQJKunEdnzBo7AIBy1V0SDNCAGjkMCI7c" />
   </head>
   <body class="">   
@@ -429,9 +431,6 @@
       }).catch(function(err) {
 
       });
-      $(".family_logo").on("click", function(){
-
-      });
       var cartArr = JSON.parse(localStorage.getItem("product"));
       if(cartArr == null){cartArr = [];}
       console.log(cartArr)
@@ -443,8 +442,10 @@
         cartArr.push(id);
         cartArr = $.unique(cartArr);
         let cartStr = JSON.stringify(cartArr);
-        console.log(cartStr);
+        let name = $('.zh-tw .text_title').text();
+        console.log(name);
         localStorage.setItem("product", cartStr);
+        swal(name, "已加入購物車！","success")        // alert('已加入購物車')
         // window.open(url);
         // windowOpen('https://famistore.famiport.com.tw/234599/index.php?action=fmall_8616820', '_blank');
       });

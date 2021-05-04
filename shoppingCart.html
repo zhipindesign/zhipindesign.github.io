@@ -342,6 +342,7 @@
           // console.log(result.feed.entry.length)
           let content = '';
           console.log(cartArr.length)
+          $('.itemNumber').text('Subtotal ( ' + cartArr.length + ' items): ')
           if(cartArr.length > 0){
             for(let i = 0; i < cartArr.length; i++){
             let j = cartArr[i] - 1;
@@ -384,7 +385,14 @@
                                 <div class="stock">有存貨</div>
                                 <div class="style">顏色</div>
                                 <div>
-                                  <span class="number">數量</span>
+                                  數量: <select name="" id="" class="number">
+                                    <option value='0'>請選擇</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3' selected>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                  </select>
                                   <span class="delete">Delete</span>
                                 </div>
                               </div>
@@ -398,14 +406,19 @@
           document.querySelector(".shoppingCartLeftWrap").innerHTML = content;
           let q = $(".price").length;
           let totalPrice = 0;
+          // let priceArr = [];
           for(let i = 0; i < q; i++){
             let price = parseFloat($(".price").eq(i).text().slice(2));
-            totalPrice += price;
-            // console.log(price);
-            // console.log(totalPrice);
+            let number = $('.number').eq(i).val();
+            totalPrice += parseInt(number*price);
+            $(".totalPrice").text('NT$' + totalPrice);
+            console.log(totalPrice)
+            $(document).on('change', '.number', function(){
+            })
+            console.log(totalPrice)
           }
+
           // console.log(q)
-          $(".totalPrice").text('NT$' + totalPrice);
 
           $(document).on("click", ".deleteAll", function(){
             localStorage.clear()
