@@ -326,7 +326,6 @@ nav a {
 .shoppingCart {
   margin: 20vh auto;
   width: 100%;
-  border: 1px red solid;
   font-family: "Open Sans", "微軟正黑體";
 }
 
@@ -338,8 +337,7 @@ nav a {
 }
 
 .shoppingCart .shoppingCartWrap .shoppingCartLeftWrap {
-  border: 1px darkcyan solid;
-  width: 70%;
+  width: 75%;
 }
 
 .shoppingCart .shoppingCartWrap .shoppingCartLeftWrap .shoppingBox {
@@ -348,7 +346,6 @@ nav a {
 }
 
 .shoppingCart .shoppingCartWrap .shoppingCartLeftWrap .shoppingBox .imgWrap {
-  background: darkgray;
   width: 30%;
   height: 200px;
   margin-right: 2vw;
@@ -371,9 +368,22 @@ nav a {
   text-align: right;
 }
 
+.shoppingCart .shoppingCartWrap .shoppingCartLeftWrap .shoppingBox .textWrap .delete {
+  color: #00a2ff;
+  cursor: pointer;
+}
+
+.shoppingCart .shoppingCartWrap .shoppingCartLeftWrap .shoppingBox .textWrap .delete:hover {
+  color: #023dfd;
+  text-decoration: underline;
+}
+
 .shoppingCart .shoppingCartWrap .shoppingCartRightWrap {
-  border: 1px slategrey solid;
-  width: 30%;
+  background: #e9e9e9b0;
+  padding: 10px;
+  height: 32vh;
+  border-radius: 16px;
+  width: 25%;
   margin: 0 auto;
 }
 

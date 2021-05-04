@@ -434,13 +434,14 @@
       });
       var cartArr = JSON.parse(localStorage.getItem("product"));
       if(cartArr == null){cartArr = [];}
-      console.log(cartArr);
+      console.log(cartArr)
+
       $(document).on("click", ".family_logo", function(){
 
         let id = $(".box_imgWrap").data('id');
         // let url = "https://famistore.famiport.com.tw/234599/index.php?action=" + id;
         cartArr.push(id);
-        console.log(cartArr);
+        cartArr = $.unique(cartArr);
         let cartStr = JSON.stringify(cartArr);
         console.log(cartStr);
         localStorage.setItem("product", cartStr);

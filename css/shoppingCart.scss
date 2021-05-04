@@ -392,7 +392,7 @@ nav {
   // height: 160vh;
   margin: 20vh auto;
   width: 100%;
-  border: 1px red solid;
+  // border: 1px red solid;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .title {
     // border: 1px solid red;
@@ -403,15 +403,15 @@ nav {
   }
   .shoppingCartWrap{
     .shoppingCartLeftWrap{
-      border: 1px darkcyan solid;
+      // border: 1px darkcyan solid;
       // height: 100vh;
-      width: 70%;
+      width: 75%;
       .shoppingBox{
         width: 80%;
         margin: 0 auto;
         // border: 1px darkgoldenrod solid;
         .imgWrap{
-          background: darkgray;
+          // background: darkgray;
           width: 30%;
           height: 200px;
           margin-right: 2vw;
@@ -428,13 +428,25 @@ nav {
           .price{
             text-align: right;
           }
+          .delete{
+            color: rgb(0, 162, 255);
+            cursor: pointer;
+          }
+          .delete:hover{
+            color: rgb(2, 61, 253);
+            text-decoration: underline;
+          }
         }
       }
     }
     .shoppingCartRightWrap{
-      border: 1px slategrey solid;
+      background: #e9e9e9b0;
+      padding: 10px;
+      height: 32vh;
+      border-radius: 16px;
+      // border: 1px slategrey solid;
       // height: 100vh;
-      width: 30%;
+      width: 25%;
       margin: 0 auto;
       .checkbox{
         margin: 0 auto;

@@ -174,6 +174,7 @@
         <div class="title">Shopping Cart</div>
         <div class="shoppingCartWrap d-flex">
           <div class="shoppingCartLeftWrap">
+            <h1>購物車內無任何商品</h1>
             <!-- <div class="shoppingBox d-flex">
               <div class="imgWrap">
                 <img src="./images/product/switch.webp" alt="">
@@ -193,12 +194,16 @@
           <div class="shoppingCartRightWrap">
             <div class="checkbox">
               <div>Your order qualifies for FREE Shipping.</div>
-              <div class="itemNumber">Subtotal ( 2 items): </div>
-              <div class="totalPrice">NT$720</div>
+              <div>
+                <span class="itemNumber">Subtotal ( 2 items): </span>
+                <span class="totalPrice">NT$720</span>
+              </div>
+              <br>
               <button type="button" class="btn btn-primary">Proceed to checkout</button>
             </div>
           </div>
         </div>
+        <button type="button" class="btn btn-primary deleteAll">清空購物車</button>
       </div>
       <!-- 最下方文字區塊(footer) -->
       <footer class="">
@@ -336,7 +341,9 @@
           // console.log(result)
           // console.log(result.feed.entry.length)
           let content = '';
-          for(let i = 0; i < cartArr.length; i++){
+          console.log(cartArr.length)
+          if(cartArr.length > 0){
+            for(let i = 0; i < cartArr.length; i++){
             let j = cartArr[i] - 1;
             let s_num      = (result.feed.entry[j].gsx$snum.$t)
             let type       = (result.feed.entry[j].gsx$type.$t)
@@ -359,8 +366,8 @@
             // console.log(img)
             // console.log(zh_title)
             // console.log(zh_text)
-          //   console.log(en_content)
-          //   console.log(zh_content)
+            // console.log(en_content)
+            // console.log(zh_content)
             // if(s_num == num){
               // console.log(s_num)
               // console.log(num)
@@ -376,7 +383,10 @@
                                 </div>
                                 <div class="stock">有存貨</div>
                                 <div class="style">顏色</div>
-                                <div class="number">數量</div>
+                                <div>
+                                  <span class="number">數量</span>
+                                  <span class="delete">Delete</span>
+                                </div>
                               </div>
                             </div>
                             <hr>
@@ -391,28 +401,29 @@
           for(let i = 0; i < q; i++){
             let price = parseFloat($(".price").eq(i).text().slice(2));
             totalPrice += price;
-            console.log(price);
-            console.log(totalPrice);
+            // console.log(price);
+            // console.log(totalPrice);
           }
-          console.log(q)
+          // console.log(q)
           $(".totalPrice").text('NT$' + totalPrice);
+
+          $(document).on("click", ".deleteAll", function(){
+            localStorage.clear()
+            location.reload();
+          })
+          }
         }).catch(function(err) {
   
         });
-        $(".family_logo").on("click", function(){
-  
-        });
-        $(document).on("click", ".family_logo", function(){
-  
-          let id = $(".box_imgWrap").data('id');
-          // let url = "https://famistore.famiport.com.tw/234599/index.php?action=" + id;
-          cartArr.push(id);
-          console.log(cartArr);
-          let cartStr = JSON.stringify(cartArr);
-          console.log(cartStr);
-          localStorage.setItem("product", cartStr);
-          // window.open(url);
-          // windowOpen('https://famistore.famiport.com.tw/234599/index.php?action=fmall_8616820', '_blank');
+        $(document).on('click', '.delete', function(){
+          let id = $(this).parent().parent().parent().data('id');
+          cartArr.forEach(function(item, index, arr) {
+              if(item === id) {
+                  arr.splice(index, 1);
+              }
+          });
+          localStorage.setItem('product',JSON.stringify(cartArr)); 
+          location.reload();
         });
       </script>
   </body>
