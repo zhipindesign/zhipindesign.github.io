@@ -324,6 +324,7 @@ nav a {
 }
 
 .product {
+  height: 80vh;
   margin: 0 auto;
   width: 100%;
   font-family: "Open Sans", "微軟正黑體";
@@ -347,14 +348,13 @@ nav a {
 }
 
 .product .boxWrapP .box_imgWrap {
-  width: 60%;
+  width: 40%;
 }
 
 .product .boxWrapP .box_imgWrap .imgWrap {
   width: 48vh;
   height: 48vh;
   margin: 0 auto 3vh;
-  border: springgreen 1px solid;
   background: #efefef;
 }
 
@@ -384,51 +384,99 @@ nav a {
 }
 
 .product .boxWrapP .box_textWrap {
-  width: 40%;
+  width: 60%;
 }
 
-.product .boxWrapP .box_textWrap .text_title, .product .boxWrapP .box_textWrap .text_content, .product .boxWrapP .box_textWrap .price {
+.product .boxWrapP .box_textWrap .textWrap {
+  width: 50%;
+}
+
+.product .boxWrapP .box_textWrap .textWrap .text_title, .product .boxWrapP .box_textWrap .textWrap .text_content, .product .boxWrapP .box_textWrap .textWrap .price {
   width: 80%;
   margin: 0 auto;
 }
 
-.product .boxWrapP .box_textWrap .text_title {
-  text-align: center;
+.product .boxWrapP .box_textWrap .textWrap .text_title {
+  text-align: left;
   font-size: 32px;
   margin: 5vh auto 0vh;
   font-weight: 600;
 }
 
-.product .boxWrapP .box_textWrap .text_content {
-  height: 45vh;
-  font-size: 14px;
-}
-
-.product .boxWrapP .box_textWrap .price {
-  text-align: center;
-  margin-top: 0vh;
+.product .boxWrapP .box_textWrap .textWrap .price {
+  text-align: left;
+  margin-top: 4vh;
+  margin-bottom: 8vh;
   font-size: 20px;
   font-weight: 600;
+  color: red;
 }
 
-.product .boxWrapP .box_textWrap .family_logo {
+.product .boxWrapP .box_textWrap .textWrap .text_content {
+  font-size: 14px;
+  margin-top: 4vh;
+}
+
+.product .boxWrapP .box_textWrap .textWrap .sImgWrap {
+  width: 100%;
+}
+
+.product .boxWrapP .box_textWrap .textWrap .sImgWrap img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.product .boxWrapP .box_textWrap .btnWrap {
   width: 50%;
+}
+
+.product .boxWrapP .box_textWrap .btnWrap .stock {
+  margin-top: 10vh;
+}
+
+.product .boxWrapP .box_textWrap .btnWrap .addCart {
+  width: 70%;
+  height: 6vh;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #008ED3;
   text-align: center;
   color: white;
   z-index: 10;
   margin-bottom: 4vh;
   margin-top: 2vh;
+  line-height: 6vh;
 }
 
-.product .boxWrapP .box_textWrap .family_logo svg {
+.product .boxWrapP .box_textWrap .btnWrap .addCart svg {
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
 }
 
-.product .boxWrapP .box_textWrap .family_logo:hover {
+.product .boxWrapP .box_textWrap .btnWrap .addCart:hover {
+  cursor: pointer;
+}
+
+.product .boxWrapP .box_textWrap .btnWrap .toShoppingCart {
+  width: 70%;
+  height: 6vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #69c7f7;
+  text-align: center;
+  color: white;
+  z-index: 10;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
+  line-height: 6vh;
+}
+
+.product .boxWrapP .box_textWrap .btnWrap .toShoppingCart svg {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.product .boxWrapP .box_textWrap .btnWrap .toShoppingCart:hover {
   cursor: pointer;
 }
 

@@ -330,7 +330,7 @@
         $(document).on("click",".inner_img",function() {
             newImg = $(this).html();
             console.log(newImg)
-            $(this).parent().parent().find(".imgWrap").html(newImg)
+            $(".imgWrap").html(newImg)
         })
         var url = location.href; 
         var num = url.substring(url.indexOf("?")+1,url.length).split("&"); 
@@ -374,20 +374,38 @@
                                 </div>
 
                             </div>
-                            <div class="box_textWrap zh-tw">
+                            <div class="box_textWrap zh-tw d-flex">
+                              <div class="textWrap">
                                 <div class="text_title">${zh_title}</div>
                                 <div class="price">${price}</div>
-
-                                <div class="family_logo">
-                                  addCart
+                                <div class="sImgWrap d-flex">
+                                  <div class="inner_img"><img src="./images/product/${img}" alt=""></div>
+                                  <div class="inner_img"><img src="./images/product/${img1}" alt=""></div>
+                                  <div class="inner_img"><img src="./images/product/${img2}" alt=""></div>
                                 </div>
-                                <div class="text_content">
-                                    ${zh_content}
+                                <div class="text_content">${zh_content}</div>
+                              </div>
+                              <div class="btnWrap">
+                                <div class="stock">In Stock</div>
+                                數量: <select class="number">
+                                  <option value="0">請選擇</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                </select>
+                                <div class="addCart">
+                                  Add to cart
                                 </div>
+                                <div class="toShoppingCart">
+                                  Buy Now
+                                </div>
+                              </div>
                             </div>
                             <div class="box_textWrap en" style="display: none;">
                                 <div class="text_title">${en_title}</div>
-                                <div class="family_logo">
+                                <div class="addCart">
                                   <a href="https://famistore.famiport.com.tw/234599/index.php?action=fmall_8420368" target="_blank">
                                   <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="104.322" height="38.88" viewBox="0 0 104.322 38.88">
                                     <path id="Path_95" data-name="Path 95" d="M331.272,19.38h-9.29V10.09a.581.581,0,0,0-.59-.59h-5.62a.581.581,0,0,0-.59.59v9.29h-9.29a.581.581,0,0,0-.59.59v5.62a.581.581,0,0,0,.59.59h9.29v9.29a.581.581,0,0,0,.59.59h5.62a.581.581,0,0,0,.59-.59V26.207h9.29a.581.581,0,0,0,.59-.59V19.971A.566.566,0,0,0,331.272,19.38Z" transform="translate(-227.541 -9.5)" fill="#fff"/>
@@ -435,7 +453,7 @@
       if(cartArr == null){cartArr = [];}
       console.log(cartArr)
 
-      $(document).on("click", ".family_logo", function(){
+      $(document).on("click", ".addCart", function(){
 
         let id = $(".box_imgWrap").data('id');
         // let url = "https://famistore.famiport.com.tw/234599/index.php?action=" + id;
