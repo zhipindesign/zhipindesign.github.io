@@ -514,7 +514,6 @@ nav a {
 }
 
 .threeD {
-  height: 170vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -546,7 +545,6 @@ nav a {
 
 .threeD .main {
   border: 1px solid red;
-  height: 800px;
   width: 100%;
   margin: 0px auto 0;
   color: black;

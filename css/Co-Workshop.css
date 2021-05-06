@@ -559,7 +559,6 @@ nav a {
 }
 
 .coworkshop {
-  height: 470vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
@@ -591,7 +590,6 @@ nav a {
 
 .coworkshop .main {
   border: 1px solid red;
-  height: 470vh;
   width: 100%;
   margin: 0px auto 0;
 }
@@ -675,8 +673,8 @@ nav a {
 
 .coworkshop .main .tool1 .boxWrap .box .box_img {
   border: 1px solid black;
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
