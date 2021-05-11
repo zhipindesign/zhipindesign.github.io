@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'zhipindesign'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0752968700e049b8a5dd485b1110fa4f }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_221ab32473fc4441b6162bf005a71553 }}
         package: .
