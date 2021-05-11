@@ -681,6 +681,7 @@ nav a {
 .coworkshop .main .tool1 .boxWrap .box .box_img img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 
 .coworkshop .main .tool1 .boxWrap .box .box_img .box_text {
