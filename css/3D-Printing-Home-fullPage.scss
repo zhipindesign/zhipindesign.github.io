@@ -1,0 +1,1144 @@
+header {
+  height: 60px;
+  color: white;
+  background: #3e4141;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  font-family: "Open Sans", "微軟正黑體";
+  .header_left {
+    width: 15%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    .zhipin_icon_wrap {
+      position: relative;
+    }
+  }
+  .header_mid {
+    width: 70%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: center;
+    margin: 0 auto;
+    ul {
+      width: 390px;
+      text-align: center;
+      margin: 0 auto;
+      li {
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 4px;
+        .dropdown-toggle::after {
+          transform: translate(-5px, 3px) scale(0.8);
+        }
+        .dropdown-menu {
+          background-color: #3e4141;
+          border: none;
+          margin-top: -20px;
+          transform: translateX(-10px);
+          .dropdown-item {
+            padding: 0 10px 5px 10px;
+            height: 30px;
+            line-height: 30px;
+          }
+          .dropdown-item:hover {
+            background-color: #3e4141;
+          }
+        }
+        .dropdown-menu li:hover .sub-menu {
+          visibility: visible;
+        }
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+  .header_right {
+    width: 15%;
+    height: 60px;
+    // border: 1px red solid;
+    text-align: center;
+    .text_opacity {
+      opacity: 30%;
+      cursor: pointer;
+    }
+    .languageEn:hover,
+    .languageZh:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    //最上方區塊樣式
+
+    width: 100vw; //最大寬度
+    height: 65px; //高度
+    background: #131313; //背景 rgb:顏色
+    position: fixed; //位置 absolute按到relative位置移動
+    font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    color: white;
+    z-index: 10;
+    .language {
+      //切換語言樣式
+      position: fixed; //跟著螢幕滾動
+      z-index: 20; //放在最上層 不會被遮擋 數字越高越上層
+      transition: 0.3s; //變化時間
+      font-size: 20px; //字體大小
+      font-weight: 600; //字體粗度
+    }
+    .language:hover {
+      //切換語言模式(滑鼠移上去後)
+      cursor: pointer; //滑鼠變成手指
+      // background: coral;
+      color: rgb(90, 219, 187) !important; //字體顏色
+    }
+    //icon
+    .zhipin_icon_wrap {
+      transform: translateY(18px);
+      //icon外框樣式
+      display: flex; //讓物件並排
+      .zhipin_icon {
+        //icon本身樣式
+        width: 48px; //寬度
+        height: 48px; //高度
+        margin: 6px 0px 0px 15px; //對外寬度
+      }
+
+      .logo_text {
+        //logo文字樣式
+        text-align: center; //左右置中
+        line-height: 74px; //上下置中
+        font-size: 12px; //字體大小
+        font-weight: 400; //字體粗度
+        transform: scale(0.85);
+      }
+      .zhipin_icon:hover,
+      .logo_text:hover {
+        //滑鼠移上去後
+        cursor: pointer; //滑鼠變成手指
+      }
+    }
+
+    //主選單
+    .header_list_top {
+      //上方主選單(雷切/真空/共享空間)
+
+      display: flex; //讓列表並排
+      list-style: none; //list取消預設樣式
+      font-size: 12px; //字體大小
+      position: absolute; //位置 absolute按到relative位置移動
+      top: 0%; //位置 top: 距離relative最高點位置
+      right: 2%; //位置 right: 距離relative最右點位置
+
+      li {
+        padding: 8px 12px; //內縮寬度
+        a {
+          color: white; //字體顏色
+          padding: 4px 0px; //內縮寬度
+          text-decoration: black underline;
+          font-weight: 500;
+        }
+        a:hover {
+          //hover: 滑鼠移上去後之效果
+          color: #007bff; //字體顏色
+          text-decoration: #007bff underline;
+        }
+        p {
+          cursor: default;
+        }
+        .text_opacity:hover {
+          opacity: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+    .header_list_bot {
+      //上方主選單(首頁/3D列印/作品/商店/聯絡我們/電話)
+
+      display: flex; //讓列表並排
+      list-style: none; //list取消預設樣式
+      font-size: 12px; //字體大小
+      position: absolute; //位置 absolute按到relative位置移動
+      bottom: -60%; //位置 top: 距離relative最高點位置
+      right: 2%; //位置 right: 距離relative最右點位置
+      li {
+        padding: 8px 3px; //內縮寬度
+        transform: scale(0.85);
+        z-index: 3;
+        .tel,
+        .contact {
+          color: white; //字體顏色
+          font-weight: 600; //字體粗度
+        }
+        .tel:hover,
+        .contact:hover {
+          text-decoration: none; //將預設底線拿掉
+          cursor: default;
+        }
+        .text_opacity {
+          opacity: 30%;
+          cursor: pointer;
+        }
+        .bot {
+          //超連結樣式
+          color: white; //字體顏色
+          font-weight: 400; //字體粗度
+          padding: 1px;
+        }
+        .bot:hover {
+          //hover: 滑鼠移上去後之效果
+          color: #007bff; //字體顏色
+          text-decoration: none; //將預設底線拿掉
+        }
+        .blue {
+          color: #007bff; //字體顏色
+        }
+        .dropdown-toggle::after {
+          transform: translateY(3px) scale(0.8);
+        }
+        .dropdown-menu {
+          background: #13131380;
+          transform: scale(0.84) translate(-18%, -10%);
+          a {
+            color: white;
+          }
+          a:hover {
+            color: #007bff;
+          }
+          .dropdown-item:hover {
+            background: #131313;
+          }
+        }
+        .dropdown-menu li:hover .sub-menu {
+          visibility: visible;
+        }
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    .header_list_bot_600 {
+      //手機版選單(三條橫線，預設隱藏)
+      display: none; //隱藏
+    }
+    .menu {
+      //手機版選單按鈕(三條橫線，預設隱藏)
+      width: 30px; //寬度
+      height: 30px; //高度
+      display: none; //隱藏
+    }
+    // @media screen and (max-width: 600px) {
+    //   //當螢幕寬度小於600px
+    //   .en {
+    //     //英文文字樣式
+    //     font-size: 10px; //字體大小
+    //   }
+    //   .zhipin_icon_wrap {
+    //     //logo外框樣式
+
+    //     .zhipin_icon {
+    //       //logo樣式
+    //       width: 100px; //寬度
+    //       height: auto; //高度(隨著寬度改變)
+    //       display: block; //取消隱藏
+    //       margin: auto; //logo置中
+    //     }
+
+    //     .logo_text {
+    //       //logo文字樣式
+    //       display: none; //隱藏logo文字
+    //     }
+    //   }
+
+    //   .header_list_top {
+    //     //電腦版選單樣式
+    //     display: none; //隱藏
+    //   }
+    //   .header_list_bot {
+    //     //電腦版選單樣式
+    //     li {
+    //       display: none; //隱藏
+    //     }
+    //     .menu {
+    //       //手機版選單按鈕樣式
+    //       display: block; //取消隱藏
+    //       position: relative; //位置 absolute按到relative位置移動
+    //     }
+    //     .menu:hover {
+    //       //手機版選單按鈕 hover(滑鼠移上去後之效果)
+    //       cursor: pointer; //滑鼠樣式改為手指
+    //     }
+    //   }
+    //   .header_list_bot_600 {
+    //     //手機版選單樣式
+    //     z-index: 10; //出現在最上面(數字越大越上面)
+    //     background: rgba(110, 110, 110, 0.658); //背景顏色(R, G, B, 透明度)
+    //     width: 180px; //寬度
+    //     list-style: none; //列表樣式取消
+    //     position: absolute; //位置 absolute按到relative位置移動
+    //     right: 0; //位置 right: 距離relative最右點位置
+    //     top: 100%; //位置 top: 距離relative最高點位置
+    //     font-size: 14px; //字體大小
+    //     a {
+    //       //超連結樣式
+    //       color: white; //字體顏色
+    //     }
+    //     a:hover {
+    //       //超連結樣式(當滑鼠移上去後)
+    //       color: rgb(90, 219, 187); //字體顏色
+    //       text-decoration: none; //將預設底線拿掉
+    //     }
+    //   }
+    // }
+  }
+}
+nav {
+  display: none !important;
+  a {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    display: none;
+  }
+  nav {
+    // position: relative;
+    display: flex !important;
+    // position: fixed;
+    z-index: 10;
+    color: #e9e9e9;
+    text-align: left;
+    background: #3e4141;
+    a {
+      color: #d8d9d9;
+      display: block;
+      span {
+        margin-left: -24vw;
+      }
+      // font-size: 16px;
+    }
+    button {
+      // position: absolute;
+      // top: 1vh;
+      // left: 80vw;
+      .mobileMenu {
+        // path:nth-child(2){
+        //   transform: rotate(45deg);
+        // }
+        // path:nth-child(3){
+        //   transform: rotate(-45deg);
+        // }
+        width: 30px;
+      }
+    }
+    .shopCart {
+      width: 30px;
+    }
+
+    .navbar-collapse {
+      margin: 0 -4vw 0 -4vw;
+      background: #111313;
+      .navbar-nav {
+        transform: translate(7vw, 0);
+        background: #111313;
+        .show > .dropdown-menu {
+          max-height: 800px;
+          visibility: visible;
+        }
+        #navbarDropdown {
+          margin-bottom: -2vh;
+        }
+        .dropdown-menu {
+          width: 100vw;
+          text-align: left;
+          border: none;
+          background: #111313;
+          display: block;
+          max-height: 0;
+          visibility: hidden;
+          transition: all 0.6s ease-in-out;
+          overflow: hidden;
+          .dropdown-item {
+            padding: 0.5rem 1.5rem;
+            color: #d8d9d9;
+          }
+        }
+      }
+    }
+  }
+}
+.carousel {
+  //幻燈片樣式
+  transform: translateY(60px);
+  margin-bottom: 60px;
+  font-family: "Open Sans", "微軟正黑體"; //字型樣式
+  .carousel-indicators li {
+    width: 30px;
+    height: 10px;
+    border-radius: 100%;
+    background: #007bff;
+    transform: scale(0.2) translateY(12vh);
+    margin-right: -15px;
+  }
+  .carousel-item {
+    //幻燈片外框樣式
+    height: 385px; //高度
+  }
+  .carousel-item1 {
+    background: 
+    // linear-gradient(
+    //     180deg,
+    //     rgba(19, 19, 19, 1) 0%,
+    //     rgba(19, 19, 19, 0) 45%
+    //   ),
+      //   linear-gradient(
+      //     255deg,
+      //     rgba(0, 60, 255, 0.4) 0%,
+      //     rgba(146, 0, 255, 0.4) 100%
+      //   ),
+      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
+    // gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // -webkit-filter: grayscale(1);
+  }
+  .carousel-item2 {
+    background: linear-gradient(
+        180deg,
+        rgba(19, 19, 19, 1) 0%,
+        rgba(19, 19, 19, 0) 34%
+      ),
+      linear-gradient(
+        255deg,
+        rgba(0, 60, 255, 0.4) 0%,
+        rgba(146, 0, 255, 0.4) 100%
+      ),
+      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
+    background-size: cover;
+  }
+  .carousel-item3 {
+    background: linear-gradient(
+        180deg,
+        rgba(19, 19, 19, 1) 0%,
+        rgba(19, 19, 19, 0) 34%
+      ),
+      linear-gradient(
+        255deg,
+        rgba(0, 60, 255, 0.4) 0%,
+        rgba(146, 0, 255, 0.4) 100%
+      ),
+      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
+    background-size: cover;
+  }
+  .carousel-item img {
+    //幻燈片圖片樣式
+    min-height: 540px; //最小高度
+    max-height: 1600px; //最大高度
+    object-fit: contain;
+    transform: translateY(-35%);
+  }
+  .start_your_project {
+    //開始專案按鈕樣式
+    width: 160px; //寬度
+    height: 32px; //高度
+    text-align: center; //文字左右置中
+    line-height: 32px; //上下置中
+    font-size: 14px; //字體大小
+    background: #0063c5; //背景樣式 顏色
+    border-radius: 30px;
+    position: absolute; //位置 absolute按到relative位置移動
+    padding: 0px -10px; //內縮寬度
+    font-weight: 600; //字體粗度
+    top: calc(50% - 25px); //位置 top: 距離relative最高點位置
+    left: calc(50% - 65px); //位置 right: 距離relative最右點位置
+    z-index: 10;
+    a {
+      //超連結樣式
+      color: white; //字體顏色
+    }
+    a:hover {
+      //hover: 滑鼠移上去後之效果
+      text-decoration: none; //將預設底線拿掉
+    }
+  }
+  .mainTitle {
+    //開始專案按鈕樣式
+    width: 100%; //寬度
+    padding: 0 5px;
+    height: 40px; //高度
+    text-align: center; //文字左右置中
+    line-height: 40px; //上下置中
+    font-size: 60px; //字體大小
+    // background: #3e414171; //背景樣式 顏色
+    position: absolute; //位置 absolute按到relative位置移動
+    top: 5vh; //位置 top: 距離relative最高點位置
+    // transform: translateY(30vh);
+    font-weight: 600; //字體粗度
+    z-index: 10;
+    a {
+      //超連結樣式
+      color: white; //字體顏色
+    }
+    a:hover {
+      //hover: 滑鼠移上去後之效果
+      text-decoration: none; //將預設底線拿掉
+    }
+    .mainText{
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      margin: 5vh auto 0;
+      text-align: center;
+      width: 80%;
+    }
+  }
+  .start_your_project:hover {
+    //hover: 滑鼠移上去後之效果
+    cursor: pointer; //滑鼠樣式 pointer: 手指頭
+    // transform: scale(1.2); //有hover 移上去之後之效果  transform: 效果 scale: 縮放效果(倍數)
+    transition: 0.5s; //動畫時間
+    background: #0070e0; //背景樣式 顏色
+  }
+}
+@media screen and (max-width: 700px) {
+  .carousel {
+    //幻燈片樣式
+    transform: translateY(55px);
+    font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    .carousel-indicators li {
+      width: 30px;
+      height: 10px;
+      border-radius: 100%;
+      background: #007bff;
+      transform: scale(0.2) translateY(12vh);
+      margin-right: -15px;
+    }
+    .carousel-item {
+      //幻燈片外框樣式
+      height: 62vh; //高度
+    }
+    .carousel-item1 {
+      background: 
+        //   linear-gradient(
+        //     255deg,
+        //     rgba(0, 60, 255, 0.4) 0%,
+        //     rgba(146, 0, 255, 0.4) 100%
+        //   ),
+        // url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+        // url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
+        gray;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .carousel-item2 {
+      background: linear-gradient(
+          180deg,
+          rgba(19, 19, 19, 1) 0%,
+          rgba(19, 19, 19, 0) 34%
+        ),
+        linear-gradient(
+          255deg,
+          rgba(0, 60, 255, 0.4) 0%,
+          rgba(146, 0, 255, 0.4) 100%
+        ),
+        url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      background-size: cover;
+    }
+    .carousel-item3 {
+      background: linear-gradient(
+          180deg,
+          rgba(19, 19, 19, 1) 0%,
+          rgba(19, 19, 19, 0) 34%
+        ),
+        linear-gradient(
+          255deg,
+          rgba(0, 60, 255, 0.4) 0%,
+          rgba(146, 0, 255, 0.4) 100%
+        ),
+        url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      background-size: cover;
+    }
+    .carousel-item img {
+      //幻燈片圖片樣式
+      min-height: 540px; //最小高度
+      max-height: 1600px; //最大高度
+      object-fit: contain;
+      transform: translateY(-35%);
+    }
+    .mainTitle {
+      //開始專案按鈕樣式
+      // width: 140px; //寬度
+      padding: 0 5px;
+      height: 40px; //高度
+      text-align: center; //文字左右置中
+      margin: -5vh auto 0;
+      line-height: 40px; //上下置中
+      font-size: 32px; //字體大小
+      // background: #3e414171; //背景樣式 顏色
+      // position: absolute; //位置 absolute按到relative位置移動
+      // top: 12px; //位置 top: 距離relative最高點位置
+      // left: 26%; //位置 right: 距離relative最右點位置
+      padding: 0px -10px; //內縮寬度
+      font-weight: 1000; //字體粗度
+      z-index: 10;
+      a {
+        //超連結樣式
+        color: white; //字體顏色
+      }
+      a:hover {
+        //hover: 滑鼠移上去後之效果
+        text-decoration: none; //將預設底線拿掉
+      }
+    }
+    .start_your_project {
+      //開始專案按鈕樣式
+      width: 160px; //寬度
+      height: 32px; //高度
+      text-align: center; //文字左右置中
+      line-height: 32px; //上下置中
+      font-size: 14px; //字體大小
+      background: #0063c5; //背景樣式 顏色
+      border-radius: 30px;
+      position: absolute; //位置 absolute按到relative位置移動
+      padding: 0px -10px; //內縮寬度
+      font-weight: 600; //字體粗度
+      top: calc(50% - 25px); //位置 top: 距離relative最高點位置
+      left: calc(50% - 65px); //位置 right: 距離relative最右點位置
+      z-index: 10;
+      a {
+        //超連結樣式
+        color: white; //字體顏色
+      }
+      a:hover {
+        //hover: 滑鼠移上去後之效果
+        text-decoration: none; //將預設底線拿掉
+      }
+    }
+    .start_your_project:hover {
+      //hover: 滑鼠移上去後之效果
+      cursor: pointer; //滑鼠樣式 pointer: 手指頭
+      // transform: scale(1.2); //有hover 移上去之後之效果  transform: 效果 scale: 縮放效果(倍數)
+      transition: 0.5s; //動畫時間
+      background: #0070e0; //背景樣式 顏色
+    }
+  }
+}
+.threeD {
+  // height: 170vh;
+  margin: 20px auto 0;
+  font-family: "Open Sans", "微軟正黑體"; //字型樣式
+  .toggle {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    border-radius: 20px;
+    opacity: 0.5;
+    background-color: #1d1d1f;
+    .toggle-on {
+      background-color: #1d1d1f;
+    }
+    .toggle-off {
+      background-color: #e9e9e9;
+    }
+  }
+  .title {
+    border: 1px solid red;
+    font-weight: 600;
+    margin: 10vh 8vh;
+    font-size: 24px;
+    text-align: center;
+  }
+  .main {
+    border: 1px solid red;
+    // height: 800px;
+    width: 100%;
+    margin: 0px auto 0;
+    color: black;
+    .ourService {
+      border: 1px solid rgb(115, 255, 0);
+      height: 270px;
+      width: 100%;
+      margin: 0 auto;
+      .boxWrap {
+        border: 1px solid red;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        margin: -30px auto 0;
+        .box {
+          border: 1px solid red;
+          height: 250px;
+          width: 25%;
+          margin: 0 auto;
+          .box_img {
+            border: 1px solid black;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            // background: url(../images/Coworkshop/box_img.png) center center;
+            // background-size: cover;
+            img {
+              max-width: 100%;
+              height: auto;
+              margin: 0 auto 0;
+            }
+            .mask {
+              position: absolute;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+              background: rgba(101, 101, 101, 0.6);
+              color: #ffffff;
+              opacity: 0;
+              transition: 0.5s;
+            }
+          }
+          .box_img a:hover .mask {
+            opacity: 0.8;
+          }
+          .box_text {
+            text-align: center;
+            font-size: 12px;
+            margin: -10% auto 0;
+          }
+        }
+      }
+    }
+    .start_your_project {
+      border: 1px solid red;
+      height: 550px;
+      width: 80%;
+      margin: 4% auto 0%;
+      .boxWrap {
+        border: 1px solid red;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        margin: 0% auto 8%;
+        .box {
+          border: 1px solid red;
+          height: 150px;
+          width: 20%;
+          margin: 0 auto;
+          position: relative;
+          // transform: scale(.5);
+          .box_img {
+            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            // background: url(../images/Coworkshop/box_img.png) center center;
+            // background-size: cover;
+            img,
+            svg {
+              max-width: 100%;
+              height: auto;
+              margin: 30px auto 0;
+              position: absolute;
+              bottom: -20%;
+            }
+            .svg_dispatch {
+              position: absolute;
+              bottom: -20%;
+            }
+            .s10,
+            .m15,
+            .l20 {
+              transform: scale(1.5);
+            }
+            .svg_stlFile:hover {
+              fill: #0071e3;
+              cursor: pointer;
+            }
+            .svg_stlFile:hover .box_text_content_okay {
+              background-color: red;
+            }
+            .svg_noFile:hover {
+              fill: #0071e3;
+              cursor: pointer;
+            }
+            .svg_coworkshop {
+              max-width: 100%;
+              height: auto;
+              margin: 30px auto 0;
+              position: absolute;
+              bottom: -8%;
+            }
+          }
+          .box_img1 {
+            border: 1px solid black;
+            width: 50%;
+            height: 50%;
+            margin: 0 auto;
+            // background: url(../images/Coworkshop/box_img.png) center center;
+            // background-size: cover;
+            img,
+            svg {
+              max-width: 50%;
+              height: auto;
+              margin: 30px auto 0;
+              position: absolute;
+              bottom: 50%;
+            }
+          }
+          .box_img2 {
+            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            // background: url(../images/Coworkshop/box_img.png) center center;
+            // background-size: cover;
+            img,
+            svg {
+              max-width: 50%;
+              height: auto;
+              margin: 30px auto 0;
+              position: absolute;
+              bottom: -8%;
+              left: 5%;
+              transform: scale(0.7);
+            }
+            .svg_noFile {
+              max-width: 50%;
+              height: auto;
+              margin: 30px auto 0;
+              position: absolute;
+              bottom: -8%;
+              left: 45%;
+            }
+          }
+          .box_text {
+            text-align: center;
+            .box_text_title {
+              font-size: 14px;
+              font-weight: 600;
+              margin: 6% auto;
+            }
+            .box_text_content {
+              width: 120%;
+              font-size: 12px;
+              transform: translateX(-10%);
+              margin-top: 5%;
+            }
+          }
+        }
+        .box1 {
+          border: 1px solid red;
+          height: 250px;
+          width: 5%;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+    }
+    .other_services {
+      border: 1px solid red;
+      height: 270px;
+      width: 80%;
+      margin: 0% auto 5%;
+      .boxWrap {
+        border: 1px solid red;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        margin: -80px auto 0;
+        .box {
+          border: 1px solid red;
+          height: 250px;
+          width: 20%;
+          margin: 0 auto;
+          position: relative;
+          cursor: pointer;
+          // transform: scale(.5);
+          .box_img {
+            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            // background: url(../images/Coworkshop/box_img.png) center center;
+            // background-size: cover;
+            img,
+            svg {
+              max-width: 100%;
+              height: auto;
+              margin: 0 auto -50px;
+              position: absolute;
+              bottom: 16%;
+            }
+          }
+          .box_text {
+            text-align: center;
+            .box_text_title {
+              font-size: 14px;
+              font-weight: 600;
+              margin: 0 auto;
+            }
+            .box_text_content {
+              width: 120%;
+              font-size: 12px;
+              transform: translateX(-10%);
+              margin-top: 5%;
+            }
+          }
+        }
+        .box1 {
+          border: 1px solid red;
+          height: 250px;
+          width: 5%;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+    }
+  }
+  .mobileMain {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .threeD {
+    height: 230vh;
+    margin: 80px auto 0;
+    font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    .title {
+      border: 1px solid red;
+      font-weight: 600;
+      margin: 10px 2% 0px;
+      font-size: 24px;
+      text-align: center;
+    }
+    .main {
+      display: none;
+    }
+    .mobileMain {
+      height: 230vh;
+      display: block;
+      .mobileStart {
+        .box_container {
+          width: 60vw;
+          transform: translateX(10vw);
+          height: 110vh;
+          // position: relative;
+          .box {
+            width: 70vw;
+            height: 35vh;
+            .box_img {
+              svg {
+                width: 100%;
+                transform: translateX(5vw) scale(0.7);
+              }
+            }
+            .box_text {
+              text-align: center;
+              width: 62vw;
+              transform: translate(8vw, -8vh);
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+                font-weight: 800;
+              }
+            }
+          }
+
+          .mobilebox {
+            // transform: translateY(10vh);
+            width: 80vw;
+            .box_img {
+              svg {
+                width: 80vw;
+              }
+            }
+
+            .box_img2 {
+              // transform: translate(0vw,-10vh);
+              svg {
+                width: 25%;
+                margin: 4vh 0;
+                transform: translateX(20vw);
+              }
+            }
+            .box_text {
+              margin-top: 6.8vh;
+              text-align: center;
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+                font-weight: 800;
+              }
+            }
+          }
+        }
+        .gallery {
+          text-align: center;
+          height: 40vh;
+          .flickity-page-dots {
+            transform: translateY(6vh);
+          }
+          .box {
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+                transform: scale(0.6);
+              }
+            }
+          }
+          .mobilebox {
+            transform: translateY(10vh);
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+              }
+            }
+            .box_img2 {
+              transform: translateX(10vw);
+              svg {
+                width: 35%;
+              }
+            }
+            .box_text {
+              margin-top: 2.6vh;
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+              }
+            }
+          }
+        }
+      }
+      .mobileOthers {
+        margin-top: 10vh;
+        display: none;
+        .gallery {
+          height: 40vh;
+          .flickity-page-dots {
+            transform: translateY(6vh);
+          }
+          .box {
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+                transform: scale(0.6);
+              }
+            }
+          }
+          .mobilebox {
+            transform: translateY(10vh);
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+              }
+            }
+            .box_img2 {
+              transform: translateX(10vw);
+              svg {
+                width: 35%;
+              }
+            }
+            .box_text {
+              margin-top: 2.6vh;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//footer樣式
+footer {
+  //最下方區塊樣式
+  font-family: "Open Sans", "微軟正黑體"; //字型樣式
+  max-width: 100vw; //最大寬度
+  height: 200px; //高度
+  background: #f4f6f8; //背景樣式 顏色
+  color: #717474; //字體顏色
+  font-size: 12px; //字體大小
+  font-weight: 600; //字體粗度
+  text-align: center; //字體左右置中
+  // transform: scale(0.9);
+  // .en,
+  // .zh-tw,
+  .logo_img {
+    transform: scale(0.9);
+  }
+  .logo_img {
+    transform: scale(0.6);
+  }
+  .s-icon {
+    transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
+  }
+  .footer_title {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .logo_img {
+    //四種社群logo樣式
+    margin-left: 20px;
+    .logo_img_FB {
+      //FB logo樣式
+      width: 15px; //寬度
+      margin-right: 20px; //對右寬度
+      border-radius: 30%;
+    }
+    a {
+      text-decoration: none;
+    }
+    .logo_img_IG,
+    .logo_img_Twitter,
+    .logo_img_Youtube {
+      //其他三種logo望是
+      width: 30px; //寬度
+      margin-right: 20px; //對右寬度
+      border-radius: 30%;
+    }
+  }
+  // .logo_img .logo_img_FB:hover path{  //FB logo移上去後樣式
+  //     transition: .5s;  //變化時間
+  //     transform: scale(1.3);  //放大
+  //     background: rgb(26, 132, 202);  //背景顏色
+  // }
+  // .logo_img .logo_img_IG:hover{  //IG logo移上去後樣式
+  //     transition: .5s;  //變化時間
+  //     transform: scale(1.3);  //放大
+  //     background: linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+  //     background: -moz-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+  //     background: -webkit-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+  //     background: -o-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+  // }
+  // .logo_img .logo_img_Twitter:hover{  //Twitter logo移上去後樣式
+  //     transition: .5s;  //變化時間
+  //     transform: scale(1.3);  //放大
+  //     background: rgb(62, 178, 255);  //背景顏色
+  // }
+  // .logo_img .logo_img_Youtube:hover{  //Youtube logo移上去後樣式
+  //     transition: .5s;  //變化時間
+  //     transform: scale(1.3);  //放大
+  //     background: rgb(253, 37, 37);  //背景顏色
+  // }
+}
