@@ -484,7 +484,6 @@ nav a {
 
 @media screen and (max-width: 600px) {
   .threeD {
-    height: 230vh;
     margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體";
   }
@@ -499,7 +498,6 @@ nav a {
     display: none;
   }
   .threeD .mobileMain {
-    height: 230vh;
     display: block;
   }
   .threeD .mobileMain .mobileStart .box_container {

@@ -71,16 +71,16 @@ function home(){
     window.location.replace('./index.html');
 }
 function coworkshop(){
-    window.location.replace('./Co-Workshop.html');
+    window.location.replace('./Coworkshop.html');
 }
 function printing(){
-    window.location.replace('./3D-Printing-Home.html');
+    window.location.replace('./3D-Printing.html');
 }
 function laser(){
-    window.location.replace('./Laser-Cutting-Engraving-Home.html');
+    window.location.replace('./Laser-Cutting.html');
 }
 function Vacuum(){
-    window.location.replace('./Vacuum-Forming-Home.html');
+    window.location.replace('./Vacuum-Forming.html');
 }
 
 
