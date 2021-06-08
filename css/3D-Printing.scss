@@ -400,39 +400,19 @@ nav {
   }
   .carousel-item {
     //幻燈片外框樣式
-    height: 385px; //高度
+    height: 600px; //高度
   }
   .carousel-item1 {
-    //background: 
-    // linear-gradient(
-    //     180deg,
-    //     rgba(19, 19, 19, 1) 0%,
-    //     rgba(19, 19, 19, 0) 45%
-    //   ),
-      //   linear-gradient(
-      //     255deg,
-      //     rgba(0, 60, 255, 0.4) 0%,
-      //     rgba(146, 0, 255, 0.4) 100%
-      //   ),
-      //url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
-    // gray;
+    background: 
+      url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
     background-size: cover;
     background-repeat: no-repeat;
-    // -webkit-filter: grayscale(1);
   }
   .carousel-item2 {
-    background: linear-gradient(
-        180deg,
-        rgba(19, 19, 19, 1) 0%,
-        rgba(19, 19, 19, 0) 34%
-      ),
-      linear-gradient(
-        255deg,
-        rgba(0, 60, 255, 0.4) 0%,
-        rgba(146, 0, 255, 0.4) 100%
-      ),
-      url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
+    background: 
+      url(/images/web-fullPage/3D-Photo.jpg) right 100% bottom 65%;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .carousel-item3 {
     background: linear-gradient(
@@ -532,35 +512,19 @@ nav {
     }
     .carousel-item {
       //幻燈片外框樣式
-      height: 62vh; //高度
+      height: 45vh; //高度
     }
     .carousel-item1 {
       background: 
-        //   linear-gradient(
-        //     255deg,
-        //     rgba(0, 60, 255, 0.4) 0%,
-        //     rgba(146, 0, 255, 0.4) 100%
-        //   ),
-        // url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-        // url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
-        gray;
-
+        url(/images/web-fullPage/Phone-3D-Photo-Ch.png) right 50% bottom 50%;
       background-size: cover;
       background-repeat: no-repeat;
     }
     .carousel-item2 {
-      background: linear-gradient(
-          180deg,
-          rgba(19, 19, 19, 1) 0%,
-          rgba(19, 19, 19, 0) 34%
-        ),
-        linear-gradient(
-          255deg,
-          rgba(0, 60, 255, 0.4) 0%,
-          rgba(146, 0, 255, 0.4) 100%
-        ),
-        url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      background: 
+        url(/images/web-fullPage/Phone-3D-Photo.png) right 50% bottom 50%;
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .carousel-item3 {
       background: linear-gradient(

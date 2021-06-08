@@ -300,15 +300,17 @@ nav a {
   margin-right: -15px;
 }
 .carousel .carousel-item {
-  height: 385px;
+  height: 600px;
 }
 .carousel .carousel-item1 {
+  background: url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .carousel .carousel-item2 {
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
+  background: url(/images/web-fullPage/3D-Photo.jpg) right 100% bottom 65%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .carousel .carousel-item3 {
   background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/images/3DPservice/3D-printing-index.png) right 100% bottom 50%;
@@ -387,16 +389,17 @@ nav a {
     margin-right: -15px;
   }
   .carousel .carousel-item {
-    height: 62vh;
+    height: 45vh;
   }
   .carousel .carousel-item1 {
-    background: gray;
+    background: url(/images/web-fullPage/Phone-3D-Photo-Ch.png) right 50% bottom 50%;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .carousel .carousel-item2 {
-    background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background: url(/images/web-fullPage/Phone-3D-Photo.png) right 50% bottom 50%;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .carousel .carousel-item3 {
     background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;

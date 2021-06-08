@@ -347,13 +347,14 @@ nav a {
   height: 385px;
 }
 .carousel .carousel-item1 {
-  background: url(/images/Coworkshop/coworkshop.jpg) right 100% bottom 70%;
+  background: url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .carousel .carousel-item2 {
-  background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+  background: url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .carousel .carousel-item3 {
   background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
@@ -527,6 +528,7 @@ nav a {
   border: 1px solid red;
   width: 100%;
   margin: 0px auto 0;
+  background-color: #d8d9d9;
 }
 .coworkshop .main .des {
   display: none;
