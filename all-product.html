@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>商品頁</title>
+    <title>全部商品</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./images/Zhipin Logo .svg" />
+    <meta name="description" content="3D 列印服務， 想把心中的設計帶到現實嗎? 3D列印能為您完成任務">
+    <meta name="keywords" content="3D 列印服務">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel=stylesheet type="text/css" href="./css/all-product.css">
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <meta name="google-site-verification" content="oUVAG5aiPzcQJKunEdnzBo7AIBy1V0SDNCAGjkMCI7c" />
   </head>
   <body class="">   
@@ -48,8 +51,8 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="./our-work.html" class="bot">案例展示</a></li>
-                    <li><a href="./all-product.html" class="bot">商店</a></li>
+                    <li><a href="./index.html" class="bot">案例展示</a></li>
+                    <li><a href="./index.html" class="bot">商店</a></li>
                 </ul>
             </div>
             <div class="header_mid en">
@@ -68,8 +71,8 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="./our-work.html" class="bot">View our work</a></li>
-                    <li><a href="./all-product.html" class="bot">Shop</a></li>
+                    <li><a href="./index.html" class="bot">View our work</a></li>
+                    <li><a href="./index.html" class="bot">Shop</a></li>
                 </ul>
             </div>
             <div class="header_right">
@@ -87,7 +90,7 @@
           </svg>
         </button>
         <a class="navbar-brand" href="./index.html"><span>zhipindesign</span></a>
-        <a href="./all-product.html">          <svg class="shopCart" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background:new 0 0 511.997 511.997;" xml:space="preserve" fill="#aaaaaa">
+        <a href="./index.html">          <svg class="shopCart" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background:new 0 0 511.997 511.997;" xml:space="preserve" fill="#aaaaaa">
           <g>
             <g>
               <path d="M405.387,362.612c-35.202,0-63.84,28.639-63.84,63.84s28.639,63.84,63.84,63.84s63.84-28.639,63.84-63.84
@@ -112,8 +115,8 @@
         </svg></a>
 
         </button>
-        <div class="collapse navbar-collapse navbar-collapse-center zh-tw" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto navbar-center">
+        <div class="collapse navbar-collapse navbar-collapse-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navbar-center zh-tw1">
             <li class="nav-item active">
               <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
             </li>
@@ -129,10 +132,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./our-work.html">案例展示</a>
+              <a class="nav-link" href="./index.html">案例展示</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./all-product.html">商店</a>
+              <a class="nav-link" href="./index.html">商店</a>
             </li>
             <li class="nav-item" style="height: 100vh;">
               <span class="text_opacity languageEn">En</span> /
@@ -140,8 +143,8 @@
             </li>
           </ul>
         </div>
-        <div class="collapse navbar-collapse navbar-collapse-center en" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto navbar-center">
+        <div class="collapse navbar-collapse navbar-collapse-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navbar-center en1">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -169,15 +172,50 @@
           </ul>
         </div>
       </nav>
-      <!-- 首頁主要內容 index -->
-      <div class="allProduct">
-        <input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" class="dark darkmodel">
-        <div class="borderOn btn btn-danger position-fixed">On</div>
-        <div class="borderClose btn btn-danger position-fixed" style="transform: translateX(50px);">Close</div>
-        <div class="main">
-            <div class="title title1">All product</div>  
+      <!-- 幻燈片區  修改圖片就好-->
+      <div class="carousel slide" data-ride="carousel" id="carousel-demo" data-interval="5000">
+        <div class="mainTitle">
+          <a class="en" href="./file.html" target="">PRODUCT</a>
+          <a class="zh-tw" href="./file.html" target="">商品頁</a>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item1">
+            <!-- 幻燈片1 更改src換圖片 -->
+            <!-- <img class="d-block w-100" src="./img/PXL_20201216_093128501.jpg" alt=""> -->
+            <div class="d-block w-100 img"></div>
+          </div>
+          <!-- <div class="carousel-item carousel-item2">
+            幻燈片2 更改src換圖片
+            <img class="d-block w-100" src="./img/PXL_20201216_093128501.jpg" alt="">
+          </div>
+          <div class="carousel-item carousel-item3">
+            幻燈片3 更改src換圖片
+            <img class="d-block w-100" src="./img/PXL_20201216_093128501.jpg" alt="">
+          </div> -->
+          <!-- 左邊幻燈片箭頭 -->
+          <!-- <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          </a> -->
+          <!-- 右邊幻燈片箭頭 -->
+          <!-- <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a> -->
         </div>
       </div>
+      <!-- 首頁主要內容 index -->
+      <div class="allProduct container">
+        <div class="title title1 en">PRODUCT</div>  
+        <div class="title title1 zh-tw">商品頁</div>  
+        <div class="boxWrap" id="boxWrap1">
+        </div>
+        <div class="boxWrap" id="boxWrap2">
+        </div>
+        <div class="boxWrap" id="boxWrap3">
+        </div>
+        <div class="boxWrap" id="boxWrap4">
+        </div>
+      </div>
+         
       <!-- 最下方文字區塊(footer) -->
       <footer class="">
         <!-- footer中英文字 -->
@@ -270,14 +308,16 @@
       attribution=install_email
       page_id="100143348602409">
       </div>  
-    
+    <!-- 區塊1 圖片縮小 -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="https://realtimeusers.bycontrast.co/realtimeusers.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -295,5 +335,133 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+      $(document).on("click",".boxP", function(){
+        let num = $(this).data('num');
+        let url = "./product.html?" + num;
+        // window.open(url);
+        window.location.href = url;
+      });
+
+      fetch("https://spreadsheets.google.com/feeds/list/149Mk3-jRjNL3vd2DLyWUBsa7GF-uGCqbYR9isUaKaLY/2/public/values?alt=json")
+      .then(res => {
+          return res.json();
+      }).then(result => {
+        // console.log(result)
+        let length = result.feed.entry.length;
+        console.log(result.feed.entry.length)
+        let boxLength = parseInt(length / 3) + 1;
+        console.log(boxLength)
+        let boxWrap1 = '';
+        let boxWrap2 = '';
+        let boxWrap3 = '';
+        let boxWrap4 = '';
+        for(let i = 0; i < result.feed.entry.length; i++){
+          let s_num      = (result.feed.entry[i].gsx$snum.$t)
+          let type       = (result.feed.entry[i].gsx$type.$t)
+          let img        = (result.feed.entry[i].gsx$img.$t)
+          let zh_title   = (result.feed.entry[i].gsx$zhtitle.$t)
+          let zh_text    = (result.feed.entry[i].gsx$zhtext.$t)
+          let en_title   = (result.feed.entry[i].gsx$entitle.$t)
+          let en_text    = (result.feed.entry[i].gsx$entext.$t)
+          let shopID     = (result.feed.entry[i].gsx$shopid.$t)
+          // console.log(s_num)
+          // console.log(type)
+          // console.log(img)
+          // console.log(zh_title)
+          // console.log(zh_text)
+          // console.log(en_title)
+          // console.log(en_text)
+
+          for(let i = 0; i < length; i++){
+            
+          }
+          if(type == "1"){
+            boxWrap1 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
+                            <div class="box_imgWrap">
+                              <img src="./images/product/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en" style="display: none;">${en_title}</div>
+                              <div class="box_text en" style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }else if(type == "2"){
+            boxWrap2 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
+                            <div class="box_imgWrap">
+                              <img src="./images/product/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en" style="display: none;">${en_title}</div>
+                              <div class="box_text en" style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }else if(type == "3"){
+            boxWrap3 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
+                            <div class="box_imgWrap">
+                              <img src="./images/product/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en" style="display: none;">${en_title}</div>
+                              <div class="box_text en" style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }else if(type == "4"){
+            boxWrap4 += `
+                        <div class="boxP" id="context${s_num}" data-num="${s_num}" data-id="${shopID}">
+                            <div class="box_imgWrap">
+                              <img src="./images/product/${img}" alt="">
+                            </div>
+                            <div class="box_textWrap">
+                              <div class="box_title zh-tw">${zh_title}</div>
+                              <div class="box_text zh-tw">
+                                ${zh_text}
+                              </div>
+                              <div class="box_title en"  style="display: none;">${en_title}</div>
+                              <div class="box_text en"  style="display: none;">
+                                ${en_text}
+                              </div>
+                            </div>
+                          </div>
+                        `;
+          }
+
+
+
+
+          // console.log(boxWrap1)
+        }
+        document.querySelector("#boxWrap1").innerHTML = boxWrap1;
+        document.querySelector("#boxWrap2").innerHTML = boxWrap2;
+        document.querySelector("#boxWrap3").innerHTML = boxWrap3;
+        document.querySelector("#boxWrap4").innerHTML = boxWrap4;
+      }).catch(function(err) {
+
+      });
+    </script>
   </body>
 </html>

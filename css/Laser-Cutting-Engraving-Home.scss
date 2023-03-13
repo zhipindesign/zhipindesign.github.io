@@ -385,6 +385,7 @@ nav {
   }
 }
 .carousel {
+  //幻燈片樣式
   transform: translateY(60px);
   margin-bottom: 60px;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
@@ -402,20 +403,19 @@ nav {
   }
   .carousel-item1 {
     background: 
-    // linear-gradient(
-    //     180deg,
-    //     rgba(19, 19, 19, 1) 0%,
-    //     rgba(19, 19, 19, 0) 45%
-    //   ),
-      //   linear-gradient(
-      //     255deg,
-      //     rgba(0, 60, 255, 0.4) 0%,
-      //     rgba(146, 0, 255, 0.4) 100%
-      //   ),
-      url(/images/LCEservice/laser-index.png) right 100% bottom 90%;
+      // linear-gradient(
+      //   180deg,
+      //   rgba(19, 19, 19, 1) 0%,
+      //   rgba(19, 19, 19, 0) 45%
+      // ),
+      // linear-gradient(
+      //   255deg,
+      //   rgba(0, 60, 255, 0.4) 0%,
+      //   rgba(146, 0, 255, 0.4) 100%
+      // ),
+      url(/images/LCEservice/LaserCutService.jpg) right 100% bottom 70%;
     background-size: cover;
     background-repeat: no-repeat;
-    // -webkit-filter: grayscale(1);
   }
   .carousel-item2 {
     background: linear-gradient(
@@ -483,10 +483,10 @@ nav {
     height: 40px; //高度
     text-align: center; //文字左右置中
     line-height: 40px; //上下置中
-    font-size: 36px; //字體大小
+    font-size: 60px; //字體大小
     // background: #3e414171; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
-    top: 2vh; //位置 top: 距離relative最高點位置
+    top: 5vh; //位置 top: 距離relative最高點位置
     // transform: translateY(30vh);
     font-weight: 600; //字體粗度
     z-index: 10;
@@ -497,6 +497,13 @@ nav {
     a:hover {
       //hover: 滑鼠移上去後之效果
       text-decoration: none; //將預設底線拿掉
+    }
+    .mainText{
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      margin: 5vh auto 0;
+      text-align: center;
+      width: 80%;
     }
   }
   .start_your_project:hover {
@@ -532,7 +539,8 @@ nav {
         //     rgba(146, 0, 255, 0.4) 100%
         //   ),
         // url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
-        url(/images/LCEservice/laser-index.png) right 50% bottom 10%;
+         url(/images/LCEservice/LaserCutService.jpg)  right 50% bottom 10%;
+        // gray;
 
       background-size: cover;
       background-repeat: no-repeat;
@@ -630,8 +638,133 @@ nav {
     }
   }
 }
+@media screen and (max-width: 700px) {
+  .carousel {
+    //幻燈片樣式
+    transform: translateY(55px);
+    font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    .carousel-indicators li {
+      width: 30px;
+      height: 10px;
+      border-radius: 100%;
+      background: #007bff;
+      transform: scale(0.2) translateY(12vh);
+      margin-right: -15px;
+    }
+    .carousel-item {
+      //幻燈片外框樣式
+      height: 500px; //高度
+    }
+    .carousel-item1 {
+      background: 
+        //   linear-gradient(
+        //     255deg,
+        //     rgba(0, 60, 255, 0.4) 0%,
+        //     rgba(146, 0, 255, 0.4) 100%
+        //   ),
+        // url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+        url(/images/LCEservice/LaserCutService.jpg) right 50% bottom 10%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .carousel-item2 {
+      background: linear-gradient(
+          180deg,
+          rgba(19, 19, 19, 1) 0%,
+          rgba(19, 19, 19, 0) 34%
+        ),
+        linear-gradient(
+          255deg,
+          rgba(0, 60, 255, 0.4) 0%,
+          rgba(146, 0, 255, 0.4) 100%
+        ),
+        url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      background-size: cover;
+    }
+    .carousel-item3 {
+      background: linear-gradient(
+          180deg,
+          rgba(19, 19, 19, 1) 0%,
+          rgba(19, 19, 19, 0) 34%
+        ),
+        linear-gradient(
+          255deg,
+          rgba(0, 60, 255, 0.4) 0%,
+          rgba(146, 0, 255, 0.4) 100%
+        ),
+        url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+      background-size: cover;
+    }
+    .carousel-item img {
+      //幻燈片圖片樣式
+      min-height: 540px; //最小高度
+      max-height: 1600px; //最大高度
+      object-fit: contain;
+      transform: translateY(-35%);
+    }
+    .mainTitle {
+      //開始專案按鈕樣式
+      // width: 140px; //寬度
+      padding: 0 5px;
+      height: 40px; //高度
+      text-align: center; //文字左右置中
+      margin: -5vh auto 0;
+      line-height: 40px; //上下置中
+      font-size: 32px; //字體大小
+      transform: translateY(5vh);
+
+      // background: #3e414171; //背景樣式 顏色
+      // position: absolute; //位置 absolute按到relative位置移動
+      // top: 12px; //位置 top: 距離relative最高點位置
+      // left: 26%; //位置 right: 距離relative最右點位置
+      padding: 0px -10px; //內縮寬度
+      font-weight: 1000; //字體粗度
+      z-index: 10;
+      a {
+        //超連結樣式
+        color: white; //字體顏色
+      }
+      a:hover {
+        //hover: 滑鼠移上去後之效果
+        text-decoration: none; //將預設底線拿掉
+      }
+    }
+    .start_your_project {
+      //開始專案按鈕樣式
+      width: 160px; //寬度
+      height: 32px; //高度
+      text-align: center; //文字左右置中
+      line-height: 32px; //上下置中
+      font-size: 14px; //字體大小
+      background: #0063c5; //背景樣式 顏色
+      border-radius: 30px;
+      position: absolute; //位置 absolute按到relative位置移動
+      padding: 0px -10px; //內縮寬度
+      font-weight: 600; //字體粗度
+      top: calc(50% - 25px); //位置 top: 距離relative最高點位置
+      left: calc(50% - 65px); //位置 right: 距離relative最右點位置
+      z-index: 10;
+      a {
+        //超連結樣式
+        color: white; //字體顏色
+      }
+      a:hover {
+        //hover: 滑鼠移上去後之效果
+        text-decoration: none; //將預設底線拿掉
+      }
+    }
+    .start_your_project:hover {
+      //hover: 滑鼠移上去後之效果
+      cursor: pointer; //滑鼠樣式 pointer: 手指頭
+      // transform: scale(1.2); //有hover 移上去之後之效果  transform: 效果 scale: 縮放效果(倍數)
+      transition: 0.5s; //動畫時間
+      background: #0070e0; //背景樣式 顏色
+    }
+  }
+}
 .LaserCutting {
-  height: 120vh;
+  // height: 170vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -651,13 +784,13 @@ nav {
   .title {
     border: 1px solid red;
     font-weight: 600;
-    margin: 0 8%;
+    margin: 10vh 8vh;
     font-size: 24px;
     text-align: center;
   }
   .main {
     border: 1px solid red;
-    height: 1000px;
+    // height: 1000px;
     width: 100%;
     margin: 0px auto 0;
     color: black;
@@ -825,9 +958,9 @@ nav {
               margin: 6% auto;
             }
             .box_text_content {
-              width: 76%;
+              width: 120%;
               font-size: 12px;
-              transform: translateX(12%);
+              transform: translateX(-10%);
               margin-top: 5%;
             }
           }
@@ -884,9 +1017,9 @@ nav {
               margin: 0 auto;
             }
             .box_text_content {
-              width: 76%;
+              width: 120%;
               font-size: 12px;
-              transform: translateX(12%);
+              transform: translateX(-10%);
               margin-top: 5%;
             }
           }
@@ -905,278 +1038,159 @@ nav {
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .LaserCutting {
-    height: 130vh;
-    margin: 20px auto 0;
+    height: 230vh;
+    margin: 80px auto 0;
     font-family: "Open Sans", "微軟正黑體"; //字型樣式
-    .toggle {
-      position: fixed;
-      top: 100px;
-      right: 0px;
-      border-radius: 20px;
-      opacity: 0.5;
-      background-color: #1d1d1f;
-      .toggle-on {
-        background-color: #1d1d1f;
-      }
-      .toggle-off {
-        background-color: #e9e9e9;
-      }
-    }
     .title {
       border: 1px solid red;
       font-weight: 600;
-      margin: 10vh 8vh;
+      margin: 10px 2% 0px;
       font-size: 24px;
       text-align: center;
     }
     .main {
-      border: 1px solid red;
-      height: 800px;
-      width: 100%;
-      margin: 0px auto 0;
-      color: black;
-      .ourService {
-        border: 1px solid rgb(115, 255, 0);
-        height: 270px;
-        width: 100%;
-        margin: 0 auto;
-        .boxWrap {
-          border: 1px solid red;
-          height: 250px;
-          width: 100%;
-          display: flex;
-          margin: -30px auto 0;
+      display: none;
+    }
+    .mobileMain {
+      height: 230vh;
+      display: block;
+      .mobileStart {
+        .box_container {
+          width: 60vw;
+          transform: translateX(10vw);
+          height: 110vh;
+          // position: relative;
           .box {
-            border: 1px solid red;
-            height: 250px;
-            width: 25%;
-            margin: 0 auto;
+            width: 70vw;
+            height: 35vh;
             .box_img {
-              border: 1px solid black;
-              width: 100%;
-              height: auto;
-              margin: 0 auto;
-              position: relative;
-              // background: url(../images/Coworkshop/box_img.png) center center;
-              // background-size: cover;
-              img {
-                max-width: 100%;
-                height: auto;
-                margin: 0 auto 0;
-              }
-              .mask {
-                position: absolute;
-                top: 0px;
+              svg {
                 width: 100%;
-                height: 100%;
-                background: rgba(101, 101, 101, 0.6);
-                color: #ffffff;
-                opacity: 0;
-                transition: 0.5s;
+                transform: translateX(5vw) scale(0.7);
               }
-            }
-            .box_img a:hover .mask {
-              opacity: 0.8;
             }
             .box_text {
               text-align: center;
+              width: 62vw;
+              transform: translate(8vw, -8vh);
               font-size: 12px;
-              margin: -10% auto 0;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+                font-weight: 800;
+              }
+            }
+          }
+
+          .mobilebox {
+            // transform: translateY(10vh);
+            width: 80vw;
+            .box_img {
+              svg {
+                width: 80vw;
+              }
+            }
+
+            .box_img2 {
+              // transform: translate(0vw,-10vh);
+              svg {
+                width: 25%;
+                margin: 4vh 0;
+                transform: translateX(20vw);
+              }
+            }
+            .box_text {
+              margin-top: 6.8vh;
+              text-align: center;
+              font-size: 12px;
+              .box_text_title {
+                font-size: 16px;
+                margin-bottom: 2vh;
+                font-weight: 800;
+              }
             }
           }
         }
-      }
-      .start_your_project {
-        border: 1px solid red;
-        height: 550px;
-        width: 80%;
-        margin: 4% auto 0%;
-        .boxWrap {
-          border: 1px solid red;
-          height: 250px;
-          width: 100%;
-          display: flex;
-          margin: 0% auto 8%;
+        .gallery {
+          text-align: center;
+          height: 40vh;
+          .flickity-page-dots {
+            transform: translateY(6vh);
+          }
           .box {
-            border: 1px solid red;
-            height: 150px;
-            width: 20%;
-            margin: 0 auto;
-            position: relative;
-            // transform: scale(.5);
+            width: 70vw;
             .box_img {
-              border: 1px solid black;
-              width: 100%;
-              height: 100%;
-              margin: 0 auto;
-              // background: url(../images/Coworkshop/box_img.png) center center;
-              // background-size: cover;
-              img,
               svg {
-                max-width: 100%;
-                height: auto;
-                margin: 30px auto 0;
-                position: absolute;
-                bottom: -20%;
-              }
-              .svg_dispatch {
-                position: absolute;
-                bottom: -20%;
-              }
-              .s10,
-              .m15,
-              .l20 {
-                transform: scale(1.5);
-              }
-              .svg_stlFile:hover {
-                fill: #0071e3;
-                cursor: pointer;
-              }
-              .svg_stlFile:hover .box_text_content_okay {
-                background-color: red;
-              }
-              .svg_noFile:hover {
-                fill: #0071e3;
-                cursor: pointer;
-              }
-              .svg_coworkshop {
-                max-width: 100%;
-                height: auto;
-                margin: 30px auto 0;
-                position: absolute;
-                bottom: -8%;
+                width: 70vw;
+                transform: scale(0.6);
               }
             }
-            .box_img1 {
-              border: 1px solid black;
-              width: 50%;
-              height: 50%;
-              margin: 0 auto;
-              // background: url(../images/Coworkshop/box_img.png) center center;
-              // background-size: cover;
-              img,
+          }
+          .mobilebox {
+            transform: translateY(10vh);
+            width: 70vw;
+            .box_img {
               svg {
-                max-width: 50%;
-                height: auto;
-                margin: 30px auto 0;
-                position: absolute;
-                bottom: 50%;
+                width: 70vw;
               }
             }
             .box_img2 {
-              border: 1px solid black;
-              width: 100%;
-              height: 100%;
-              margin: 0 auto;
-              // background: url(../images/Coworkshop/box_img.png) center center;
-              // background-size: cover;
-              img,
+              transform: translateX(10vw);
               svg {
-                max-width: 50%;
-                height: auto;
-                margin: 30px auto 0;
-                position: absolute;
-                bottom: -8%;
-                left: 5%;
-                transform: scale(0.7);
-              }
-              .svg_noFile {
-                max-width: 50%;
-                height: auto;
-                margin: 30px auto 0;
-                position: absolute;
-                bottom: -8%;
-                left: 45%;
+                width: 35%;
               }
             }
             .box_text {
-              text-align: center;
+              margin-top: 2.6vh;
+              font-size: 12px;
               .box_text_title {
-                font-size: 14px;
-                font-weight: 600;
-                margin: 6% auto;
-              }
-              .box_text_content {
-                width: 76%;
-                font-size: 12px;
-                transform: translateX(12%);
-                margin-top: 5%;
+                font-size: 16px;
+                margin-bottom: 2vh;
               }
             }
           }
-          .box1 {
-            border: 1px solid red;
-            height: 250px;
-            width: 5%;
-            margin: 0 auto;
-            position: relative;
-          }
         }
       }
-      .other_services {
-        border: 1px solid red;
-        height: 270px;
-        width: 80%;
-        margin: 0% auto 5%;
-        .boxWrap {
-          border: 1px solid red;
-          height: 250px;
-          width: 100%;
-          display: flex;
-          margin: -80px auto 0;
+      .mobileOthers {
+        margin-top: 10vh;
+        display: none;
+        .gallery {
+          height: 40vh;
+          .flickity-page-dots {
+            transform: translateY(6vh);
+          }
           .box {
-            border: 1px solid red;
-            height: 250px;
-            width: 20%;
-            margin: 0 auto;
-            position: relative;
-            cursor: pointer;
-            // transform: scale(.5);
+            width: 70vw;
             .box_img {
-              border: 1px solid black;
-              width: 100%;
-              height: 100%;
-              margin: 0 auto;
-              // background: url(../images/Coworkshop/box_img.png) center center;
-              // background-size: cover;
-              img,
               svg {
-                max-width: 100%;
-                height: auto;
-                margin: 0 auto -50px;
-                position: absolute;
-                bottom: 16%;
+                width: 70vw;
+                transform: scale(0.6);
+              }
+            }
+          }
+          .mobilebox {
+            transform: translateY(10vh);
+            width: 70vw;
+            .box_img {
+              svg {
+                width: 70vw;
+              }
+            }
+            .box_img2 {
+              transform: translateX(10vw);
+              svg {
+                width: 35%;
               }
             }
             .box_text {
-              text-align: center;
-              .box_text_title {
-                font-size: 14px;
-                font-weight: 600;
-                margin: 0 auto;
-              }
-              .box_text_content {
-                width: 76%;
-                font-size: 12px;
-                transform: translateX(12%);
-                margin-top: 5%;
-              }
+              margin-top: 2.6vh;
+              font-size: 12px;
             }
-          }
-          .box1 {
-            border: 1px solid red;
-            height: 250px;
-            width: 5%;
-            margin: 0 auto;
-            position: relative;
           }
         }
       }
-    }
-    .mobileMain {
-      display: none;
     }
   }
 }

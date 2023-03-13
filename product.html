@@ -1,195 +1,472 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>ZHIPIN 3D LAB</title>
+    <title>商品內頁</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="shortcut icon" href="./images/Zhipin Logo .svg" />
+    <meta name="description" content="3D 列印服務， 想把心中的設計帶到現實嗎? 3D列印能為您完成任務">
+    <meta name="keywords" content="3D 列印服務">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel=stylesheet type="text/css" href="./css/index.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/css.css" /> -->
-		<link rel="stylesheet" type="text/css" href="js/jquery.productColorizer.css" />
-		<link href="http://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet" type="text/css" />
-		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> -->
-		<script type="text/javascript" src="js/raphael-min.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery.productColorizer.js"></script>   -->
-		<script type="text/javascript" src="js/prettify.js"></script>
-		<!-- <script type="text/javascript" src="js/init.js"></script> -->
+    <link rel=stylesheet type="text/css" href="./css/product.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <meta name="google-site-verification" content="oUVAG5aiPzcQJKunEdnzBo7AIBy1V0SDNCAGjkMCI7c" />
   </head>
-  <body>
-
+  <body class="">   
       <!-- 最上方選單+logo(header)  -->
-      <header class="">
-        <!-- 在class有 en的 就是英文文字 有zh-tw的就是中文文字 可以切換 要更改中英文要看清楚是en還是zh-tw -->
-        <!-- <div class="language">
-          <div class="language1 en">繁體</div>
-          <div class="language2 zh-tw">English</div>
-        </div> -->
-        <!-- logo外框 -->
-        <div class="d-flex justify-content-between">
-          <div class="zhipin_icon_wrap">
-            <!-- logo圖片 src更改圖片位置 -->
-            <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
-            <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
-              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
-                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
-                <!--svg 標籤 裡面的fill 是圖片框線顏色-->
-              </g>
-            </svg> 
-            <!-- logo文字 &nbsp是空格 -->
-            <!-- <div class="logo_text" onclick="home()">3D Printing Service</div> -->
+      <header>
+        <div class=" d-flex">
+          <div class="header_left">
+            <div class="zhipin_icon_wrap">
+              <!-- logo圖片 src更改圖片位置 -->
+              <!-- <img class="zhipin_icon" src="./img/3D-printing-service-Logo.svg" alt="" onclick="home()"> -->
+              <svg onclick="home()" class="zhipin_icon s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+                <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                  <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#FFFFFF"/>
+                  <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+                </g>
+              </svg> 
+              <!-- logo文字 &nbsp是空格 -->
+              <!-- <div class="logo_text" onclick="home()">3D Printing Service</div> -->
+            </div>
           </div>
-          <!-- 右下選單英文版 -->
-          <ul class="header_list_bot en">
-            <li class="mid"><a href="./index.html" class="blue bot">Home</a></li>
-            <li class="mid">
-              <div class="dropdown">
-                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Our service
-                </div>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="./Co-Workshop.html">Coworkershop</a>
-                  <a class="dropdown-item" href="./3D-Printing-Home.html">3D printing service</a>
-                  <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">Laser cutting engraving service</a>
-                  <a class="dropdown-item" href="Vacuum-Forming-Home.html">Vacumm forming service</a>
-                </div>
+
+            <!-- <div class="header_left" onclick="home()">zhipindesign</div> -->
+            <div class="header_mid zh-tw">
+                <ul class="d-flex align-center">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                我們的服務
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./Co-Workshop.html">共享工作室</a>
+                                <a class="dropdown-item" href="./3D-Printing-Home.html">3D列印服務</a>
+                                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">雷射切割雕刻服務</a>
+                                <a class="dropdown-item" href="Vacuum-Forming-Home.html">真空成形服務</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./index.html" class="bot">案例展示</a></li>
+                    <li><a href="./index.html" class="bot">商店</a></li>
+                </ul>
+            </div>
+            <div class="header_mid en">
+                <ul class="d-flex align-center">
+                    <li><a href="./index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our service
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./Co-Workshop.html">Coworkershop</a>
+                                <a class="dropdown-item" href="./3D-Printing-Home.html">3D printing service</a>
+                                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">Laser cutting engraving service</a>
+                                <a class="dropdown-item" href="Vacuum-Forming-Home.html">Vacumm forming service</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./index.html" class="bot">View our work</a></li>
+                    <li><a href="./index.html" class="bot">Shop</a></li>
+                </ul>
+            </div>
+            <div class="header_right">
+                <span class="text_opacity languageEn">En</span> /
+                <span class="languageZh">繁中</span>
+            </div>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="menuButton">
+          <svg class="mobileMenu closeMenu" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg" fill="#717474">
+            <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+          </svg>
+        </button>
+        <a class="navbar-brand" href="./index.html"><span>zhipindesign</span></a>
+        <a href="./index.html">          <svg class="shopCart" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background:new 0 0 511.997 511.997;" xml:space="preserve" fill="#aaaaaa">
+          <g>
+            <g>
+              <path d="M405.387,362.612c-35.202,0-63.84,28.639-63.84,63.84s28.639,63.84,63.84,63.84s63.84-28.639,63.84-63.84
+                S440.588,362.612,405.387,362.612z M405.387,451.988c-14.083,0-25.536-11.453-25.536-25.536s11.453-25.536,25.536-25.536
+                c14.083,0,25.536,11.453,25.536,25.536S419.47,451.988,405.387,451.988z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M507.927,115.875c-3.626-4.641-9.187-7.348-15.079-7.348H118.22l-17.237-72.12c-2.062-8.618-9.768-14.702-18.629-14.702
+                H19.152C8.574,21.704,0,30.278,0,40.856s8.574,19.152,19.152,19.152h48.085l62.244,260.443
+                c2.062,8.625,9.768,14.702,18.629,14.702h298.135c8.804,0,16.477-6.001,18.59-14.543l46.604-188.329
+                C512.849,126.562,511.553,120.516,507.927,115.875z M431.261,296.85H163.227l-35.853-150.019h341.003L431.261,296.85z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M173.646,362.612c-35.202,0-63.84,28.639-63.84,63.84s28.639,63.84,63.84,63.84s63.84-28.639,63.84-63.84
+                S208.847,362.612,173.646,362.612z M173.646,451.988c-14.083,0-25.536-11.453-25.536-25.536s11.453-25.536,25.536-25.536
+                s25.536,11.453,25.536,25.536S187.729,451.988,173.646,451.988z"/>
+            </g>
+        </svg></a>
+
+        </button>
+        <div class="collapse navbar-collapse navbar-collapse-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navbar-center zh-tw1">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link our" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                我們的服務 +
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Co-Workshop.html">共享工作室</a>
+                <a class="dropdown-item" href="./3D-Printing-Home.html">3D列印服務</a>
+                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">雷射切割雕刻服務</a>
+                <a class="dropdown-item" href="Vacuum-Forming-Home.html">真空成形服務</a>
               </div>
             </li>
-            <li class="mid"><a href="./our-work.html" class="bot">View our work</a></li>
-            <li class="mid"><a href="./all-product.html" class="bot">Shop</a></li>
-            <!-- <li><a href="./index.html" class="contact">Contact</a></li>
-            <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
-  
-          </ul>
-          <ul class="header_list_bot en">
-            <li class="language1 d-flex mr-1">
-              <p>En</p>/
-              <p class="text_opacity">繁中</p>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">案例展示</a>
             </li>
-            <img class="menu" src="./img/menu.png" alt="">
-          </ul>
-                    <!-- 右下選單中文版 -->
-                    <ul class="header_list_bot zh-tw">
-                      <li class="mid"><a href="./index.html" class="blue bot">首頁</a></li> &nbsp&nbsp&nbsp
-                      <li class="mid">
-                        <div class="dropdown">
-                          <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            我們的服務
-                          </div>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="./Co-Workshop.html">共享工作室</a>
-                            <a class="dropdown-item" href="./3D-Printing-Home.html">3D列印服務</a>
-                            <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">雷射切割雕刻服務</a>
-                            <a class="dropdown-item" href="Vacuum-Forming-Home.html">真空成形服務</a>
-                          </div>
-                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                      </li>
-                      <li class="mid"><a href="./our-work.html" class="bot">案例展示</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                      <li class="mid"><a href="./all-product.html" class="bot">商店</a></li>
-                      <!-- <li><a href="./index.html" class="contact">Contact</a></li>
-                      <li><a href="./index.html" class="tel">+886 0226813986</a></li> -->
-            
-                    </ul>
-          <ul class="header_list_bot zh-tw">
-            <li class="language2 d-flex mr-1">
-              <p class="text_opacity">En</p>/
-              <p>繁中</p>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">商店</a>
             </li>
-            <img class="menu" src="./img/menu.png" alt="">
+            <li class="nav-item" style="height: 100vh;">
+              <span class="text_opacity languageEn">En</span> /
+              <span class="languageZh">繁中</span>
+            </li>
           </ul>
         </div>
-        
-        <!-- 右下選單手機英文版 -->
-        <ul class="header_list_bot_600 en">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html">3D printing service</a></li>
-          <li><a href="./index.html">View our work</a></li>
-          <li><a href="./index.html">Shop</a></li>
-          <li><a href="./index.html">Contact</a></li>
-          <li><a href="./index.html">+886 0226813986</a></li>
-        </ul>
-      </header>
-
-       
-      <div class="container item">
-        <main>
-          <ul class="list">
-              <li><a href="https://lesandoz.github.io/%E6%99%BA%E5%93%81/index">HOME</a></li>
-              <li><a href="https://lesandoz.github.io/%E6%99%BA%E5%93%81/product">SHOP</a></li>
-
-          </ul>              
-          <div class="wrap">
-            <div class="icon"></div>
-            <div class="icon icon_new"></div>
-            <input type="color" name="" id="colorSelectorIcon">
-            <input type="color" name="" id="colorSelectorTshirt">
-            <div class="d-flex">
-              <div class="drag_wrap">
-                <div id="" class="ui-widget-content draggable">
-                  <div class="icon icon_new" id="icon_new"></div>
+        <div class="collapse navbar-collapse navbar-collapse-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navbar-center en1">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link our" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our service +
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Co-Workshop.html">Coworkshop</a>
+                <a class="dropdown-item" href="./3D-Printing-Home.html">3D Printing service</a>
+                <a class="dropdown-item" href="./Laser-Cutting-Engraving-Home.html">Laser cutting engraving service</a>
+                <a class="dropdown-item" href="Vacuum-Forming-Home.html">Vacuum forming service</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">View our work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item" style="height: 100vh;">
+              <span class="text_opacity languageEn">En</span> /
+              <span class="languageZh">繁中</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- 首頁主要內容 index -->
+      <div class="product container">
+        <!-- <div class="title title1 en">PRODUCT</div>  
+        <div class="title title1 zh-tw">商品頁</div>   -->
+        <div class="boxWrapP">
+            <!-- <div class="box_imgWrap">
+                <div class="imgWrap">
+                    <img src="./images/3DPservice/E2.jpg" alt="">
                 </div>
-              </div>
-              <div class="container shirt-wrap" id="droppable">
-                <div class="shirt-back"></div>
-                <div class="shirt-bg"></div>
-                <div class="shirt"></div>
-              </div>
+                <div class="inner_imgWrap d-flex">
+                    <div class="inner_img"><img src="./images/product/S.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/product/S2.jpg" alt=""></div>
+                    <div class="inner_img"><img src="./images/product/E.jpg" alt=""></div>
+                </div>
             </div>
-
-          </div>
-          <!-- <div id="demo" class="container clearfix">
-            <div class="product-preview">
-              <div class="product">
-                  <img src="img/blank_tshirt.jpg" alt="Shirt Image" />
-                  <img id="mask" class="mask" src="img/shirt-mask-blank.png" alt="Mask Image" />
-              </div>
+            <div class="box_textWrap zh-tw">
+                <div class="text_title">我是title</div>
+                <div class="text_content">
+                    我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文
+                </div>
+                <div class="price">NT99</div>
             </div>
-          </div> -->
-        </main>
+            <div class="box_textWrap en" style="display: none;">
+                <div class="text_title">I'm title</div>
+                <div class="text_content">
+                    I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.I'm content.
+                </div>
+                <div class="price">NT99</div>
+            </div> -->
+            
+        </div>
       </div>
-      
+         
       <!-- 最下方文字區塊(footer) -->
-      <footer>
+      <footer class="">
         <!-- footer中英文字 -->
         <div class="en">
-          <br><br><div>ZHIPIN 3D LAB</div><br>
-          <div>3F., No. 10, Sec. 2, Bao'an St., Shulin Dist.,</div>
-          <div>New Taipei City 238, Taiwan</div><br>
-          <div>02-26813986</div>
+          <br><br><div class="footer_title">
+            <span class="footerText1"> &nbsp &nbsp&nbsp zhipindesign     &nbsp </span>
+            <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" fill="#717474"/>
+                <!--svg 標籤 裡面的fill 是圖片框線顏色-->
+              </g>
+            </svg>
+            <div class="footerText2">
+                智品設計股份有限公司
+            </div>
+        </div>
+         
+          <br>
+          <div>3F., No. 10, Sec. 2, Bao'an St., Shulin Dist.,New Taipei City 238, Taiwan</div>
+          <br>
+          <div>+886 0226813986</div>
         </div>
         <div class="zh-tw">
-          <br><br><div>ZHIPIN 3D LAB</div><br>
-          <div>新北市樹林區保安街二段10號3樓</div>
-          <div>New Taipei City 238, Taiwan</div><br>
-          <div>02-26813986</div>
+          <br><br>
+          <div>
+            <span class="footerText1"> &nbsp &nbsp&nbsp zhipindesign     &nbsp </span>   
+            <svg class="s-icon" xmlns="http://www.w3.org/2000/svg" width="39.634" height="18.076" viewBox="0 0 39.634 18.076" fill="#717474">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_56" data-name="Path 56" d="M23.828,0H2.765A.39.39,0,0,0,2.5.705L4.929,2.448a1.889,1.889,0,0,0,1.1.347H17.393a.439.439,0,0,1,.292.793L.507,15.931A1.187,1.187,0,0,0,1.3,18.076H6.621l3.893-2.8H7.732a.439.439,0,0,1-.292-.793L24.62,2.145A1.187,1.187,0,0,0,23.828,0Zm14.38,7.2a5.061,5.061,0,0,0-3.451-1.325H29.176a3.265,3.265,0,0,0-1.9.6l-16.093,11.6h3.928a2.873,2.873,0,0,0,1.672-.538L28.306,9.272a3.266,3.266,0,0,1,1.9-.6h4.378a1.966,1.966,0,0,1,2.036,1.888v.648a4.243,4.243,0,0,1-4.394,4.074H27.089l-3.893,2.8h8.159c4.574,0,8.282-3.438,8.282-7.679A4.347,4.347,0,0,0,38.209,7.2Z" transform="translate(-0.004)" />
+              </g>
+            </svg> 
+            <div class="footerText2">
+              智品設計股份有限公司
+            </div>
+          </div>
+          <br>
+          <div class="zh-tw footerText3">
+            <a class="text-secondary" href="https://www.google.com.tw/maps/place/238%E6%96%B0%E5%8C%97%E5%B8%82%E6%A8%B9%E6%9E%97%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF13%E8%99%9F7/@24.9944916,121.4204022,17z/data=!3m1!4b1!4m5!3m4!1s0x34681d156055cf53:0x89240c53232e5894!8m2!3d24.9944868!4d121.4225909?hl=zh-TW" target="_blank">
+              新北市樹林區復興路13號7樓
+            </a>
+          </div>
+          <div class="en footerText3">
+            <a class="text-secondary" href="https://www.google.com.tw/maps/place/238%E6%96%B0%E5%8C%97%E5%B8%82%E6%A8%B9%E6%9E%97%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF13%E8%99%9F7/@24.9944916,121.4204022,17z/data=!3m1!4b1!4m5!3m4!1s0x34681d156055cf53:0x89240c53232e5894!8m2!3d24.9944868!4d121.4225909?hl=zh-TW" target="_blank">7F., No. 13, Fuxing Rd., Shulin Dist., New Taipei City 238, Taiwan
+            </a>
+          </div><br>
+          <div>+886 0226813986</div>
         </div>
         <br>
         <!-- 四大社群logo+超連結 -->
         <div class="logo_img">
-          <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_FB" src="./img/FB.png" alt="" ></a>
+          <!-- <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_FB" src="./img/FB.png" alt="" ></a>
           <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_IG" src="./img/IG.png" alt=""></a>
           <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_Twitter" src="./img/Twitter.png" alt=""></a>
-          <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_Youtube" src="./img/Youtube.png" alt=""></a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank"><img class="logo_img_Youtube" src="./img/Youtube.png" alt=""></a> -->
+          <a href="https://www.facebook.com/zhipin-design-100143348602409" target="_blank">
+            <svg class="logo_img_FB" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="14.918" height="27.594" viewBox="0 0 14.918 27.594">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+                <path id="Path_45" data-name="Path 45" d="M14.355,0H10.777C6.758,0,4.159,2.665,4.159,6.79V9.911H.561A.562.562,0,0,0,0,10.485v4.538a.562.562,0,0,0,.562.562h3.6V27.032a.562.562,0,0,0,.562.562H9.415a.562.562,0,0,0,.562-.562V15.583h4.208a.562.562,0,0,0,.562-.56V10.485a.564.564,0,0,0-.564-.564h-4.2V7.268c0-1.276.3-1.924,1.967-1.924h2.41a.562.562,0,0,0,.562-.562V.568A.562.562,0,0,0,14.355,0Z" transform="translate(0.001)" fill="#717474"/>
+              </g>
+            </svg>
+            
+          </a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_IG" xmlns="http://www.w3.org/2000/svg" width="27.601" height="27.593" viewBox="0 0 27.601 27.593">
+              <path id="Path_46" data-name="Path 46" d="M41.506,34.4a7.08,7.08,0,1,0,7.075,7.078A7.08,7.08,0,0,0,41.506,34.4Zm0,11.675a4.593,4.593,0,1,1,3.25-1.346A4.595,4.595,0,0,1,41.506,46.075Z" transform="translate(-27.704 -27.687)" fill="#717474"/>
+              <path id="Path_47" data-name="Path 47" d="M19.484.081c-2.536-.119-8.827-.113-11.367,0A8.268,8.268,0,0,0,2.326,2.313C-.328,4.966.012,8.543.012,13.785c0,5.367-.3,8.86,2.314,11.472,2.663,2.663,6.29,2.314,11.472,2.314,5.317,0,7.151,0,9.031-.724,2.556-.993,4.487-3.276,4.683-7.379.119-2.536.113-8.827,0-11.367C27.276,3.259,24.677.321,19.484.081ZM23.5,23.494c-1.74,1.74-4.152,1.584-9.736,1.584-5.748,0-8.054.086-9.736-1.6-1.937-1.928-1.586-5.024-1.586-9.718,0-6.353-.652-10.926,5.722-11.254,1.465-.053,1.9-.068,5.582-.068l.053.035c6.126,0,10.926-.642,11.223,5.732.066,1.454.08,1.891.08,5.572,0,5.682.107,8-1.6,9.718Z" transform="translate(0.002 0.006)" fill="#717474"/>
+              <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="1.655" cy="1.655" rx="1.655" ry="1.655" transform="translate(19.507 4.779)" fill="#717474"/>
+            </svg>
+            
+          </a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_Twitter" xmlns="http://www.w3.org/2000/svg" width="33.949" height="27.58" viewBox="0 0 33.949 27.58">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+                <path id="Path_48" data-name="Path 48" d="M30.466,6.906a13.9,13.9,0,0,0,3.483-3.613h0a14.537,14.537,0,0,1-4.011,1.1A6.924,6.924,0,0,0,33,.544a13.929,13.929,0,0,1-4.413,1.686A6.961,6.961,0,0,0,16.551,6.988a7.168,7.168,0,0,0,.162,1.588A19.706,19.706,0,0,1,2.365,1.295a6.961,6.961,0,0,0,2.146,9.3,6.881,6.881,0,0,1-3.145-.857v.076a7,7,0,0,0,5.57,6.84,6.922,6.922,0,0,1-1.824.228,6.144,6.144,0,0,1-1.317-.119,7.024,7.024,0,0,0,6.5,4.85,13.993,13.993,0,0,1-8.633,2.968A13.166,13.166,0,0,1,0,24.491a19.6,19.6,0,0,0,10.678,3.122A19.674,19.674,0,0,0,30.466,6.9Z" transform="translate(0 -0.033)" fill="#717474"/>
+              </g>
+            </svg> 
+          </a>
+          <a href="https://www.instagram.com/zhipindesign/" target="_blank">
+            <svg class="logo_img_Youtube" xmlns="http://www.w3.org/2000/svg" width="27.534" height="19.511" viewBox="0 0 27.534 19.511">
+              <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+                <path id="Path_49" data-name="Path 49" d="M26.949,2.788l.035.224A3.492,3.492,0,0,0,24.611.585h-.023C22.442,0,13.8,0,13.8,0S5.179-.012,3.009.585a3.494,3.494,0,0,0-2.39,2.4v.023A38.463,38.463,0,0,0,.648,16.724L.613,16.5a3.492,3.492,0,0,0,2.374,2.427h.023c2.146.585,10.787.585,10.787.585s8.618,0,10.787-.585a3.492,3.492,0,0,0,2.392-2.406V16.5a35.882,35.882,0,0,0,.574-6.481V9.5a37.019,37.019,0,0,0-.609-6.71ZM11.041,13.946V5.576l7.192,4.191Z" transform="translate(-0.017 0)" fill="#717474"/>
+              </g>
+            </svg>  
+          </a>
         </div>
       </footer>
       <!-- Your Chat Plugin code -->
       <!-- FB機器人 勿動 -->
-        
-    
+      <div class="fb-customerchat"
+      attribution=install_email
+      page_id="100143348602409">
+      </div>  
+    <!-- 區塊1 圖片縮小 -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
-    <!-- <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="https://realtimeusers.bycontrast.co/realtimeusers.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v9.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        $(document).on("click",".inner_img",function() {
+            newImg = $(this).html();
+            console.log(newImg)
+            $(".imgWrap").html(newImg)
+        })
+        var url = location.href; 
+        var num = url.substring(url.indexOf("?")+1,url.length).split("&"); 
+
+
+        fetch("https://spreadsheets.google.com/feeds/list/149Mk3-jRjNL3vd2DLyWUBsa7GF-uGCqbYR9isUaKaLY/2/public/values?alt=json")
+      .then(res => {
+          return res.json();
+      }).then(result => {
+        // console.log(result)
+        // console.log(result.feed.entry.length)
+        let content = '';
+        for(let i = 0; i < result.feed.entry.length; i++){
+          let s_num      = (result.feed.entry[i].gsx$snum.$t)
+          let type       = (result.feed.entry[i].gsx$type.$t)
+          let img        = (result.feed.entry[i].gsx$img.$t)
+          let img1       = (result.feed.entry[i].gsx$img1.$t)
+          let img2       = (result.feed.entry[i].gsx$img2.$t)
+          let zh_title   = (result.feed.entry[i].gsx$zhtitle.$t)
+          let zh_text    = (result.feed.entry[i].gsx$zhtext.$t)
+          let zh_content = (result.feed.entry[i].gsx$zhcontent.$t)
+          let en_title   = (result.feed.entry[i].gsx$entitle.$t)
+          let en_text    = (result.feed.entry[i].gsx$entext.$t)
+          let en_content = (result.feed.entry[i].gsx$encontent.$t)
+          let price      = (result.feed.entry[i].gsx$price.$t)
+          let shopID     = (result.feed.entry[i].gsx$shopid.$t)
+          // console.log(shopID)
+          // console.log(type)
+          // console.log(img)
+          // console.log(zh_title)
+          // console.log(zh_text)
+        //   console.log(en_content)
+        //   console.log(zh_content)
+          if(s_num == num){
+            // console.log(s_num)
+            // console.log(num)
+            content += `
+                            <div class="box_imgWrap" data-id="${s_num}">
+                                <div class="imgWrap">
+                                    <img src="./images/product/${img}" alt="">
+                                </div>
+
+                            </div>
+                            <div class="box_textWrap zh-tw d-flex">
+                              <div class="textWrap">
+                                <div class="text_title">${zh_title}</div>
+                                <div class="price">${price}</div>
+                                <div class="sImgWrap d-flex">
+                                  <div class="inner_img"><img src="./images/product/${img}" alt=""></div>
+                                  <div class="inner_img"><img src="./images/product/${img1}" alt=""></div>
+                                  <div class="inner_img"><img src="./images/product/${img2}" alt=""></div>
+                                </div>
+                                <div class="text_content">${zh_content}</div>
+                              </div>
+                              <div class="btnWrap">
+                                <div class="stock">In Stock</div>
+                                數量: <select class="number">
+                                  <option value="0">請選擇</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                </select>
+                                <div class="addCart">
+                                  Add to cart
+                                </div>
+                                <div class="toShoppingCart">
+                                  Buy Now
+                                </div>
+                              </div>
+                            </div>
+                            <div class="box_textWrap en" style="display: none;">
+                                <div class="text_title">${en_title}</div>
+                                <div class="addCart">
+                                  <a href="https://famistore.famiport.com.tw/234599/index.php?action=fmall_8420368" target="_blank">
+                                  <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="104.322" height="38.88" viewBox="0 0 104.322 38.88">
+                                    <path id="Path_95" data-name="Path 95" d="M331.272,19.38h-9.29V10.09a.581.581,0,0,0-.59-.59h-5.62a.581.581,0,0,0-.59.59v9.29h-9.29a.581.581,0,0,0-.59.59v5.62a.581.581,0,0,0,.59.59h9.29v9.29a.581.581,0,0,0,.59.59h5.62a.581.581,0,0,0,.59-.59V26.207h9.29a.581.581,0,0,0,.59-.59V19.971A.566.566,0,0,0,331.272,19.38Z" transform="translate(-227.541 -9.5)" fill="#fff"/>
+                                    <g id="Group_77" data-name="Group 77" transform="translate(0 3.388)">
+                                      <g id="Group_73" data-name="Group 73" transform="translate(0 1.457)">
+                                        <path id="Path_96" data-name="Path 96" d="M11.812,48.677c0-.026.026-.051.026-.077H10.324a2.214,2.214,0,0,0-.924.205,4.579,4.579,0,0,1,1.206-.128Z" transform="translate(-7.58 -43.41)"/>
+                                        <path id="Path_97" data-name="Path 97" d="M10.056,49.787c-.385-.488-.77-.975-1.078-1.386a1.974,1.974,0,0,1-.128-1.745c.693-2.079,1.719-6.082,2.566-9.419h.436a2.059,2.059,0,0,1,2.053,2.079c-.154,1.8-2.233,8.418-2.746,9.855-.128.359-.257.59-.539,1.309L7.695,55.1s-.231.308-.436.59c-.077.077-.128.18-.18.231s-.077.1-.1.128h0a30.439,30.439,0,0,1-4.568,4.927c-.205.257-.077.642.205.642H8.67a1.1,1.1,0,0,0,.975-.385c.436-.488,1.027-1.181,1.668-1.976.565.667,1.206,1.309,1.719,1.873a1.711,1.711,0,0,0,1.155.488h5.749c.462,0,.436-.385.205-.642-2.053-2-3.978-3.978-5.826-6.005a29.116,29.116,0,0,0,3.7-9.752,38.476,38.476,0,0,0,.667-5.133c.1-1.565.488-3.362-.821-4.645a6.191,6.191,0,0,0-4.363-1.8h-1.36c.077-.359.128-.744.18-1.129,0-.026.026-.077.026-.1l.308-1.155a2.38,2.38,0,0,0-2.053-2.823,2.765,2.765,0,0,0-3.259,1.8s-.616,2.926-.8,3.362c0,.026-.026.051-.026.077H5.308A4.579,4.579,0,0,0,4.1,33.8a1.844,1.844,0,0,0-1.181,1.617,1.987,1.987,0,0,0,2.1,1.822H5.77a70.946,70.946,0,0,1-2.31,8.469c-.462,1.258-.821,2.541,0,3.85a50.635,50.635,0,0,0,3.619,4.85" transform="translate(-2.307 -28.378)" fill="#fff"/>
+                                        <path id="Path_98" data-name="Path 98" d="M34.905,112.3c-.077.18-.128.359-.205.539l.205-.539Z" transform="translate(-26.387 -90.763)" fill="#fff"/>
+                                        <path id="Path_99" data-name="Path 99" d="M20.6,135.6c-.026.051-.077.077-.1.128h0A.559.559,0,0,0,20.6,135.6Z" transform="translate(-15.831 -108.083)" fill="#fff"/>
+                                        <path id="Path_100" data-name="Path 100" d="M22.036,132.4c-.128.205-.282.385-.436.59C21.805,132.708,22.036,132.4,22.036,132.4Z" transform="translate(-16.649 -105.704)" fill="#fff"/>
+                                      </g>
+                                      <g id="Group_76" data-name="Group 76" transform="translate(16.5)">
+                                        <g id="Group_74" data-name="Group 74" transform="translate(0 3.311)">
+                                          <path id="Path_101" data-name="Path 101" d="M92.649,61.084,91.211,48.842l-11.446.1V47.636c1.591-2.079,3.567-4.85,5.158-7.109a3.165,3.165,0,0,0,.308-3.105c-.565-1.052-1.848-1.822-3.978-1.822H69.526a1.987,1.987,0,0,0-2.1,1.822,1.646,1.646,0,0,0,.462,1.1h0a.3.3,0,0,0,.231.231,2.241,2.241,0,0,0,1.411.488H78.38c.462,0,.59.308.308.642-1.36,1.9-2.8,3.773-4.363,5.595a2.24,2.24,0,0,0-.513,1.54v1.925H67.19a.568.568,0,0,0-.59.488v2.643c0,.385.257.513.59.513h6.6v9.8a.972.972,0,0,1-1.027.975h-2.9c-.308,0-.513.257-.385.513l.95,2.566c.128.385.334.488.77.488H74.5a5.661,5.661,0,0,0,4.029-1.258,4.692,4.692,0,0,0,1.232-3.542V52.589l8.187-.1,1.437,12.242h6.057a2.912,2.912,0,0,1,5.7,0h17.143a2.912,2.912,0,0,1,5.7,0h4.825v-3.67H92.649Z" transform="translate(-66.6 -35.6)" fill="#fff"/>
+                                          <path id="Path_102" data-name="Path 102" d="M272.83,152.228a2.188,2.188,0,0,0,2.13-2.258,2.689,2.689,0,0,0-.128-.77h-4a2.42,2.42,0,0,0-.128.77A2.2,2.2,0,0,0,272.83,152.228Z" transform="translate(-218.321 -120.046)" fill="#008ed3"/>
+                                          <path id="Path_103" data-name="Path 103" d="M273.2,143.4a2.118,2.118,0,0,0-2,1.489h4A2.118,2.118,0,0,0,273.2,143.4Z" transform="translate(-218.692 -115.735)" fill="#008ed3"/>
+                                          <path id="Path_104" data-name="Path 104" d="M183.83,152.228a2.188,2.188,0,0,0,2.13-2.258,2.689,2.689,0,0,0-.128-.77h-4a2.42,2.42,0,0,0-.128.77A2.221,2.221,0,0,0,183.83,152.228Z" transform="translate(-152.161 -120.046)" fill="#008ed3"/>
+                                          <path id="Path_105" data-name="Path 105" d="M184.2,143.4a2.118,2.118,0,0,0-2,1.489h4A2.094,2.094,0,0,0,184.2,143.4Z" transform="translate(-152.533 -115.735)" fill="#008ed3"/>
+                                        </g>
+                                        <g id="Group_75" data-name="Group 75" transform="translate(25.715)">
+                                          <path id="Path_106" data-name="Path 106" d="M205.128,92.3a3.48,3.48,0,0,0,.667-2.258V84.216a3.111,3.111,0,0,0-1.206-2.643,5.213,5.213,0,0,0-3.182-.873H176.59a.609.609,0,0,0-.59.513v9.624a2.54,2.54,0,0,0,1,1.873,3.839,3.839,0,0,0,1.155.744h25.407A4.444,4.444,0,0,0,205.128,92.3Zm-5.107-.488h-17.99a.947.947,0,0,1-.95-.95.964.964,0,0,1,.95-.95h17.99a.95.95,0,0,1,0,1.9Zm0-3.644h-17.99a.947.947,0,0,1-.95-.95.964.964,0,0,1,.95-.95h17.99a.95.95,0,1,1,0,1.9Zm0-3.67h-17.99a.95.95,0,1,1,0-1.9h17.99a.95.95,0,1,1,0,1.9Z" transform="translate(-173.639 -65.815)" fill="#fff"/>
+                                          <path id="Path_107" data-name="Path 107" d="M175.223,54.8a2.831,2.831,0,0,0-2.823,2.823v.257a2.831,2.831,0,0,0,2.823,2.823h26.254A2.831,2.831,0,0,0,204.3,57.88v-.257a2.831,2.831,0,0,0-2.823-2.823Zm5.235,4.132h-2.566a1.206,1.206,0,1,1,0-2.412h2.566a1.206,1.206,0,0,1,0,2.412Zm8.828,0H186.72a1.206,1.206,0,0,1,0-2.412h2.566a1.2,1.2,0,0,1,1.206,1.206A1.189,1.189,0,0,1,189.287,58.932Zm8.854,0h-2.566a1.206,1.206,0,1,1,0-2.412h2.566a1.206,1.206,0,1,1,0,2.412Z" transform="translate(-170.963 -46.562)" fill="#fff"/>
+                                          <path id="Path_108" data-name="Path 108" d="M167.236,26.909h14.141v1.206H170.5a.459.459,0,0,0-.488.385v1.334c0,.205.205.334.462.334h27.383c.205,0,.462-.077.462-.359V28.526c0-.205-.282-.385-.488-.385h-10.8V26.934h14.064a.483.483,0,0,0,.488-.462V24.958c0-.282-.154-.436-.488-.436H187.023c0-.026-.026-.051-.026-.1V22.7h-5.569s-.026,1.386-.026,1.822H167.288a.444.444,0,0,0-.488.359v1.642A.423.423,0,0,0,167.236,26.909Z" transform="translate(-166.8 -22.7)" fill="#fff"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </svg>
+                                </a>
+                                </div>
+                                <div class="price">${price}</div>
+                                <div class="text_content">
+                                    ${en_content}
+                                </div>
+                            </div>
+                        `;
+          }
+
+          // console.log(content)
+        }
+        document.querySelector(".boxWrapP").innerHTML = content;
+      }).catch(function(err) {
+
+      });
+      var cartArr = JSON.parse(localStorage.getItem("product"));
+      if(cartArr == null){cartArr = [];}
+      console.log(cartArr)
+
+      $(document).on("click", ".addCart", function(){
+
+        let id = $(".box_imgWrap").data('id');
+        // let url = "https://famistore.famiport.com.tw/234599/index.php?action=" + id;
+        cartArr.push(id);
+        cartArr = $.unique(cartArr);
+        let cartStr = JSON.stringify(cartArr);
+        let name = $('.zh-tw .text_title').text();
+        console.log(name);
+        localStorage.setItem("product", cartStr);
+        swal(name, "已加入購物車！","success")        // alert('已加入購物車')
+        // window.open(url);
+        // windowOpen('https://famistore.famiport.com.tw/234599/index.php?action=fmall_8616820', '_blank');
+      });
+    </script>
   </body>
 </html>

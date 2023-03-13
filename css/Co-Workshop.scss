@@ -403,33 +403,15 @@ nav {
   }
   .carousel-item1 {
     background: 
-      // linear-gradient(
-      //   180deg,
-      //   rgba(19, 19, 19, 1) 0%,
-      //   rgba(19, 19, 19, 0) 45%
-      // ),
-      // linear-gradient(
-      //   255deg,
-      //   rgba(0, 60, 255, 0.4) 0%,
-      //   rgba(146, 0, 255, 0.4) 100%
-      // ),
-      url(/images/Coworkshop/index.png) right 100% bottom 70%;
+      url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .carousel-item2 {
-    background: linear-gradient(
-        180deg,
-        rgba(19, 19, 19, 1) 0%,
-        rgba(19, 19, 19, 0) 34%
-      ),
-      linear-gradient(
-        255deg,
-        rgba(0, 60, 255, 0.4) 0%,
-        rgba(146, 0, 255, 0.4) 100%
-      ),
-      url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
+    background: 
+      url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .carousel-item3 {
     background: linear-gradient(
@@ -483,10 +465,10 @@ nav {
     height: 40px; //高度
     text-align: center; //文字左右置中
     line-height: 40px; //上下置中
-    font-size: 36px; //字體大小
+    font-size: 60px; //字體大小
     // background: #3e414171; //背景樣式 顏色
     position: absolute; //位置 absolute按到relative位置移動
-    top: 10vh; //位置 top: 距離relative最高點位置
+    top: 5vh; //位置 top: 距離relative最高點位置
     // transform: translateY(30vh);
     font-weight: 600; //字體粗度
     z-index: 10;
@@ -497,6 +479,13 @@ nav {
     a:hover {
       //hover: 滑鼠移上去後之效果
       text-decoration: none; //將預設底線拿掉
+    }
+    .mainText{
+      font-size: 24px;
+      color: rgb(255, 255, 255);
+      margin: 5vh auto 0;
+      text-align: center;
+      width: 60%;
     }
   }
   .start_your_project:hover {
@@ -632,7 +621,7 @@ nav {
   }
 }
 .coworkshop {
-  height: 360vh;
+  // height: 470vh;
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體"; //字型樣式
   .toggle {
@@ -658,15 +647,16 @@ nav {
   }
   .main {
     border: 1px solid red;
-    height: 2000px;
+    // height: 470vh;
     width: 100%;
     margin: 0px auto 0;
+    background-color: #d8d9d9;
     .des {
       display: none;
     }
     .content {
       width: 100%;
-      height: 300px;
+      height: 50vh;
       display: none;
       background: #0070e0;
       text-align: center;
@@ -677,15 +667,15 @@ nav {
     .equipment {
       border: 1px solid red;
       width: 100%;
-      height: 1080px;
+      height: 130vh;
       .boxWrap {
         border: 1px solid red;
         width: 100%;
-        height: 360px;
+        height: 50vh;
         .box {
           border: 1px solid red;
           width: 60%;
-          height: 360px;
+          height: 50vh;
           margin: 0 auto;
           .box_img {
             border: 1px solid black;
@@ -701,6 +691,7 @@ nav {
             .box_text {
               text-align: center;
               font-size: 14px;
+              font-weight: 800;
             }
           }
           .box_img1 {
@@ -715,26 +706,27 @@ nav {
     .tool1 {
       border: 1px solid red;
       width: 100%;
-      height: 400px;
+      height: 40vh;
       .boxWrap {
         border: 1px solid red;
         width: 100%;
-        height: 400px;
+        height: 40vh;
         .box {
           border: 1px solid red;
           width: 60%;
-          height: 400px;
+          height: 40vh;
           margin: 0 auto;
           .box_img {
             border: 1px solid black;
-            width: 60%;
-            height: 60%;
+            width: 100%;
+            height: 100%;
             margin: 0 auto;
             // background: url(../images/Coworkshop/box_img.png) center center;
             // background-size: cover;
             img {
               width: 100%;
               height: auto;
+              border-radius: 4px;
             }
             .box_text {
               text-align: center;
@@ -753,15 +745,15 @@ nav {
     .tool2 {
       border: 1px solid red;
       width: 100%;
-      height: 800px;
+      height: 110vh;
       .boxWrap {
         border: 1px solid red;
         width: 100%;
-        height: 400px;
+        height: 50vh;
         .box {
           border: 1px solid red;
           width: 60%;
-          height: 400px;
+          height: 50vh;
           margin: 0 auto;
           .box_img {
             border: 1px solid black;
@@ -791,18 +783,18 @@ nav {
 
     .other_services {
       border: 1px solid red;
-      height: 270px;
+      height: 40vh;
       width: 80%;
       margin: 0% auto 5%;
       .boxWrap {
         border: 1px solid red;
-        height: 250px;
+        height: 40vh;
         width: 100%;
         display: flex;
         margin: 0% auto 0;
         .box {
           border: 1px solid red;
-          height: 250px;
+          height: 25vh;
           width: 20%;
           margin: 0 auto;
           position: relative;

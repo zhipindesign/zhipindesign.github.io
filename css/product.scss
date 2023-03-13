@@ -1,0 +1,707 @@
+header {
+    height: 60px;
+    color: white;
+    background: #3e4141;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    font-family: "Open Sans", "微軟正黑體";
+    .header_left {
+      width: 15%;
+      height: 60px;
+      // border: 1px red solid;
+      text-align: center;
+      font-size: 20px;
+      cursor: pointer;
+      .zhipin_icon_wrap {
+        position: relative;
+      }
+    }
+    .header_mid {
+      width: 70%;
+      height: 60px;
+      // border: 1px red solid;
+      text-align: center;
+      margin: 0 auto;
+      ul {
+        width: 390px;
+        text-align: center;
+        margin: 0 auto;
+        li {
+          list-style: none;
+          text-align: center;
+          margin: 0 auto;
+          padding-right: 4px;
+          .dropdown-toggle::after {
+            transform: translate(-5px, 3px) scale(0.8);
+          }
+          .dropdown-menu {
+            background-color: #3e4141;
+            border: none;
+            margin-top: -20px;
+            transform: translateX(-10px);
+            .dropdown-item {
+              padding: 0 10px 5px 10px;
+              height: 30px;
+              line-height: 30px;
+            }
+            .dropdown-item:hover {
+              background-color: #3e4141;
+            }
+          }
+          .dropdown-menu li:hover .sub-menu {
+            visibility: visible;
+          }
+          .dropdown:hover .dropdown-menu {
+            display: block;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          a:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+    .header_right {
+      width: 15%;
+      height: 60px;
+      // border: 1px red solid;
+      text-align: center;
+      .text_opacity {
+        opacity: 30%;
+        cursor: pointer;
+      }
+      .languageEn:hover,
+      .languageZh:hover {
+        opacity: 100%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    header {
+      //最上方區塊樣式
+  
+      width: 100vw; //最大寬度
+      height: 65px; //高度
+      background: #131313; //背景 rgb:顏色
+      position: fixed; //位置 absolute按到relative位置移動
+      font-family: "Open Sans", "微軟正黑體"; //字型樣式
+      color: white;
+      z-index: 10;
+      .language {
+        //切換語言樣式
+        position: fixed; //跟著螢幕滾動
+        z-index: 20; //放在最上層 不會被遮擋 數字越高越上層
+        transition: 0.3s; //變化時間
+        font-size: 20px; //字體大小
+        font-weight: 600; //字體粗度
+      }
+      .language:hover {
+        //切換語言模式(滑鼠移上去後)
+        cursor: pointer; //滑鼠變成手指
+        // background: coral;
+        color: rgb(90, 219, 187) !important; //字體顏色
+      }
+      //icon
+      .zhipin_icon_wrap {
+        transform: translateY(18px);
+        //icon外框樣式
+        display: flex; //讓物件並排
+        .zhipin_icon {
+          //icon本身樣式
+          width: 48px; //寬度
+          height: 48px; //高度
+          margin: 6px 0px 0px 15px; //對外寬度
+        }
+  
+        .logo_text {
+          //logo文字樣式
+          text-align: center; //左右置中
+          line-height: 74px; //上下置中
+          font-size: 12px; //字體大小
+          font-weight: 400; //字體粗度
+          transform: scale(0.85);
+        }
+        .zhipin_icon:hover,
+        .logo_text:hover {
+          //滑鼠移上去後
+          cursor: pointer; //滑鼠變成手指
+        }
+      }
+  
+      //主選單
+      .header_list_top {
+        //上方主選單(雷切/真空/共享空間)
+  
+        display: flex; //讓列表並排
+        list-style: none; //list取消預設樣式
+        font-size: 12px; //字體大小
+        position: absolute; //位置 absolute按到relative位置移動
+        top: 0%; //位置 top: 距離relative最高點位置
+        right: 2%; //位置 right: 距離relative最右點位置
+  
+        li {
+          padding: 8px 12px; //內縮寬度
+          a {
+            color: white; //字體顏色
+            padding: 4px 0px; //內縮寬度
+            text-decoration: black underline;
+            font-weight: 500;
+          }
+          a:hover {
+            //hover: 滑鼠移上去後之效果
+            color: #007bff; //字體顏色
+            text-decoration: #007bff underline;
+          }
+          p {
+            cursor: default;
+          }
+          .text_opacity:hover {
+            opacity: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+      .header_list_bot {
+        //上方主選單(首頁/3D列印/作品/商店/聯絡我們/電話)
+  
+        display: flex; //讓列表並排
+        list-style: none; //list取消預設樣式
+        font-size: 12px; //字體大小
+        position: absolute; //位置 absolute按到relative位置移動
+        bottom: -60%; //位置 top: 距離relative最高點位置
+        right: 2%; //位置 right: 距離relative最右點位置
+        li {
+          padding: 8px 3px; //內縮寬度
+          transform: scale(0.85);
+          z-index: 3;
+          .tel,
+          .contact {
+            color: white; //字體顏色
+            font-weight: 600; //字體粗度
+          }
+          .tel:hover,
+          .contact:hover {
+            text-decoration: none; //將預設底線拿掉
+            cursor: default;
+          }
+          .text_opacity {
+            opacity: 30%;
+            cursor: pointer;
+          }
+          .bot {
+            //超連結樣式
+            color: white; //字體顏色
+            font-weight: 400; //字體粗度
+            padding: 1px;
+          }
+          .bot:hover {
+            //hover: 滑鼠移上去後之效果
+            color: #007bff; //字體顏色
+            text-decoration: none; //將預設底線拿掉
+          }
+          .blue {
+            color: #007bff; //字體顏色
+          }
+          .dropdown-toggle::after {
+            transform: translateY(3px) scale(0.8);
+          }
+          .dropdown-menu {
+            background: #13131380;
+            transform: scale(0.84) translate(-18%, -10%);
+            a {
+              color: white;
+            }
+            a:hover {
+              color: #007bff;
+            }
+            .dropdown-item:hover {
+              background: #131313;
+            }
+          }
+          .dropdown-menu li:hover .sub-menu {
+            visibility: visible;
+          }
+          .dropdown:hover .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      .header_list_bot_600 {
+        //手機版選單(三條橫線，預設隱藏)
+        display: none; //隱藏
+      }
+      .menu {
+        //手機版選單按鈕(三條橫線，預設隱藏)
+        width: 30px; //寬度
+        height: 30px; //高度
+        display: none; //隱藏
+      }
+      // @media screen and (max-width: 600px) {
+      //   //當螢幕寬度小於600px
+      //   .en {
+      //     //英文文字樣式
+      //     font-size: 10px; //字體大小
+      //   }
+      //   .zhipin_icon_wrap {
+      //     //logo外框樣式
+  
+      //     .zhipin_icon {
+      //       //logo樣式
+      //       width: 100px; //寬度
+      //       height: auto; //高度(隨著寬度改變)
+      //       display: block; //取消隱藏
+      //       margin: auto; //logo置中
+      //     }
+  
+      //     .logo_text {
+      //       //logo文字樣式
+      //       display: none; //隱藏logo文字
+      //     }
+      //   }
+  
+      //   .header_list_top {
+      //     //電腦版選單樣式
+      //     display: none; //隱藏
+      //   }
+      //   .header_list_bot {
+      //     //電腦版選單樣式
+      //     li {
+      //       display: none; //隱藏
+      //     }
+      //     .menu {
+      //       //手機版選單按鈕樣式
+      //       display: block; //取消隱藏
+      //       position: relative; //位置 absolute按到relative位置移動
+      //     }
+      //     .menu:hover {
+      //       //手機版選單按鈕 hover(滑鼠移上去後之效果)
+      //       cursor: pointer; //滑鼠樣式改為手指
+      //     }
+      //   }
+      //   .header_list_bot_600 {
+      //     //手機版選單樣式
+      //     z-index: 10; //出現在最上面(數字越大越上面)
+      //     background: rgba(110, 110, 110, 0.658); //背景顏色(R, G, B, 透明度)
+      //     width: 180px; //寬度
+      //     list-style: none; //列表樣式取消
+      //     position: absolute; //位置 absolute按到relative位置移動
+      //     right: 0; //位置 right: 距離relative最右點位置
+      //     top: 100%; //位置 top: 距離relative最高點位置
+      //     font-size: 14px; //字體大小
+      //     a {
+      //       //超連結樣式
+      //       color: white; //字體顏色
+      //     }
+      //     a:hover {
+      //       //超連結樣式(當滑鼠移上去後)
+      //       color: rgb(90, 219, 187); //字體顏色
+      //       text-decoration: none; //將預設底線拿掉
+      //     }
+      //   }
+      // }
+    }
+  }
+  nav {
+    display: none !important;
+    a {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    header {
+      display: none;
+    }
+    nav {
+      // position: relative;
+      display: flex !important;
+      // position: fixed;
+      z-index: 10;
+      color: #e9e9e9;
+      text-align: left;
+      background: #3e4141;
+      a {
+        color: #d8d9d9;
+        display: block;
+        span {
+          margin-left: -24vw;
+        }
+        // font-size: 16px;
+      }
+      button {
+        // position: absolute;
+        // top: 1vh;
+        // left: 80vw;
+        .mobileMenu {
+          // path:nth-child(2){
+          //   transform: rotate(45deg);
+          // }
+          // path:nth-child(3){
+          //   transform: rotate(-45deg);
+          // }
+          width: 30px;
+        }
+      }
+      .shopCart {
+        width: 30px;
+      }
+  
+      .navbar-collapse {
+        margin: 0 -4vw 0 -4vw;
+        background: #111313;
+        .navbar-nav {
+          transform: translate(7vw, 0);
+          background: #111313;
+          .show > .dropdown-menu {
+            max-height: 800px;
+            visibility: visible;
+          }
+          #navbarDropdown {
+            margin-bottom: -2vh;
+          }
+          .dropdown-menu {
+            width: 100vw;
+            text-align: left;
+            border: none;
+            background: #111313;
+            display: block;
+            max-height: 0;
+            visibility: hidden;
+            transition: all 0.6s ease-in-out;
+            overflow: hidden;
+            .dropdown-item {
+              padding: 0.5rem 1.5rem;
+              color: #d8d9d9;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+  .product{
+    height: 80vh;
+    margin: 0 auto;
+    width: 100%;
+    font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    .title {
+      // border: 1px solid red;
+      font-weight: 600;
+      margin: 10vh 0 4vh;
+      font-size: 24px;
+      text-align: center;
+    }
+    .boxWrapP{
+        width: 100%;
+        display: flex;
+        // height: 70vh;
+        // border: 1px red solid;
+        margin-bottom: -18vh;
+        margin-top: 10vh;
+        padding: 10px;
+        .box_imgWrap{
+            // height: 75vh;
+            width: 40%;
+            // border: 1px darkcyan solid;
+            .imgWrap{
+              width: 48vh;
+              height: 48vh;
+              margin: 0 auto 3vh;
+              // border: springgreen 1px solid;
+              background: #efefef;
+              img{
+                  width: 100%;
+                  // opacity: 0%;
+              }
+            }
+            .inner_imgWrap{
+              transform: translate(80%,-150%);
+                .inner_img{
+                  width: 10vh;
+                  height: 10vh;
+                  border: solid 1px red;
+                  background: #9c9c9c;
+                  margin-bottom: 1vh;
+                  img{
+                      width: 100%;
+                      // opacity: 0%;
+                  }
+                }
+                .inner_img:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .box_textWrap{
+            // height: 50vh;
+            width: 60%;
+            // border: 1px darkcyan solid;
+            .textWrap{
+              width: 50%;
+              .text_title, .text_content, .price{
+                width: 80%;
+                margin: 0 auto;
+              }
+              .text_title{
+                  text-align: left;
+                  font-size: 32px;
+                  margin: 5vh auto 0vh;
+                  font-weight: 600;
+              }
+              .price{
+                  text-align: left;
+                  // margin-bottom: 10vh;
+                  margin-top: 4vh;
+                  margin-bottom: 8vh;
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: red;
+              }
+              .text_content{
+                // height: 45vh;
+                font-size: 14px;
+                margin-top: 4vh;
+              }
+              .sImgWrap{
+                width: 100%;
+                img{
+                  width: 100%;
+                  cursor: pointer;
+                }
+              }
+            }
+            .btnWrap{
+              width: 50%;
+              .stock{
+                // margin-left: 10vw;
+                margin-top: 10vh;
+              }
+              .addCart{
+                width: 70%;
+                height: 6vh;
+                margin: 0 auto;
+                border-radius: 10px;
+                background: #008ED3;
+                text-align: center;
+                color: white;
+                z-index: 10;
+                margin-bottom: 4vh;
+                margin-top: 2vh;
+                line-height: 6vh;
+                svg{
+                  transform: scale(.6);
+                }
+              }
+              .addCart:hover {
+                cursor: pointer;
+              }
+              .toShoppingCart{
+                width: 70%;
+                height: 6vh;
+                margin: 0 auto;
+                border-radius: 10px;
+                background: #69c7f7;
+                text-align: center;
+                color: white;
+                z-index: 10;
+                margin-bottom: 4vh;
+                margin-top: 2vh;
+                line-height: 6vh;
+                svg{
+                  transform: scale(.6);
+                }
+              }
+              .toShoppingCart:hover {
+                cursor: pointer;
+              }
+            }
+        }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .product {
+      // height: 230vh;
+      margin: 80px auto 0;
+      font-family: "Open Sans", "微軟正黑體"; //字型樣式
+      .title {
+        border: 1px solid red;
+        font-weight: 600;
+        margin: 10px 2% 0px;
+        font-size: 24px;
+        text-align: center;
+      }
+      .boxWrapP{
+        width: 100%;
+        display: block;
+        // height: 70vh;
+        // border: 1px red solid;
+        margin-bottom: -18vh;
+        margin-top: 10vh;
+        padding: 10px;
+        .box_imgWrap{
+            // height: 75vh;
+            width: 60%;
+            // border: 1px darkcyan solid;
+            .imgWrap{
+              width: 40vh;
+              height: 40vh;
+              margin: 0 auto 3vh;
+              border: springgreen 1px solid;
+              background: #efefef;
+              img{
+                  width: 100%;
+                  // opacity: 0%;
+              }
+            }
+            .inner_imgWrap{
+              width: 100%;
+              transform: translate(35%,-50%) scale(1.6);
+              display: flex;
+                .inner_img{
+                  width: 150px;
+                  height: auto;
+                  border: solid 1px red;
+                  background: #9c9c9c;
+                  margin-bottom: 0vh;
+                  margin-right: 1vh;
+                  img{
+                      width: 100%;
+                      // opacity: 0%;
+                  }
+                }
+                .inner_img:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .box_textWrap{
+            // height: 50vh;
+            width: 100%;
+            margin-bottom: 5vh;
+            // border: 1px darkcyan solid;
+            .text_title, .text_content, .price{
+                width: 80%;
+                margin: 0 auto;
+            }
+            .text_title{
+                text-align: center;
+                font-size: 32px;
+                margin: 5vh auto 0vh;
+                font-weight: 600;
+            }
+            .text_content{
+                height: 45vh;
+                font-size: 14px;
+            }
+            .price{
+                text-align: center;
+                // margin-bottom: 10vh;
+                margin-top: 0vh;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .family_logo{
+              width: 50%;
+              margin: 0 auto;
+              border-radius: 20px;
+              background: #008ED3;
+              text-align: center;
+              color: white;
+              z-index: 10;
+              margin-bottom: 4vh;
+              margin-top: 2vh;
+              svg{
+                transform: scale(.6);
+              }
+            }
+            .family_logo:hover {
+              cursor: pointer;
+            }
+        }
+    }
+    }
+  }
+  //footer樣式
+  footer {
+    //最下方區塊樣式
+    font-family: "Open Sans", "微軟正黑體"; //字型樣式
+    max-width: 100vw; //最大寬度
+    height: 200px; //高度
+    background: #f4f6f8; //背景樣式 顏色
+    color: #717474; //字體顏色
+    font-size: 12px; //字體大小
+    font-weight: 600; //字體粗度
+    text-align: center; //字體左右置中
+    // transform: scale(0.9);
+    // .en,
+    // .zh-tw,
+    .logo_img {
+      transform: scale(0.9);
+    }
+    .logo_img {
+      transform: scale(0.6);
+    }
+    .s-icon {
+      transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
+    }
+    .footer_title {
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    .logo_img {
+      //四種社群logo樣式
+      margin-left: 20px;
+      .logo_img_FB {
+        //FB logo樣式
+        width: 15px; //寬度
+        margin-right: 20px; //對右寬度
+        border-radius: 30%;
+      }
+      a {
+        text-decoration: none;
+      }
+      .logo_img_IG,
+      .logo_img_Twitter,
+      .logo_img_Youtube {
+        //其他三種logo望是
+        width: 30px; //寬度
+        margin-right: 20px; //對右寬度
+        border-radius: 30%;
+      }
+    }
+    // .logo_img .logo_img_FB:hover path{  //FB logo移上去後樣式
+    //     transition: .5s;  //變化時間
+    //     transform: scale(1.3);  //放大
+    //     background: rgb(26, 132, 202);  //背景顏色
+    // }
+    // .logo_img .logo_img_IG:hover{  //IG logo移上去後樣式
+    //     transition: .5s;  //變化時間
+    //     transform: scale(1.3);  //放大
+    //     background: linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+    //     background: -moz-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+    //     background: -webkit-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+    //     background: -o-linear-gradient(316deg, rgba(106, 65, 187, 0.9)0%, rgba(235, 77, 79, 0.8)57%);  //背景顏色
+    // }
+    // .logo_img .logo_img_Twitter:hover{  //Twitter logo移上去後樣式
+    //     transition: .5s;  //變化時間
+    //     transform: scale(1.3);  //放大
+    //     background: rgb(62, 178, 255);  //背景顏色
+    // }
+    // .logo_img .logo_img_Youtube:hover{  //Youtube logo移上去後樣式
+    //     transition: .5s;  //變化時間
+    //     transform: scale(1.3);  //放大
+    //     background: rgb(253, 37, 37);  //背景顏色
+    // }
+  }
+  

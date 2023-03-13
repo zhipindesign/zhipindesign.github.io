@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <form>
+        <form id="uploadForm" enctype="multipart/form-data"> 
+            檔案:<input id="file" type="file" name="file"/> 
+        </form> 
+        <button id="upload">上傳檔案</button> 
+        <img src="" id="show" width="200">
+    </form>
+
+    <script type="text/javascript">
+        $(function() {
+
+            $("#file").change(function() {
+                var readFile = new FileReader();
+                var mfile = $("#file")[0].files[0];  //注意這裡必須時$("#myfile")[0]，document.getElementById('file')等價與$("#myfile")[0]
+                readFile.readAsDataURL(mfile);
+                readFile.onload = function() {
+                    var img = $("#show");
+                    img.attr("src", this.result);
+                }
+
+            });
+
+        });
+        $(function () { 
+            $("#upload").click(function () { 
+                var formData = new FormData($('#uploadForm')[0]); 
+                $.ajax({ 
+                    type: 'post', 
+                    url: "C:\Users\User\Documents\GitHub\zhipindesign.github.io\images\product", 
+                    data: formData, 
+                    cache: false, 
+                    processData: false, 
+                    contentType: false, 
+                    }).success(function (data) { 
+                        alert(data); 
+                    }).error(function () { 
+                        alert("上傳失敗"); 
+                    }); 
+            }); 
+        }); 
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
