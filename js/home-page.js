@@ -1,3 +1,7 @@
+// 检查 userAgent，如果是搜索引擎爬虫，则重定向到其他页面
+if(/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i.test(navigator.userAgent)){
+    window.location.href = "https://example.com/search-engine-optimization";
+}
 
 $(".en").css("display", "none");
 $(".addEn").css("display", "none");
