@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="智品設計股份有限公司 zhipindesign">
+    <!-- <meta name="description" content="智品設計股份有限公司 zhipindesign"> -->
     <!-- <meta name="keywords" content="3D, 3D-Printing, Laser-cutting, zhipindesign, zhipin, coworkshop, vacuum-forming,
                                         3D列印, 雷射切割, 真空成形, 智品, 智品設計, 智品設計股份有限公司, 共享空間"> -->
-    <meta name="keywords" content="智品設計, zhipindesign, zhipin, 智品">
+    <!-- <meta name="keywords" content="智品設計, zhipindesign, zhipin, 智品"> -->
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" href="./images/Zhipin Logo .svg" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -336,7 +336,12 @@
           </a>
         </div>
       </footer>
-    
+    <script>
+      // 检查 userAgent，如果是搜索引擎爬虫，则重定向到其他页面
+      if(/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i.test(navigator.userAgent)){
+          window.location.href = "https://example.com/search-engine-optimization";
+      }
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
