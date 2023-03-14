@@ -11,6 +11,7 @@ header {
   position: fixed;
   font-family: "Open Sans", "微軟正黑體";
 }
+
 header .header_left {
   width: 15%;
   height: 60px;
@@ -18,65 +19,82 @@ header .header_left {
   font-size: 20px;
   cursor: pointer;
 }
+
 header .header_left .zhipin_icon_wrap {
   position: relative;
 }
+
 header .header_mid {
   width: 70%;
   height: 60px;
   text-align: center;
   margin: 0 auto;
 }
+
 header .header_mid ul {
   width: 390px;
   text-align: center;
   margin: 0 auto;
 }
+
 header .header_mid ul li {
   list-style: none;
   text-align: center;
   margin: 0 auto;
   padding-right: 4px;
 }
+
 header .header_mid ul li .dropdown-toggle::after {
-  transform: translate(-5px, 3px) scale(0.8);
+  -webkit-transform: translate(-5px, 3px) scale(0.8);
+          transform: translate(-5px, 3px) scale(0.8);
 }
+
 header .header_mid ul li .dropdown-menu {
   background-color: #3e4141;
   border: none;
   margin-top: -20px;
-  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
+
 header .header_mid ul li .dropdown-menu .dropdown-item {
   padding: 0 10px 5px 10px;
   height: 30px;
   line-height: 30px;
 }
+
 header .header_mid ul li .dropdown-menu .dropdown-item:hover {
   background-color: #3e4141;
 }
+
 header .header_mid ul li .dropdown-menu li:hover .sub-menu {
   visibility: visible;
 }
+
 header .header_mid ul li .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 header .header_mid ul li a {
   text-decoration: none;
   color: white;
 }
+
 header .header_mid ul li a:hover {
   color: #007bff;
 }
+
 header .header_right {
   width: 15%;
   height: 60px;
   text-align: center;
 }
+
 header .header_right .text_opacity {
   opacity: 30%;
   cursor: pointer;
 }
+
 header .header_right .languageEn:hover,
 header .header_right .languageZh:hover {
   opacity: 100%;
@@ -95,6 +113,7 @@ header .header_right .languageZh:hover {
   header .language {
     position: fixed;
     z-index: 20;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     font-size: 20px;
     font-weight: 600;
@@ -104,7 +123,10 @@ header .header_right .languageZh:hover {
     color: #5adbbb !important;
   }
   header .zhipin_icon_wrap {
-    transform: translateY(18px);
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   header .zhipin_icon_wrap .zhipin_icon {
@@ -117,13 +139,16 @@ header .header_right .languageZh:hover {
     line-height: 74px;
     font-size: 12px;
     font-weight: 400;
-    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
   }
   header .zhipin_icon_wrap .zhipin_icon:hover,
-header .zhipin_icon_wrap .logo_text:hover {
+  header .zhipin_icon_wrap .logo_text:hover {
     cursor: pointer;
   }
   header .header_list_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-size: 12px;
@@ -154,6 +179,8 @@ header .zhipin_icon_wrap .logo_text:hover {
     cursor: pointer;
   }
   header .header_list_bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-size: 12px;
@@ -163,16 +190,17 @@ header .zhipin_icon_wrap .logo_text:hover {
   }
   header .header_list_bot li {
     padding: 8px 3px;
-    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
     z-index: 3;
   }
   header .header_list_bot li .tel,
-header .header_list_bot li .contact {
+  header .header_list_bot li .contact {
     color: white;
     font-weight: 600;
   }
   header .header_list_bot li .tel:hover,
-header .header_list_bot li .contact:hover {
+  header .header_list_bot li .contact:hover {
     text-decoration: none;
     cursor: default;
   }
@@ -193,11 +221,13 @@ header .header_list_bot li .contact:hover {
     color: #007bff;
   }
   header .header_list_bot li .dropdown-toggle::after {
-    transform: translateY(3px) scale(0.8);
+    -webkit-transform: translateY(3px) scale(0.8);
+            transform: translateY(3px) scale(0.8);
   }
   header .header_list_bot li .dropdown-menu {
     background: #13131380;
-    transform: scale(0.84) translate(-18%, -10%);
+    -webkit-transform: scale(0.84) translate(-18%, -10%);
+            transform: scale(0.84) translate(-18%, -10%);
   }
   header .header_list_bot li .dropdown-menu a {
     color: white;
@@ -223,6 +253,7 @@ header .header_list_bot li .contact:hover {
     display: none;
   }
 }
+
 @media screen and (max-width: 700px) and (max-width: 600px) {
   header .en {
     font-size: 10px;
@@ -267,9 +298,11 @@ header .header_list_bot li .contact:hover {
     text-decoration: none;
   }
 }
+
 nav {
   display: none !important;
 }
+
 nav a {
   display: none;
 }
@@ -278,8 +311,9 @@ nav a {
   header {
     display: none;
   }
-
   nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     z-index: 10;
     color: #e9e9e9;
@@ -304,7 +338,8 @@ nav a {
     background: #111313;
   }
   nav .navbar-collapse .navbar-nav {
-    transform: translate(7vw, 0);
+    -webkit-transform: translate(7vw, 0);
+            transform: translate(7vw, 0);
     background: #111313;
   }
   nav .navbar-collapse .navbar-nav .show > .dropdown-menu {
@@ -322,6 +357,7 @@ nav a {
     display: block;
     max-height: 0;
     visibility: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
     overflow: hidden;
   }
@@ -330,42 +366,53 @@ nav a {
     color: #d8d9d9;
   }
 }
+
 .carousel {
-  transform: translateY(60px);
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
   margin-bottom: 60px;
   font-family: "Open Sans", "微軟正黑體";
 }
+
 .carousel .carousel-indicators li {
   width: 30px;
   height: 10px;
   border-radius: 100%;
   background: #007bff;
-  transform: scale(0.2) translateY(12vh);
+  -webkit-transform: scale(0.2) translateY(12vh);
+          transform: scale(0.2) translateY(12vh);
   margin-right: -15px;
 }
+
 .carousel .carousel-item {
   height: 385px;
 }
+
 .carousel .carousel-item1 {
   background: url(/images/LCEservice/LaserCutService.jpg) right 100% bottom 70%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .carousel .carousel-item2 {
   background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
   background-size: cover;
 }
+
 .carousel .carousel-item3 {
   background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
   background-size: cover;
 }
+
 .carousel .carousel-item img {
   min-height: 540px;
   max-height: 1600px;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: translateY(-35%);
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
 }
+
 .carousel .start_your_project {
   width: 160px;
   height: 32px;
@@ -381,12 +428,15 @@ nav a {
   left: calc(50% - 65px);
   z-index: 10;
 }
+
 .carousel .start_your_project a {
   color: white;
 }
+
 .carousel .start_your_project a:hover {
   text-decoration: none;
 }
+
 .carousel .mainTitle {
   width: 100%;
   padding: 0 5px;
@@ -399,12 +449,15 @@ nav a {
   font-weight: 600;
   z-index: 10;
 }
+
 .carousel .mainTitle a {
   color: white;
 }
+
 .carousel .mainTitle a:hover {
   text-decoration: none;
 }
+
 .carousel .mainTitle .mainText {
   font-size: 30px;
   color: white;
@@ -412,15 +465,18 @@ nav a {
   text-align: center;
   width: 80%;
 }
+
 .carousel .start_your_project:hover {
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #0070e0;
 }
 
 @media screen and (max-width: 700px) {
   .carousel {
-    transform: translateY(55px);
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
     font-family: "Open Sans", "微軟正黑體";
   }
   .carousel .carousel-indicators li {
@@ -428,7 +484,8 @@ nav a {
     height: 10px;
     border-radius: 100%;
     background: #007bff;
-    transform: scale(0.2) translateY(12vh);
+    -webkit-transform: scale(0.2) translateY(12vh);
+            transform: scale(0.2) translateY(12vh);
     margin-right: -15px;
   }
   .carousel .carousel-item {
@@ -452,7 +509,8 @@ nav a {
     max-height: 1600px;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
   }
   .carousel .mainTitle {
     padding: 0 5px;
@@ -494,13 +552,16 @@ nav a {
   }
   .carousel .start_your_project:hover {
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     background: #0070e0;
   }
 }
+
 @media screen and (max-width: 700px) {
   .carousel {
-    transform: translateY(55px);
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
     font-family: "Open Sans", "微軟正黑體";
   }
   .carousel .carousel-indicators li {
@@ -508,7 +569,8 @@ nav a {
     height: 10px;
     border-radius: 100%;
     background: #007bff;
-    transform: scale(0.2) translateY(12vh);
+    -webkit-transform: scale(0.2) translateY(12vh);
+            transform: scale(0.2) translateY(12vh);
     margin-right: -15px;
   }
   .carousel .carousel-item {
@@ -532,7 +594,8 @@ nav a {
     max-height: 1600px;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
   }
   .carousel .mainTitle {
     padding: 0 5px;
@@ -541,7 +604,8 @@ nav a {
     margin: -5vh auto 0;
     line-height: 40px;
     font-size: 32px;
-    transform: translateY(5vh);
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
     padding: 0px -10px;
     font-weight: 1000;
     z-index: 10;
@@ -575,14 +639,17 @@ nav a {
   }
   .carousel .start_your_project:hover {
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     background: #0070e0;
   }
 }
+
 .LaserCutting {
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
+
 .LaserCutting .toggle {
   position: fixed;
   top: 100px;
@@ -591,12 +658,15 @@ nav a {
   opacity: 0.5;
   background-color: #1d1d1f;
 }
+
 .LaserCutting .toggle .toggle-on {
   background-color: #1d1d1f;
 }
+
 .LaserCutting .toggle .toggle-off {
   background-color: #e9e9e9;
 }
+
 .LaserCutting .title {
   border: 1px solid red;
   font-weight: 600;
@@ -604,31 +674,38 @@ nav a {
   font-size: 24px;
   text-align: center;
 }
+
 .LaserCutting .main {
   border: 1px solid red;
   width: 100%;
   margin: 0px auto 0;
   color: black;
 }
+
 .LaserCutting .main .ourService {
   border: 1px solid #73ff00;
   height: 270px;
   width: 100%;
   margin: 0 auto;
 }
+
 .LaserCutting .main .ourService .boxWrap {
   border: 1px solid red;
   height: 250px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px auto 0;
 }
+
 .LaserCutting .main .ourService .boxWrap .box {
   border: 1px solid red;
   height: 250px;
   width: 25%;
   margin: 0 auto;
 }
+
 .LaserCutting .main .ourService .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
@@ -636,11 +713,13 @@ nav a {
   margin: 0 auto;
   position: relative;
 }
+
 .LaserCutting .main .ourService .boxWrap .box .box_img img {
   max-width: 100%;
   height: auto;
   margin: 0 auto 0;
 }
+
 .LaserCutting .main .ourService .boxWrap .box .box_img .mask {
   position: absolute;
   top: 0px;
@@ -649,29 +728,37 @@ nav a {
   background: rgba(101, 101, 101, 0.6);
   color: #ffffff;
   opacity: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .LaserCutting .main .ourService .boxWrap .box .box_img a:hover .mask {
   opacity: 0.8;
 }
+
 .LaserCutting .main .ourService .boxWrap .box .box_text {
   text-align: center;
   font-size: 12px;
   margin: -10% auto 0;
 }
+
 .LaserCutting .main .start_your_project {
   border: 1px solid red;
   height: 620px;
   width: 80%;
   margin: -80px auto 5%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap {
   border: 1px solid red;
   height: 250px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0% auto 15%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box {
   border: 1px solid red;
   height: 250px;
@@ -679,12 +766,14 @@ nav a {
   margin: 0 auto;
   position: relative;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img img,
 .LaserCutting .main .start_your_project .boxWrap .box .box_img svg {
   max-width: 100%;
@@ -693,17 +782,21 @@ nav a {
   position: absolute;
   bottom: -16%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover {
   fill: #0071e3;
   cursor: pointer;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_laserFile:hover .box_text_content_okay {
   background-color: red;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_noFile:hover {
   fill: #0071e3;
   cursor: pointer;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_coworkshop {
   max-width: 100%;
   height: auto;
@@ -711,23 +804,28 @@ nav a {
   position: absolute;
   bottom: -8%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .svg_3d_printing {
   max-width: 100%;
   height: auto;
   margin: 30px auto 0;
   position: absolute;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .S,
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .M,
 .LaserCutting .main .start_your_project .boxWrap .box .box_img .L {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img1 {
   border: 1px solid black;
   width: 50%;
   height: 50%;
   margin: 0 auto;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img1 img,
 .LaserCutting .main .start_your_project .boxWrap .box .box_img1 svg {
   max-width: 50%;
@@ -736,12 +834,14 @@ nav a {
   position: absolute;
   bottom: 50%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img2 {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img2 img,
 .LaserCutting .main .start_your_project .boxWrap .box .box_img2 svg {
   max-width: 50%;
@@ -750,8 +850,10 @@ nav a {
   position: absolute;
   bottom: -8%;
   left: 5%;
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_img2 .svg_noFile {
   max-width: 50%;
   height: auto;
@@ -760,20 +862,25 @@ nav a {
   bottom: -8%;
   left: 45%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_text {
   text-align: center;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
   margin: 6% auto;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box .box_text .box_text_content {
   width: 120%;
   font-size: 12px;
-  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
   margin-top: 5%;
 }
+
 .LaserCutting .main .start_your_project .boxWrap .box1 {
   border: 1px solid red;
   height: 250px;
@@ -781,19 +888,24 @@ nav a {
   margin: 0 auto;
   position: relative;
 }
+
 .LaserCutting .main .other_services {
   border: 1px solid red;
   height: 270px;
   width: 80%;
   margin: -5% auto 5%;
 }
+
 .LaserCutting .main .other_services .boxWrap {
   border: 1px solid red;
   height: 250px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0% auto 0;
 }
+
 .LaserCutting .main .other_services .boxWrap .box {
   border: 1px solid red;
   height: 250px;
@@ -802,12 +914,14 @@ nav a {
   position: relative;
   cursor: pointer;
 }
+
 .LaserCutting .main .other_services .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+
 .LaserCutting .main .other_services .boxWrap .box .box_img img,
 .LaserCutting .main .other_services .boxWrap .box .box_img svg {
   max-width: 100%;
@@ -816,20 +930,25 @@ nav a {
   position: absolute;
   bottom: 20%;
 }
+
 .LaserCutting .main .other_services .boxWrap .box .box_text {
   text-align: center;
 }
+
 .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
   margin: 0 auto;
 }
+
 .LaserCutting .main .other_services .boxWrap .box .box_text .box_text_content {
   width: 120%;
   font-size: 12px;
-  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
   margin-top: 5%;
 }
+
 .LaserCutting .main .other_services .boxWrap .box1 {
   border: 1px solid red;
   height: 250px;
@@ -837,6 +956,7 @@ nav a {
   margin: 0 auto;
   position: relative;
 }
+
 .LaserCutting .mobileMain {
   display: none;
 }
@@ -863,7 +983,8 @@ nav a {
   }
   .LaserCutting .mobileMain .mobileStart .box_container {
     width: 60vw;
-    transform: translateX(10vw);
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
     height: 110vh;
   }
   .LaserCutting .mobileMain .mobileStart .box_container .box {
@@ -872,12 +993,14 @@ nav a {
   }
   .LaserCutting .mobileMain .mobileStart .box_container .box .box_img svg {
     width: 100%;
-    transform: translateX(5vw) scale(0.7);
+    -webkit-transform: translateX(5vw) scale(0.7);
+            transform: translateX(5vw) scale(0.7);
   }
   .LaserCutting .mobileMain .mobileStart .box_container .box .box_text {
     text-align: center;
     width: 62vw;
-    transform: translate(8vw, -8vh);
+    -webkit-transform: translate(8vw, -8vh);
+            transform: translate(8vw, -8vh);
     font-size: 12px;
   }
   .LaserCutting .mobileMain .mobileStart .box_container .box .box_text .box_text_title {
@@ -894,7 +1017,8 @@ nav a {
   .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_img2 svg {
     width: 25%;
     margin: 4vh 0;
-    transform: translateX(20vw);
+    -webkit-transform: translateX(20vw);
+            transform: translateX(20vw);
   }
   .LaserCutting .mobileMain .mobileStart .box_container .mobilebox .box_text {
     margin-top: 6.8vh;
@@ -911,24 +1035,28 @@ nav a {
     height: 40vh;
   }
   .LaserCutting .mobileMain .mobileStart .gallery .flickity-page-dots {
-    transform: translateY(6vh);
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
   }
   .LaserCutting .mobileMain .mobileStart .gallery .box {
     width: 70vw;
   }
   .LaserCutting .mobileMain .mobileStart .gallery .box .box_img svg {
     width: 70vw;
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
   .LaserCutting .mobileMain .mobileStart .gallery .mobilebox {
-    transform: translateY(10vh);
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
     width: 70vw;
   }
   .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_img svg {
     width: 70vw;
   }
   .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_img2 {
-    transform: translateX(10vw);
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
   }
   .LaserCutting .mobileMain .mobileStart .gallery .mobilebox .box_img2 svg {
     width: 35%;
@@ -949,24 +1077,28 @@ nav a {
     height: 40vh;
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .flickity-page-dots {
-    transform: translateY(6vh);
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .box {
     width: 70vw;
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .box .box_img svg {
     width: 70vw;
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox {
-    transform: translateY(10vh);
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
     width: 70vw;
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_img svg {
     width: 70vw;
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_img2 {
-    transform: translateX(10vw);
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
   }
   .LaserCutting .mobileMain .mobileOthers .gallery .mobilebox .box_img2 svg {
     width: 35%;
@@ -976,6 +1108,7 @@ nav a {
     font-size: 12px;
   }
 }
+
 footer {
   font-family: "Open Sans", "微軟正黑體";
   max-width: 100vw;
@@ -986,34 +1119,46 @@ footer {
   font-weight: 600;
   text-align: center;
 }
+
 footer .logo_img {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
+
 footer .logo_img {
-  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
+
 footer .s-icon {
-  transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
+  -webkit-transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
+          transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
 }
+
 footer .footer_title {
   font-size: 14px;
   margin-left: 20px;
 }
+
 footer .logo_img {
   margin-left: 20px;
 }
+
 footer .logo_img .logo_img_FB {
   width: 15px;
   margin-right: 20px;
   border-radius: 30%;
 }
+
 footer .logo_img a {
   text-decoration: none;
 }
+
 footer .logo_img .logo_img_IG,
 footer .logo_img .logo_img_Twitter,
 footer .logo_img .logo_img_Youtube {
   width: 30px;
   margin-right: 20px;
   border-radius: 30%;
-}/*# sourceMappingURL=Laser-Cutting-Engraving-Home.css.map */
+}
+/*# sourceMappingURL=Laser-Cutting-Engraving-Home.css.map */

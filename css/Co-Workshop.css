@@ -11,6 +11,7 @@ header {
   position: fixed;
   font-family: "Open Sans", "微軟正黑體";
 }
+
 header .header_left {
   width: 15%;
   height: 60px;
@@ -18,65 +19,82 @@ header .header_left {
   font-size: 20px;
   cursor: pointer;
 }
+
 header .header_left .zhipin_icon_wrap {
   position: relative;
 }
+
 header .header_mid {
   width: 70%;
   height: 60px;
   text-align: center;
   margin: 0 auto;
 }
+
 header .header_mid ul {
   width: 390px;
   text-align: center;
   margin: 0 auto;
 }
+
 header .header_mid ul li {
   list-style: none;
   text-align: center;
   margin: 0 auto;
   padding-right: 4px;
 }
+
 header .header_mid ul li .dropdown-toggle::after {
-  transform: translate(-5px, 3px) scale(0.8);
+  -webkit-transform: translate(-5px, 3px) scale(0.8);
+          transform: translate(-5px, 3px) scale(0.8);
 }
+
 header .header_mid ul li .dropdown-menu {
   background-color: #3e4141;
   border: none;
   margin-top: -20px;
-  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
+
 header .header_mid ul li .dropdown-menu .dropdown-item {
   padding: 0 10px 5px 10px;
   height: 30px;
   line-height: 30px;
 }
+
 header .header_mid ul li .dropdown-menu .dropdown-item:hover {
   background-color: #3e4141;
 }
+
 header .header_mid ul li .dropdown-menu li:hover .sub-menu {
   visibility: visible;
 }
+
 header .header_mid ul li .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 header .header_mid ul li a {
   text-decoration: none;
   color: white;
 }
+
 header .header_mid ul li a:hover {
   color: #007bff;
 }
+
 header .header_right {
   width: 15%;
   height: 60px;
   text-align: center;
 }
+
 header .header_right .text_opacity {
   opacity: 30%;
   cursor: pointer;
 }
+
 header .header_right .languageEn:hover,
 header .header_right .languageZh:hover {
   opacity: 100%;
@@ -95,6 +113,7 @@ header .header_right .languageZh:hover {
   header .language {
     position: fixed;
     z-index: 20;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     font-size: 20px;
     font-weight: 600;
@@ -104,7 +123,10 @@ header .header_right .languageZh:hover {
     color: #5adbbb !important;
   }
   header .zhipin_icon_wrap {
-    transform: translateY(18px);
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   header .zhipin_icon_wrap .zhipin_icon {
@@ -117,13 +139,16 @@ header .header_right .languageZh:hover {
     line-height: 74px;
     font-size: 12px;
     font-weight: 400;
-    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
   }
   header .zhipin_icon_wrap .zhipin_icon:hover,
-header .zhipin_icon_wrap .logo_text:hover {
+  header .zhipin_icon_wrap .logo_text:hover {
     cursor: pointer;
   }
   header .header_list_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-size: 12px;
@@ -154,6 +179,8 @@ header .zhipin_icon_wrap .logo_text:hover {
     cursor: pointer;
   }
   header .header_list_bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-size: 12px;
@@ -163,16 +190,17 @@ header .zhipin_icon_wrap .logo_text:hover {
   }
   header .header_list_bot li {
     padding: 8px 3px;
-    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
     z-index: 3;
   }
   header .header_list_bot li .tel,
-header .header_list_bot li .contact {
+  header .header_list_bot li .contact {
     color: white;
     font-weight: 600;
   }
   header .header_list_bot li .tel:hover,
-header .header_list_bot li .contact:hover {
+  header .header_list_bot li .contact:hover {
     text-decoration: none;
     cursor: default;
   }
@@ -193,11 +221,13 @@ header .header_list_bot li .contact:hover {
     color: #007bff;
   }
   header .header_list_bot li .dropdown-toggle::after {
-    transform: translateY(3px) scale(0.8);
+    -webkit-transform: translateY(3px) scale(0.8);
+            transform: translateY(3px) scale(0.8);
   }
   header .header_list_bot li .dropdown-menu {
     background: #13131380;
-    transform: scale(0.84) translate(-18%, -10%);
+    -webkit-transform: scale(0.84) translate(-18%, -10%);
+            transform: scale(0.84) translate(-18%, -10%);
   }
   header .header_list_bot li .dropdown-menu a {
     color: white;
@@ -223,6 +253,7 @@ header .header_list_bot li .contact:hover {
     display: none;
   }
 }
+
 @media screen and (max-width: 700px) and (max-width: 600px) {
   header .en {
     font-size: 10px;
@@ -267,9 +298,11 @@ header .header_list_bot li .contact:hover {
     text-decoration: none;
   }
 }
+
 nav {
   display: none !important;
 }
+
 nav a {
   display: none;
 }
@@ -278,8 +311,9 @@ nav a {
   header {
     display: none;
   }
-
   nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     z-index: 10;
     color: #e9e9e9;
@@ -304,7 +338,8 @@ nav a {
     background: #111313;
   }
   nav .navbar-collapse .navbar-nav {
-    transform: translate(7vw, 0);
+    -webkit-transform: translate(7vw, 0);
+            transform: translate(7vw, 0);
     background: #111313;
   }
   nav .navbar-collapse .navbar-nav .show > .dropdown-menu {
@@ -322,6 +357,7 @@ nav a {
     display: block;
     max-height: 0;
     visibility: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
     overflow: hidden;
   }
@@ -330,43 +366,54 @@ nav a {
     color: #d8d9d9;
   }
 }
+
 .carousel {
-  transform: translateY(60px);
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
   margin-bottom: 60px;
   font-family: "Open Sans", "微軟正黑體";
 }
+
 .carousel .carousel-indicators li {
   width: 30px;
   height: 10px;
   border-radius: 100%;
   background: #007bff;
-  transform: scale(0.2) translateY(12vh);
+  -webkit-transform: scale(0.2) translateY(12vh);
+          transform: scale(0.2) translateY(12vh);
   margin-right: -15px;
 }
+
 .carousel .carousel-item {
   height: 385px;
 }
+
 .carousel .carousel-item1 {
   background: url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .carousel .carousel-item2 {
   background: url(/images/web-fullPage/3D-Photo-Ch.jpg) right 100% bottom 65%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .carousel .carousel-item3 {
   background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 34%), linear-gradient(255deg, rgba(0, 60, 255, 0.4) 0%, rgba(146, 0, 255, 0.4) 100%), url(/img/PXL_20201216_093128501.jpg) right 100% bottom 50%;
   background-size: cover;
 }
+
 .carousel .carousel-item img {
   min-height: 540px;
   max-height: 1600px;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: translateY(-35%);
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
 }
+
 .carousel .start_your_project {
   width: 160px;
   height: 32px;
@@ -382,12 +429,15 @@ nav a {
   left: calc(50% - 65px);
   z-index: 10;
 }
+
 .carousel .start_your_project a {
   color: white;
 }
+
 .carousel .start_your_project a:hover {
   text-decoration: none;
 }
+
 .carousel .mainTitle {
   width: 100%;
   padding: 0 5px;
@@ -400,12 +450,15 @@ nav a {
   font-weight: 600;
   z-index: 10;
 }
+
 .carousel .mainTitle a {
   color: white;
 }
+
 .carousel .mainTitle a:hover {
   text-decoration: none;
 }
+
 .carousel .mainTitle .mainText {
   font-size: 24px;
   color: white;
@@ -413,15 +466,18 @@ nav a {
   text-align: center;
   width: 60%;
 }
+
 .carousel .start_your_project:hover {
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #0070e0;
 }
 
 @media screen and (max-width: 700px) {
   .carousel {
-    transform: translateY(55px);
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
     font-family: "Open Sans", "微軟正黑體";
   }
   .carousel .carousel-indicators li {
@@ -429,7 +485,8 @@ nav a {
     height: 10px;
     border-radius: 100%;
     background: #007bff;
-    transform: scale(0.2) translateY(12vh);
+    -webkit-transform: scale(0.2) translateY(12vh);
+            transform: scale(0.2) translateY(12vh);
     margin-right: -15px;
   }
   .carousel .carousel-item {
@@ -453,7 +510,8 @@ nav a {
     max-height: 1600px;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
   }
   .carousel .mainTitle {
     padding: 0 5px;
@@ -495,14 +553,17 @@ nav a {
   }
   .carousel .start_your_project:hover {
     cursor: pointer;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     background: #0070e0;
   }
 }
+
 .coworkshop {
   margin: 20px auto 0;
   font-family: "Open Sans", "微軟正黑體";
 }
+
 .coworkshop .toggle {
   position: fixed;
   top: 100px;
@@ -511,12 +572,15 @@ nav a {
   opacity: 0.5;
   background-color: #1d1d1f;
 }
+
 .coworkshop .toggle .toggle-on {
   background-color: #1d1d1f;
 }
+
 .coworkshop .toggle .toggle-off {
   background-color: #e9e9e9;
 }
+
 .coworkshop .title {
   border: 1px solid red;
   font-weight: 600;
@@ -524,15 +588,18 @@ nav a {
   font-size: 24px;
   text-align: center;
 }
+
 .coworkshop .main {
   border: 1px solid red;
   width: 100%;
   margin: 0px auto 0;
   background-color: #d8d9d9;
 }
+
 .coworkshop .main .des {
   display: none;
 }
+
 .coworkshop .main .content {
   width: 100%;
   height: 50vh;
@@ -543,126 +610,152 @@ nav a {
   font-size: 36px;
   line-height: 300px;
 }
+
 .coworkshop .main .equipment {
   border: 1px solid red;
   width: 100%;
   height: 130vh;
 }
+
 .coworkshop .main .equipment .boxWrap {
   border: 1px solid red;
   width: 100%;
   height: 50vh;
 }
+
 .coworkshop .main .equipment .boxWrap .box {
   border: 1px solid red;
   width: 60%;
   height: 50vh;
   margin: 0 auto;
 }
+
 .coworkshop .main .equipment .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+
 .coworkshop .main .equipment .boxWrap .box .box_img img {
   width: 100%;
   height: auto;
 }
+
 .coworkshop .main .equipment .boxWrap .box .box_img .box_text {
   text-align: center;
   font-size: 14px;
   font-weight: 800;
 }
+
 .coworkshop .main .equipment .boxWrap .box .box_img1 {
   width: 20%;
   height: 100%;
   margin: 0 auto;
 }
+
 .coworkshop .main .tool1 {
   border: 1px solid red;
   width: 100%;
   height: 40vh;
 }
+
 .coworkshop .main .tool1 .boxWrap {
   border: 1px solid red;
   width: 100%;
   height: 40vh;
 }
+
 .coworkshop .main .tool1 .boxWrap .box {
   border: 1px solid red;
   width: 60%;
   height: 40vh;
   margin: 0 auto;
 }
+
 .coworkshop .main .tool1 .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+
 .coworkshop .main .tool1 .boxWrap .box .box_img img {
   width: 100%;
   height: auto;
   border-radius: 4px;
 }
+
 .coworkshop .main .tool1 .boxWrap .box .box_img .box_text {
   text-align: center;
   font-size: 14px;
 }
+
 .coworkshop .main .tool1 .boxWrap .box .box_img1 {
   width: 20%;
   height: 100%;
   margin: 0 auto;
 }
+
 .coworkshop .main .tool2 {
   border: 1px solid red;
   width: 100%;
   height: 110vh;
 }
+
 .coworkshop .main .tool2 .boxWrap {
   border: 1px solid red;
   width: 100%;
   height: 50vh;
 }
+
 .coworkshop .main .tool2 .boxWrap .box {
   border: 1px solid red;
   width: 60%;
   height: 50vh;
   margin: 0 auto;
 }
+
 .coworkshop .main .tool2 .boxWrap .box .box_img {
   border: 1px solid black;
   width: 60%;
   height: 60%;
   margin: 0 auto;
 }
+
 .coworkshop .main .tool2 .boxWrap .box .box_img img {
   width: 100%;
   height: auto;
 }
+
 .coworkshop .main .tool2 .boxWrap .box .box_img .box_text {
   text-align: center;
   font-size: 14px;
 }
+
 .coworkshop .main .tool2 .boxWrap .box .box_img1 {
   width: 20%;
   height: 100%;
   margin: 0 auto;
 }
+
 .coworkshop .main .other_services {
   border: 1px solid red;
   height: 40vh;
   width: 80%;
   margin: 0% auto 5%;
 }
+
 .coworkshop .main .other_services .boxWrap {
   border: 1px solid red;
   height: 40vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0% auto 0;
 }
+
 .coworkshop .main .other_services .boxWrap .box {
   border: 1px solid red;
   height: 25vh;
@@ -671,12 +764,14 @@ nav a {
   position: relative;
   cursor: pointer;
 }
+
 .coworkshop .main .other_services .boxWrap .box .box_img {
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
+
 .coworkshop .main .other_services .boxWrap .box .box_img img,
 .coworkshop .main .other_services .boxWrap .box .box_img svg {
   max-width: 100%;
@@ -685,20 +780,25 @@ nav a {
   position: absolute;
   bottom: 20%;
 }
+
 .coworkshop .main .other_services .boxWrap .box .box_text {
   text-align: center;
 }
+
 .coworkshop .main .other_services .boxWrap .box .box_text .box_text_title {
   font-size: 14px;
   font-weight: 600;
   margin: 0 auto;
 }
+
 .coworkshop .main .other_services .boxWrap .box .box_text .box_text_content {
   width: 76%;
   font-size: 12px;
-  transform: translateX(12%);
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
   margin-top: 5%;
 }
+
 .coworkshop .main .other_services .boxWrap .box1 {
   border: 1px solid red;
   height: 250px;
@@ -706,6 +806,7 @@ nav a {
   margin: 0 auto;
   position: relative;
 }
+
 .coworkshop .mobileMain {
   display: none;
 }
@@ -861,6 +962,8 @@ nav a {
     border: 1px solid red;
     height: 250px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0% auto 0;
   }
@@ -879,7 +982,7 @@ nav a {
     margin: 0 auto;
   }
   .coworkshop .main .other_services .boxWrap .box .box_img img,
-.coworkshop .main .other_services .boxWrap .box .box_img svg {
+  .coworkshop .main .other_services .boxWrap .box .box_img svg {
     max-width: 100%;
     height: auto;
     margin: 0 auto -50px;
@@ -897,7 +1000,8 @@ nav a {
   .coworkshop .main .other_services .boxWrap .box .box_text .box_text_content {
     width: 76%;
     font-size: 12px;
-    transform: translateX(12%);
+    -webkit-transform: translateX(12%);
+            transform: translateX(12%);
     margin-top: 5%;
   }
   .coworkshop .main .other_services .boxWrap .box1 {
@@ -928,6 +1032,7 @@ nav a {
     width: 70vw;
   }
 }
+
 footer {
   font-family: "Open Sans", "微軟正黑體";
   max-width: 100vw;
@@ -938,34 +1043,46 @@ footer {
   font-weight: 600;
   text-align: center;
 }
+
 footer .logo_img {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
+
 footer .logo_img {
-  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
+
 footer .s-icon {
-  transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
+  -webkit-transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
+          transform: translateY(-0.2vh) scale(0.6) translateX(-20px);
 }
+
 footer .footer_title {
   font-size: 14px;
   margin-left: 20px;
 }
+
 footer .logo_img {
   margin-left: 20px;
 }
+
 footer .logo_img .logo_img_FB {
   width: 15px;
   margin-right: 20px;
   border-radius: 30%;
 }
+
 footer .logo_img a {
   text-decoration: none;
 }
+
 footer .logo_img .logo_img_IG,
 footer .logo_img .logo_img_Twitter,
 footer .logo_img .logo_img_Youtube {
   width: 30px;
   margin-right: 20px;
   border-radius: 30%;
-}/*# sourceMappingURL=Co-Workshop.css.map */
+}
+/*# sourceMappingURL=Co-Workshop.css.map */

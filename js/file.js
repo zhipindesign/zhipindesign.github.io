@@ -1,6 +1,7 @@
 let sendButton = document.querySelector('#send');
 let today = new Date();
 let datetime = today.getFullYear()+ "/" + (today.getMonth()+1) + "/" + today.getDate() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+location.href="https://zhipindesign.com/"; //跳轉首頁
 const cors = 'https://cors-anywhere.herokuapp.com/'; // use cors-anywhere to fetch api data
 function send() {
     let lastName = document.querySelector('#lastName').value;
