@@ -2,7 +2,7 @@
 if(/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i.test(navigator.userAgent)){
     window.location.href = "https://example.com/search-engine-optimization";
 }
-// location.href="https://zhipindesign.com/"; //跳轉首頁
+location.href="https://zhipindesign.com/"; //跳轉首頁
 
 $(".en").css("display", "none");
 $(".addEn").css("display", "none");
